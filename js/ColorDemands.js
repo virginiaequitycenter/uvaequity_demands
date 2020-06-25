@@ -13,7 +13,7 @@ function ColorDemands(tags) {
    
     queryids = queryids.join(', #ID');
     
-    d3.selectAll("#ID" + queryids).style("background-color", 'red')
+    d3.selectAll("#ID" + queryids).style("background", 'url(pics/redsquareuse.jpg)')
 
 
 
