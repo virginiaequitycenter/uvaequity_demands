@@ -43,5 +43,6 @@ function DrawDemandDocs(demand_text) {
         .data( (d) => d.values)
         .enter()
         .append("div")
-        .classed("demandlines", true);
+        .classed("demandlines", true)
+        .attr("id", (d) =>  "ID" + d.demand_id );
 }

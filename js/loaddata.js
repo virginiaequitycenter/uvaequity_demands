@@ -13,6 +13,8 @@ function loadData() {
     
     d3.csv("data/demands_tags.csv")
        .then(function(data){
-        DemandsTags = data;    
+        DemandsTags = data;   
+        ColorDemands(DemandsTags);
     });
+
 }
