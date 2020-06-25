@@ -1,0 +1,823 @@
+demand_id,Code
+1,Minority Faculty Staff and Leadership Recruitment
+2,Minority Faculty Retention
+3,Financial Aid and Financing
+3,Minority Faculty Retention
+4,Spaces and Places
+5,Community Labor or Partnership
+5,Data Collection and Transparency
+6,Minority Faculty Staff and Leadership Recruitment
+6,Minority Faculty Retention
+7,School Climate
+8,Financial Aid and Financing
+8,Minority Faculty Retention
+9,Spaces and Places
+10,Minority Faculty Retention
+10,Minority Faculty Staff and Leadership Recruitment
+11,Adding Courses
+11,Financial Aid and Financing
+11,Minority Faculty Retention
+12,Minority Faculty / Staff Recruitment
+12,Data Collection and Transparency
+13,Minority Faculty Staff and Leadership Recruitment
+14,Diversity in Student Leadership
+14,School Climate
+15,School Climate
+16,Community Labor or Partnership
+16,Minority Faculty Staff and Leadership Recruitment
+17,Data Collection and Transparency
+17,Adding Courses
+18,School Climate
+18,Spaces and Places
+19,Minority Faculty / Staff Recruitment
+19,Data Collection and Transparency
+20,Financial Aid and Financing
+20,Minority Faculty Retention
+21,Diversity in Student Leadership
+22,Data Collection and Transparency
+22,Minority Faculty Retention
+22,School Climate
+23,Financial Aid and Financing
+23,Minority Faculty Retention
+24,School Climate
+25,Minority Faculty Staff and Leadership Recruitment
+26,School Climate
+26,Spaces and Places
+27,Minority Faculty / Staff Recruitment
+28,School Climate
+29,Spaces and Places
+29,School Climate
+30,Data Collection and Transparency
+30,Minority Faculty Retention
+31,Minority Faculty Retention
+32,School Climate
+33,Minority Faculty Retention
+33,Data Collection and Transparency
+34,Financial Aid and Financing
+34,School Climate
+35,Minority Faculty Staff and Leadership Recruitment
+36,Minority Faculty Retention
+36,Spaces and Places
+37,Minority Faculty Retention
+38,Spaces and Places
+39,School Climate
+40,Adding Courses
+41,Data Collection and Transparency
+41,Minority Student Recruitment
+42,Spaces and Places
+43,Data Collection and Transparency
+43,Minority Faculty Retention
+43,School Climate
+44,School Climate
+45,Spaces and Places
+46,School Climate
+47,Spaces and Places
+47,School Climate
+48,Minority Faculty Retention
+48,Data Collection and Transparency
+49,School Climate
+50,School Climate
+51,School Climate
+52,Abolition/ Defunding
+53,Minority Faculty Retention
+53,Minority Student Recruitment
+54,Minority Faculty Staff and Leadership Recruitment
+55,Current Iniatives and Working Groups
+56,Minority Faculty Staff and Leadership Recruitment
+56,Minority Faculty Retention
+57,Minority Faculty Staff and Leadership Recruitment
+58,Data Collection and Transparency
+59,Minority Faculty Staff and Leadership Recruitment
+60,Minority Faculty Staff and Leadership Recruitment
+61,School Climate
+62,Minority Student Recruitment
+62,School Climate
+63,School Climate
+64,Community Labor or Partnership
+65,School Climate
+65,Adding Courses
+66,School Climate
+66,Adding Courses
+67,Minority Student Recruitment
+67,Financial Aid and Financing
+68,Financial Aid and Financing
+68,Minority Student Recruitment
+68,Current Iniatives and Working Groups
+69,Current Iniatives and Working Groups
+69,School Climate
+70,Financial Aid and Financing
+71,Data Collection and Transparency
+71,Research or Coursework
+71,School Climate
+72,Diversity in Student Leadership
+73,Minority Student Recruitment
+74,School Climate
+74,Adding Courses
+75,Inclusive Anti Racist Curriculum Programs
+75,Financial Aid and Financing
+76,School Climate
+77,Current Iniatives and Working Groups
+77,School Climate
+78,Adding Courses
+79,School Climate
+79,Minority Faculty Staff and Leadership Recruitment
+80,Diversity in Student Leadership
+80,Data Collection and Transparency
+81,Current Iniatives and Working Groups
+82,Minority Faculty Retention
+83,School Climate
+83,Minority Student Recruitment
+84,Minority Student Recruitment
+84,Financial Aid and Financing
+84,Current Iniatives and Working Groups
+85,School Climate
+85,Data Collection and Transparency
+86,Current Iniatives and Working Groups
+87,School Climate
+88,Minority Student Recruitment
+89,School Climate
+90,Data Collection and Transparency
+91,Minority Student Recruitment
+92,Minority Student Recruitment
+92,Financial Aid and Financing
+93,School Climate
+94,School Climate
+95,Current Iniatives and Working Groups
+95,Diversity in Student Leadership
+95,School Climate
+96,Research or Coursework
+96,School Climate
+97,Inclusive Anti Racist Curriculum Programs
+97,Current Iniatives and Working Groups
+98,School Climate
+99,Minority Faculty Staff and Leadership Recruitment
+100,Data Collection and Transparency
+100,Minority Faculty Staff and Leadership Recruitment
+101,Minority Faculty Staff and Leadership Recruitment
+102,Minority Student Recruitment
+102,Adding Courses
+102,School Climate
+103,Minority Faculty Staff and Leadership Recruitment
+104,Current Iniatives and Working Groups
+104,School Climate
+105,School Climate
+106,Minority Student Recruitment
+107,Minority Faculty Staff and Leadership Recruitment
+107,Minority Student Recruitment
+108,Financial Aid and Financing
+109,Financial Aid and Financing
+109,Current Iniatives and Working Groups
+110,Diversity in Student Leadership
+111,Diversity in Student Leadership
+111,School Climate
+112,Financial Aid and Financing
+112,Minority Student Recruitment
+113,Minority Faculty Staff and Leadership Recruitment
+114,Current Iniatives and Working Groups
+115,School Climate
+116,Financial Aid and Financing
+116,School Climate
+117,School Climate
+118,Inclusive Anti Racist Curriculum Programs
+119,Inclusive Anti Racist Curriculum Programs
+120,Community Labor or Partnership
+121,Spaces and Places
+122,Financial Aid and Financing
+122,Minority Student Recruitment
+123,Minority Student Recruitment
+124,Diversity in Student Leadership
+125,Community Labor or Partnership
+126,Inclusive Anti Racist Curriculum Programs
+127,Diversity in Student Leadership
+128,Minority Faculty Retention
+128,Research or Coursework
+129,Adding Courses
+130,Current Iniatives and Working Groups
+130,Spaces and Places
+131,Inclusive Anti Racist Curriculum Programs
+132,Adding Courses
+133,Minority Faculty / Staff Recruitment
+133,Minority Faculty Retention
+133,Minority Faculty Staff and Leadership Recruitment
+134,School Climate
+135,Current Iniatives and Working Groups
+136,Living Wage
+137,Spaces and Places
+138,Adding Courses
+139,Minority Student Recruitment
+140,Minority Student Recruitment
+140,Financial Aid and Financing
+141,Current Iniatives and Working Groups
+142,Minority Faculty Staff and Leadership Recruitment
+143,School Climate
+143,Minority Student Recruitment
+144,School Climate
+144,Diversity in Student Leadership
+145,School Climate
+146,School Climate
+147,Minority Faculty Staff and Leadership Recruitment
+148,Current Iniatives and Working Groups
+148,Inclusive Anti Racist Curriculum Programs
+149,Inclusive Anti Racist Curriculum Programs
+150,Living Wage
+150,Community Labor or Partnership
+151,School Climate
+152,Inclusive Anti Racist Curriculum Programs
+152,Adding Courses
+153,Current Iniatives and Working Groups
+154,Minority Student Recruitment
+155,Current Iniatives and Working Groups
+156,Current Iniatives and Working Groups
+157,Minority Faculty Staff and Leadership Recruitment
+158,School Climate
+159,School Climate
+160,Current Iniatives and Working Groups
+161,Current Iniatives and Working Groups
+162,Current Iniatives and Working Groups
+163,Diversity in Student Leadership
+163,Current Iniatives and Working Groups
+164,Minority Faculty Retention
+164,Data Collection and Transparency
+165,School Climate
+165,Current Iniatives and Working Groups
+166,Inclusive Anti Racist Curriculum Programs
+167,Current Iniatives and Working Groups
+168,Minority Faculty Staff and Leadership Recruitment
+169,Inclusive Anti Racist Curriculum Programs
+169,School Climate
+170,Minority Faculty Staff and Leadership Recruitment
+171,Research or Coursework
+172,Data Collection and Transparency
+173,Abolition/ Defunding
+174,Minority Student Recruitment
+175,Current Iniatives and Working Groups
+175,Financial Aid and Financing
+176,Minority Faculty Staff and Leadership Recruitment
+176,School Climate
+177,Current Iniatives and Working Groups
+178,Data Collection and Transparency
+179,Current Iniatives and Working Groups
+179,School Climate
+180,Living Wage
+181,Financial Aid and Financing
+181,Current Iniatives and Working Groups
+182,Minority Student Recruitment
+183,Current Iniatives and Working Groups
+184,Adding Courses
+185,Inclusive Anti Racist Curriculum Programs
+186,Spaces and Places
+187,Abolition/ Defunding
+188,Inclusive Anti Racist Curriculum Programs
+189,Abolition/ Defunding
+190,Inclusive Anti Racist Curriculum Programs
+191,Spaces and Places
+192,Diversity in Student Leadership
+193,Minority Student Recruitment
+194,Minority Faculty Staff and Leadership Recruitment
+195,School Climate
+196,Living Wage
+197,Minority Student Recruitment
+198,Spaces and Places
+199,Reparations
+200,School Climate
+201,Minority Student Recruitment
+202,Living Wage
+203,Minority Faculty Staff and Leadership Recruitment
+204,Minority Faculty Staff and Leadership Recruitment
+205,Abolition/ Defunding
+206,Spaces and Places
+207,Inclusive Anti Racist Curriculum Programs
+208,Inclusive Anti Racist Curriculum Programs
+209,Research or Coursework
+210,Research or Coursework
+210,Adding Courses
+211,Spaces and Places
+212,School Climate
+213,Data Collection and Transparency
+214,Diversity in Student Leadership
+214,Minority Student Recruitment
+215,Adding Courses
+216,Minority Faculty Staff and Leadership Recruitment
+217,Adding Courses
+218,Minority Faculty Staff and Leadership Recruitment
+219,School Climate
+219,Current Iniatives and Working Groups
+220,Financial Aid and Financing
+220,Minority Student Recruitment
+220,School Climate
+221,School Climate
+222,Inclusive Anti Racist Curriculum Programs
+223,Financial Aid and Financing
+223,Current Iniatives and Working Groups
+224,Financial Aid and Financing
+225,Financial Aid and Financing
+226,Financial Aid and Financing
+227,Financial Aid and Financing
+227,School Climate
+228,Diversity in Student Leadership
+229,Current Iniatives and Working Groups
+229,Diversity in Student Leadership
+230,Spaces and Places
+231,Research or Coursework
+232,Inclusive Anti Racist Curriculum Programs
+233,Community Labor or Partnership
+234,Community Labor or Partnership
+235,Minority Student Recruitment
+236,Spaces and Places
+237,Minority Faculty Staff and Leadership Recruitment
+238,Diversity in Student Leadership
+239,Abolition/ Defunding
+240,Inclusive Anti Racist Curriculum Programs
+241,Inclusive Anti Racist Curriculum Programs
+241,School Climate
+242,Research or Coursework
+243,School Climate
+244,Spaces and Places
+245,Minority Student Recruitment
+245,Financial Aid and Financing
+246,Financial Aid and Financing
+246,Community Labor or Partnership
+247,Financial Aid and Financing
+247,Inclusive Anti Racist Curriculum Programs
+248,Community Labor or Partnership
+248,Minority Student Recruitment
+249,Adding Courses
+249,Inclusive Anti Racist Curriculum Programs
+250,Minority Student Recruitment
+250,Financial Aid and Financing
+251,Financial Aid and Financing
+251,Inclusive Anti Racist Curriculum Programs
+252,Financial Aid and Financing
+253,Reparations
+254,School Climate
+255,School Climate
+256,Financial Aid and Financing
+257,Minority Faculty Staff and Leadership Recruitment
+257,School Climate
+258,Data Collection and Transparency
+259,Minority Faculty / Staff Recruitment
+260,Data Collection and Transparency
+260,Minority Faculty / Staff Recruitment
+261,Data Collection and Transparency
+262,Minority Faculty Staff and Leadership Recruitment
+262,School Climate
+263,Minority Faculty / Staff Recruitment
+264,Research or Coursework
+265,Inclusive Anti Racist Curriculum Programs
+265,Financial Aid and Financing
+266,Financial Aid and Financing
+266,Current Iniatives and Working Groups
+266,Spaces and Places
+267,Minority Faculty Staff and Leadership Recruitment
+267,Current Iniatives and Working Groups
+268,Adding Courses
+269,Spaces and Places
+269,School Climate
+270,Minority Faculty Retention
+270,School Climate
+271,Inclusive Anti Racist Curriculum Programs
+272,Research or Coursework
+272,Spaces and Places
+273,Minority Student Recruitment
+273,School Climate
+273,Inclusive Anti Racist Curriculum Programs
+273,Minority Faculty Staff and Leadership Recruitment
+273,Minority Faculty Retention
+274,School Climate
+275,Minority Student Recruitment
+276,Financial Aid and Financing
+276,Minority Faculty Retention
+277,Current Iniatives and Working Groups
+278,Data Collection and Transparency
+278,Minority Faculty Retention
+279,Living Wage
+279,Data Collection and Transparency
+280,Financial Aid and Financing
+280,Minority Faculty Retention
+281,Current Iniatives and Working Groups
+282,Minority Faculty Staff and Leadership Recruitment
+282,School Climate
+283,Minority Faculty Retention
+283,School Climate
+284,Current Iniatives and Working Groups
+285,Minority Student Recruitment
+286,Current Iniatives and Working Groups
+287,Minority Faculty Staff and Leadership Recruitment
+288,School Climate
+289,Data Collection and Transparency
+290,Spaces and Places
+291,Minority Student Recruitment
+292,Minority Faculty Retention
+292,Minority Faculty Staff and Leadership Recruitment
+293,Current Iniatives and Working Groups
+294,School Climate
+295,Minority Faculty Retention
+296,Minority Faculty Staff and Leadership Recruitment
+297,Current Iniatives and Working Groups
+298,Financial Aid and Financing
+298,Minority Student Recruitment
+299,Minority Faculty Staff and Leadership Recruitment
+300,Minority Student Recruitment
+300,Minority Faculty Staff and Leadership Recruitment
+301,Minority Student Recruitment
+302,Spaces and Places
+303,School Climate
+303,Minority Faculty Retention
+304,Minority Faculty Retention
+304,School Climate
+305,Spaces and Places
+306,Current Iniatives and Working Groups
+307,Inclusive Anti Racist Curriculum Programs
+308,School Climate
+309,Minority Faculty Staff and Leadership Recruitment
+309,Research or Coursework
+310,School Climate
+311,School Climate
+311,Minority Faculty Retention
+312,Minority Faculty Staff and Leadership Recruitment
+312,Minority Faculty Retention
+313,Minority Student Recruitment
+314,Current Iniatives and Working Groups
+315,Minority Student Recruitment
+315,Current Iniatives and Working Groups
+316,Financial Aid and Financing
+317,Current Iniatives and Working Groups
+317,Minority Faculty Staff and Leadership Recruitment
+318,School Climate
+319,Research or Coursework
+319,Spaces and Places
+320,School Climate
+320,Community Labor or Partnership
+321,Minority Student Recruitment
+322,School Climate
+323,School Climate
+324,Inclusive Anti Racist Curriculum Programs
+325,School Climate
+326,Current Iniatives and Working Groups
+326,Financial Aid and Financing
+327,Minority Student Recruitment
+328,Minority Student Recruitment
+329,Minority Faculty Staff and Leadership Recruitment
+329,Financial Aid and Financing
+330,School Climate
+331,Minority Faculty Staff and Leadership Recruitment
+332,School Climate
+333,School Climate
+334,Spaces and Places
+335,Minority Faculty Staff and Leadership Recruitment
+336,Current Iniatives and Working Groups
+336,Financial Aid and Financing
+336,Spaces and Places
+337,School Climate
+338,Minority Student Recruitment
+339,Minority Faculty Staff and Leadership Recruitment
+339,Minority Student Recruitment
+340,Data Collection and Transparency
+340,Minority Faculty Retention
+341,Living Wage
+342,School Climate
+343,School Climate
+344,Current Iniatives and Working Groups
+344,Financial Aid and Financing
+345,Spaces and Places
+346,Inclusive Anti Racist Curriculum Programs
+346,Adding Courses
+346,Financial Aid and Financing
+347,School Climate
+348,Inclusive Anti Racist Curriculum Programs
+348,Adding Courses
+349,Minority Faculty Staff and Leadership Recruitment
+350,Current Iniatives and Working Groups
+350,Financial Aid and Financing
+351,Minority Faculty Staff and Leadership Recruitment
+352,School Climate
+353,Inclusive Anti Racist Curriculum Programs
+354,Minority Faculty Retention
+354,School Climate
+355,Living Wage
+356,School Climate
+357,Minority Faculty Staff and Leadership Recruitment
+357,Minority Faculty Retention
+357,Data Collection and Transparency
+358,Financial Aid and Financing
+358,Minority Student Recruitment
+359,Minority Student Recruitment
+359,Minority Faculty Staff and Leadership Recruitment
+359,Spaces and Places
+359,Inclusive Anti Racist Curriculum Programs
+359,Financial Aid and Financing
+360,Current Iniatives and Working Groups
+360,Financial Aid and Financing
+361,School Climate
+362,Inclusive Anti Racist Curriculum Programs
+362,Research or Coursework
+363,Minority Faculty Staff and Leadership Recruitment
+364,Spaces and Places
+365,Current Iniatives and Working Groups
+365,School Climate
+366,Spaces and Places
+367,Inclusive Anti Racist Curriculum Programs
+367,Minority Student Recruitment
+368,Minority Faculty Retention
+369,Current Iniatives and Working Groups
+370,Financial Aid and Financing
+370,Minority Student Recruitment
+371,Current Iniatives and Working Groups
+371,Minority Student Recruitment
+372,School Climate
+373,Data Collection and Transparency
+373,Minority Faculty Staff and Leadership Recruitment
+374,Minority Faculty Retention
+374,Financial Aid and Financing
+375,Minority Faculty Staff and Leadership Recruitment
+376,Current Iniatives and Working Groups
+377,Minority Student Recruitment
+378,School Climate
+378,Financial Aid and Financing
+379,Data Collection and Transparency
+379,Minority Faculty Retention
+380,Inclusive Anti Racist Curriculum Programs
+381,Diversity in Student Leadership
+381,School Climate
+382,Current Iniatives and Working Groups
+383,Minority Faculty Retention
+383,Financial Aid and Financing
+384,School Climate
+385,Current Iniatives and Working Groups
+386,Minority Faculty Staff and Leadership Recruitment
+387,Minority Faculty Retention
+387,Minority Faculty Staff and Leadership Recruitment
+388,School Climate
+388,Minority Faculty Retention
+389,School Climate
+390,Minority Faculty Staff and Leadership Recruitment
+391,Adding Courses
+392,Minority Faculty Staff and Leadership Recruitment
+393,Spaces and Places
+394,School Climate
+395,Current Iniatives and Working Groups
+395,Diversity in Student Leadership
+396,Financial Aid and Financing
+396,Minority Faculty Retention
+397,Spaces and Places
+398,School Climate
+399,Current Iniatives and Working Groups
+399,School Climate
+400,Inclusive Anti Racist Curriculum Programs
+401,Minority Faculty Retention
+401,School Climate
+402,School Climate
+403,Minority Student Recruitment
+404,School Climate
+404,Minority Faculty Retention
+405,Current Iniatives and Working Groups
+406,Minority Faculty Staff and Leadership Recruitment
+406,Current Iniatives and Working Groups
+407,School Climate
+407,Minority Faculty Retention
+407,Minority Faculty Staff and Leadership Recruitment
+408,Inclusive Anti Racist Curriculum Programs
+409,School Climate
+409,Minority Faculty Retention
+410,Adding Courses
+411,Minority Faculty Staff and Leadership Recruitment
+412,Minority Student Recruitment
+413,Current Iniatives and Working Groups
+413,Diversity in Student Leadership
+414,Financial Aid and Financing
+414,Minority Faculty Retention
+415,Financial Aid and Financing
+416,School Climate
+417,Research or Coursework
+417,Financial Aid and Financing
+418,Minority Faculty Staff and Leadership Recruitment
+418,Data Collection and Transparency
+419,School Climate
+420,School Climate
+421,School Climate
+421,Minority Faculty Retention
+422,Inclusive Anti Racist Curriculum Programs
+423,Financial Aid and Financing
+423,Minority Faculty Staff and Leadership Recruitment
+424,Minority Faculty Staff and Leadership Recruitment
+424,Minority Faculty Retention
+425,School Climate
+426,School Climate
+426,Minority Faculty Staff and Leadership Recruitment
+427,Minority Faculty Staff and Leadership Recruitment
+428,Inclusive Anti Racist Curriculum Programs
+428,Financial Aid and Financing
+429,Current Iniatives and Working Groups
+430,School Climate
+431,Minority Faculty Retention
+431,Minority Faculty Staff and Leadership Recruitment
+432,Adding Courses
+433,Inclusive Anti Racist Curriculum Programs
+433,School Climate
+434,Minority Student Recruitment
+435,Inclusive Anti Racist Curriculum Programs
+436,Minority Student Recruitment
+437,Minority Faculty Retention
+437,Minority Faculty Staff and Leadership Recruitment
+438,Data Collection and Transparency
+439,Current Iniatives and Working Groups
+440,Financial Aid and Financing
+441,Community Labor or Partnership
+442,School Climate
+443,Adding Courses
+444,Data Collection and Transparency
+444,Minority Faculty Staff and Leadership Recruitment
+445,Current Iniatives and Working Groups
+446,Community Labor or Partnership
+446,Data Collection and Transparency
+447,Adding Courses
+448,Minority Student Recruitment
+449,Adding Courses
+450,Minority Faculty Staff and Leadership Recruitment
+451,Financial Aid and Financing
+452,School Climate
+453,Minority Faculty Staff and Leadership Recruitment
+454,Current Iniatives and Working Groups
+455,Minority Student Recruitment
+456,Minority Faculty Retention
+457,School Climate
+458,School Climate
+459,Minority Student Recruitment
+460,Minority Faculty Staff and Leadership Recruitment
+461,Adding Courses
+462,Minority Student Recruitment
+463,Research or Coursework
+464,Community Labor or Partnership
+465,Spaces and Places
+466,Spaces and Places
+467,Current Iniatives and Working Groups
+468,Spaces and Places
+469,Current Iniatives and Working Groups
+470,Adding Courses
+471,Adding Courses
+472,School Climate
+473,School Climate
+474,Spaces and Places
+475,School Climate
+476,Current Iniatives and Working Groups
+477,Financial Aid and Financing
+478,School Climate
+479,School Climate
+480,School Climate
+481,Spaces and Places
+481,School Climate
+482,Adding Courses
+483,School Climate
+483,Financial Aid and Financing
+484,Financial Aid and Financing
+485,Spaces and Places
+486,School Climate
+487,Spaces and Places
+488,Financial Aid and Financing
+489,Spaces and Places
+490,School Climate
+491,School Climate
+492,School Climate
+493,School Climate
+494,School Climate
+495,School Climate
+496,Adding Courses
+496,Spaces and Places
+496,Financial Aid and Financing
+496,Current Iniatives and Working Groups
+496,Minority Student Recruitment
+496,Minority Faculty Retention
+497,Inclusive Anti Racist Curriculum Programs
+497,Minority Student Recruitment
+497,Minority Faculty Staff and Leadership Recruitment
+497,School Climate
+498,School Climate
+499,Research or Coursework
+499,Spaces and Places
+500,Spaces and Places
+501,School Climate
+501,Living Wage
+502,School Climate
+503,Abolition/ Defunding
+504,Abolition/ Defunding
+505,Abolition/ Defunding
+506,School Climate
+506,Abolition/ Defunding
+507,School Climate
+508,Minority Student Recruitment
+508,School Climate
+509,Minority Faculty Staff and Leadership Recruitment
+510,Spaces and Places
+511,Minority Faculty Staff and Leadership Recruitment
+512,School Climate
+513,Community Labor or Partnership
+514,Inclusive Anti Racist Curriculum Programs
+515,Inclusive Anti Racist Curriculum Programs
+516,Minority Student Recruitment
+517,Spaces and Places
+518,School Climate
+518,Minority Faculty Staff and Leadership Recruitment
+518,Community Labor or Partnership
+519,Inclusive Anti Racist Curriculum Programs
+520,Financial Aid and Financing
+520,Minority Student Recruitment
+521,Data Collection and Transparency
+522,Minority Student Recruitment
+522,Minority Faculty Staff and Leadership Recruitment
+523,Community Labor or Partnership
+524,Current Iniatives and Working Groups
+524,Spaces and Places
+525,Minority Faculty Staff and Leadership Recruitment
+526,Minority Student Recruitment
+527,Minority Faculty Staff and Leadership Recruitment
+528,Inclusive Anti Racist Curriculum Programs
+529,School Climate
+530,Adding Courses
+531,School Climate
+531,Data Collection and Transparency
+532,Minority Faculty Staff and Leadership Recruitment
+533,School Climate
+533,Current Iniatives and Working Groups
+534,Minority Student Recruitment
+535,Living Wage
+535,Minority Faculty Staff and Leadership Recruitment
+536,Adding Courses
+537,Data Collection and Transparency
+537,School Climate
+538,School Climate
+538,Minority Faculty Staff and Leadership Recruitment
+539,School Climate
+540,Minority Faculty Staff and Leadership Recruitment
+541,Diversity in Student Leadership
+542,Diversity in Student Leadership
+543,Adding Courses
+544,Adding Courses
+545,Spaces and Places
+546,Diversity in Student Leadership
+547,Inclusive Anti Racist Curriculum Programs
+548,School Climate
+549,Current Iniatives and Working Groups
+549,Financial Aid and Financing
+550,Current Iniatives and Working Groups
+551,Minority Faculty Staff and Leadership Recruitment
+552,School Climate
+553,Minority Student Recruitment
+554,Adding Courses
+555,Adding Courses
+556,Adding Courses
+557,Minority Student Recruitment
+557,Minority Faculty Staff and Leadership Recruitment
+558,Current Iniatives and Working Groups
+558,Financial Aid and Financing
+559,Community Labor or Partnership
+560,Minority Faculty Retention
+560,Minority Faculty Staff and Leadership Recruitment
+561,Adding Courses
+562,Adding Courses
+563,Minority Student Recruitment
+563,Adding Courses
+564,Adding Courses
+565,Community Labor or Partnership
+565,Adding Courses
+566,Current Iniatives and Working Groups
+566,Financial Aid and Financing
+567,Current Iniatives and Working Groups
+567,Financial Aid and Financing
+568,Minority Faculty Staff and Leadership Recruitment
+568,Minority Faculty Retention
+569,Adding Courses
+570,Minority Faculty Staff and Leadership Recruitment
+570,Minority Faculty Retention
+571,Minority Faculty Staff and Leadership Recruitment
+571,Data Collection and Transparency
+572,Minority Faculty Staff and Leadership Recruitment
+572,Minority Faculty Retention
+573,Minority Faculty Staff and Leadership Recruitment
+573,Minority Student Recruitment
+574,Minority Student Recruitment
+575,Minority Student Recruitment
+576,Minority Student Recruitment
+577,Minority Student Recruitment
+578,Data Collection and Transparency
+579,Minority Student Recruitment
+580,Minority Student Recruitment
+581,Financial Aid and Financing
+581,Minority Student Recruitment
+582,Minority Student Recruitment
+582,School Climate
+583,Spaces and Places
+583,Current Iniatives and Working Groups
+584,Spaces and Places
+585,Financial Aid and Financing
+585,Current Iniatives and Working Groups
+586,Community Labor or Partnership
+587,Community Labor or Partnership
+588,Community Labor or Partnership
+589,Community Labor or Partnership
+590,Community Labor or Partnership
+591,Adding Courses
+591,Community Labor or Partnership
+592,Community Labor or Partnership
+592,Financial Aid and Financing
+593,Community Labor or Partnership
+594,Community Labor or Partnership
