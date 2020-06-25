@@ -8,12 +8,12 @@ function ColorDemands(tags) {
     });
 
     queryids = d3.map(tagsdata, function (d) {
-        return d.Tag;
+        return d.demand_id;
     }).keys();
    
-    queryids = queryids.join(', ');
+    queryids = queryids.join(', #ID');
     
-    d3.selectAll(queryids).style("background-color", 'red')
+    d3.selectAll("#ID" + queryids).style("background-color", 'red')
 
 
 
