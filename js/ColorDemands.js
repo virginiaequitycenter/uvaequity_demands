@@ -4,7 +4,7 @@ var queryids;
 function ColorDemands(tags) {
 
     tagsdata = tags.filter(function (el) {
-        return el.Code === "School Climate";
+        return el.Code === "Minority Student Recruitment";
     });
 
     queryids = d3.map(tagsdata, function (d) {
