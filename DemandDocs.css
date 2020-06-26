@@ -10,6 +10,10 @@ body{
     
 }
 
+.box{
+width: 7500px; 
+    
+}
 .timelinecontainer {
     display: flex;
     flex-direction: row;
@@ -19,6 +23,7 @@ body{
     overflow-x:scroll;
     height:50vh;
     overflow-y: hidden;
+    width:auto;
 }
 
 .years {
@@ -84,20 +89,33 @@ body{
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
+.demandpagescontainer{
+  display: flex;
+  flex-wrap: wrap;
+   width: 95%;
+    overflow-y: scroll;
+}
+
 .demandlinescontainer{
-    width: 85%;
-    background-color:none;
+    width: 20%;
+    background-color:antiquewhite;
     display: flex;
     flex-direction: column;
     text-align:center;
     overflow-y: scroll;
+    border: .01px solid;
+    border-color: black;
+    border-radius: 2.5px;
+    padding: 5px;
+    padding-bottom: 3px;
+    margin: 5px;
 }
 
 .demandlines {
    position: relative;
    left:2.5%;
    width: 95%;
-   height: 10px;
+   height: 7.5px;
    background-color: #ebecf0;
    margin-bottom: 2px;
    border-radius: 2px;

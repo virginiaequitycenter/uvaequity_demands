@@ -1,8 +1,13 @@
 var DemandTextNested;
 
 function DrawDemandDocs(demand_text) {
+    
 
-    DemandTextNested = d3.nest().key((d) => d.YEAR).key((d) => d.Title).entries(demand_text); // Nest to the top level of organization – the Year
+    DemandTextNested = d3.nest()
+        .key((d) => d.YEAR)
+        .key((d) => d.Title)
+        .key((d) => d.PageNum)
+        .entries(demand_text); // Nest to the top level of organization – the Year
 
     var demandstimeline = d3.selectAll("#timelinecontainer"); // Select the container for the demands timeline
 
@@ -35,12 +40,15 @@ function DrawDemandDocs(demand_text) {
     var documenttitleboxes = demandboxes.append("div").classed("documenttitlebox", true);
 
     var documenttitles = documenttitleboxes.append("h3").text((d) => d.key);
+    
+    var demandpagescontainer = demandboxes.append("div").classed("demandpagescontainer", true);
 
-    var demandlinescontainer = demandboxes.append("div").classed("demandlinescontainer", true);
+    var demandlinescontainer = demandpagescontainer.selectAll(".demandlinescontainer")
+                               .data((d) => d.values).enter().append("div").classed("demandlinescontainer", true);
 
     var demandlines = demandlinescontainer
         .selectAll(".demandlines")
-        .data( (d) => d.values)
+        .data((d) => d.values)
         .enter()
         .append("div")
         .classed("demandlines", true)
