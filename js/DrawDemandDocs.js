@@ -9,18 +9,21 @@ function DrawDemandDocs(demand_text) {
         .key((d) => d.PageNum)
         .entries(demand_text); // Nest to the top level of organization – the Year
 
-    var demandstimeline = d3.selectAll("#timelinecontainer"); // Select the container for the demands timeline
+    var demandstimeline = d3.selectAll("#timelinecontainer").classed("d-flex", true)
+        .classed("flex-row", true); // Select the container for the demands timeline
 
     var demanyearboxes = demandstimeline
         .selectAll(".years") // Create one box for each year
         .data(DemandTextNested)
         .enter()
         .append("div")
-        .classed("years", true);
+        .classed("years", true)
+        .classed("d-flex", true)
+        .classed("flex-row", true);
 
     var yeartextcolumn = demanyearboxes // Divide Each Year into a Text Column and a Div area for the Demands
         .append("div")
-        .classed("yeartextcolumn", true);
+        .classed("yeartextcolumn", true).classed("d-flex", true);
 
     var yeartextbox = yeartextcolumn.append("div").classed("yeartextbox", true); // Create a box for the year inside the text column
 
@@ -41,10 +44,11 @@ function DrawDemandDocs(demand_text) {
 
     var documenttitles = documenttitleboxes.append("h3").text((d) => d.key);
     
-    var demandpagescontainer = demandboxes.append("div").classed("demandpagescontainer", true);
+    var demandpagescontainer = demandboxes.append("div").classed("demandpagescontainer", true).classed("d-flex", true);
 
     var demandlinescontainer = demandpagescontainer.selectAll(".demandlinescontainer")
-                               .data((d) => d.values).enter().append("div").classed("demandlinescontainer", true);
+                               .data((d) => d.values).enter().append("div").classed("demandlinescontainer", true)
+                               .classed("d-flex", true).classed("flex-column", true);
 
     var demandlines = demandlinescontainer
         .selectAll(".demandlines")
