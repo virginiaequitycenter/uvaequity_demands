@@ -57,4 +57,7 @@ function DrawDemandDocs(demand_text) {
         .append("div")
         .classed("demandlines", true)
         .attr("id", (d) =>  "ID" + d.demand_id );
+    
+ ColorDemands(DemandsTags);
+
 }
