@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Teko:wght@300;400;500;600;700&family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+
 
 ::-webkit-scrollbar {
     display: none;
@@ -39,7 +41,7 @@ body{
 .yeartextcolumn {
     border-right: 2px solid;
     border-color: black;
-    margin-right: 10px;
+/*    margin-right: 10px;*/
     width: 65px;
 }
 
@@ -51,10 +53,11 @@ body{
     transform: rotate(180deg);
     text-align: right;
     margin: 0;
-    margin-right: 5px;
+/*    margin-right: 5px;*/
     font-weight: 700;
     font-size: 44px;
     font-family: 'Amatic SC', cursive;
+
 }
 
 .demandboxcontainer {
@@ -63,7 +66,7 @@ body{
 }
 
 .demandbox {
-    width: 225px;
+    width: 260px;
     padding-left: 10px;
 /*    border-left: .5px dashed;*/
     overflow-x: hidden;
@@ -73,24 +76,37 @@ body{
 .secondbox {
     border-left: .5px dashed;
         padding-left: 20px;
-
-
 }
 
 .documenttitlebox {
     padding: 0;
-    width: 80%;
-    height: 150px;
+    width: 90%;
+    height: 125px;
     overflow-x: hidden
 }
 
 .documenttitlebox h3 {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 18px;
     margin: 0;
-    font-weight: 700;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 600;
+font-family: 'Yantramanav', sans-serif;
 }
+
+.documenttitlebox hr {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+
+
+}
+
+
+.documenttitlebox h4 {
+    font-size: 12px;
+    margin: 0;
+    font-weight: 300;
+font-family: 'Yantramanav', sans-serif;
+}
+
 
 .demandpagescontainer{
   display: flex;
