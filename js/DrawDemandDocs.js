@@ -39,7 +39,7 @@ function DrawDemandDocs(demand_text) {
         .enter()
         .append("div")
         .classed("demandbox", true)
-        .classed("secondbox", if ((d) => d.YearOrder > 1)  );
+       // .classed("secondbox", if ((d) => d.YearOrder > 1)  );
 
     var documenttitleboxes = demandboxes.append("div").classed("documenttitlebox", true);
 
