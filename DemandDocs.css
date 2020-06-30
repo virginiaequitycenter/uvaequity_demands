@@ -68,6 +68,12 @@ body{
 /*    border-left: .5px dashed;*/
     overflow-x: hidden;
     overflow-y: scroll;
+}
+
+.secondbox {
+    border-left: .5px dashed;
+        padding-left: 20px;
+
 
 }
 

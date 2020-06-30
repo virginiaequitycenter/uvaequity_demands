@@ -1,7 +1,7 @@
 var DemandTextNested;
 
 function DrawDemandDocs(demand_text) {
-    
+
 
     DemandTextNested = d3.nest()
         .key((d) => d.YEAR)
@@ -39,17 +39,27 @@ function DrawDemandDocs(demand_text) {
         .enter()
         .append("div")
         .classed("demandbox", true)
-       // .classed("secondbox", if ((d) => d.YearOrder > 1)  );
+        .classed("secondbox",  function(d) {  
+            if (d.values[[0]].values[[0]].YearOrder > 1) {
+                return true;
+            } else {
+                return false;
+            }
+         });
 
     var documenttitleboxes = demandboxes.append("div").classed("documenttitlebox", true);
 
     var documenttitles = documenttitleboxes.append("h3").text((d) => d.key);
-    
+
     var demandpagescontainer = demandboxes.append("div").classed("demandpagescontainer", true).classed("d-flex", true);
 
     var demandlinescontainer = demandpagescontainer.selectAll(".demandlinescontainer")
-                               .data((d) => d.values).enter().append("div").classed("demandlinescontainer", true)
-                               .classed("d-flex", true).classed("flex-column", true);
+        .data((d) => d.values)
+        .enter().
+    append("div")
+        .classed("demandlinescontainer", true)
+        .classed("d-flex", true)
+        .classed("flex-column", true);
 
     var demandlines = demandlinescontainer
         .selectAll(".demandlines")
@@ -57,8 +67,8 @@ function DrawDemandDocs(demand_text) {
         .enter()
         .append("div")
         .classed("demandlines", true)
-        .attr("id", (d) =>  "ID" + d.demand_id );
-    
- ColorDemands(DemandsTags);
+        .attr("id", (d) => "ID" + d.demand_id);
+
+    ColorDemands(DemandsTags);
 
 }
