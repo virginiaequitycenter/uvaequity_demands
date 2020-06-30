@@ -29,7 +29,7 @@ body{
 }
 
 .years {
-    padding-top: 10px;
+    padding-top: 20px;
     display: flex;
     flex-direction: row;
     margin: 0 0rem;
