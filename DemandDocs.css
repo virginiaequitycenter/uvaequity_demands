@@ -6,12 +6,12 @@
 }
 
 body{
-/*    background-color: #f2eecb;*/
+/*    background-color: #F0F0F0;*/
     
 }
 
 .box{
-width: 7500px; 
+/*width: 7500px; */
     
 }
 .timelinecontainer {
@@ -28,7 +28,7 @@ width: 7500px;
 
 .years {
     padding-top: 10px;
-   display: flex;
+    display: flex;
     flex-direction: row;
     margin: 0 0rem;
     background-color: none;
@@ -37,7 +37,9 @@ width: 7500px;
 }
 
 .yeartextcolumn {
-    border-right: 3px solid;
+    border-right: 2px solid;
+    border-color: black;
+    margin-right: 10px;
     width: 65px;
 }
 
@@ -51,7 +53,7 @@ width: 7500px;
     margin: 0;
     margin-right: 5px;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 44px;
     font-family: 'Amatic SC', cursive;
 }
 
@@ -61,9 +63,9 @@ width: 7500px;
 }
 
 .demandbox {
-    width: 275px;
+    width: 225px;
     padding-left: 10px;
-    border-left: .5px dashed;
+/*    border-left: .5px dashed;*/
     overflow-x: hidden;
     overflow-y: scroll;
 
@@ -71,13 +73,13 @@ width: 7500px;
 
 .documenttitlebox {
     padding: 0;
-    width: 70%;
+    width: 80%;
     height: 150px;
     overflow-x: hidden
 }
 
 .documenttitlebox h3 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     margin: 0;
     font-weight: 700;
@@ -87,19 +89,19 @@ width: 7500px;
 .demandpagescontainer{
   display: flex;
   flex-wrap: wrap;
-   width: 95%;
+   width: 90%;
     overflow-y: scroll;
 }
 
 .demandlinescontainer{
-    width: 20%;
-    background-color:antiquewhite;
+    width: 24%;
+/*    background-color:antiquewhite;*/
     display: flex;
     flex-direction: column;
     text-align:center;
     overflow-y: scroll;
     border: .01px solid;
-    border-color: black;
+/*    border-color: black;*/
     border-radius: 2.5px;
     padding: 5px;
     padding-bottom: 3px;
@@ -110,18 +112,18 @@ width: 7500px;
    position: relative;
    left:2.5%;
    width: 95%;
-   height: 7.5px;
+   height: 3px;
    background-color: #ebecf0;
-   margin-bottom: 2px;
+   margin-bottom: 1px;
    border-radius: 2px;
-   border: .01px solid;
-   border-color: black;
+/*   border: .001px solid;*/
+   border-color: none;
 }
 
 /* Timeline */
 
 #timeline {
-    height: 10px;
+    height: 5px;
     border-radius: 10px;
     background-color: black;
 

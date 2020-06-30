@@ -5,7 +5,7 @@ function DrawDemandDocs(demand_text) {
 
     DemandTextNested = d3.nest()
         .key((d) => d.YEAR)
-        .key((d) => d.Title)
+        .key((d) => d.DocTitle)
         .key((d) => d.PageNum)
         .entries(demand_text); // Nest to the top level of organization – the Year
 
@@ -38,7 +38,8 @@ function DrawDemandDocs(demand_text) {
         .data((d) => d.values)
         .enter()
         .append("div")
-        .classed("demandbox", true);
+        .classed("demandbox", true)
+        .classed("secondbox", if ((d) => d.YearOrder > 1)  );
 
     var documenttitleboxes = demandboxes.append("div").classed("documenttitlebox", true);
 
