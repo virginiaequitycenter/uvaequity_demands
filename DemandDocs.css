@@ -125,7 +125,7 @@ background-image:
 }
 
 .demandbox {
-    width: 300px;
+    width: 325px;
     padding-left: 10px;
     /*    border-left: .5px dashed;*/
     overflow-x: hidden;
@@ -140,12 +140,12 @@ background-image:
 .documenttitlebox {
     padding: 0;
     width: 90%;
-    height: 135px;
+    height: 155px;
     overflow-x: hidden
 }
 
 .documenttitlebox h3 {
-    font-size: 18px;
+    font-size: 23px;
     margin: 0;
     font-weight: 600;
     font-family: 'Yantramanav', sans-serif;
