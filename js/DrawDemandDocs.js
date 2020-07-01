@@ -73,8 +73,10 @@ function DrawDemandDocs(demand_text) {
         .enter()
         .append("div")
         .classed("demandlines", true)
-        .attr("id", (d) => "ID" + d.demand_id);
+        .attr("id", (d) => "ID" + d.demand_id)
+        .on("mouseover", mouseover)
+        .on("mousemove", mousemove)
+        .on("mouseleave", mouseleave);
 
     ColorDemands(DemandsTags);
-
 }

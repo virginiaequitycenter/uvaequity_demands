@@ -7,25 +7,26 @@
     display: none;
 }
 
-body{
-/*    background-color: #F0F0F0;*/
-    
+body {
+    background-color: #FEFFFF;
+
 }
 
-.box{
-/*width: 7500px; */
-    
+.box {
+    /*width: 7500px; */
+
 }
+
 .timelinecontainer {
     display: flex;
     flex-direction: row;
     margin: 0 0rem;
     z-index: 0;
     background-color: none;
-    overflow-x:scroll;
-    height:50vh;
+    overflow-x: scroll;
+    height: 50vh;
     overflow-y: hidden;
-    width:auto;
+    width: auto;
 }
 
 .years {
@@ -41,13 +42,12 @@ body{
 .yeartextcolumn {
     border-right: 2px solid;
     border-color: black;
-/*    margin-right: 10px;*/
-/*    width: 65px;*/
-    padding:0;
+    /*    margin-right: 10px;*/
+    /*    width: 65px;*/
+    padding: 0;
 }
 
-.yeartextbox {
-}
+.yeartextbox {}
 
 .yeartextbox h3 {
     writing-mode: vertical-rl;
@@ -58,7 +58,7 @@ body{
     font-weight: 700;
     font-size: 44px;
     font-family: 'Amatic SC', cursive;
-/*    font-family: 'Yantramanav', sans-serif;*/
+    /*    font-family: 'Yantramanav', sans-serif;*/
 
 
 }
@@ -71,14 +71,14 @@ body{
 .demandbox {
     width: 260px;
     padding-left: 10px;
-/*    border-left: .5px dashed;*/
+    /*    border-left: .5px dashed;*/
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
 .secondbox {
     border-left: .5px dashed;
-        padding-left: 20px;
+    padding-left: 20px;
 }
 
 .documenttitlebox {
@@ -92,7 +92,7 @@ body{
     font-size: 18px;
     margin: 0;
     font-weight: 600;
-font-family: 'Yantramanav', sans-serif;
+    font-family: 'Yantramanav', sans-serif;
 }
 
 .documenttitlebox hr {
@@ -107,26 +107,26 @@ font-family: 'Yantramanav', sans-serif;
     font-size: 12px;
     margin: 0;
     font-weight: 300;
-font-family: 'Yantramanav', sans-serif;
+    font-family: 'Yantramanav', sans-serif;
 }
 
 
-.demandpagescontainer{
-  display: flex;
-  flex-wrap: wrap;
-   width: 90%;
+.demandpagescontainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
     overflow-y: scroll;
 }
 
-.demandlinescontainer{
+.demandlinescontainer {
     width: 24%;
-/*    background-color:antiquewhite;*/
+    /*    background-color:antiquewhite;*/
     display: flex;
     flex-direction: column;
-    text-align:center;
+    text-align: center;
     overflow-y: scroll;
     border: .01px solid;
-/*    border-color: black;*/
+    /*    border-color: black;*/
     border-radius: 2.5px;
     padding: 5px;
     padding-bottom: 3px;
@@ -134,15 +134,15 @@ font-family: 'Yantramanav', sans-serif;
 }
 
 .demandlines {
-   position: relative;
-   left:2.5%;
-   width: 95%;
-   height: 3px;
-   background-color: #ebecf0;
-   margin-bottom: 1px;
-   border-radius: 2px;
-/*   border: .001px solid;*/
-   border-color: none;
+    position: relative;
+    left: 2.5%;
+    width: 95%;
+    height: 3px;
+    background-color: #ebecf0;
+    margin-bottom: 1px;
+    border-radius: 2px;
+    /*   border: .001px solid;*/
+    border-color: none;
 }
 
 /* Timeline */
@@ -152,18 +152,40 @@ font-family: 'Yantramanav', sans-serif;
     border-radius: 10px;
     background-color: black;
 
-    
+
 }
 
 /* Events Container */
-.eventscontainer{
+.eventscontainer {
     height: 45vh;
-    
+
 }
 
+/*Interaciton Functions*/
+#tooltip {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    max-height: 100px;
+    overflow-y: scroll;
+    visibility: hidden;
+    font-size: 10px;
+/*    background-color: #d6ecef;*/
+    background-color: #fcf5e3;
+    padding: 10px;
+    box-shadow: 1px 1px 1px #cccccc;
+    border-radius: 3px;
+    text-align: left;
+    opacity: 0.9;
+    border-radius: 7.5px;
+    z-index: 1000;
+}
 
-
-
-
-
+#demandtext{
+    font-size: 12px;
+        font-weight: 300;
+    font-family: 'Yantramanav', sans-serif;
+       
+}
 
