@@ -51,7 +51,7 @@ background-image:
 
 .sidebar h1{
         text-align:center;
-        font-size: 32px;
+        font-size: 40px;
         color: white;
         opacity: .9;
     font-weight: 700;
@@ -117,7 +117,6 @@ background-image:
     font-family: 'Amatic SC', cursive;
     /*    font-family: 'Yantramanav', sans-serif;*/
 
-
 }
 
 .demandboxcontainer {
@@ -126,7 +125,7 @@ background-image:
 }
 
 .demandbox {
-    width: 260px;
+    width: 300px;
     padding-left: 10px;
     /*    border-left: .5px dashed;*/
     overflow-x: hidden;
@@ -141,7 +140,7 @@ background-image:
 .documenttitlebox {
     padding: 0;
     width: 90%;
-    height: 125px;
+    height: 135px;
     overflow-x: hidden
 }
 
@@ -155,13 +154,11 @@ background-image:
 .documenttitlebox hr {
     margin-top: .5rem;
     margin-bottom: .5rem;
-
-
 }
 
 
 .documenttitlebox h4 {
-    font-size: 12px;
+    font-size: 15px;
     margin: 0;
     font-weight: 300;
     font-family: 'Yantramanav', sans-serif;
@@ -241,11 +238,10 @@ background-image:
     border-radius: 7.5px;
     z-index: 1000;
     transform: translate(-50%, 0%);
-
 }
 
 #demandtext{
-    font-size: 14px;
+    font-size: 15px;
         font-weight: 300;
     font-family: 'Yantramanav', sans-serif;
        
