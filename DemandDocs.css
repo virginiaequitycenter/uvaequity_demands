@@ -42,7 +42,8 @@ body{
     border-right: 2px solid;
     border-color: black;
 /*    margin-right: 10px;*/
-    width: 65px;
+/*    width: 65px;*/
+    padding:0;
 }
 
 .yeartextbox {
@@ -53,10 +54,12 @@ body{
     transform: rotate(180deg);
     text-align: right;
     margin: 0;
-/*    margin-right: 5px;*/
+    margin-right: 5px;
     font-weight: 700;
     font-size: 44px;
     font-family: 'Amatic SC', cursive;
+/*    font-family: 'Yantramanav', sans-serif;*/
+
 
 }
 
