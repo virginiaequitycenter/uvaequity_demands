@@ -11,9 +11,8 @@ body {
 /*    background-color: #FEFFFF;*/
 background-image:
     linear-gradient(
-               rgba(255, 255, 255, .99),
-
-                rgba(255, 255, 255, .99)
+               rgba(255, 255, 255, .98),
+                rgba(255, 255, 255, .98)
 
     ),
       url("pics/paint.jpg"); 
@@ -45,7 +44,21 @@ background-image:
                rgba(95, 117, 142, .97)
         ),
         url("pics/paint.jpg"); 
+    padding: 0;
+     padding-top:20px;
+
 }
+
+.sidebar h1{
+        text-align:center;
+        font-size: 32px;
+        color: white;
+        opacity: .9;
+    font-weight: 700;
+    font-family: 'Amatic SC', cursive;
+    
+}
+
 
 /*Overall Project*/
 .project{
