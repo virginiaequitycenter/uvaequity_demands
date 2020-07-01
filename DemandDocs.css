@@ -8,14 +8,58 @@
 }
 
 body {
-    background-color: #FEFFFF;
+/*    background-color: #FEFFFF;*/
+background-image:
+    linear-gradient(
+               rgba(255, 255, 255, .99),
+
+                rgba(255, 255, 255, .99)
+
+    ),
+      url("pics/paint.jpg"); 
+}
+
+
+.site {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.container-fluid{
+    padding:0;
+    margin:0;
+    height: 100vh;
 
 }
+
+.row{
+        margin: 0;
+}
+
+/*Sidebar*/
+.sidebar {
+background-image:
+    linear-gradient(
+               rgba(95, 117, 142, .97),
+               rgba(95, 117, 142, .97)
+        ),
+        url("pics/paint.jpg"); 
+}
+
+/*Overall Project*/
+.project{
+    padding:0;
+    margin: 0;
+}
+
+/*Document Scroller*/
 
 .box {
     /*width: 7500px; */
 
 }
+
 
 .timelinecontainer {
     display: flex;
@@ -138,7 +182,9 @@ body {
     left: 2.5%;
     width: 95%;
     height: 3px;
-    background-color: #ebecf0;
+/*    background-color: #ebecf0;*/
+/*    background-image:       url("pics/paint.jpg"); */
+        background-color: #E0E1E1;
     margin-bottom: 1px;
     border-radius: 2px;
     /*   border: .001px solid;*/
@@ -157,7 +203,7 @@ body {
 
 /* Events Container */
 .eventscontainer {
-    height: 45vh;
+    height: calc(49vh - 5px);
 
 }
 
@@ -165,7 +211,7 @@ body {
 
 
 #tooltip {
-    position: fixed;
+    position: relative;
     top: 2.5%;
     left: 50%;
 /*  max-height: 100px;*/
