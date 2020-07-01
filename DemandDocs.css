@@ -162,12 +162,13 @@ body {
 }
 
 /*Interaciton Functions*/
+
+
 #tooltip {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 50%;
-    max-height: 100px;
+    position: fixed;
+    top: 2.5%;
+    left: 50%;
+/*  max-height: 100px;*/
     overflow-y: scroll;
     visibility: hidden;
     font-size: 10px;
@@ -180,6 +181,8 @@ body {
     opacity: 0.9;
     border-radius: 7.5px;
     z-index: 1000;
+    transform: translate(-50%, 0%);
+
 }
 
 #demandtext{
