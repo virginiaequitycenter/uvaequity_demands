@@ -71,31 +71,7 @@ function DrawYearJump(Data) {
         .append("select")
         .classed("form-control", true)
         .classed("yearjumpselect", true)
-
-
-    $('.yearjumpselect').change(function () {
     
-        var data =  $(this).val();
-        var elmnt =  document.getElementById(data); 
-        var x = elmnt.scrollLeft;
-        var y = elmnt.scrollTop;
-
-        elmnt.scrollLeft = 200;
-
-        console.log(x, y, data);
-
-//    $('.timelinecontainer').animate({
-//        scrollLeft: $(data).offset().top
-//    }, 2000);
-//    return false;
-        
-//        var leftPos = $('.timelinecontainer').scrollLeft();
-//         $(".timelinecontainer").animate({scrollLeft: leftPos - 200}, 800);
-//        
-        
- //          $(".timelinecontainer").scrollTo($(data), 1000);
-    });
-
     yearjump.selectAll("option")
         .data(YearList)
         .enter()
@@ -103,4 +79,16 @@ function DrawYearJump(Data) {
         .attr("value", (d) => "Y" + d)
         .text((d) => d)
         .classed("tagoption", true);
+
+
+    $('.yearjumpselect').change(function () {
+    
+        var data =  $(this).val();
+        var position =   $('#' + data).position().left
+        
+       $(".timelinecontainer").animate({scrollLeft: "+=" + position  }, 1000)
+      //  elmnt.scrollLeft += position
+        
+    });
+
 }
