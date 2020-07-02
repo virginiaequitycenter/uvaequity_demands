@@ -11,8 +11,8 @@ body {
 /*    background-color: #FEFFFF;*/
 background-image:
     linear-gradient(
-               rgba(255, 255, 255, .98),
-                rgba(255, 255, 255, .98)
+               rgba(255, 255, 255, .96),
+                rgba(255, 255, 255, .99)
 
     ),
       url("pics/paint.jpg"); 
@@ -40,8 +40,8 @@ background-image:
 .sidebar {
 background-image:
     linear-gradient(
-               rgba(95, 117, 142, .97),
-               rgba(95, 117, 142, .97)
+               rgba(95, 117, 142, .94),
+               rgba(95, 117, 142, .94)
         ),
         url("pics/paint.jpg"); 
     padding: 0;
@@ -168,12 +168,12 @@ background-image:
 .demandpagescontainer {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    width: 80%;
     overflow-y: scroll;
 }
 
 .demandlinescontainer {
-    width: 24%;
+    width: 22%;
     /*    background-color:antiquewhite;*/
     display: flex;
     flex-direction: column;
@@ -181,9 +181,9 @@ background-image:
     overflow-y: scroll;
     border: .01px solid;
     /*    border-color: black;*/
-    border-radius: 2.5px;
+    border-radius: 4px;
     padding: 5px;
-    padding-bottom: 3px;
+    padding-bottom: 3.5px;
     margin: 5px;
 }
 
@@ -191,7 +191,7 @@ background-image:
     position: relative;
     left: 2.5%;
     width: 95%;
-    height: 3px;
+    height: 4px;
 /*    background-color: #ebecf0;*/
 /*    background-image:       url("pics/paint.jpg"); */
         background-color: #E0E1E1;
