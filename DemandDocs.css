@@ -135,11 +135,23 @@ background-image:
     /*    border-left: .5px dashed;*/
     overflow-x: hidden;
 /*    overflow-y: scroll;*/
+    position: relative;
 }
 
 .secondbox {
     border-left: .5px dashed;
     padding-left: 20px;
+}
+
+.demandbox i{
+    position: absolute;
+    top: .75%;
+    left:91%;
+}
+
+i.fas {
+    
+    color: rgba(95, 117, 142, .94);
 }
 
 .documenttitlebox {
@@ -155,6 +167,7 @@ background-image:
     font-weight: 600;
     font-family: 'Yantramanav', sans-serif;
 }
+
 
 .documenttitlebox hr {
     margin-top: .5rem;

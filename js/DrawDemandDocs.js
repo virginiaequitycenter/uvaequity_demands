@@ -46,12 +46,13 @@ function DrawDemandDocs(demand_text) {
                 return false;
             }
          });
-
+   
+    var documentlinks = demandboxes.append("i").classed("fas", true).classed("fa-external-link-alt", true).on("click", function(d) { window.open("documents/" + d.values[[0]].values[[0]].Title ); });
     var documenttitleboxes = demandboxes.append("div").classed("documenttitlebox", true);
-
     var documenttitles = documenttitleboxes.append("h3").text((d) => d.key);
-    var documenttitles = documenttitleboxes.append("hr")
+    var documenttitlebreaks = documenttitleboxes.append("hr");
 
+    
     var documenttitles = documenttitleboxes.append("h4").text((d) =>  "Written by " + d.values[[0]].values[[0]].Author);
     var documenttitles = documenttitleboxes.append("h4").text( (d) =>  d.values[[0]].values[[0]].details);
 
