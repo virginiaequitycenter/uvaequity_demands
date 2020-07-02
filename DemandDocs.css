@@ -134,7 +134,7 @@ background-image:
     padding-left: 10px;
     /*    border-left: .5px dashed;*/
     overflow-x: hidden;
-    overflow-y: scroll;
+/*    overflow-y: scroll;*/
 }
 
 .secondbox {
@@ -174,7 +174,6 @@ background-image:
     display: flex;
     flex-wrap: wrap;
     width: 80%;
-    overflow-y: scroll;
 }
 
 .demandlinescontainer {
@@ -183,7 +182,6 @@ background-image:
     display: flex;
     flex-direction: column;
     text-align: center;
-    overflow-y: scroll;
     border: .01px solid;
     /*    border-color: black;*/
     border-radius: 4px;
