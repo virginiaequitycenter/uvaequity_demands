@@ -19,7 +19,8 @@ function DrawDemandDocs(demand_text) {
         .append("div")
         .classed("years", true)
         .classed("d-flex", true)
-        .classed("flex-row", true);
+        .classed("flex-row", true)
+        .attr("id", (d) => "Y" + d.key);
 
     var yeartextcolumn = demanyearboxes // Divide Each Year into a Text Column and a Div area for the Demands
         .append("div")
@@ -39,25 +40,27 @@ function DrawDemandDocs(demand_text) {
         .enter()
         .append("div")
         .classed("demandbox", true)
-        .classed("secondbox",  function(d) {  
+        .classed("secondbox", function (d) {
             if (d.values[[0]].values[[0]].YearOrder > 1) {
                 return true;
             } else {
                 return false;
             }
-         });
-   
-    var documentlinks = demandboxes.append("i").classed("fas", true).classed("fa-external-link-alt", true).on("click", function(d) { window.open("documents/" + d.values[[0]].values[[0]].Title ); });
+        });
+
+    var documentlinks = demandboxes.append("i").classed("fas", true).classed("fa-external-link-alt", true).on("click", function (d) {
+        window.open("documents/" + d.values[[0]].values[[0]].Title);
+    });
     var documenttitleboxes = demandboxes.append("div").classed("documenttitlebox", true);
     var documenttitles = documenttitleboxes.append("h3").text((d) => d.key);
     var documenttitlebreaks = documenttitleboxes.append("hr");
 
-    
-    var documenttitles = documenttitleboxes.append("h4").text((d) =>  "Written by " + d.values[[0]].values[[0]].Author);
-    var documenttitles = documenttitleboxes.append("h4").text( (d) =>  d.values[[0]].values[[0]].details);
 
-    
-    
+    var documenttitles = documenttitleboxes.append("h4").text((d) => "Written by " + d.values[[0]].values[[0]].Author);
+    var documenttitles = documenttitleboxes.append("h4").text((d) => d.values[[0]].values[[0]].details);
+
+
+
     var demandpagescontainer = demandboxes.append("div").classed("demandpagescontainer", true).classed("d-flex", true);
 
     var demandlinescontainer = demandpagescontainer.selectAll(".demandlinescontainer")
@@ -79,5 +82,5 @@ function DrawDemandDocs(demand_text) {
         .on("mousemove", mousemove)
         .on("mouseleave", mouseleave);
 
-    ColorDemands(DemandsTags);
+    ColorDemands(DemandsTags, "Minority Student Recruitment");
 }
