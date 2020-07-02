@@ -7,6 +7,11 @@
     display: none;
 }
 
+html{  
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+
 body {
 /*    background-color: #FEFFFF;*/
 background-image:
