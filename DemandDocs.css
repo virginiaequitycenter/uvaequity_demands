@@ -469,3 +469,9 @@ padding-left: 7.5px;
 .form-group {
     margin-top:0;
 }
+
+.outlined {
+    border: solid white .001px;
+}
+
+
