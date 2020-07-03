@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+
+.myArea{
+    stroke-width: .5px;
+    stroke: white;
+
+}
+
+.annotationline{
+    stroke-width: 2px;
+    stroke: black;
+    stroke-dasharray: 5 5;
+}
+
+.textannotation {
+    font-family: 'Open Sans Condensed', sans-serif; 
+}
+
+.axistext{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 15px;
+}
+
