@@ -17,7 +17,7 @@ body {
     background-image:
         linear-gradient(rgba(255, 255, 255, .96),
             rgba(255, 255, 255, .99)),
-        url("pics/paint.jpg");
+         ;
 }
 
 .site {
@@ -42,7 +42,7 @@ body {
     background-image:
         linear-gradient(rgba(95, 117, 142, .94),
             rgba(95, 117, 142, .94)),
-        url("pics/paint.jpg");
+       url("../../pics/paint.jpg");
     padding: 0;
     padding-top: 20px;
     height: 100vh;
