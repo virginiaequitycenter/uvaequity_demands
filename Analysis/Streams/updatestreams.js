@@ -26,6 +26,14 @@ function updatestreams(data, input) {
         return d.CodeUse;
     }).keys();
 
+    var Other = ["Other"];
+    
+   var  diff = CodeList.filter(function(x) { return Other.indexOf(x) < 0 });
+      console.log(CodeList);
+      console.log(diff);
+
+    CodeList = [...Other, ...diff];
+    
     //   console.log(CodeList);
 
     var counteddemands = d3.nest()
@@ -93,22 +101,22 @@ function updatestreams(data, input) {
             return ystreams(d[1]);
         }).curve(d3.curveMonotoneX);
     
- streamareas = streamssvg.selectAll(".myArea").data(stackedData);
-    
-    streamareas.enter()
+ streamareas = streamssvg.selectAll(".myArea");
+    streamareas.remove()
+    streamssvg.selectAll(".myArea").data(stackedData).enter()
         .append("path")
         .attr("class", "myArea")
+        .attr("id", (d) => d.key)
         .style("fill", function (d) {
             return colorstreams(d.key);
-        }).transition()
-         .duration(1000).ease(d3.easeCubicInOut)
+        })
         .style("opacity", function (d) {
             return opacitystreams(d.key);
         })
-        .attr("d", area).transition()
-     .duration(1000).ease(d3.easeCubicInOut);
+        .attr("d", area)
+         ;
     
-streamareas.exit().transition().duration(1000).ease(d3.easeCubicInOut).remove();
+//streamareas.exit().transition().remove();
      
     // Add Year Annotation
     var DocYear = d3.map(data.filter(function (el) {
@@ -177,3 +185,4 @@ function DrawStreamsControl(Data) {
 
 
 }
+var CodeList2;

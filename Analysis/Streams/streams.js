@@ -2,7 +2,7 @@ var demands;
 var sumstat;
 var stackedData;
 var mygroup;
-var title_input = "Muddy Floor Report";
+var title_input = "Student Body Referendum";
 var colorstreams;
 var opacitystreams;
 var xstreams;
@@ -56,7 +56,7 @@ function streamgraph(data) {
 
 
     // Start Ridiculous Data Manipulation
-    var AllCodes = d3.map(data, function (d) {
+     AllCodes = d3.map(data, function (d) {
         return d.Code;
     }).keys();
 
@@ -84,6 +84,13 @@ function streamgraph(data) {
         return d.CodeUse;
     }).keys();
 
+   var Other = ["Other"];
+    
+   var  diff = CodeList.filter(function(x) { return Other.indexOf(x) < 0 });
+      console.log(CodeList);
+      console.log(diff);
+
+    CodeList = [...Other, ...diff];
     //   console.log(CodeList);
 
     var counteddemands = d3.nest()
@@ -145,7 +152,7 @@ function streamgraph(data) {
    
      colorstreams = d3.scaleOrdinal()
         .domain(["Other", AllCodes ])
-        .range(['#dfad89', '#683a20', '#dcb17d', '#bd7b45', '#6d3b20', '#f2d3b1', '#9d5d2d', '#ac7752', '#894f29', '#d39156', '#efd1b7', '#e2ad85', '#fde7da', '#dca77d', '#824f30', '#7d452c', '#a86b3f', '#e8bfa3']);
+        .range(['#fde7da','#dfad89', '#683a20', '#dcb17d', '#bd7b45', '#6d3b20', '#f2d3b1', '#9d5d2d', '#ac7752', '#894f29', '#d39156', '#efd1b7', '#e2ad85',  '#dca77d', '#824f30', '#7d452c', '#a86b3f', '#e8bfa3']);
 
 //    "#fde9de" "#fde7da" "#fde3cc" "#f2d3b1" "#fce1c6" "#efd1b7" "#f4cca8" "#e8bfa3" "#fad5b8" "#e9c39f" "#e8bc99" "#e2ad85" "#eeba93"
 // "#dfad89" "#d9a57d" "#e4ac7c" "#dca77d" "#d59d6d" "#e7ae85" "#dcb17d" "#ca9262" "#d28f58" "#d39063" "#d39156" "#ac7752" "#b67849"
@@ -153,8 +160,8 @@ function streamgraph(data) {
 // "#583218"
     
      opacitystreams = d3.scaleOrdinal()
-        .domain(["Other", AllCodes ])
-        .range([0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]);
+        .domain(["Other", AllCodes])
+        .range([0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1,1]);
     
     console.log(AllCodes);
 
@@ -175,9 +182,12 @@ function streamgraph(data) {
         .enter()
         .append("path")
         .attr("class", "myArea")
+            .attr("id", (d) => d.key)
+
         .style("fill", function (d) {
             return colorstreams(d.key);
         })
+    
         .style("opacity", function (d) {
             return opacitystreams(d.key);
         })
@@ -214,3 +224,4 @@ function streamgraph(data) {
         .call(wrap, 100);
 }
 
+var AllCodes;
