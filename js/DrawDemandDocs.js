@@ -82,5 +82,5 @@ function DrawDemandDocs(demand_text) {
         .on("mousemove", mousemove)
         .on("mouseleave", mouseleave);
 
-    ColorDemands(DemandsTags, "Minority Student Recruitment");
+    ColorDemands(DemandsTags, "Minority Faculty Staff and Leadership Recruitment");
 }

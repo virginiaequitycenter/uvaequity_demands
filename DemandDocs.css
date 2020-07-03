@@ -45,6 +45,8 @@ body {
         url("pics/paint.jpg");
     padding: 0;
     padding-top: 20px;
+    height: 100vh;
+    overflow-y: scroll;
 }
 
 .sidebar h1 {
@@ -80,13 +82,12 @@ body {
     /*       font-family: 'Amatic SC', cursive;*/
     font-family: 'Yantramanav', sans-serif;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 25px;
 }
 
 .sidebartext {
     padding-left: 7.5px;
-    margin-top: 25px;
-
+    padding-right: 7.5px;
 }
 
 .sidebartext h4 {
@@ -96,10 +97,13 @@ body {
     opacity: .85;
     font-weight: 300;
     font-family: 'Amatic SC', cursive;
+    margin: 0;
+    padding:0;
+    margin-bottom:5px;
 
 }
 
-.tagselector{
+.tagfilter{
     margin-left: 10px;
    margin-right: 10px;
     width: 90%;
@@ -255,7 +259,7 @@ i.fas {
 
 .demandlinescontainer {
     width: 22%;
-    /*    background-color:antiquewhite;*/
+/*        background-color:antiquewhite;*/
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -312,7 +316,7 @@ width:
     /*  max-height: 100px;*/
     overflow-y: scroll;
     visibility: hidden;
-    font-size: 10px;
+    font-size: 16px;
     /*    background-color: #d6ecef;*/
     background-color: #fcf5e3;
     padding: 10px;
@@ -326,20 +330,142 @@ width:
 }
 
 #demandtext {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 300;
     font-family: 'Yantramanav', sans-serif;
 
 }
 
-.sidebartext p {
-    font-size: 14px;
+
+
+.tagfilter {
+    margin-top: 20px;
+}
+
+.sidebartext strong {
+    font-weight: 700;
+}
+
+.sidebardef p {
+    text-align: left;
+
+/*    display:inline;*/
+    font-size: 16px;
     color: white;
-    opacity: .9;
+    opacity: .85;
     font-weight: 300;
     /*    padding-left: 10px;*/
     /*    padding-right: 10px;*/
     /*       font-family: 'Amatic SC', cursive;*/
     font-family: 'Yantramanav', sans-serif;
+    line-height: 1em;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+
+.sidebardef sup {
     
+    font-size: 10px;
+}
+
+a {
+    color: #fcf5e3;
+}
+
+a:hover {
+    color: white;
+}
+
+.demandlinescontainerexample {
+    position: inline;
+/*    text-align: center;*/
+    width: 60px;
+/*    width: 22%;*/
+/*        background-color:antiquewhite;*/
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: .01px solid;
+       border-color: rgba(250, 250, 250 ,.9);
+    border-radius: 4px;
+    padding: 5px;
+    padding-bottom: 3.5px;
+    left:50%;
+/*    transform: translate(-50%, 0%);*/
+
+}
+
+
+
+.demandlinesex {
+    position: relative;
+    left: 2.5%;
+    width: 95%;
+    height: 4px;
+    /*    background-color: #ebecf0;*/
+    /*    background-image:       url("pics/paint.jpg"); */
+    background-color: #E0E1E1;
+    margin-bottom: 1px;
+    border-radius: 2px;
+    /*   border: .001px solid;*/
+    border-color: none;
+
+}
+
+.inlinetext {
+    position:inline;
+    
+}
+
+.annotation {
+    position: inline;
+    margin: 0;
+/*    display:inline;*/
+    font-size: 60px;
+    color: white;
+    opacity: .85;
+    font-weight: 300;
+    /*    padding-left: 10px;*/
+    /*    padding-right: 10px;*/
+           font-family: 'Amatic SC', cursive;
+    line-height: 1em;
+    opacity: .8;
+    padding-left: 2px;
+}
+
+p {
+    
+}
+
+.annotationtext{
+    text-align: left;
+    
+/*    display:inline;*/
+    font-size: 16px;
+    color: white;
+    opacity: .85;
+    font-weight: 300;
+    /*    padding-left: 10px;*/
+    /*    padding-right: 10px;*/
+    /*       font-family: 'Amatic SC', cursive;*/
+    font-family: 'Yantramanav', sans-serif;
+    line-height: 1em;
+   transform: translate(0%, 25%);
+      vertical-align: middle;
+    width: 40%;
+    padding-right:5px;
+    margin: 0;
+
+
+}
+
+.demandexamplecontainer {
+padding-left: 7.5px;
+    padding-right: 7.5px;
+    transform: translate(25%,0);
+    margin-bottom: 7.5px;
+}
+
+.form-group {
+    margin-top:0;
 }
