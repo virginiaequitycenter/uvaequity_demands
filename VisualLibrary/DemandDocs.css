@@ -17,7 +17,7 @@ body {
     background-image:
         linear-gradient(rgba(255, 255, 255, .96),
             rgba(255, 255, 255, .99)),
-               url("../../pics/paint.jpg");
+        url("../../pics/paint.jpg");
 
 
 }
@@ -44,11 +44,12 @@ body {
     background-image:
         linear-gradient(rgba(95, 117, 142, .94),
             rgba(95, 117, 142, .94)),
-       url("../../pics/paint.jpg");
+        url("../../pics/paint.jpg");
     padding: 0;
     padding-top: 20px;
     height: 100vh;
     overflow-y: scroll;
+    min-width: 275px;
 }
 
 .sidebar h1 {
@@ -88,8 +89,8 @@ body {
 }
 
 .sidebartext {
-    padding-left: 7.5px;
-    padding-right: 7.5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .sidebartext h4 {
@@ -100,62 +101,194 @@ body {
     font-weight: 300;
     font-family: 'Amatic SC', cursive;
     margin: 0;
-    padding:0;
-    margin-bottom:5px;
+    padding: 0;
+    margin-bottom: 5px;
 
 }
 
-.tagfilter{
+.tagfilter {
     margin-left: 10px;
-   margin-right: 10px;
+    margin-right: 10px;
     width: 90%;
-    height:auto;
+    height: auto;
 
 }
 
-.form-control{
-   background-color: rgba(255, 255, 255, 0);
-   color: rgba(255, 255, 255, .97);
+.form-control {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, .97);
     font-family: 'Yantramanav', sans-serif;
 }
 
-.tagoption{
-   background-color: rgba(255, 255, 255, 0);
+.tagoption {
+    background-color: rgba(255, 255, 255, 0);
     font-family: 'Yantramanav', sans-serif;
 }
 
-.yearjumpselect{
+.yearjumpselect {
     margin-left: 10px;
-   margin-right: 10px;
+    margin-right: 10px;
     width: 90%;
-    height:auto;
+    height: auto;
 
 }
+
+
+
+.tagfilter {
+    margin-top: 20px;
+}
+
+.sidebartext strong {
+    font-weight: 700;
+}
+
+.sidebardef p {
+    text-align: left;
+
+    /*    display:inline;*/
+    font-size: 16px;
+    color: white;
+    opacity: .85;
+    font-weight: 300;
+    /*    padding-left: 10px;*/
+    /*    padding-right: 10px;*/
+    /*       font-family: 'Amatic SC', cursive;*/
+    font-family: 'Yantramanav', sans-serif;
+    line-height: 1em;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sidebardef sup {
+
+    font-size: 10px;
+}
+
+a {
+    color: #fcf5e3;
+}
+
+a:hover {
+    color: white;
+}
+
+.demandlinescontainerexample {
+    position: inline;
+    /*    text-align: center;*/
+    width: 60px;
+    /*    width: 22%;*/
+    /*        background-color:antiquewhite;*/
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: .01px solid;
+    border-color: rgba(250, 250, 250, .9);
+    border-radius: 4px;
+    padding: 5px;
+    padding-bottom: 3.5px;
+    left: 50%;
+    /*    transform: translate(-50%, 0%);*/
+
+}
+
+.demandlinesex {
+    position: relative;
+    left: 2.5%;
+    width: 95%;
+    height: 4px;
+    /*    background-color: #ebecf0;*/
+    /*    background-image:       url("pics/paint.jpg"); */
+    background-color: #E0E1E1;
+    margin-bottom: 1px;
+    border-radius: 2px;
+    /*   border: .001px solid;*/
+    border-color: none;
+
+}
+
+.inlinetext {
+    position: inline;
+
+}
+
+.annotation {
+    position: inline;
+    margin: 0;
+    /*    display:inline;*/
+    font-size: 60px;
+    color: white;
+    opacity: .85;
+    font-weight: 300;
+    /*    padding-left: 10px;*/
+    /*    padding-right: 10px;*/
+    font-family: 'Amatic SC', cursive;
+    line-height: 1em;
+    opacity: .8;
+    padding-left: 2px;
+}
+
+
+.annotationtext {
+    text-align: left;
+
+    /*    display:inline;*/
+    font-size: 16px;
+    color: white;
+    opacity: .85;
+    font-weight: 300;
+    /*    padding-left: 10px;*/
+    /*    padding-right: 10px;*/
+    /*       font-family: 'Amatic SC', cursive;*/
+    font-family: 'Yantramanav', sans-serif;
+    line-height: 1em;
+    transform: translate(0%, 25%);
+    vertical-align: middle;
+    width: 40%;
+    padding-right: 5px;
+    margin: 0;
+
+
+}
+
+.demandexamplecontainer {
+    position:relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    left: 50%;
+    transform: translate(-25%, 0);
+    margin-bottom: 10px;
+}
+
 
 
 /*Overall Project*/
 .project {
     padding: 0;
     margin: 0;
+    max-width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+    .project {
+        max-width: calc(100% - 275px);
+    }
+}
 
 /*Document Scroller*/
 
-.box {
-
-}
+.box {}
 
 
 .timelinecontainer {
-/*    display: flex;*/
+    /*    display: flex;*/
     display: inline-block;
 
-/*    flex-direction: row;*/
+    /*    flex-direction: row;*/
     margin: 0 0rem;
     z-index: 0;
     background-color: none;
-/*    overflow-x: scroll;*/
+    /*    overflow-x: scroll;*/
     /*    height: 50vh;*/
     overflow-y: hidden;
     width: auto;
@@ -175,7 +308,7 @@ body {
     border-right: 2px solid;
     border-color: black;
     /*    margin-right: 10px;*/
-       width: 60px;
+    width: 60px;
     padding: 0;
 }
 
@@ -261,7 +394,7 @@ i.fas {
 
 .demandlinescontainer {
     width: 22%;
-/*        background-color:antiquewhite;*/
+    /*        background-color:antiquewhite;*/
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -306,7 +439,7 @@ i.fas {
 /* Overall Box Needs a Width */
 
 .box {
-width: 
+    width:
 }
 
 /*Interaciton Functions*/
@@ -339,141 +472,6 @@ width:
 }
 
 
-
-.tagfilter {
-    margin-top: 20px;
-}
-
-.sidebartext strong {
-    font-weight: 700;
-}
-
-.sidebardef p {
-    text-align: left;
-
-/*    display:inline;*/
-    font-size: 16px;
-    color: white;
-    opacity: .85;
-    font-weight: 300;
-    /*    padding-left: 10px;*/
-    /*    padding-right: 10px;*/
-    /*       font-family: 'Amatic SC', cursive;*/
-    font-family: 'Yantramanav', sans-serif;
-    line-height: 1em;
-    padding-left: 7.5px;
-    padding-right: 7.5px;
-}
-
-.sidebardef sup {
-    
-    font-size: 10px;
-}
-
-a {
-    color: #fcf5e3;
-}
-
-a:hover {
-    color: white;
-}
-
-.demandlinescontainerexample {
-    position: inline;
-/*    text-align: center;*/
-    width: 60px;
-/*    width: 22%;*/
-/*        background-color:antiquewhite;*/
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    border: .01px solid;
-       border-color: rgba(250, 250, 250 ,.9);
-    border-radius: 4px;
-    padding: 5px;
-    padding-bottom: 3.5px;
-    left:50%;
-/*    transform: translate(-50%, 0%);*/
-
-}
-
-
-
-.demandlinesex {
-    position: relative;
-    left: 2.5%;
-    width: 95%;
-    height: 4px;
-    /*    background-color: #ebecf0;*/
-    /*    background-image:       url("pics/paint.jpg"); */
-    background-color: #E0E1E1;
-    margin-bottom: 1px;
-    border-radius: 2px;
-    /*   border: .001px solid;*/
-    border-color: none;
-
-}
-
-.inlinetext {
-    position:inline;
-    
-}
-
-.annotation {
-    position: inline;
-    margin: 0;
-/*    display:inline;*/
-    font-size: 60px;
-    color: white;
-    opacity: .85;
-    font-weight: 300;
-    /*    padding-left: 10px;*/
-    /*    padding-right: 10px;*/
-           font-family: 'Amatic SC', cursive;
-    line-height: 1em;
-    opacity: .8;
-    padding-left: 2px;
-}
-
-p {
-    
-}
-
-.annotationtext{
-    text-align: left;
-    
-/*    display:inline;*/
-    font-size: 16px;
-    color: white;
-    opacity: .85;
-    font-weight: 300;
-    /*    padding-left: 10px;*/
-    /*    padding-right: 10px;*/
-    /*       font-family: 'Amatic SC', cursive;*/
-    font-family: 'Yantramanav', sans-serif;
-    line-height: 1em;
-   transform: translate(0%, 25%);
-      vertical-align: middle;
-    width: 40%;
-    padding-right:5px;
-    margin: 0;
-
-
-}
-
-.demandexamplecontainer {
-padding-left: 7.5px;
-    padding-right: 7.5px;
-    transform: translate(25%,0);
-    margin-bottom: 7.5px;
-}
-
 .form-group {
-    margin-top:0;
+    margin-top: 0;
 }
-
-.outlined {
-    border: solid white .001px;
-}
-
-
