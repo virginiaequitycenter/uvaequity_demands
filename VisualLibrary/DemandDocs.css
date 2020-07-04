@@ -41,10 +41,18 @@ body {
 
 /*Sidebar*/
 .sidebar {
+/*
     background-image:
         linear-gradient(rgba(95, 117, 142, .94),
             rgba(95, 117, 142, .94)),
         url("../../pics/paint.jpg");
+*/
+    background-image:
+        linear-gradient(rgba(90, 111, 135, .94),
+            rgba(90, 111, 135, .94)),
+        url("../../pics/paint.jpg");
+    
+    
     padding: 0;
     padding-top: 20px;
     height: 100vh;
@@ -354,7 +362,7 @@ a:hover {
 
 i.fas {
 
-    color: rgba(95, 117, 142, .94);
+    color: rgba(90, 111, 135, .94);
 }
 
 .documenttitlebox {
