@@ -58,6 +58,7 @@ body {
     height: 100vh;
     overflow-y: scroll;
     min-width: 275px;
+    overflow-x: hidden;
 }
 
 .sidebar h1 {
@@ -271,6 +272,8 @@ a:hover {
 .relativecontainer{
     position:relative;
     padding-bottom: 62px;
+    overflow-x: hidden;
+/*    width: 240px;*/
     
 }
 
