@@ -274,6 +274,7 @@ a:hover {
     padding-bottom: 62px;
     overflow-x: hidden;
 /*    width: 240px;*/
+    overflow-y: hidden;
     
 }
 
