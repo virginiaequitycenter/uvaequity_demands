@@ -41,7 +41,7 @@ body {
 
 /*Sidebar*/
 .sidebar {
-/*
+    /*
     background-image:
         linear-gradient(rgba(95, 117, 142, .94),
             rgba(95, 117, 142, .94)),
@@ -51,8 +51,8 @@ body {
         linear-gradient(rgba(90, 111, 135, .94),
             rgba(90, 111, 135, .94)),
         url("../../pics/paint.jpg");
-    
-    
+
+
     padding: 0;
     padding-top: 20px;
     height: 100vh;
@@ -261,21 +261,21 @@ a:hover {
 }
 
 .demandexamplecontainer {
-    position:absolute;
-/*    padding-left: 10px;*/
-/*    padding-right: 10px;*/
+    position: absolute;
+    /*    padding-left: 10px;*/
+    /*    padding-right: 10px;*/
     left: 40%;
     transform: translate(-20%, 0);
-/*    margin-bottom: 10px;*/
+    /*    margin-bottom: 10px;*/
 }
 
-.relativecontainer{
-    position:relative;
+.relativecontainer {
+    position: relative;
     padding-bottom: 62px;
     overflow-x: hidden;
-/*    width: 240px;*/
+    /*    width: 240px;*/
     overflow-y: hidden;
-    
+
 }
 
 

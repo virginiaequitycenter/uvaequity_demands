@@ -1,4 +1,3 @@
-var demands;
 var sumstat;
 var stackedData;
 var mygroup;
@@ -9,14 +8,6 @@ var xstreams;
 var ystreams;
 var streamssvg;
 
-function loadData() {
-
-    d3.csv("data/demands.csv").then(function (d) {
-        demands = d;
-        streamgraph(demands);
-        DrawStreamsControl(demands);
-    });
-}
 
 
 function streamgraph(data) {
@@ -24,7 +15,7 @@ function streamgraph(data) {
     // set the dimensions and margins of the graph
     var margin = {
             top: 0,
-            right: 20,
+            right: 100,
             bottom: 0,
             left: 20
         },
@@ -215,10 +206,14 @@ function streamgraph(data) {
     var display = title_input + " " + DocYear
     // Add Title & Year Name Annotation
     streamssvg
+        .append("g")
+        .attr("transform",
+            "translate(" + xstreams(displayyear) + "," + ystreams(140) + ")")
+        .attr("class", "textannotationg")
         .append("text")
-        .attr("x", xstreams(displayyear))
-        .attr("y", ystreams(150))
-        .attr("dy", 1)
+        .attr("y", 0)
+        .attr("dy", .1)
+         .attr("x", 0)
         .text(display)
         .attr("class", "textannotation")
         .call(wrap, 100);

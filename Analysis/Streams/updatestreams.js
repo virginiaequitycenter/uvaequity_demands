@@ -137,26 +137,45 @@ d3.selection.prototype.moveToFront = function() {
     };    
     
 var annotationline =   streamssvg.selectAll(".annotationline")
+
 annotationline.moveToFront()   
 annotationline.transition()
+            .duration(1000)
+
         .attr("x1", xstreams(DocYear))
         .attr("x2", xstreams(DocYear));
     
  var display = title_input + " " + DocYear;
     // Add Title & Year Name Annotation
 
+var textannotationg =   streamssvg.selectAll(".textannotationg");
+
+textannotationg.moveToFront();
+
+    // Translate the g outside of the text
+textannotationg
+       .transition()
+        .duration(1000)
+        .attr("transform",
+            "translate(" + xstreams(displayyear) + "," + ystreams(140) + ")")
+        .attr("class", "textannotationg")
+
 var textannotation =   streamssvg.selectAll(".textannotation");
 
-textannotation.moveToFront();
-textannotation.transition()
-        .attr("x", xstreams(displayyear))
-        .attr("y", ystreams(140))
-        .attr("dy", 1)
+     // Calculate the text inside of it
+textannotation
+        //.attr("x", xstreams(displayyear))
         .text(display)
-        .attr("class", "textannotation")
-        .call(wrap, 100);       
-}
+         .attr("y", 0)
+         .attr("dy", .1)
+         .attr("x", 0)
+         .call(wrap, 75);
+};
 
+
+
+
+// This is the one that draws the control for the updater 
 var DocList;
     
 function DrawStreamsControl(Data) {
@@ -179,9 +198,9 @@ function DrawStreamsControl(Data) {
         .enter()
         .append("option")
         .attr("value", (d) => d)
-        .text((d) => d)
-       // .classed("tagoption", true);
+        .text((d) => d);
 
+       // .classed("tagoption", true);
 
 
 }
