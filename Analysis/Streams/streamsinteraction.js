@@ -28,7 +28,6 @@ var mouseoverstream = function(d) {
 
 
 var mousemovestream = function(d) {
-    
     d3.select("#tooltipchord")
       .style("left", d3.event.pageX + 10 + "px")
       .style("top", d3.event.pageY - 10 + "px")
