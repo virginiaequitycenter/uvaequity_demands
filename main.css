@@ -1,0 +1,29 @@
+h2{    
+    padding-top: 10px;
+    text-align: center;
+    font-size: 50px;
+    color: rgba(90, 111, 135, 1);
+    opacity: .9;
+    font-weight: 700;
+    font-family: 'Amatic SC', cursive;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  
+p{
+    font-size: 1.5em;
+    opacity: .85;
+    font-weight: 300;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+    /* font-family: 'Amatic SC', cursive; */
+    font-family: 'Yantramanav', sans-serif;
+    line-height: 1em;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content{
+  padding-left: 60px;
+  padding-right: 60px;
+}

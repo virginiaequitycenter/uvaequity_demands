@@ -55,7 +55,7 @@ body {
 
     padding: 0;
     padding-top: 20px;
-    height: 100vh;
+    /*height: 100vh;*/
     overflow-y: scroll;
     min-width: 275px;
     overflow-x: hidden;
