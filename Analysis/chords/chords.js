@@ -9,11 +9,17 @@ var chordsvg = d3.select("#chords")
     .attr("transform", "translate(300,300)");
     
 chorddata = data.filter(function (el) {
-        return el.Code === input_code;
+        return el.Code === input_code & el.RowSum > 0;
     });
 
-    console.log(chorddata.Alumni)
-    
+var demographiclist = d3.map(chorddata, function (d) {
+        return d.Demographic;
+    }).keys()
+
+console.log(demographiclist)
+
+const indexByName = new Map;
+const nameByIndex = new Map;
 
   const matrix = [];
   let n = 0;
@@ -27,8 +33,6 @@ chorddata = data.filter(function (el) {
   });
     
    console.log(nameByIndex);
-
-   var uselength = chorddata.length - 1;
     
     var i;
     var j;
@@ -103,14 +107,19 @@ group.append("path")
       .attr("fill", d => color(d.source.index))
       .attr("d", ribbon)
       .attr("class", "chordribbons")
-      .on("mouseover", mouseoverchord)
-      .on("mousemove", mousemovechord)
-      .on("mouseleave", mouseleavechord);
-    
+      .on("mouseover", function (d) {
+              d3.select("#tooltipchord")
+                  .style("visibility", "visible");
+              var attribute = d3.select(this);
+              d3.selectAll(".chordribbons").style("opacity", .3);
+              attribute
+                  .style("opacity", 1);
+              d3.select("#chordtext").text(nameByIndex.get(d.source.index) + " & " + nameByIndex.get(d.target.index) + ": " + d.source.value);
+          })
+          .on("mousemove", mousemovechord)
+          .on("mouseleave", mouseleavechord);
 
   return chordsvg.node();
     
 }
 
- const indexByName = new Map;
- const  nameByIndex = new Map;

@@ -134,7 +134,7 @@ function streamgraph(data) {
     //   console.log(wide)
 
 
-    var stackedData = d3.stack()
+     stackedData = d3.stack()
         .keys(CodeList)
         (wide);
 
@@ -186,7 +186,10 @@ function streamgraph(data) {
         .style("opacity", function (d) {
             return opacitystreams(d.key);
         })
-        .attr("d", area);
+        .attr("d", area)
+        .on("mouseover", mouseoverstream)
+               .on("mousemove", mouseoverstream)
+          .on("mouseleave", mouseleavestream);
 
     // Add Year Annotation
     var DocYear = d3.map(data.filter(function (el) {
