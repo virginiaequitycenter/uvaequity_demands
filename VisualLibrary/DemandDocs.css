@@ -15,12 +15,12 @@ html {
 body {
     /*    background-color: #FEFFFF;*/
     background-image:
-        linear-gradient(rgba(255, 255, 255, .96),
-            rgba(255, 255, 255, .99)),
+        linear-gradient(rgba(255, 255, 255, .90),
+            rgba(255, 255, 255, .95)),
         url("../pics/paint.jpg");
 
 
-}
+}</div> pi
 
 .site {
     margin: 0;
@@ -50,7 +50,7 @@ body {
     background-image:
         linear-gradient(rgba(90, 111, 135, .94),
             rgba(90, 111, 135, .94)),
-        url("../../pics/paint.jpg");
+        url("../pics/paint.jpg");
 
 
     padding: 0;
