@@ -94,6 +94,10 @@ group.append("path")
       .call(wrap, 100)
      .attr("class", "labeltext");
 ;
+
+   // var tooltip = d3.append("div").attr("position", "absolute");
+ // var  opacityDefault = 0.8;
+
     
   chordsvg.append("g")
       .attr("fill-opacity", 0.67)
@@ -102,7 +106,21 @@ group.append("path")
     .join("path")
     .attr("stroke", d => d3.rgb(color(d.source.index)).darker())
       .attr("fill", d => color(d.source.index))
-      .attr("d", ribbon);
+      .attr("d", ribbon)
+//      .on("mouseover", function(d) {
+//          tooltip.transition()
+//               .duration(200)
+//               .style("opacity", opacityDefault);
+//          tooltip.html(nameByIndex.get(d.source.index) + " leads to " + nameByIndex.get(d.target.index))
+//               .style("left", (d3.event.pageX + 5) + "px")
+//               .style("top", (d3.event.pageY - 28) + "px");
+//      })
+//      .on("mouseout", function(d) {
+//          tooltip.transition()
+//               .duration(500)
+//               .style("opacity", 0);
+//      });
+    
 
   return chordsvg.node();
     

@@ -22,7 +22,6 @@ var mousemove = function(d) {
 
   }
 
-
 var mouseleave = function(d) {
   d3.select("#tooltip")
       .style("visibility","hidden");

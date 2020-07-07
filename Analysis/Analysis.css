@@ -29,3 +29,16 @@ nav h1{
     margin-bottom: 0px;
     
 }
+
+ .demandanalysis {
+    padding-top: 10px;
+    text-align: center;
+    font-size:50px;
+    color: rgba(90, 111, 135, 1);
+/*    opacity: .9;*/
+    font-weight: 700;
+    font-family: 'Amatic SC', cursive; 
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    
+}
