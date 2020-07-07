@@ -1,33 +1,32 @@
 var mouseoverchord = function(d) {
     
-    d3.select("#tooltip")
+    d3.select("#tooltipchord")
       .style("visibility","visible");
     
     var attribute =  d3.select(this);
  
+d3.selectAll(".chordribbons").style("opacity", .3);
+    
    attribute
-      .style("border", "solid grey .0001px")
-      .style("opacity", .5); 
+      .style("opacity", 1); 
     
-    d3.select("#demandtext").text(d.Text + " " );
-    
+    d3.select("#chordtext").text(nameByIndex.get(d.source.index) + " & " + nameByIndex.get(d.target.index) + ": " + d.source.value);
 }
 
 
 var mousemovechord = function(d) {
     
-    d3.select("#tooltip")
-     // .style("left", d3.event.pageX - 25 + "px")
-      //.style("top", d3.event.pageY -110 + "px")
+    d3.select("#tooltipchord")
+      .style("left", d3.event.pageX + 10 + "px")
+      .style("top", d3.event.pageY - 10 + "px")
 
   }
 
 var mouseleavechord = function(d) {
-  d3.select("#tooltip")
+  d3.select("#tooltipchord")
       .style("visibility","hidden");
       
-    d3.select(this)
-      .style("border", "none")
-      .style("opacity", 1)
+   d3.selectAll(".chordribbons").style("opacity", .67);
+
     
   }

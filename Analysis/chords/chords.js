@@ -14,8 +14,7 @@ chorddata = data.filter(function (el) {
 
     console.log(chorddata.Alumni)
     
- const indexByName = new Map;
- const  nameByIndex = new Map;
+
   const matrix = [];
   let n = 0;
 
@@ -67,7 +66,7 @@ var chord = d3.chord()
 
  const chords = chord(array);
       
- console.log (chords);
+ console.log(chords);
     
  const group = chordsvg.append("g")
     .selectAll("g")
@@ -94,10 +93,6 @@ group.append("path")
       .call(wrap, 100)
      .attr("class", "labeltext");
 
-
- var tooltip = d3.select("#tooltip");
- var  opacityDefault = 0.8;
-
     
   chordsvg.append("g")
       .attr("fill-opacity", 0.67)
@@ -107,11 +102,15 @@ group.append("path")
     .attr("stroke", d => d3.rgb(color(d.source.index)).darker())
       .attr("fill", d => color(d.source.index))
       .attr("d", ribbon)
+      .attr("class", "chordribbons")
       .on("mouseover", mouseoverchord)
       .on("mousemove", mousemovechord)
-    .on("mouseleave", mouseleavechord);
+      .on("mouseleave", mouseleavechord);
     
 
   return chordsvg.node();
     
 }
+
+ const indexByName = new Map;
+ const  nameByIndex = new Map;
