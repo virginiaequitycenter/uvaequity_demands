@@ -61,7 +61,7 @@ var arc = d3.arc()
     .outerRadius(outerRadius);
     
 var chord = d3.chord()
-    .padAngle(.1)
+    .padAngle(.05)
     .sortSubgroups(d3.descending)
     .sortChords(d3.descending);
 

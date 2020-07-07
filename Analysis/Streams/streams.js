@@ -150,9 +150,11 @@ function streamgraph(data) {
 // "#bd7b45" "#c98256" "#ca875a" "#a86b3f" "#a65e23" "#9d5d2d" "#ab6939" "#894f29" "#9b5b35" "#824f30" "#7d452c" "#6d3b20" "#683a20"
 // "#583218"
     
+   var o = .8;
+    
      opacitystreams = d3.scaleOrdinal()
         .domain(["Other", AllCodes])
-        .range([0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1,1]);
+        .range([0, o, o, o, o, o, o, o, o, o, o, o, o, o, o, o, o, o]);
     
     console.log(AllCodes);
 
