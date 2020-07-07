@@ -1,15 +1,15 @@
 var chorddata;
 
+function drawchords(data, input_code) {
 
-function drawchords(data) {
-
+d3.select("#chords").selectAll("g").remove();
     
 var chordsvg = d3.select("#chords")
     .append("g")
     .attr("transform", "translate(300,300)");
     
 chorddata = data.filter(function (el) {
-        return el.Code === "Total";
+        return el.Code === input_code;
     });
 
     console.log(chorddata.Alumni)

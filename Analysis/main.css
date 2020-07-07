@@ -7,4 +7,25 @@ body {
         linear-gradient(rgba(255, 255, 255, .96),
             rgba(255, 255, 255, .96)),
         url("pics/paint.jpg");
+    padding-top: 60px;
+}
+
+nav {
+    
+    background-image:
+        linear-gradient(rgba(90, 111, 135, .94),
+            rgba(90, 111, 135, .94)),
+        url("pics/paint.jpg");
+}
+
+nav h1{
+    
+    font-size:30px;
+    color: white;
+/*    opacity: .9;*/
+    font-weight: 700;
+    font-family: 'Amatic SC', cursive; 
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    
 }

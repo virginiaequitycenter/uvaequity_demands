@@ -176,11 +176,10 @@ textannotation
 
 
 // This is the one that draws the control for the updater 
-var DocList;
     
 function DrawStreamsControl(Data) {
 
-     DocList = d3.map(Data, function (d) {
+   var  DocList = d3.map(Data, function (d) {
         return d.DocTitle;
     }).keys();
 
@@ -204,4 +203,3 @@ function DrawStreamsControl(Data) {
 
 
 }
-var CodeList2;

@@ -11,8 +11,8 @@ function loadData() {
 
     d3.csv("data/chord.csv").then(function (d) {
         chords = d;
-        drawchords(chords);
-//        DrawStreamsControl(demands);
+        drawchords(chords, "Total");
+        DrawChordsControl(chords);
     });
 
 

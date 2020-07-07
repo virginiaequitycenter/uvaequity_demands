@@ -17,12 +17,14 @@ function streamgraph(data) {
             top: 0,
             right: 100,
             bottom: 0,
-            left: 20
+            left: 50
         },
         width = 750 - margin.left - margin.right,
         height = 400 - margin.top - margin.bottom;
 
     // append the svg object to the body of the page
+    
+    d3.select("#streams").selectAll("g")
      streamssvg = d3.select("#streams")
         .append("g")
         .attr("transform",
