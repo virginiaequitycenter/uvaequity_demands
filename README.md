@@ -1,2 +1,2 @@
-# WeDemand
-Development Site for We Demand Project
+# Voices for Equity
+Development Site for Voices For Equity
