@@ -59,8 +59,9 @@ function drawchords(data, input_code) {
 
     var innerRadius = 200;
 
-    var color = d3.scaleOrdinal(["#c33b5c", "#fc9c9c", "#953146", "#9b5464", "#cc9fa2", "#964d5a", "#bf7068"]);
-
+    var colors = ["#c33b5c", "#fc9c9c", "#953146", "#9b5464", "#cc9fa2", "#964d5a", "#bf7068"];
+    
+    
     var ribbon = d3.ribbon()
         .radius(innerRadius - 10);
 
@@ -68,12 +69,53 @@ function drawchords(data, input_code) {
         .innerRadius(innerRadius)
         .outerRadius(outerRadius);
 
-    var chord = d3.chord()
-        .padAngle(.05)
-        .sortSubgroups(d3.descending)
-     .sortChords(d3.descending);
+    var chord = customchord()
+        .padAngle(.05);
+    
+//    var chords = customChordLayout()
+//    .padding(.15)
+//    .sortChords(d3.descending)
+//    .matrix(array)
 
     const chords = chord(array);
+    
+    
+//   var colors = ["#51addf", "#c582aa", "#005b9d", "#35a993", "#cc373c", "#f7d783", "#fc9c9c"]
+
+    
+     var color = d3.scaleOrdinal()
+          .domain(d3.range(6))
+          .range(colors)
+
+
+          // creating the fill gradient
+          function getGradID(d){ return "linkGrad-" + d.source.index + "-" + d.target.index; }
+
+
+          var grads = chordsvg.append("defs")
+            .selectAll("linearGradient")
+            .data(chords)
+            .enter()
+            .append("linearGradient")
+            .attr("id", getGradID)
+            .attr("gradientUnits", "userSpaceOnUse")
+            .attr("x1", function(d, i){ return innerRadius * Math.cos((d.source.endAngle-d.source.startAngle) / 2 + d.source.startAngle - Math.PI/2); })
+            .attr("y1", function(d, i){ return innerRadius * Math.sin((d.source.endAngle-d.source.startAngle) / 2 + d.source.startAngle - Math.PI/2); })
+            .attr("x2", function(d,i){ return innerRadius * Math.cos((d.target.endAngle-d.target.startAngle) / 2 + d.target.startAngle - Math.PI/2); })
+            .attr("y2", function(d,i){ return innerRadius * Math.sin((d.target.endAngle-d.target.startAngle) / 2 + d.target.startAngle - Math.PI/2); })
+
+            // set the starting color (at 0%)
+
+            grads.append("stop")
+              .attr("offset", "0%")
+              .attr("stop-color", function(d){ return color(d.source.index)})
+
+              //set the ending color (at 100%)
+            grads.append("stop")
+              .attr("offset", "100%")
+              .attr("stop-color", function(d){ return color(d.target.index)})
+    
+    
 
     console.log(chords);
 
@@ -114,12 +156,16 @@ function drawchords(data, input_code) {
         .attr("class", "labeltext");
 
     chordsvg.append("g")
-        .attr("fill-opacity", 0.67)
+        .attr("fill-opacity", 1)
         .selectAll("path")
         .data(chords)
         .join("path")
+                .style("fill", function(d){ return "url(#" + getGradID(d) + ")"; })
+
 //        .attr("stroke", d => d3.rgb(color(d.source.index)).darker())
 //        .attr("fill", d => color(d.source.index))
+            .attr("fill-opacity", 0.67)
+
         .attr("d", ribbon)
         .attr("class", (d) => "path" + d.source.index + " " + "path" + d.target.index + " " + "chordribbons")
         .on("mouseover", function (d) {
