@@ -188,9 +188,9 @@ function streamgraph(data) {
         })
         .attr("d", area)
         .on("mouseover", mouseoverstream)
-               .on("mousemove", mouseoverstream)
-          .on("mouseleave", mouseleavestream);
-
+        .on("mousemove", mousemovestream)
+        .on("mouseleave", mouseleavestream);
+    
     // Add Year Annotation
     var DocYear = d3.map(data.filter(function (el) {
         return el.DocTitle === title_input && el.Count > 0;

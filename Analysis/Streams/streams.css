@@ -22,3 +22,20 @@
     font-size: 15px;
 }
 
+#tooltipstream{
+    position: absolute;
+/*    top:1%;*/
+/*    left:50%;*/
+    visibility: hidden;
+/*    font-size: 16px;*/
+/*        background-color: #d6ecef;*/
+    background-color: #fcf5e3;
+    padding: 10px;
+    box-shadow: 1px 1px 1px #cccccc;
+    border-radius: 3px;
+/*    text-align: left;*/
+    opacity: 0.9;
+    border-radius: 7.5px;
+    z-index: 1000;
+/*   transform: translate(-50%, 0%);*/
+}
