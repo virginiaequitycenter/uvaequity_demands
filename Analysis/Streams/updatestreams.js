@@ -114,7 +114,8 @@ function updatestreams(data, input) {
         .style("opacity", function (d) {
             return opacitystreams(d.key);
         })
-        .attr("d", area).on("mouseover", mouseoverstream)
+        .attr("d", area)
+        .on("mouseover", mouseoverstream)
         .on("mousemove", mouseoverstream)
         .on("mouseleave", mouseleavestream);
 
