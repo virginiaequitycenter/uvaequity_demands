@@ -49,7 +49,7 @@ function DrawDemandDocs(demand_text) {
         });
 
     var documentlinks = demandboxes.append("i").classed("fas", true).classed("fa-external-link-alt", true).on("click", function (d) {
-        window.open("../VisualLibrary/documents/" + d.values[[0]].values[[0]].Title);
+        window.open("../VisualLibrary/documents/" + d.values[[0]].values[[0]].filename_updated);
     });
     var documenttitleboxes = demandboxes.append("div").classed("documenttitlebox", true);
     var documenttitles = documenttitleboxes.append("h3").text((d) => d.key);
