@@ -26,9 +26,55 @@ body {
     
     position:relative;
 }
-
+.chartcontainer {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, .96),
+            rgba(255, 255, 255, .96)),
+        url("pics/paint.jpg");
+    height: 100vh;
+    position:relative;
+    
+}
 .chordscontainer{
     position:relative;
     
 }
 
+
+.storytext {
+padding: 20px;
+background-image:
+        linear-gradient(rgba(90, 111, 135, .94),
+            rgba(90, 111, 135, .94)),
+        url("../pics/paint.jpg");
+    
+    
+
+border-radius: 10px;
+border: dashed rgba(90, 111, 135, .94) .5px;
+margin-top
+
+    
+
+}
+
+
+
+
+
+.spacer {
+    padding: 200px;
+    
+}
+
+.storyelement {
+        margin-bottom: 20px;
+   z-index: 2000;
+    
+}
+
+
+
+.vispad {
+    height: 25vh;
+}

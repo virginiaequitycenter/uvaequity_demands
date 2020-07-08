@@ -38,7 +38,7 @@
 
 <body>
     <div class="row container-fluid site d-flex">
-                <div class = "col-md-2 sidebarspacer"> </div>
+        <div class="col-md-2 sidebarspacer"> </div>
 
         <div class="sidebar col-md-2">
             <div>
@@ -64,66 +64,122 @@
 
             <hr>
 
+            <h1 class="demandanalysis"> ANALYSIS OF DEMANDS </h1>
+
+
         </div>
-        
-        
-        
+
+
+
         <div class="col-md-10 project">
+            <h1 class="demandanalysis"> WE have content</h1>
             <div class="box content">
-                <h1 class="demandanalysis"> ANALYSIS OF DEMANDS </h1>
-
-
 
                 <section id="chordsgroup">
 
-                    <div class="row">
-                        <div class="col-lg-2"> </div>
+                    <div id="chordchart" class = "chartcontainer">
+                        <div class="row">
+                            <div class="col-lg-2"> </div>
 
-                        <div class="col-lg-8" id="chordscontainer">
-                            <svg id="chords" class="svg-content" viewBox="0 0 600 600" width=100% preserveAspectRatio="none"> </svg>
+                            <div class="col-lg-8" id="chordscontainer">
+                                <svg id="chords" class="svg-content" viewBox="0 0 600 600" width=100% preserveAspectRatio="none"> </svg>
+                            </div>
+
+                            <div class="col-lg-2"> </div>
                         </div>
 
-                        <div class="col-lg-2"> </div>
+                        <div class="row">
+                            <div class="col-md-3"> </div>
+
+                            <div class="col-md-6">
+                                <div id="ThemeChange" class="form-group"></div>
+                            </div>
+
+                            <div class="col-md-3"> </div>
+                        </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-3"> </div>
+                    <div id="chordstory">
+                        <div class="row storyelement" id="text1">
+                            <div class="col-md-3"> </div>
 
-                        <div class="col-md-6">
-                            <div id="ThemeChange" class="form-group"></div>
-                            <br>
-                            <br>
-                            <br>
+                            <div class="col-md-6 storytext">
+                                This is a Chord Chart of
+                            </div>
+
+                            <div class="col-md-3"> </div>
+
                         </div>
 
-                        <div class="col-md-3"> </div>
+
+                        <div class="row storyelement" id="text2">
+                            <div class="col-md-3"> </div>
+
+                            <div class="col-md-6 storytext">
+                                This is some annotations that we would like to convey through the scroll trigger
+                            </div>
+
+                            <div class="col-md-3"> </div>
+                        </div>
                     </div>
 
                 </section>
 
+
                 <section id="streamsgroup">
-
-                    <div class="row">
-                        <div class="col-lg-2"> </div>
-
-                        <div class="col-lg-8">
-                         
-                            <svg id="streams" class="svg-content" viewBox="0 0 750 400" width=100% preserveAspectRatio="none"> </svg>
+                    
+                    <div id="streamchart" class = "chartcontainer">
+                        <div class="row vispad">
                         </div>
 
-                        <div class="col-lg-2"> </div>
-                    </div>
+                        <div class="row">
+                            <div class="col-lg-2"> </div>
 
-                    <div class="row">
-                        <div class="col-md-3"> </div>
+                            <div class="col-lg-8">
 
-                        <div class="col-md-6">
-                            <div id="DocChange" class="form-group"></div>
+                                <svg id="streams" class="svg-content" viewBox="0 0 750 400" width=100% preserveAspectRatio="none"> </svg>
+                            </div>
+
+                            <div class="col-lg-2"> </div>
                         </div>
 
-                        <div class="col-md-3"> </div>
+                        <div class="row">
+                            <div class="col-md-3"> </div>
+
+                            <div class="col-md-6">
+                                <div id="DocChange" class="form-group"></div>
+                            </div>
+
+                            <div class="col-md-3"> </div>
+                        </div>
                     </div>
 
+
+                    
+                    <div id="streamstory">
+                        <div class="row storyelement" id="text1">
+                            <div class="col-md-3"> </div>
+
+                            <div class="col-md-6 storytext">
+                                This is a Streams Chart of
+                            </div>
+
+                            <div class="col-md-3"> </div>
+
+                        </div>
+
+
+                        <div class="row storyelement" id="text2">
+                            <div class="col-md-3"> </div>
+
+                            <div class="col-md-6 storytext">
+                                This is some annotations that we would like to convey through the scroll trigger
+                            </div>
+
+                            <div class="col-md-3"> </div>
+                        </div>
+                    </div>
+                    
                 </section>
 
             </div>
@@ -134,10 +190,12 @@
     <div id="tooltipchord">
         <span id="chordtext"> </span>
     </div>
-    
-    <div id = "tooltipstream">
-        <span id = "streamtext"></span>
+
+    <div id="tooltipstream">
+        <span id="streamtext"></span>
     </div>
+
+    <script type="text/javascript" src="scrolldrivenanalysis.js"></script>
 
     <script type="text/javascript" src="wraptext.js"></script>
     <script type="text/javascript" src="chords/customchords.js"></script>

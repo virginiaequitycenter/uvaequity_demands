@@ -43,10 +43,9 @@ function drawchords(data, input_code) {
         for (j = 0; j < chorddata.length; j++) {
             var name = nameByIndex.get(j)
             if (i == j) {
-             usearray[j] =  0;
-            }
-            else {
-            usearray[j] = +chorddata[[i]][name]
+                usearray[j] = 0;
+            } else {
+                usearray[j] = +chorddata[[i]][name]
             }
         }
         array[i] = usearray
@@ -59,8 +58,8 @@ function drawchords(data, input_code) {
 
     var innerRadius = 200;
 
-    
-    
+
+
     var ribbon = d3.ribbon()
         .radius(innerRadius - 10);
 
@@ -70,52 +69,66 @@ function drawchords(data, input_code) {
 
     var chord = customchord()
         .padAngle(.05);
-    
-//    var chords = customChordLayout()
-//    .padding(.15)
-//    .sortChords(d3.descending)
-//    .matrix(array)
+
+    //    var chords = customChordLayout()
+    //    .padding(.15)
+    //    .sortChords(d3.descending)
+    //    .matrix(array)
 
     const chords = chord(array);
-    
- //  var colors = ["#c33b5c", "#fc9c9c", "#953146", "#9b5464", "#cc9fa2", "#964d5a", "#bf7068"];
- 
-   var colors = ["#51addf", "#c582aa", "#005b9d", "#35a993", "#cc373c", "#f7d783", "#fc9c9c"]
 
-    
-     var color = d3.scaleOrdinal()
-          .domain(d3.range(7))
-          .range(colors)
+    var colors = ["#c33b5c", "#fc9c9c", "#953146", "#9b5464", "#cc9fa2", "#964d5a", "#bf7068"];
+
+  //  var colors = ["#51addf", "#c582aa", "#005b9d", "#35a993", "#cc373c", "#f7d783", "#fc9c9c"]
 
 
-          // creating the fill gradient
-          function getGradID(d){ return "linkGrad-" + d.source.index + "-" + d.target.index; }
+    var color = d3.scaleOrdinal()
+        .domain(d3.range(7))
+        .range(colors)
 
 
-          var grads = chordsvg.append("defs")
-            .selectAll("linearGradient")
-            .data(chords)
-            .enter()
-            .append("linearGradient")
-            .attr("id", getGradID)
-            .attr("gradientUnits", "userSpaceOnUse")
-            .attr("x1", function(d, i){ return innerRadius * Math.cos((d.source.endAngle-d.source.startAngle) / 2 + d.source.startAngle - Math.PI/2); })
-            .attr("y1", function(d, i){ return innerRadius * Math.sin((d.source.endAngle-d.source.startAngle) / 2 + d.source.startAngle - Math.PI/2); })
-            .attr("x2", function(d,i){ return innerRadius * Math.cos((d.target.endAngle-d.target.startAngle) / 2 + d.target.startAngle - Math.PI/2); })
-            .attr("y2", function(d,i){ return innerRadius * Math.sin((d.target.endAngle-d.target.startAngle) / 2 + d.target.startAngle - Math.PI/2); })
+    // creating the fill gradient
+    function getGradID(d) {
+        return "linkGrad-" + d.source.index + "-" + d.target.index;
+    }
 
-            // set the starting color (at 0%)
 
-            grads.append("stop")
-              .attr("offset", "0%")
-              .attr("stop-color", function(d){ return color(d.source.index)})
+    var grads = chordsvg.append("defs")
+        .selectAll("linearGradient")
+        .data(chords)
+        .enter()
+        .append("linearGradient")
+        .attr("id", getGradID)
+        .attr("gradientUnits", "userSpaceOnUse")
+        .attr("x1", function (d, i) {
+            return innerRadius * Math.cos((d.source.endAngle - d.source.startAngle) / 2 + d.source.startAngle - Math.PI / 2);
+        })
+        .attr("y1", function (d, i) {
+            return innerRadius * Math.sin((d.source.endAngle - d.source.startAngle) / 2 + d.source.startAngle - Math.PI / 2);
+        })
+        .attr("x2", function (d, i) {
+            return innerRadius * Math.cos((d.target.endAngle - d.target.startAngle) / 2 + d.target.startAngle - Math.PI / 2);
+        })
+        .attr("y2", function (d, i) {
+            return innerRadius * Math.sin((d.target.endAngle - d.target.startAngle) / 2 + d.target.startAngle - Math.PI / 2);
+        })
 
-              //set the ending color (at 100%)
-            grads.append("stop")
-              .attr("offset", "100%")
-              .attr("stop-color", function(d){ return color(d.target.index)})
-    
-    
+    // set the starting color (at 0%)
+
+    grads.append("stop")
+        .attr("offset", "0%")
+        .attr("stop-color", function (d) {
+            return color(d.source.index)
+        })
+
+    //set the ending color (at 100%)
+    grads.append("stop")
+        .attr("offset", "100%")
+        .attr("stop-color", function (d) {
+            return color(d.target.index)
+        })
+
+
 
     console.log(chords);
 
@@ -160,11 +173,12 @@ function drawchords(data, input_code) {
         .selectAll("path")
         .data(chords)
         .join("path")
-//    .style("fill", function(d){ return "url(#" + getGradID(d) + ")"; })
+// If you unhighlight the below line, it will fill with a gradient
+//        .style("fill", function (d) {  return "url(#" + getGradID(d) + ")"; })
 
-//        .attr("stroke", d => d3.rgb(color(d.source.index)).darker())
-//        .attr("fill", d => color(d.source.index))
-            .attr("fill-opacity", 0.67)
+        //        .attr("stroke", d => d3.rgb(color(d.source.index)).darker())
+        //        .attr("fill", d => color(d.source.index))
+        .attr("fill-opacity", 0.67)
 
         .attr("d", ribbon)
         .attr("class", (d) => "path" + d.source.index + " " + "path" + d.target.index + " " + "chordribbons")
