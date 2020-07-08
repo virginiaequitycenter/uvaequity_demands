@@ -1,8 +1,7 @@
-
 function updatestreams(data, input) {
-    
+
     title_input = input;
-   
+
     // Start Ridiculous Data Manipulation
     var DocCodes = d3.map(data.filter(function (el) {
         return el.DocTitle === title_input && el.Count > 0;
@@ -27,13 +26,15 @@ function updatestreams(data, input) {
     }).keys();
 
     var Other = ["Other"];
-    
-   var  diff = CodeList.filter(function(x) { return Other.indexOf(x) < 0 });
-      console.log(CodeList);
-      console.log(diff);
+
+    var diff = CodeList.filter(function (x) {
+        return Other.indexOf(x) < 0
+    });
+    console.log(CodeList);
+    console.log(diff);
 
     CodeList = [...Other, ...diff];
-    
+
     //   console.log(CodeList);
 
     var counteddemands = d3.nest()
@@ -84,13 +85,13 @@ function updatestreams(data, input) {
     //   console.log(wide)
 
 
- var   stackedData = d3.stack()
+    var stackedData = d3.stack()
         .keys(CodeList)
         (wide);
 
-    console.log(stackedData); 
-    
-     var area = d3.area()
+    console.log(stackedData);
+
+    var area = d3.area()
         .x(function (d) {
             return xstreams(d.data.Year);
         })
@@ -100,8 +101,8 @@ function updatestreams(data, input) {
         .y1(function (d) {
             return ystreams(d[1]);
         }).curve(d3.curveMonotoneX);
-    
- streamareas = streamssvg.selectAll(".myArea");
+
+    streamareas = streamssvg.selectAll(".myArea");
     streamareas.remove()
     streamssvg.selectAll(".myArea").data(stackedData).enter()
         .append("path")
@@ -113,11 +114,12 @@ function updatestreams(data, input) {
         .style("opacity", function (d) {
             return opacitystreams(d.key);
         })
-        .attr("d", area)
-         ;
-    
-//streamareas.exit().transition().remove();
-     
+        .attr("d", area).on("mouseover", mouseoverstream)
+        .on("mousemove", mouseoverstream)
+        .on("mouseleave", mouseleavestream);
+
+    //streamareas.exit().transition().remove();
+
     // Add Year Annotation
     var DocYear = d3.map(data.filter(function (el) {
         return el.DocTitle === title_input && el.Count > 0;
@@ -128,70 +130,70 @@ function updatestreams(data, input) {
     console.log(DocYear);
 
     var displayyear = DocYear - (1 * -1);
-  
-    
-d3.selection.prototype.moveToFront = function() {  
-      return this.each(function(){
-        this.parentNode.appendChild(this);
-      });
-    };    
-    
-var annotationline =   streamssvg.selectAll(".annotationline")
 
-annotationline.moveToFront()   
-annotationline.transition()
-            .duration(1000)
+
+    d3.selection.prototype.moveToFront = function () {
+        return this.each(function () {
+            this.parentNode.appendChild(this);
+        });
+    };
+
+    var annotationline = streamssvg.selectAll(".annotationline")
+
+    annotationline.moveToFront()
+    annotationline.transition()
+        .duration(1000)
 
         .attr("x1", xstreams(DocYear))
         .attr("x2", xstreams(DocYear));
-    
- var display = title_input + " " + DocYear;
+
+    var display = title_input + " " + DocYear;
     // Add Title & Year Name Annotation
 
-var textannotationg =   streamssvg.selectAll(".textannotationg");
+    var textannotationg = streamssvg.selectAll(".textannotationg");
 
-textannotationg.moveToFront();
+    textannotationg.moveToFront();
 
     // Translate the g outside of the text
-textannotationg
-       .transition()
+    textannotationg
+        .transition()
         .duration(1000)
         .attr("transform",
             "translate(" + xstreams(displayyear) + "," + ystreams(140) + ")")
         .attr("class", "textannotationg")
 
-var textannotation =   streamssvg.selectAll(".textannotation");
+    var textannotation = streamssvg.selectAll(".textannotation");
 
-     // Calculate the text inside of it
-textannotation
+    // Calculate the text inside of it
+    textannotation
         //.attr("x", xstreams(displayyear))
         .text(display)
-         .attr("y", 0)
-         .attr("dy", .1)
-         .attr("x", 0)
-         .call(wrap, 75);
+        .attr("y", 0)
+        .attr("dy", .1)
+        .attr("x", 0)
+        .call(wrap, 75);
 };
 
 
 
 
 // This is the one that draws the control for the updater 
-    
+
 function DrawStreamsControl(Data) {
 
-   var  DocList = d3.map(Data, function (d) {
+    var DocList = d3.map(Data, function (d) {
         return d.DocTitle;
     }).keys();
 
     var dochange = d3.select("#DocChange")
         .append("select")
         .classed("form-control", true)
-     //   .classed("yearjumpselect", true)
-         .on("change", function () {
+        //   .classed("yearjumpselect", true)
+        .on("change", function () {
             updatestreams(demands, this.value);
             console.log(this.value);
-           });
-    
+        });
+
     dochange.selectAll("option")
         .data(DocList)
         .enter()
@@ -199,7 +201,7 @@ function DrawStreamsControl(Data) {
         .attr("value", (d) => d)
         .text((d) => d);
 
-       // .classed("tagoption", true);
+    // .classed("tagoption", true);
 
 
 }
