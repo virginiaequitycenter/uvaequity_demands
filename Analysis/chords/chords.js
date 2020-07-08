@@ -42,7 +42,12 @@ function drawchords(data, input_code) {
         var usearray = []
         for (j = 0; j < chorddata.length; j++) {
             var name = nameByIndex.get(j)
+            if (i == j) {
+             usearray[j] =  0;
+            }
+            else {
             usearray[j] = +chorddata[[i]][name]
+            }
         }
         array[i] = usearray
     };
@@ -66,7 +71,7 @@ function drawchords(data, input_code) {
     var chord = d3.chord()
         .padAngle(.05)
         .sortSubgroups(d3.descending)
-        .sortChords(d3.descending);
+     .sortChords(d3.descending);
 
     const chords = chord(array);
 

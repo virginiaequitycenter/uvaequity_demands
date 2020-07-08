@@ -4,7 +4,7 @@ function DrawChordsControl(Data) {
 
    var  CodeList = d3.map(Data, function (d) {
         return d.Code;
-    }).keys().reverse();
+    }).keys();
 
     var ThemeChange = d3.select("#ThemeChange")
         .append("select")
