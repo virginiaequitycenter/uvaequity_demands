@@ -47,19 +47,16 @@ background-image:
         linear-gradient(rgba(90, 111, 135, .94),
             rgba(90, 111, 135, .94)),
         url("../pics/paint.jpg");
-    
-    
-
 border-radius: 10px;
 border: dashed rgba(90, 111, 135, .94) .5px;
 margin-top
-
-    
-
 }
 
-
-
+.storyelement {
+  margin-bottom: 100vh;
+   z-index: 2000;
+    padding-bottom: 100px;
+}
 
 
 .spacer {
@@ -67,11 +64,6 @@ margin-top
     
 }
 
-.storyelement {
-  margin-bottom: 100vh;
-   z-index: 2000;
-    
-}
 
 
 
