@@ -59,7 +59,6 @@ function drawchords(data, input_code) {
 
     var innerRadius = 200;
 
-    var colors = ["#c33b5c", "#fc9c9c", "#953146", "#9b5464", "#cc9fa2", "#964d5a", "#bf7068"];
     
     
     var ribbon = d3.ribbon()
@@ -79,12 +78,13 @@ function drawchords(data, input_code) {
 
     const chords = chord(array);
     
-    
-//   var colors = ["#51addf", "#c582aa", "#005b9d", "#35a993", "#cc373c", "#f7d783", "#fc9c9c"]
+ //  var colors = ["#c33b5c", "#fc9c9c", "#953146", "#9b5464", "#cc9fa2", "#964d5a", "#bf7068"];
+ 
+   var colors = ["#51addf", "#c582aa", "#005b9d", "#35a993", "#cc373c", "#f7d783", "#fc9c9c"]
 
     
      var color = d3.scaleOrdinal()
-          .domain(d3.range(6))
+          .domain(d3.range(7))
           .range(colors)
 
 
@@ -160,7 +160,7 @@ function drawchords(data, input_code) {
         .selectAll("path")
         .data(chords)
         .join("path")
-                .style("fill", function(d){ return "url(#" + getGradID(d) + ")"; })
+//    .style("fill", function(d){ return "url(#" + getGradID(d) + ")"; })
 
 //        .attr("stroke", d => d3.rgb(color(d.source.index)).darker())
 //        .attr("fill", d => color(d.source.index))
