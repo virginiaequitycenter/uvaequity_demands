@@ -16,7 +16,7 @@ function drawdemos(data) {
         height = 460 - margin.top - margin.bottom,
         usewidth = width + margin.left + margin.right,
         useheight = height + margin.top + margin.bottom,
-        innerRadius = 80,
+        innerRadius = 70,
         outerRadius = Math.min(width, height) / 2; // the outerRadius goes from the middle of the SVG area to the border
 
     var container = d3.select("#demographicviz");
@@ -103,7 +103,7 @@ var totalcircle =  d3.select("#Legend").select("g");
       .append("g")
       .attr("class", "titleg")
         .attr("text-anchor", function(d) { return (x(d.Demographic) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "end" : "start"; })
-        .attr("transform", function(d) { return "rotate(" + ((x(d.Demographic) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")"+"translate(" + (y(-10)) + ",0)"; })
+        .attr("transform", function(d) { return "rotate(" + ((x(d.Demographic) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")"+"translate(" + (y(-5)) + ",0)"; })
       .append("text")
         .text(function(d){return(d.Demographic)})
         .attr("transform", function(d) { return (x(d.Demographic) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "rotate(180)" : "rotate(0)"; })
