@@ -110,6 +110,7 @@ font-size: 20px;
 
 #streamchart {
     opacity: 0;
+    visibility: visible;
 }
 
 .bodytext {
@@ -146,4 +147,12 @@ mark {
     border-radius: 7.5px;
     z-index: 1000;
 /*   transform: translate(-50%, 0%);*/
+}
+
+.invisible {
+    visibility:hidden;
+}
+.storyendelement {
+    margin-top: 10px;
+    z-index: 2000;
 }

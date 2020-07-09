@@ -19,7 +19,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Animate Stream Chart
 
-// This one Pins it
 gsap.to("#streamchart", {
     scrollTrigger: {
         trigger: "#streams",
@@ -172,9 +171,17 @@ gsap.to(myAreas, {
                 .on("mouseover", function () {})
                 .on("mousemove", function () {})
                 .on("mouseleave", function () {}) 
-
-            
-            
+ 
         },
+    },
+});
+
+gsap.to("#streamchart", {
+    scrollTrigger: {
+        trigger: ".demographicdescriptors",
+        start: "top center",
+        endTrigger: "#demographicbreakdown",
+        end: "bottom top",
+        toggleClass:  {targets: "#streamchart", className: "invisible"}
     },
 });
