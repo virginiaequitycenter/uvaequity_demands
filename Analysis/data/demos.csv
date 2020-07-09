@@ -1,4 +1,5 @@
 Demographic,Count,Percent,Code,Order
+Faculty/Staff,0,10,Legend,1
 Faculty/Staff,22,4,Total,1
 Faculty/Staff,1,10,Abolition/ Defunding,1
 Faculty/Staff,0,0,Adding Courses,1
@@ -17,6 +18,7 @@ Faculty/Staff,0,0,Reparations,1
 Faculty/Staff,2,22.2,Research or Coursework,1
 Faculty/Staff,3,2.8,School Climate,1
 Faculty/Staff,6,16.7,Spaces and Places,1
+University Office,0,10,Legend,2
 University Office,308,55.6,Total,2
 University Office,0,0,Abolition/ Defunding,2
 University Office,19,50,Adding Courses,2
@@ -35,6 +37,7 @@ University Office,1,50,Reparations,2
 University Office,3,33.3,Research or Coursework,2
 University Office,74,67.9,School Climate,2
 University Office,19,52.8,Spaces and Places,2
+Black Students,0,10,Legend,3
 Black Students,135,24.4,Total,3
 Black Students,2,20,Abolition/ Defunding,3
 Black Students,11,28.9,Adding Courses,3
@@ -53,6 +56,7 @@ Black Students,0,0,Reparations,3
 Black Students,2,22.2,Research or Coursework,3
 Black Students,14,12.8,School Climate,3
 Black Students,4,11.1,Spaces and Places,3
+APIDA Students,0,10,Legend,4
 APIDA Students,7,1.3,Total,4
 APIDA Students,0,0,Abolition/ Defunding,4
 APIDA Students,2,5.3,Adding Courses,4
@@ -71,6 +75,7 @@ APIDA Students,0,0,Reparations,4
 APIDA Students,0,0,Research or Coursework,4
 APIDA Students,0,0,School Climate,4
 APIDA Students,1,2.8,Spaces and Places,4
+Latinx Students,0,10,Legend,5
 Latinx Students,31,5.6,Total,5
 Latinx Students,0,0,Abolition/ Defunding,5
 Latinx Students,3,7.9,Adding Courses,5
@@ -89,6 +94,7 @@ Latinx Students,0,0,Reparations,5
 Latinx Students,0,0,Research or Coursework,5
 Latinx Students,7,6.4,School Climate,5
 Latinx Students,1,2.8,Spaces and Places,5
+Students,0,10,Legend,6
 Students,41,7.4,Total,6
 Students,7,70,Abolition/ Defunding,6
 Students,1,2.6,Adding Courses,6
@@ -107,6 +113,7 @@ Students,1,50,Reparations,6
 Students,2,22.2,Research or Coursework,6
 Students,9,8.3,School Climate,6
 Students,5,13.9,Spaces and Places,6
+Alumni,0,10,Legend,7
 Alumni,10,1.8,Total,7
 Alumni,0,0,Abolition/ Defunding,7
 Alumni,2,5.3,Adding Courses,7

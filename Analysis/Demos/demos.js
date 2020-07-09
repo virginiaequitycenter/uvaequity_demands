@@ -73,7 +73,7 @@ function scaleRadial() {
     
     var y = scaleRadial()
       .range([innerRadius, outerRadius])   // Domain will be define later.
-      .domain([0, d3.max(DemosNested[[0]].values.map(function(d){return +d.Percent;}))]); 
+      .domain([0, d3.max(DemosNested[[1]].values.map(function(d){return +d.Percent;}))]); 
     
   circlecontainers.append("g")
     .selectAll("path")
@@ -94,7 +94,7 @@ function scaleRadial() {
         .on("mouseleave", mouseleavedemos);
     
     
-var totalcircle =  d3.select("#Total").select("g");
+var totalcircle =  d3.select("#Legend").select("g");
     
     totalcircle
       .selectAll("titleg")
@@ -103,7 +103,7 @@ var totalcircle =  d3.select("#Total").select("g");
       .append("g")
       .attr("class", "titleg")
         .attr("text-anchor", function(d) { return (x(d.Demographic) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "end" : "start"; })
-        .attr("transform", function(d) { return "rotate(" + ((x(d.Demographic) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")"+"translate(" + (y(-12)) + ",0)"; })
+        .attr("transform", function(d) { return "rotate(" + ((x(d.Demographic) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")"+"translate(" + (y(-10)) + ",0)"; })
       .append("text")
         .text(function(d){return(d.Demographic)})
         .attr("transform", function(d) { return (x(d.Demographic) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "rotate(180)" : "rotate(0)"; })
