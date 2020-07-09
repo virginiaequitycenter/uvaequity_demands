@@ -7,7 +7,7 @@ function drawdemos(data) {
         .entries(data); // Nest to the top level of organization – the Code
 
     var margin = {
-            top: 130,
+            top: 120,
             right: 10,
             bottom: 10,
             left: 10
@@ -33,8 +33,8 @@ function drawdemos(data) {
          .attr("id", d => d.key)
     
     demosvgs.append("text").text(d => d.key).attr("y", 0).attr("dy", 1).attr("x", "50%").attr("class", "demostitles").call(wrap, 400);
-    
-    var  circlecontainers =  demosvgs.append("g")
+        
+  var  circlecontainers =  demosvgs.append("g")
              .attr("transform", "translate(" + (width / 2  )+ "," + (height / 2 + margin.top) + ")");
 
    var x = d3.scaleBand()
@@ -89,6 +89,24 @@ function scaleRadial() {
           .endAngle(function(d) { return x(d.Demographic) + x.bandwidth(); })
           .padAngle(0.01)
           .padRadius(innerRadius))
+    
+    
+var totalcircle =  d3.select("#Total").select("g");
+    
+    totalcircle
+      .selectAll("titleg")
+      .data(d = DemosNested[[0]].values)
+      .enter()
+      .append("g")
+      .attr("class", "titleg")
+        .attr("text-anchor", function(d) { return (x(d.Demographic) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "end" : "start"; })
+        .attr("transform", function(d) { return "rotate(" + ((x(d.Demographic) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")"+"translate(" + (y(-15)) + ",0)"; })
+      .append("text")
+        .text(function(d){return(d.Demographic)})
+        .attr("transform", function(d) { return (x(d.Demographic) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "rotate(180)" : "rotate(0)"; })
+        .style("font-size", "30px")
+        .attr("alignment-baseline", "middle")
+
     
     
 }
