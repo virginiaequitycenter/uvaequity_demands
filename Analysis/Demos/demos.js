@@ -7,7 +7,7 @@ function drawdemos(data) {
         .entries(data); // Nest to the top level of organization – the Code
 
     var margin = {
-            top: 120,
+            top: 100,
             right: 10,
             bottom: 10,
             left: 10
@@ -87,8 +87,11 @@ function scaleRadial() {
           .outerRadius(function(d) { return y(d.Percent); })
           .startAngle(function(d) { return x(d.Demographic); })
           .endAngle(function(d) { return x(d.Demographic) + x.bandwidth(); })
-          .padAngle(0.01)
+          .padAngle(.25)
           .padRadius(innerRadius))
+         .on("mouseover", mouseoverdemos)
+        .on("mousemove", mousemovedemos)
+        .on("mouseleave", mouseleavedemos);
     
     
 var totalcircle =  d3.select("#Total").select("g");
@@ -100,12 +103,13 @@ var totalcircle =  d3.select("#Total").select("g");
       .append("g")
       .attr("class", "titleg")
         .attr("text-anchor", function(d) { return (x(d.Demographic) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "end" : "start"; })
-        .attr("transform", function(d) { return "rotate(" + ((x(d.Demographic) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")"+"translate(" + (y(-15)) + ",0)"; })
+        .attr("transform", function(d) { return "rotate(" + ((x(d.Demographic) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")"+"translate(" + (y(-12)) + ",0)"; })
       .append("text")
         .text(function(d){return(d.Demographic)})
         .attr("transform", function(d) { return (x(d.Demographic) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "rotate(180)" : "rotate(0)"; })
-        .style("font-size", "30px")
+        .style("font-size", "35px")
         .attr("alignment-baseline", "middle")
+
 
     
     
