@@ -1,0 +1,55 @@
+            <!--
+                <section id="chordsgroup">
+         
+                    <div id="chordchart" class = "chartcontainer">
+                        <div class="row vispad">
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2"> </div>
+
+                            <div class="col-lg-8" id="chordscontainer">
+                                <svg id="chords" class="svg-content" viewBox="0 0 600 600" width=100% preserveAspectRatio="none"> </svg>
+                            </div>
+
+                            <div class="col-lg-2"> </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3"> </div>
+
+                            <div class="col-md-6">
+                                <div id="ThemeChange" class="form-group"></div>
+                            </div>
+
+                            <div class="col-md-3"> </div>   
+                        </div>
+                        <div class="row vispad"> </div>
+
+                    </div>
+
+                    <div id="chordstory">
+                        <div class="row storyelement" id="text1">
+                            <div class="col-md-3"> </div>
+
+                            <div class="col-md-6 storytext">
+                                This is a Chord Chart of
+                            </div>
+
+                            <div class="col-md-3"> </div>
+
+                        </div>
+
+
+                        <div class="row storyelement" id="text2">
+                            <div class="col-md-3"> </div>
+
+                            <div class="col-md-6 storytext">
+                                This is some annotations that we would like to convey through the scroll trigger
+                            </div>
+
+                            <div class="col-md-3"> </div>
+                        </div>
+                    </div>
+
+                </section>
+-->

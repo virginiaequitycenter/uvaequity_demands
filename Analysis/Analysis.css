@@ -2,11 +2,10 @@
 body {
     /*    background-color: #FEFFFF;*/
     background-image:
-        linear-gradient(rgba(255, 255, 255, .96),
-            rgba(255, 255, 255, .96)),
+        linear-gradient(rgba(255, 255, 255, .97),
+            rgba(255, 255, 255, .97)),
         url("pics/paint.jpg");
     position:relative;
-    
 }
 
 
@@ -28,11 +27,11 @@ body {
     position:relative;
 }
 .chartcontainer {
-    background-image:
+/*    background-image:*/
         linear-gradient(rgba(255, 255, 255, .96),
             rgba(255, 255, 255, .96)),
         url("pics/paint.jpg");
-    min-height: 100vh;
+/*    min-height: 100vh;*/
     position:relative;
     
 }
@@ -50,7 +49,10 @@ background-image:
         url("../pics/paint.jpg");
 border-radius: 10px;
 border: dashed rgba(90, 111, 135, .94) .5px;
-margin-top
+color: white;
+font-family: 'Yantramanav', sans-serif;
+font-size: 20px;
+    text-align: center;
 }
 
 .storyelement {
@@ -61,7 +63,7 @@ margin-top
 
 
 .spacer {
-    padding: 200px;
+    padding: 100px;
     
 }
 
@@ -101,3 +103,47 @@ margin-top
     
 }
 
+
+#streamstory {
+    margin-bottom: calc(50vh + 200px);
+}
+
+#streamchart {
+    opacity: 0;
+}
+
+.bodytext {
+    font-family: 'Yantramanav', sans-serif;
+   font-size: 20px;
+}
+
+#text1 {
+    opacity:0
+}
+
+mark {
+    border-radius: 3px;
+    padding: 1px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#streamsgroup {
+    margin-bottom: 50px;
+}
+
+#tooltipchord {
+    position: absolute;
+    visibility: hidden;
+/*    font-size: 16px;*/
+/*        background-color: #d6ecef;*/
+    background-color: #fcf5e3;
+    padding: 10px;
+    box-shadow: 1px 1px 1px #cccccc;
+    border-radius: 3px;
+/*    text-align: left;*/
+    opacity: 0.9;
+    border-radius: 7.5px;
+    z-index: 1000;
+/*   transform: translate(-50%, 0%);*/
+}

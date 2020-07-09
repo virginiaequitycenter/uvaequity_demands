@@ -9,7 +9,10 @@ var mouseover = function(d) {
       .style("border", "solid grey .0001px")
       .style("opacity", .5); 
     
-    d3.select("#demandtext").text(d.Text + " " );
+    d3.select("#demandtext").text(d.Text );
+  d3.select("#demandtags").text(d.CodeList );
+
+    
     
 }
 

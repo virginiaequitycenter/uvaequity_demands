@@ -7,13 +7,13 @@ function loadData() {
     d3.csv("data/demands.csv").then(function (d) {
         demands = d;
         streamgraph(demands);
-//        DrawStreamsControl(demands);
+       DrawStreamsControl(demands);
     });
 
-    d3.csv("data/chord.csv").then(function (d) {
-        chords = d;
-        drawchords(chords, "Total");
-    });
+//    d3.csv("data/chord.csv").then(function (d) {
+//        chords = d;
+//        drawchords(chords, "Total");
+//    });
     
     d3.csv("data/demos.csv").then(function(d){
         demos = d;

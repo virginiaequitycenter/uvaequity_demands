@@ -387,7 +387,7 @@ i.fas {
 .documenttitlebox {
     padding: 0;
     width: 90%;
-    height: 140px;
+    height: 150px;
     overflow-x: hidden
 }
 
@@ -501,4 +501,9 @@ i.fas {
 
 .form-group {
     margin-top: 0;
+}
+
+
+#demandtags {
+    font-weight: 600;
 }

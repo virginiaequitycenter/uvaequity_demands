@@ -1,35 +1,180 @@
 gsap.registerPlugin(ScrollTrigger);
 
 
-gsap.to("#chordchart", {
-    scrollTrigger:{
-       trigger: "#chords",
-        start: "center center",
-        endTrigger: "#chordstory",
-        end: "bottom top",
-//        markers: true,
-        pin: "#chordchart",
-        pinSpacing: false,
-        onEnterBack: () => d3.select("#ThemeChange").selectAll(".form-control").remove(),
-        onLeave: () => DrawChordsControl(chords)
-    },
-  });
+//gsap.to("#chordchart", {
+//    scrollTrigger:{
+//       trigger: "#chords",
+//        start: "center center",
+//        endTrigger: "#chordstory",
+//        end: "bottom top",
+////        markers: true,
+//        pin: "#chordchart",
+//        pinSpacing: false,
+//        onEnterBack: () => d3.select("#ThemeChange").selectAll(".form-control").remove(),
+//        onLeave: () => DrawChordsControl(chords)
+//    },
+//  });
 
 
 
-        
+// Animate Stream Chart
+
+// This one Pins it
 gsap.to("#streamchart", {
-    scrollTrigger:{
-       trigger: "#streams",
+    scrollTrigger: {
+        trigger: "#streams",
         start: "center center",
         endTrigger: "#streamstory",
         end: "bottom top",
-//        markers: true,
+        //        markers: true,
         pin: "#streamchart",
         pinSpacing: false,
-        onEnterBack: () => d3.select("#DocChange").selectAll(".form-control").remove(),
-        onLeave: () => DrawStreamsControl(demands)
+        onEnterBack: function () {
+    updatestreams(demands, "Muddy Floor Report")
+         thestreams
+                .on("mouseover", function () {})
+                .on("mousemove", function () {})
+                .on("mouseleave", function () {});
+        },
+        onLeave: function () {
+            updatestreams(demands, "Student Body Referendum")
+
+        }
     },
-  });
+
+});
+
+gsap.to("#streamchart", {
+    scrollTrigger: {
+        trigger: "#text1",
+        start: "center center",
+        //      endTrigger: "#streamstory",
+        end: "top top",
+        //        markers: true,
+        scrub: 1
+    },
+    opacity: 1
+});
+
+gsap.to("#text1", {
+    scrollTrigger: {
+        trigger: "#text1",
+        start: "center center",
+        //      endTrigger: "#streamstory",
+        end: +10,
+        //        markers: true,
+        scrub: 1
+    },
+    opacity: 1
+});
+
+var myAreas = d3.selectAll(".myArea");
+
+gsap.to(myAreas, {
+    scrollTrigger: {
+        trigger: "#text3",
+        start: "center center",
+        //      endTrigger: "#streamstory",
+        end: +10,
+        //        markers: true,
+        //        scrub: 1,
+
+        onEnterBack: function () {
+            thestreams.style("opacity", function (d) {
+                return opacitystreams(d.key);
+            })
+        },
+        onLeave: function () {
+            thestreams.style("opacity", .1)
+            d3.select("#MinorityStudentRecruitment").style("opacity", .9)
+        },
+    },
+});
 
 
+
+gsap.to(myAreas, {
+    scrollTrigger: {
+        trigger: "#text4",
+        start: "center center",
+        //      endTrigger: "#streamstory",
+        end:+10,
+        //        markers: true,
+        //        scrub: 1,
+
+        onEnterBack: function () {
+            thestreams.style("opacity", .1)
+            d3.select("#MinorityStudentRecruitment").style("opacity", .9)
+        },
+        onLeave: function () {
+            thestreams.style("opacity", .1)
+           d3.select("#AbolitionDefunding").style("opacity", .9)
+        },
+    },
+});
+
+
+gsap.to(myAreas, {
+    scrollTrigger: {
+        trigger: "#text5",
+        start: "center center",
+        //      endTrigger: "#streamstory",
+        end:+10,
+        //        markers: true,
+        //        scrub: 1,
+
+        onEnterBack: function () {
+        updatestreams(demands, "Student Body Referendum")
+
+        thestreams.style("opacity", .1);
+         d3.selectAll("#AbolitionDefunding").style("opacity", .9);  
+            
+        thestreams.on("mouseover", function () {})
+                .on("mousemove", function () {})
+                .on("mouseleave", function () {});
+       
+            
+        },
+        onLeave: function () {
+            updatestreams(demands, "An Audacious Faith")
+            thestreams
+                .on("mouseover", function () {})
+                .on("mousemove", function () {})
+                .on("mouseleave", function () {}) 
+            
+        },
+    },
+});
+
+
+gsap.to(myAreas, {
+    scrollTrigger: {
+        trigger: "#text6",
+        start: "center center",
+        //      endTrigger: "#streamstory",
+        end:+10,
+        //        markers: true,
+        //        scrub: 1,
+
+        onEnterBack: function () {
+            updatestreams(demands, "An Audacious Faith")
+            thestreams
+                .on("mouseover", function () {})
+                .on("mousemove", function () {})
+                .on("mouseleave", function () {}) 
+       
+            
+        },
+        onLeave: function () {
+            
+         updatestreams(demands, "Muddy Floor Report")
+         thestreams
+                .on("mouseover", function () {})
+                .on("mousemove", function () {})
+                .on("mouseleave", function () {}) 
+
+            
+            
+        },
+    },
+});

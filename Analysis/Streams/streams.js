@@ -7,7 +7,7 @@ var opacitystreams;
 var xstreams;
 var ystreams;
 var streamssvg;
-
+var thestreams;
 
 
 function streamgraph(data) {
@@ -171,13 +171,13 @@ function streamgraph(data) {
             return ystreams(d[1]);
         }).curve(d3.curveMonotoneX);
 
-    streamssvg
+ thestreams =  streamssvg
         .selectAll(".myArea")
         .data(stackedData)
         .enter()
         .append("path")
         .attr("class", "myArea")
-            .attr("id", (d) => d.key)
+        .attr("id", (d) => d.key.split(" ").join("").replace("/", ""))
 
         .style("fill", function (d) {
             return colorstreams(d.key);
@@ -186,10 +186,7 @@ function streamgraph(data) {
         .style("opacity", function (d) {
             return opacitystreams(d.key);
         })
-        .attr("d", area)
-        .on("mouseover", mouseoverstream)
-        .on("mousemove", mousemovestream)
-        .on("mouseleave", mouseleavestream);
+        .attr("d", area);
     
     // Add Year Annotation
     var DocYear = d3.map(data.filter(function (el) {

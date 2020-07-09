@@ -1,134 +1,106 @@
 Demographic,Count,Percent,Code,Order
 Faculty/Staff,0,10,Legend,1
-Faculty/Staff,22,4,Total,1
-Faculty/Staff,1,10,Abolition/ Defunding,1
-Faculty/Staff,0,0,Adding Courses,1
-Faculty/Staff,2,8,Community Labor or Partnership,1
-Faculty/Staff,2,4.2,Current Iniatives and Working Groups,1
+Faculty/Staff,25,4.1,Total,1
+Faculty/Staff,1,8.3,Abolition/ Defunding,1
+Faculty/Staff,2,7.4,Community Labor or Partnership,1
+Faculty/Staff,2,4,Current Iniatives and Working Groups,1
 Faculty/Staff,0,0,Data Collection and Transparency,1
 Faculty/Staff,0,0,Diversity in Student Leadership,1
 Faculty/Staff,0,0,Financial Aid and Financing,1
-Faculty/Staff,2,7.4,Inclusive Anti Racist Curriculum Programs,1
 Faculty/Staff,0,0,Living Wage,1
-Faculty/Staff,0,0,Minority Faculty / Staff Recruitment,1
-Faculty/Staff,0,0,Minority Faculty Retention,1
-Faculty/Staff,2,3.4,Minority Faculty Staff and Leadership Recruitment,1
-Faculty/Staff,2,3.6,Minority Student Recruitment,1
+Faculty/Staff,3,3.3,Minority Faculty / Staff Recruitment and Retention,1
+Faculty/Staff,3,4.5,Minority Student Recruitment,1
 Faculty/Staff,0,0,Reparations,1
-Faculty/Staff,2,22.2,Research or Coursework,1
-Faculty/Staff,3,2.8,School Climate,1
-Faculty/Staff,6,16.7,Spaces and Places,1
+Faculty/Staff,5,6,Research or Coursework,1
+Faculty/Staff,3,2.7,School Climate,1
+Faculty/Staff,6,11.8,Spaces and Places,1
 University Office,0,10,Legend,2
-University Office,308,55.6,Total,2
+University Office,330,53.7,Total,2
 University Office,0,0,Abolition/ Defunding,2
-University Office,19,50,Adding Courses,2
-University Office,9,36,Community Labor or Partnership,2
-University Office,19,39.6,Current Iniatives and Working Groups,2
-University Office,25,80.6,Data Collection and Transparency,2
-University Office,7,41.2,Diversity in Student Leadership,2
-University Office,30,63.8,Financial Aid and Financing,2
-University Office,10,37,Inclusive Anti Racist Curriculum Programs,2
+University Office,9,33.3,Community Labor or Partnership,2
+University Office,20,40,Current Iniatives and Working Groups,2
+University Office,32,84.2,Data Collection and Transparency,2
+University Office,10,41.7,Diversity in Student Leadership,2
+University Office,33,64.7,Financial Aid and Financing,2
 University Office,1,14.3,Living Wage,2
-University Office,6,100,Minority Faculty / Staff Recruitment,2
-University Office,23,82.1,Minority Faculty Retention,2
-University Office,34,58.6,Minority Faculty Staff and Leadership Recruitment,2
-University Office,28,50,Minority Student Recruitment,2
-University Office,1,50,Reparations,2
-University Office,3,33.3,Research or Coursework,2
-University Office,74,67.9,School Climate,2
-University Office,19,52.8,Spaces and Places,2
+University Office,59,64.8,Minority Faculty / Staff Recruitment and Retention,2
+University Office,35,52.2,Minority Student Recruitment,2
+University Office,1,33.3,Reparations,2
+University Office,34,40.5,Research or Coursework,2
+University Office,76,69.1,School Climate,2
+University Office,20,39.2,Spaces and Places,2
 Black Students,0,10,Legend,3
-Black Students,135,24.4,Total,3
-Black Students,2,20,Abolition/ Defunding,3
-Black Students,11,28.9,Adding Courses,3
-Black Students,14,56,Community Labor or Partnership,3
-Black Students,22,45.8,Current Iniatives and Working Groups,3
-Black Students,5,16.1,Data Collection and Transparency,3
-Black Students,3,17.6,Diversity in Student Leadership,3
-Black Students,9,19.1,Financial Aid and Financing,3
-Black Students,9,33.3,Inclusive Anti Racist Curriculum Programs,3
+Black Students,153,24.9,Total,3
+Black Students,4,33.3,Abolition/ Defunding,3
+Black Students,16,59.3,Community Labor or Partnership,3
+Black Students,23,46,Current Iniatives and Working Groups,3
+Black Students,5,13.2,Data Collection and Transparency,3
+Black Students,5,20.8,Diversity in Student Leadership,3
+Black Students,10,19.6,Financial Aid and Financing,3
 Black Students,3,42.9,Living Wage,3
-Black Students,0,0,Minority Faculty / Staff Recruitment,3
-Black Students,5,17.9,Minority Faculty Retention,3
-Black Students,14,24.1,Minority Faculty Staff and Leadership Recruitment,3
-Black Students,18,32.1,Minority Student Recruitment,3
+Black Students,17,18.7,Minority Faculty / Staff Recruitment and Retention,3
+Black Students,20,29.9,Minority Student Recruitment,3
 Black Students,0,0,Reparations,3
-Black Students,2,22.2,Research or Coursework,3
-Black Students,14,12.8,School Climate,3
-Black Students,4,11.1,Spaces and Places,3
+Black Students,28,33.3,Research or Coursework,3
+Black Students,15,13.6,School Climate,3
+Black Students,7,13.7,Spaces and Places,3
 APIDA Students,0,10,Legend,4
-APIDA Students,7,1.3,Total,4
+APIDA Students,9,1.5,Total,4
 APIDA Students,0,0,Abolition/ Defunding,4
-APIDA Students,2,5.3,Adding Courses,4
 APIDA Students,0,0,Community Labor or Partnership,4
 APIDA Students,0,0,Current Iniatives and Working Groups,4
 APIDA Students,0,0,Data Collection and Transparency,4
-APIDA Students,3,17.6,Diversity in Student Leadership,4
+APIDA Students,3,12.5,Diversity in Student Leadership,4
 APIDA Students,0,0,Financial Aid and Financing,4
-APIDA Students,0,0,Inclusive Anti Racist Curriculum Programs,4
 APIDA Students,0,0,Living Wage,4
-APIDA Students,0,0,Minority Faculty / Staff Recruitment,4
-APIDA Students,0,0,Minority Faculty Retention,4
-APIDA Students,1,1.7,Minority Faculty Staff and Leadership Recruitment,4
+APIDA Students,3,3.3,Minority Faculty / Staff Recruitment and Retention,4
 APIDA Students,0,0,Minority Student Recruitment,4
 APIDA Students,0,0,Reparations,4
-APIDA Students,0,0,Research or Coursework,4
+APIDA Students,2,2.4,Research or Coursework,4
 APIDA Students,0,0,School Climate,4
-APIDA Students,1,2.8,Spaces and Places,4
+APIDA Students,1,2,Spaces and Places,4
 Latinx Students,0,10,Legend,5
-Latinx Students,31,5.6,Total,5
+Latinx Students,31,5,Total,5
 Latinx Students,0,0,Abolition/ Defunding,5
-Latinx Students,3,7.9,Adding Courses,5
 Latinx Students,0,0,Community Labor or Partnership,5
-Latinx Students,3,6.2,Current Iniatives and Working Groups,5
-Latinx Students,1,3.2,Data Collection and Transparency,5
-Latinx Students,3,17.6,Diversity in Student Leadership,5
-Latinx Students,6,12.8,Financial Aid and Financing,5
-Latinx Students,1,3.7,Inclusive Anti Racist Curriculum Programs,5
+Latinx Students,3,6,Current Iniatives and Working Groups,5
+Latinx Students,1,2.6,Data Collection and Transparency,5
+Latinx Students,3,12.5,Diversity in Student Leadership,5
+Latinx Students,6,11.8,Financial Aid and Financing,5
 Latinx Students,0,0,Living Wage,5
-Latinx Students,0,0,Minority Faculty / Staff Recruitment,5
-Latinx Students,0,0,Minority Faculty Retention,5
-Latinx Students,3,5.2,Minority Faculty Staff and Leadership Recruitment,5
-Latinx Students,3,5.4,Minority Student Recruitment,5
+Latinx Students,3,3.3,Minority Faculty / Staff Recruitment and Retention,5
+Latinx Students,3,4.5,Minority Student Recruitment,5
 Latinx Students,0,0,Reparations,5
-Latinx Students,0,0,Research or Coursework,5
+Latinx Students,4,4.8,Research or Coursework,5
 Latinx Students,7,6.4,School Climate,5
-Latinx Students,1,2.8,Spaces and Places,5
+Latinx Students,1,2,Spaces and Places,5
 Students,0,10,Legend,6
-Students,41,7.4,Total,6
-Students,7,70,Abolition/ Defunding,6
-Students,1,2.6,Adding Courses,6
+Students,58,9.4,Total,6
+Students,7,58.3,Abolition/ Defunding,6
 Students,0,0,Community Labor or Partnership,6
 Students,0,0,Current Iniatives and Working Groups,6
 Students,0,0,Data Collection and Transparency,6
-Students,1,5.9,Diversity in Student Leadership,6
-Students,1,2.1,Financial Aid and Financing,6
-Students,4,14.8,Inclusive Anti Racist Curriculum Programs,6
+Students,3,12.5,Diversity in Student Leadership,6
+Students,1,2,Financial Aid and Financing,6
 Students,3,42.9,Living Wage,6
-Students,0,0,Minority Faculty / Staff Recruitment,6
-Students,0,0,Minority Faculty Retention,6
-Students,3,5.2,Minority Faculty Staff and Leadership Recruitment,6
-Students,4,7.1,Minority Student Recruitment,6
-Students,1,50,Reparations,6
-Students,2,22.2,Research or Coursework,6
-Students,9,8.3,School Climate,6
-Students,5,13.9,Spaces and Places,6
+Students,5,5.5,Minority Faculty / Staff Recruitment and Retention,6
+Students,5,7.5,Minority Student Recruitment,6
+Students,2,66.7,Reparations,6
+Students,8,9.5,Research or Coursework,6
+Students,8,7.3,School Climate,6
+Students,16,31.4,Spaces and Places,6
 Alumni,0,10,Legend,7
-Alumni,10,1.8,Total,7
+Alumni,9,1.5,Total,7
 Alumni,0,0,Abolition/ Defunding,7
-Alumni,2,5.3,Adding Courses,7
 Alumni,0,0,Community Labor or Partnership,7
-Alumni,2,4.2,Current Iniatives and Working Groups,7
+Alumni,2,4,Current Iniatives and Working Groups,7
 Alumni,0,0,Data Collection and Transparency,7
 Alumni,0,0,Diversity in Student Leadership,7
-Alumni,1,2.1,Financial Aid and Financing,7
-Alumni,1,3.7,Inclusive Anti Racist Curriculum Programs,7
+Alumni,1,2,Financial Aid and Financing,7
 Alumni,0,0,Living Wage,7
-Alumni,0,0,Minority Faculty / Staff Recruitment,7
-Alumni,0,0,Minority Faculty Retention,7
-Alumni,1,1.7,Minority Faculty Staff and Leadership Recruitment,7
-Alumni,1,1.8,Minority Student Recruitment,7
+Alumni,1,1.1,Minority Faculty / Staff Recruitment and Retention,7
+Alumni,1,1.5,Minority Student Recruitment,7
 Alumni,0,0,Reparations,7
-Alumni,0,0,Research or Coursework,7
-Alumni,2,1.8,School Climate,7
+Alumni,3,3.6,Research or Coursework,7
+Alumni,1,0.9,School Climate,7
 Alumni,0,0,Spaces and Places,7

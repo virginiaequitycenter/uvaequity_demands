@@ -104,10 +104,11 @@ function updatestreams(data, input) {
 
     streamareas = streamssvg.selectAll(".myArea");
     streamareas.remove()
-    streamssvg.selectAll(".myArea").data(stackedData).enter()
+    
+ thestreams =  streamssvg.selectAll(".myArea").data(stackedData).enter()
         .append("path")
         .attr("class", "myArea")
-        .attr("id", (d) => d.key)
+        .attr("id", (d) => d.key.split(" ").join("").replace("/", ""))
         .style("fill", function (d) {
             return colorstreams(d.key);
         })
@@ -116,7 +117,7 @@ function updatestreams(data, input) {
         })
         .attr("d", area)
         .on("mouseover", mouseoverstream)
-        .on("mousemove", mouseoverstream)
+        .on("mousemove", mousemovestream)
         .on("mouseleave", mouseleavestream);
 
     //streamareas.exit().transition().remove();
@@ -172,7 +173,7 @@ function updatestreams(data, input) {
         .attr("y", 0)
         .attr("dy", .1)
         .attr("x", 0)
-        .call(wrap, 75);
+        .call(wrap, 100);
 };
 
 
