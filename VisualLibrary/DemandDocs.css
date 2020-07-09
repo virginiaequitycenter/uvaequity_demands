@@ -15,8 +15,8 @@ html {
 body {
     /*    background-color: #FEFFFF;*/
     background-image:
-        linear-gradient(rgba(255, 255, 255, .90),
-            rgba(255, 255, 255, .95)),
+        linear-gradient(rgba(255, 255, 255, .9),
+            rgba(255, 255, 255, .9)),
         url("../pics/paint.jpg");
 
 
@@ -51,7 +51,7 @@ body {
         linear-gradient(rgba(90, 111, 135, .94),
             rgba(90, 111, 135, .94)),
         url("../pics/paint.jpg");
-
+margin:0;
    position:relative;
     padding: 0;
     padding-top: 20px;
@@ -280,6 +280,9 @@ a:hover {
 
 .sidebarspacer {
         min-width: 275px;
+    padding:0;
+    margin: 0;
+    height: 0;
 }
 
 /*Overall Project*/
