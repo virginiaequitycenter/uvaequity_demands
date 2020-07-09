@@ -1,5 +1,6 @@
 var demands;
 var chords;
+var demos;
 
 function loadData() {
 
@@ -13,6 +14,11 @@ function loadData() {
         chords = d;
         drawchords(chords, "Total");
     });
+    
+    d3.csv("data/demos.csv").then(function(d){
+        demos = d;
+        drawdemos(demos);
+    })
 
 
 }
