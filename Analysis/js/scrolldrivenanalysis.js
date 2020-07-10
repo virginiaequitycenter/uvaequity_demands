@@ -21,11 +21,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.to("#streamchart", {
     scrollTrigger: {
-        trigger: "#streams",
+        trigger: "#streamchart",
         start: "center center",
         endTrigger: "#streamstory",
         end: "bottom top",
-        //        markers: true,
+//                markers: true,
         pin: "#streamchart",
         pinSpacing: false,
         onEnterBack: function () {
@@ -176,12 +176,12 @@ gsap.to(myAreas, {
     },
 });
 
-gsap.to("#streamchart", {
-    scrollTrigger: {
-        trigger: ".demographicdescriptors",
-        start: "top center",
-        endTrigger: "#demographicbreakdown",
-        end: "bottom top",
-        toggleClass:  {targets: "#streamchart", className: "invisible"}
-    },
-});
+//gsap.to("#streamchart", {
+//    scrollTrigger: {
+//        trigger: ".demographicdescriptors",
+//        start: "top center",
+//        endTrigger: "#demographicbreakdown",
+//        end: "bottom top",
+//        toggleClass:  {targets: "#streamchart", className: "invisible"}
+//    },
+//});

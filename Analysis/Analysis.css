@@ -12,7 +12,7 @@ body {
  .demandanalysis {
     padding-top: 10px;
     text-align: center;
-    font-size:50px;
+    font-size:60px;
     color: rgba(90, 111, 135, 1);
 /*    opacity: .9;*/
     font-weight: 700;
@@ -155,4 +155,36 @@ mark {
 .storyendelement {
     margin-top: 10px;
     z-index: 2000;
+}
+
+h3 {
+    text-align: center;
+    font-size: 20px;
+    opacity: .9;
+    font-weight: 300;
+    /*    padding-left: 10px;*/
+    /*    padding-right: 10px;*/
+    /*       font-family: 'Amatic SC', cursive;*/
+    font-family: 'Yantramanav', sans-serif;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.writing {
+   text-align:center;
+    color: rgba(90, 111, 135, 1);
+    
+}
+
+.demandanalysis2 {
+        padding-top: 10px;
+    text-align: center;
+    font-size:45px;
+    color: black;
+/*    opacity: .9;*/
+    font-weight: 300;
+    font-family: 'Amatic SC', cursive; 
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    
 }
