@@ -85,6 +85,7 @@ function scaleRadial() {
     .enter()
     .append("path")
       .attr("fill", function(d){ return colorstreams(d.Code)})
+    .attr("id", function(d){ return d.Code})
        .attr("opacity", .8)
       .attr("d", d3.arc()     // imagine your doing a part of a donut plot
           .innerRadius(innerRadius)
