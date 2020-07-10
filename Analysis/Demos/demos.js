@@ -6,6 +6,9 @@ function drawdemos(data) {
         .key((d) => d.Code)
         .entries(data); // Nest to the top level of organization – the Code
 
+    
+    
+    
     var margin = {
             top: 100,
             right: 10,
@@ -31,6 +34,7 @@ function drawdemos(data) {
         .attr("viewBox", "0 0 " + usewidth + " " + useheight)
         .attr("class", "svg-content")
          .attr("id", d => d.key)
+    
     
     demosvgs.append("text").text(d => d.key).attr("y", 0).attr("dy", 1).attr("x", "50%").attr("class", "demostitles").call(wrap, 400);
         
