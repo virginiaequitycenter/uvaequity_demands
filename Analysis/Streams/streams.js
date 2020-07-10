@@ -221,6 +221,7 @@ function streamgraph(data) {
         .text(display)
         .attr("class", "textannotation")
         .call(wrap, 100);
+    
 }
 
 var AllCodes;

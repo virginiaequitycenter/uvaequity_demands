@@ -15,7 +15,7 @@ gsap.registerPlugin(ScrollTrigger);
 //    },
 //  });
 
-
+function initiatemovement() {
 
 // Animate Stream Chart
 
@@ -175,6 +175,8 @@ gsap.to(myAreas, {
         },
     },
 });
+    
+};
 
 //gsap.to("#streamchart", {
 //    scrollTrigger: {
