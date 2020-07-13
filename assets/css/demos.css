@@ -1,0 +1,24 @@
+#demographicviz {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.demoboxes {
+    /*    background-color: black;*/
+    /*   padding-bottom: 100px;*/
+    width: calc(25% - 10px);
+    margin: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    /*    border: solid black .5px;*/
+    font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+.demostitles {
+    font-size: 45px;
+    text-anchor: middle;
+    dominant-baseline: bottom;
+}
+
+

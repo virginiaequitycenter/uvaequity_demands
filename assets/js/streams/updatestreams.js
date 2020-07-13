@@ -168,7 +168,6 @@ function updatestreams(data, input) {
 
     // Calculate the text inside of it
     textannotation
-        //.attr("x", xstreams(displayyear))
         .text(display)
         .attr("y", 0)
         .attr("dy", .1)
