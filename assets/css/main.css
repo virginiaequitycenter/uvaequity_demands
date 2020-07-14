@@ -65,14 +65,15 @@ header a {
 
 }
 
-.navbar-hide {
-    pointer-events: none;
-    opacity: 0;
-}
-
-
 .navbar {
     color:  rgba(90, 111, 135, 1);
+}
+
+.bg-white {
+   background-image:         linear-gradient(rgba(255, 255, 255, .97),
+            rgba(255, 255, 255, .97)),
+                url("../pics/paint.jpg")
+    
 }
 
 /*Set everything in the main body*/
@@ -227,10 +228,6 @@ main {
     color:white;
 }
 
-
-
-
-
 .card-text {
           font-family: 'Yantramanav', sans-serif;
 
@@ -241,8 +238,6 @@ main {
         linear-gradient(rgba(90, 111, 135, .5),
           rgba(90, 111, 135, .5)),
                     url("../pics/paint.jpg");
-
-
 }
 
 
@@ -264,7 +259,6 @@ main {
     padding:25px;
 /*    height: 200px;*/
 }
-
 
 
 .nav-link {
