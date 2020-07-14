@@ -5,9 +5,6 @@ function drawdemos(data) {
     DemosNested = d3.nest()
         .key((d) => d.Code)
         .entries(data); // Nest to the top level of organization – the Code
-
-    
-    
     
     var margin = {
             top: 100,

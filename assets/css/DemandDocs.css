@@ -14,10 +14,7 @@ html {
 
 body {
     /*    background-color: #FEFFFF;*/
-    background-image:
-        linear-gradient(rgba(255, 255, 255, .9),
-            rgba(255, 255, 255, .9)),
-        url("../pics/paint.jpg");
+
 
 
 }</div> pi
@@ -289,6 +286,7 @@ a:hover {
     padding: 0;
     margin: 0;
     max-width: 100%;
+  overflow-x:scroll;
 }
 
 @media screen and (min-width: 768px) {
@@ -301,9 +299,7 @@ a:hover {
     }
 }
 
-/*Document Scroller*/
 
-.box {}
 
 
 .timelinecontainer {
@@ -317,7 +313,7 @@ a:hover {
     /*    overflow-x: scroll;*/
     /*    height: 50vh;*/
     overflow-y: hidden;
-    width: auto;
+/*    width: auto;*/
 }
 
 .years {
@@ -338,7 +334,6 @@ a:hover {
     padding: 0;
 }
 
-.yeartextbox {}
 
 .yeartextbox h3 {
     writing-mode: vertical-rl;
@@ -462,18 +457,12 @@ i.fas {
 
 }
 
-/* Overall Box Needs a Width */
-
-.box {
-    width:
-}
 
 /*Interaciton Functions*/
-
 #tooltip {
-    position: relative;
+    position: absolute;
     top: 2.5%;
-    left: 50%;
+    left: 60%;
     /*  max-height: 100px;*/
     overflow-y: scroll;
     visibility: hidden;
@@ -505,4 +494,11 @@ i.fas {
 
 #demandtags {
     font-weight: 600;
+}
+
+.box {
+        background-image:
+        linear-gradient(rgba(255, 255, 255, .9),
+            rgba(255, 255, 255, .9)),
+        url("../pics/paint.jpg");
 }

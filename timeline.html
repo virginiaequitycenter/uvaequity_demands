@@ -34,13 +34,13 @@
 
 <body>
     <div class="row container-fluid site d-flex">
-             <div class="sidebarspacer col-md-2"> </div>
+        <div class="sidebarspacer col-md-2"> </div>
 
-      <div class="sidebar col-md-2">
-          <div>
-              <h1>VISUAL LIBRARY</h1>
-          </div>
-          <hr>
+        <div class="sidebar col-md-2">
+            <div>
+                <h1>VISUAL LIBRARY</h1>
+            </div>
+            <hr>
 
             <div class="sidebartext">
                 <h4> Scroll Through the Timeline: </h4>
@@ -50,29 +50,29 @@
                 <p>We coded demands into <a href="#">key themes</a>. Hover to see the demand text. Click <i class="fas fa-external-link-alt" style="color:#fcf5e3"> </i> for the full document. </p>
             </div>
 
-<div class = "relativecontainer">
-            <div class="demandexamplecontainer d-flex">
+            <div class="relativecontainer">
+                <div class="demandexamplecontainer d-flex">
 
-                <div class="demandlinescontainerexample d-flex flex-column">
-                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
-                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
-                    <div class="demandlinesex" style="background-color: rgb(163, 0, 11); border: none; opacity: 1;"></div>
-                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
-                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
-                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
-                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
-                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
-                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
-                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"> </div>
+                    <div class="demandlinescontainerexample d-flex flex-column">
+                        <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
+                        <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
+                        <div class="demandlinesex" style="background-color: rgb(163, 0, 11); border: none; opacity: 1;"></div>
+                        <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
+                        <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
+                        <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
+                        <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
+                        <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
+                        <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
+                        <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"> </div>
+                    </div>
+                    <div class="inlinetext">
+                        <p class="annotation">}</p>
+                    </div>
+                    <p class="annotationtext"> Group of 10 Demands</p>
+
                 </div>
-                <div class="inlinetext">
-                    <p class="annotation">}</p>
-                </div>
-                <p class="annotationtext"> Group of 10 Demands</p>
 
             </div>
-    
-</div>
             <br>
             <div class="sidebartext">
                 <h4> Highlight a Demand Type:</h4>
@@ -86,25 +86,27 @@
             <div class="form-group yearjump">
             </div>
 
-                    <center> <span> <a href="../VisualLibrary">Timeline</a> | <a href="../Analysis">Analysis</a> | <a href="../">Home</a> </span></center>
+            <center> <span> <a href="../VisualLibrary">Timeline</a> | <a href="../Analysis">Analysis</a> | <a href="../">Home</a> </span></center>
 
         </div>
-        <div class="col-md-10 project">
-            <div class="box">
-                <div id="eventscontainer" class="eventscontainer">
-                    <div id="tooltip" class="col-md-6">
-                        <span id="demandtext"></span> <br>
-                       <span id="demandtags"></span>
 
-                    </div>
+
+        <div class="col-md-10 project">
+            <div class="box" id="timelinebox">
+                <div id="eventscontainer" class="eventscontainer">
+                                    <div id="timeline"> </div>
+
                 </div>
-                <div id="timeline"> </div>
                 <div id="timelinecontainer" class="timelinecontainer"> </div>
             </div>
         </div>
     </div>
 
+    <div id="tooltip" class="col-md-6">
+        <span id="demandtext"></span> <br>
+        <span id="demandtags"></span>
 
+    </div>
 
     <script type="text/javascript" src="assets/js/timeline/InteractionFunctions.js"></script>
     <script type="text/javascript" src="assets/js/timeline/ColorDemands.js"></script>
