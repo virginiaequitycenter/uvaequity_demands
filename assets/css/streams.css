@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+
+#text1 {
+    opacity:0
+}
+
+#streamchart {
+    opacity: 0;
+    visibility: visible;
+}
+
+#streamstory {
+    margin-bottom: calc(50vh + 200px);
+}
+
+.myArea{
+    stroke-width: .5px;
+    stroke: white;
+}
+
+.annotationline{
+    stroke-width: 2px;
+    stroke: black;
+    stroke-dasharray: 5 5;
+}
+
+
+.axistext{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 15px;
+}
+

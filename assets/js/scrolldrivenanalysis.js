@@ -1,20 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
 
-//gsap.to("#chordchart", {
-//    scrollTrigger:{
-//       trigger: "#chords",
-//        start: "center center",
-//        endTrigger: "#chordstory",
-//        end: "bottom top",
-////        markers: true,
-//        pin: "#chordchart",
-//        pinSpacing: false,
-//        onEnterBack: () => d3.select("#ThemeChange").selectAll(".form-control").remove(),
-//        onLeave: () => DrawChordsControl(chords)
-//    },
-//  });
-
 function initiatemovement() {
 
 // Animate Stream Chart
@@ -178,12 +164,4 @@ gsap.to(myAreas, {
     
 };
 
-//gsap.to("#streamchart", {
-//    scrollTrigger: {
-//        trigger: ".demographicdescriptors",
-//        start: "top center",
-//        endTrigger: "#demographicbreakdown",
-//        end: "bottom top",
-//        toggleClass:  {targets: "#streamchart", className: "invisible"}
-//    },
-//});
+

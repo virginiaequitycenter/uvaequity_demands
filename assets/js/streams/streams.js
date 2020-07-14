@@ -219,7 +219,8 @@ function streamgraph(data) {
         .attr("dy", .1)
          .attr("x", 0)
         .text(display)
-        .attr("class", "textannotation")
+        .classed("textannotation", true)
+        .classed("visualizationtext", true)
         .call(wrap, 100);
     
 }
