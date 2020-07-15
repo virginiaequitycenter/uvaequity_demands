@@ -108,6 +108,8 @@ function DrawDemandDocs(demand_text) {
     var projectwidth = projectwidths.reduce(function (a, b) {
         return a + b;
     }, 0);
+    
+    var projectheight = document.getElementById("timelinebox").offsetHeight;
 
     var timelinebox = document.getElementById('timelinebox');
     timelinebox.setAttribute("style", "width:" + projectwidth + "px")
@@ -120,7 +122,9 @@ function DrawDemandDocs(demand_text) {
    var timelinex = d3.scaleLinear()
         .domain(yearnums)
         .range(yearstarts);
-    
  
+  
     
+  d3.select("#eventscontainer").append("svg").attr("viewBox", "0 0 " + projectwidth + " " + 0).attr("class", "svg-content")
+
 }

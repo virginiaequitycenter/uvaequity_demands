@@ -300,8 +300,6 @@ a:hover {
 }
 
 
-
-
 .timelinecontainer {
     /*    display: flex;*/
     display: inline-block;
@@ -322,7 +320,7 @@ a:hover {
     flex-direction: row;
     margin: 0 0rem;
     background-color: none;
-    height: 73vh;
+    height: 60vh;
 
 }
 
@@ -453,7 +451,7 @@ i.fas {
 
 /* Events Container */
 .eventscontainer {
-    height: calc(27vh - 5px);
+    height: calc(40vh);
 
 }
 
