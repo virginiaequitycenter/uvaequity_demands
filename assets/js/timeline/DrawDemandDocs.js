@@ -1,6 +1,6 @@
 var DemandTextNested;
 
-function DrawDemandDocs(demand_text) {
+function DrawDemandDocs(demand_text, events) {
 
 
     DemandTextNested = d3.nest()
@@ -11,8 +11,7 @@ function DrawDemandDocs(demand_text) {
 
     var YearList = d3.map(DemandTextNested, (d) => d.key).keys()
     //            console.log(YearList);
-     
-    
+       
     var demandstimeline = d3.selectAll("#timelinecontainer").classed("d-flex", true)
         .classed("flex-row", true); // Select the container for the demands timeline
 
@@ -21,6 +20,7 @@ function DrawDemandDocs(demand_text) {
         .data(DemandTextNested)
         .enter()
         .append("div")
+        .attr("class", d =>  d.values[[0]].values[[0]].values[[0]].docid)
         .classed("years", true)
         .classed("d-flex", true)
         .classed("flex-row", true)
@@ -50,7 +50,9 @@ function DrawDemandDocs(demand_text) {
             } else {
                 return false;
             }
-        });
+        })
+    
+    .attr("id", (d) => "did" + d.values[[0]].values[[0]].docid);
 
     var documentlinks = demandboxes.append("i").classed("fas", true).classed("fa-external-link-alt", true).on("click", function (d) {
         window.open("assets/documents/" + d.values[[0]].values[[0]].filename_updated);
@@ -112,19 +114,46 @@ function DrawDemandDocs(demand_text) {
     var projectheight = document.getElementById("timelinebox").offsetHeight;
 
     var timelinebox = document.getElementById('timelinebox');
-    timelinebox.setAttribute("style", "width:" + projectwidth + "px")
+    timelinebox.setAttribute("style", "width:" + projectwidth + "px");
 
+    var timeline = document.getElementById('timeline');
+    timeline.setAttribute("style", "width:" + projectwidth + "px");
+    
     var yearfinal = d3.max(YearList) - 1 * -1;
     
     yearnums[YearList.length] = yearfinal;
     yearstarts[YearList.length] = projectwidth;
 
-   var timelinex = d3.scaleLinear()
+    timelinex = d3.scaleLinear()
         .domain(yearnums)
         .range(yearstarts);
- 
-  
     
-  d3.select("#eventscontainer").append("svg").attr("viewBox", "0 0 " + projectwidth + " " + 0).attr("class", "svg-content")
-
+  var eventscontainer = d3.select("#eventscontainer");
+    
+  eventscontainer.selectAll(".timepoints").data(events).enter().append("div")
+      .classed("timepoints", true)
+      .classed("rounded-circle", true)
+    .style("left", d => timelinex(d.YearPercent) + "px")
+    .style("bottom", "0px")
+    .style("transform", "translate(-50%, 50%)");
+    
+   eventscontainer.selectAll(".eventtext").data(events).enter().append("div")
+      .classed("eventtext", true)
+    .style("left", d => timelinex(d.YearPercent) + "px")
+//    .style("bottom", "2px")
+    .style("bottom", d => (d.vert * 100 + 10) + "px" )
+    .text(d => d.Year + " " +  d.Text);
+    
+    
+  eventscontainer.selectAll(".timepointer").data(events).enter().append("div")
+      .classed("timepointer", true)
+//      .classed("rounded-circle", true)
+    .style("left", d => timelinex(d.YearPercent) + "px")
+    .style("bottom", "2px")
+    .style("height", d => (d.vert*100 + 10) + "px" )
+    .style("transform", "translate(-50%, 0)");
+    
+    
+    
 }
+var timelinex;

@@ -13,27 +13,8 @@ function ColorDemands(tags, input_code) {
         return d.demand_id;
     }).keys().join(', #ID');
 
-
-    //   d3.selectAll("#ID" + queryids).style("background-image", "url(pics/redsquareuse.jpg)")
     d3.selectAll("#ID" + queryids).transition().style("background-color", "rgba(163, 0, 11, 1)").duration(1000)
 
-    // gsap.registerPlugin(ScrollTrigger);
-
-    //let sections = gsap.utils.toArray(".demandboxes");
-    //
-    //gsap.to(".box", {
-    //  xPercent: 100 * (sections.length - 1),
-    //  ease: "none",
-    //  scrollTrigger: {
-    //    trigger: ".box",
-    //    markers: true,
-    //    pin: true,
-    //    scrub: 1,
-    //    snap: 1 / (sections.length - 1),
-    //    // base vertical scrolling on how wide the container is so it feels more natural.
-    //    end: () => "+=" + document.querySelector(".box").offsetWidth;
-    //  }
-    //});
 
 }
 
@@ -87,9 +68,12 @@ function DrawYearJump(Data) {
     $('.yearjumpselect').change(function () {
     
         var data =  $(this).val();
-        var position =   $('#' + data).position().left
+        var position =   $('#' + data).position().left;
+        var classList = document.getElementById(data).className.split(/\s+/);
+        docid =  Number(classList[[0]]);
+        console.log(position, Number(classList[[0]]));
         
-       $(".timelinecontainer").animate({scrollLeft: "+=" + position  }, 1000)
+    $(".project").animate({scrollLeft: "+=" + position  }, 1000)
       //  elmnt.scrollLeft += position
         
     });
