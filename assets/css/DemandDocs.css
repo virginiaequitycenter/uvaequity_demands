@@ -11,7 +11,7 @@
 
 /*Nav Bar Options*/
 nav {
-z-index: 10;
+    z-index: 10;
 
 }
 
@@ -24,19 +24,18 @@ z-index: 10;
 
 .form-group {
     margin-top: 0;
-    border: hidden;
 }
 
 .tagfilter {
-/*    position: absolute;*/
-/*    margin-top: 20px;*/
-/*    margin-left: 10px;*/
-/*    margin-right: 10px;*/
-    padding:0px;
+    /*    position: absolute;*/
+    /*    margin-top: 20px;*/
+    /*    margin-left: 10px;*/
+    /*    margin-right: 10px;*/
+    padding: 0px;
     margin: 0px;
     width: 15%;
     height: 40px;
-/*    transform: translate(0, 50%);*/
+    /*    transform: translate(0, 50%);*/
 }
 
 .tagoption {
@@ -45,8 +44,8 @@ z-index: 10;
     font-size: 10px;
 }
 
-.yearjump{
-    padding:0px;
+.yearjump {
+    padding: 0px;
     margin: 0px;
     width: 80px;
     height: 40px;
@@ -180,7 +179,7 @@ z-index: 10;
     padding: 0;
     margin: 0;
     max-width: 100%;
-  overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 .box {
@@ -267,7 +266,7 @@ i.fas {
     font-family: 'Yantramanav', sans-serif;
 }
 
- .documenttitlebox hr {
+.documenttitlebox hr {
     margin-top: .5rem;
     margin-bottom: .5rem;
 }
@@ -292,7 +291,7 @@ i.fas {
     display: flex;
     flex-direction: column;
     text-align: center;
-    border: .01px solid rgba(0, 0, 0, .3) ;
+    border: .01px solid rgba(0, 0, 0, .3);
     border-radius: 4px;
     padding: 5px;
     padding-bottom: 3.5px;
@@ -315,7 +314,7 @@ i.fas {
 .eventscontainer {
     height: calc(45vh - 44px);
     position: relative;
-        z-index: 100;
+    z-index: 100;
 
 
 }
@@ -337,18 +336,18 @@ i.fas {
     position: absolute;
     padding: 6px;
     background-color: black;
-    border: solid 2px rgba(255,255,255, .97);
-/*    left: 20px;*/
-    
-    
+    border: solid 2px rgba(255, 255, 255, .97);
+    /*    left: 20px;*/
+
+
 }
 
 .timepointer {
-   position: absolute;
-   background-color: black;
-   padding: 1px;
-/*   height:  100px;*/
-    
+    position: absolute;
+    background-color: black;
+    padding: 1px;
+    /*   height:  100px;*/
+
 }
 
 .eventtext {
@@ -358,36 +357,36 @@ i.fas {
     font-family: 'Yantramanav', sans-serif;
     font-size: 5px;
     max-width: 100px;
-    opacity: .4;
-   transform: translate(-50%, -5px);
-          transition: 0.1s;
+    opacity: .5;
+    transform: translate(-50%, -5px);
+    transition: 0.1s;
 }
 
 .eventtext:hover {
-        font-size: 20px;
-       max-width: 400px;
+    /*    position: fixed;*/
+    font-size: 20px;
+    max-width: 400px;
     z-index: 5000;
-    opacity: 1;
-       transform: translate(-50%, -5px);
-
+    opacity: 0;
+    transform: translate(-50%, -5px);
 }
 
-@media screen and (max-width: 576px){
-    
+@media screen and (max-width: 576px) {
+
     .eventtext:hover {
-        left: 50%;
+        left: 50vw;
         font-size: 20px;
-         max-width: 90vw;
-         z-index: 5000;
-          opacity: 1;
-       transform: translate(-50%, -5px);
+        max-width: 90vw;
+        z-index: 5000;
+        opacity: 0;
+        transform: translate(-50%, -5px);
         overflow: scroll;
-}
-    
+    }
+
 }
 
 
-/*Interaciton Functions*/
+/*Interaction Functions*/
 #tooltip {
     position: absolute;
     top: 10%;
@@ -401,7 +400,7 @@ i.fas {
     padding: 10px;
     box-shadow: 1px 1px 1px #cccccc;
     border-radius: 3px;
-    text-align: left;
+    text-align: justify;
     opacity: 0.9;
     border-radius: 7.5px;
     z-index: 1000;
@@ -409,6 +408,7 @@ i.fas {
 }
 
 #demandtext {
+
     font-size: 17px;
     font-weight: 300;
     font-family: 'Yantramanav', sans-serif;
@@ -420,17 +420,43 @@ i.fas {
 }
 
 
+#eventtooltip {
+    position: absolute;
+    top: 10px;
+        left: 50vw;
+    width: 500px;
+    /*  max-height: 100px;*/
+    overflow-y: scroll;
+    visibility: hidden;
+    font-size: 20px;
+/*
+    background-image:
+        linear-gradient(rgba(255, 255, 255, .4),
+            rgba(255, 255, 255, .8));
+*/
+        /*    background-color: #fcf5e3;*/
+        padding: 10px;
+    /*    box-shadow: 1px 1px 1px #cccccc;*/
+    /*    border-radius: 3px;*/
+    text-align: justify;
+    opacity: 0.9;
+        border-radius: 7.5px;
+    z-index: 1000;
+/*  transform: translate(-50%, 0%);*/
+}
 
+ .eventmark {
+      background-color:rgba(255, 0, 255, .4),
 
-select {
-    border-bottom  0px;
 }
 
 
+
+/*Forward/ Backward buttons */
 #button-group {
     position: fixed;
     right: calc(0vw + 10px);
-    top:50px;
+    top: 50px;
     z-index: 100000;
 }
 

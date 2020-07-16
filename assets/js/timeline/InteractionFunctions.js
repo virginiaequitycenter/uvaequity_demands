@@ -131,34 +131,45 @@ $('#scroll-back').click(function () {
 });
 
 // Trying to make the enlarge unenlarge text on the timeline more maneagable
-var eventtexts = d3.selectAll(".eventtext");
-eventtexts.on("mouseover", position_tooltip) // On hover, launch the function below
 
- var position_tooltip = function (){
-// Get .ktooltiptext sibling
-//  var tooltip = this;
-  
-  // Get calculated ktooltip coordinates and size
-  var eventtext_rect = $(this).getBoundingClientRect();
-     
- console.log(eventtext_rect);
+var mouseovertip = function (d) {
+    var windowwidth = d3.select("body").node().getBoundingClientRect()
+    var thiswidth = d3.select(this).node().getBoundingClientRect()
+    var windowleft = $("#project").scrollLeft();
+
+    var left = thiswidth.x - 250;
+    var width = thiswidth.width;
+    var right = thiswidth.x - 250*-1;
+
+    var useleft;
+    var usetransform;
+    if (left < 0) {useleft =  windowleft - 5*-1
+                  usetransform = 0
+                  }
+    else if (right > windowwidth.width) {
+      useleft = windowleft + windowwidth.width - 505;
+      usetransform = 0
+    } else {
+      useleft = left  - windowleft*-1;
+     usetransform = 0;
+    };
     
-  var tipX = eventtext_rect.width + 5; // 5px on the right of the ktooltip
-  var tipY = -40;                     // 40px on the top of the ktooltip
-  console.log(tipX)
-  // Position tooltip
-  tooltip.style.top = tipY + 'px';
-  tooltip.style.left = tipX + 'px';
+    d3.select("#eventtooltip")
+        .style("visibility", "visible");
+      d3.select("#eventtooltip")
+        .style("opacity", 1)
 
-  // Get calculated tooltip coordinates and size
-  var eventtext_rect = tooltip.getBoundingClientRect();
-  // Corrections if out of window
-  if ((eventtext_rect.x + eventtext_rect.width) > window.innerWidth) // Out on the right
-    tipX = -tooltip_rect.width - 5;  // Simulate a "right: tipX" position
-  if (eventtext_rect.y < 0)            // Out on the top
-    tipY = tipY - tooltip_rect.y;    // Align on the top
+    d3.select("#eventtexttip").text(d.Text);
+    
+    d3.select("#eventtooltip")
+     .style("left", useleft + "px")
+     .style("transform", "translate(" + usetransform + "%, 0)")
+        console.log(useleft)
+}
 
-  // Apply corrected position
-  tooltip.style.top = tipY + 'px';
-  tooltip.style.left = tipX + 'px';
+var mouseleavetip = function (d) {
+    d3.select("#eventtooltip")
+        .style("visibility", "hidden");
+    d3.select("#eventtooltip")
+        .style("opacity", 0)
 }

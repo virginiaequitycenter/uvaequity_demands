@@ -142,7 +142,9 @@ function DrawDemandDocs(demand_text, events) {
     .style("left", d => timelinex(d.YearPercent) + "px")
 //    .style("bottom", "2px")
     .style("bottom", d => (d.vert * 100 + 10) + "px" )
-    .text(d => d.Year + " " +  d.Text);
+    .text(d => d.Year + " " +  d.Text)
+    .on("mouseover", mouseovertip)
+    .on("mouseleave", mouseleavetip);
     
     
   eventscontainer.selectAll(".timepointer").data(events).enter().append("div")
