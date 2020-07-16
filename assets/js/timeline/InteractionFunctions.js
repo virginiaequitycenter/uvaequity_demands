@@ -32,6 +32,7 @@ var mouseleave = function (d) {
         .style("opacity", 1);
 }
 
+
 // This Draws the Color Filter Selector
 function DrawTagFilter(tags) {
 
@@ -105,6 +106,7 @@ $('#scroll-forward').click(function () {
     
     docid = docid + 1
     if (docid > maxscroll) {docid = maxscroll};
+    console.log(docid);
 
     var position = $('#did' + docid).position().left - 10
     console.log(position);
@@ -119,7 +121,7 @@ $('#scroll-forward').click(function () {
 $('#scroll-back').click(function () {
     docid = docid - 1
     if (docid < 1) {docid = 1}; 
-    
+    console.log(docid);
     var position = $('#did' + docid).position().left - 60
     console.log(position);
 
@@ -138,7 +140,7 @@ var mouseovertip = function (d) {
     var windowleft = $("#project").scrollLeft();
 
     var left = thiswidth.x - 250;
-    var width = thiswidth.width;
+   // var width = thiswidth.width;
     var right = thiswidth.x - 250*-1;
 
     var useleft;
