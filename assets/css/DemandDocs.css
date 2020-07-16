@@ -3,149 +3,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&family=Teko:wght@300;400;500;600;700&family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
 
 
-::-webkit-scrollbar {
-    display: none;
-}
-
-html {
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-}
-
-
-body {
-    /*    background-color: #FEFFFF;*/
-    background-image:
-        linear-gradient(rgba(255, 255, 255, .9),
-            rgba(255, 255, 255, .9)),
-        url("../pics/paint.jpg");
-
-
-}</div> pi
-
-.site {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-}
-
 .container-fluid {
     padding: 0;
     margin: 0;
     height: 100vh;
-    
+}
+
+/*Nav Bar Options*/
+nav {
+    z-index: 10;
 
 }
 
-
-
-/*Sidebar*/
-.sidebar {
-    /*
-    background-image:
-        linear-gradient(rgba(95, 117, 142, .94),
-            rgba(95, 117, 142, .94)),
-        url("../../pics/paint.jpg");
-*/
-    background-image:
-        linear-gradient(rgba(90, 111, 135, .94),
-            rgba(90, 111, 135, .94)),
-        url("../pics/paint.jpg");
-margin:0;
-   position:relative;
-    padding: 0;
-    padding-top: 20px;
-/*    height: 100vh;*/
-    overflow-y: scroll;
-    min-width: 275px;
-    overflow-x: hidden;
-}
-
-.sidebar h1 {
-    text-align: center;
-    font-size: 40px;
-    color: white;
-    opacity: .9;
-    font-weight: 700;
-    font-family: 'Amatic SC', cursive;
-    /*    padding-left: 10px;*/
-    margin-bottom: 0px;
-
-}
-
-.sidebar hr {
-    margin-top: .25rem;
-    margin-bottom: .5rem;
-    border-color: white;
-    margin-left: 20px;
-    margin-right: 20px;
-    opacity: .9;
-
-}
-
-.sidebar h3 {
-    text-align: center;
-    font-size: 16px;
-    color: white;
-    opacity: .9;
-    font-weight: 300;
-    /*    padding-left: 10px;*/
-    /*    padding-right: 10px;*/
-    /*       font-family: 'Amatic SC', cursive;*/
-    font-family: 'Yantramanav', sans-serif;
-    margin-top: 0;
-    margin-bottom: 25px;
-}
-
-.sidebartext {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.sidebartext h4 {
-    text-align: left;
-    font-size: 25px;
-    color: white;
-    opacity: .85;
-    font-weight: 300;
-    font-family: 'Amatic SC', cursive;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 5px;
-
-}
-
-.tagfilter {
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 90%;
-    height: auto;
-
-}
-
-.sidebar .form-control {
+.form-control {
     background-color: rgba(255, 255, 255, 0);
     color: rgba(255, 255, 255, .97);
     font-family: 'Yantramanav', sans-serif;
+    border-color: rgba(255, 255, 255, 0)
+}
+
+.form-group {
+    margin-top: 0;
+}
+
+.tagfilter {
+    /*    position: absolute;*/
+    /*    margin-top: 20px;*/
+    /*    margin-left: 10px;*/
+    /*    margin-right: 10px;*/
+    padding: 0px;
+    margin: 0px;
+    width: 15%;
+    height: 40px;
+    /*    transform: translate(0, 50%);*/
 }
 
 .tagoption {
     background-color: rgba(255, 255, 255, 0);
     font-family: 'Yantramanav', sans-serif;
+    font-size: 10px;
 }
 
-.yearjumpselect {
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 90%;
-    height: auto;
-
+.yearjump {
+    padding: 0px;
+    margin: 0px;
+    width: 80px;
+    height: 40px;
 }
 
-
-
-.tagfilter {
-    margin-top: 20px;
-}
 
 .sidebartext strong {
     font-weight: 700;
@@ -171,14 +76,6 @@ margin:0;
 .sidebardef sup {
 
     font-size: 10px;
-}
-
-a {
-    color: #fcf5e3;
-}
-
-a:hover {
-    color: white;
 }
 
 .demandlinescontainerexample {
@@ -277,68 +174,43 @@ a:hover {
 
 }
 
-.sidebarspacer {
-        min-width: 275px;
-    padding:0;
-    margin: 0;
-    height: 0;
-}
-
 /*Overall Project*/
 .project {
     padding: 0;
     margin: 0;
     max-width: 100%;
+    overflow-x: hidden;
 }
 
-@media screen and (min-width: 768px) {
-    .project {
-        max-width: calc(100% - 275px); 
-    }
-    .sidebar {
-      position: fixed;
-        height: 100vh;
-    }
+.box {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, .97),
+            rgba(255, 255, 255, .97)),
+        url("../pics/paint.jpg");
 }
-
-/*Document Scroller*/
-
-.box {}
 
 
 .timelinecontainer {
-    /*    display: flex;*/
-    display: inline-block;
-
-    /*    flex-direction: row;*/
     margin: 0 0rem;
     z-index: 0;
     background-color: none;
-    /*    overflow-x: scroll;*/
     /*    height: 50vh;*/
     overflow-y: hidden;
-    width: auto;
 }
 
 .years {
     padding-top: 20px;
-    display: flex;
-    flex-direction: row;
     margin: 0 0rem;
     background-color: none;
-    height: 73vh;
-
+    height: 55vh;
 }
 
 .yeartextcolumn {
     border-right: 2px solid;
     border-color: black;
-    /*    margin-right: 10px;*/
     width: 60px;
     padding: 0;
 }
-
-.yeartextbox {}
 
 .yeartextbox h3 {
     writing-mode: vertical-rl;
@@ -349,8 +221,6 @@ a:hover {
     font-weight: 700;
     font-size: 48px;
     font-family: 'Amatic SC', cursive;
-    /*    font-family: 'Yantramanav', sans-serif;*/
-
 }
 
 .demandboxcontainer {
@@ -360,11 +230,11 @@ a:hover {
 
 .demandbox {
     width: 325px;
-    padding-left: 10px;
-    /*    border-left: .5px dashed;*/
+    padding-left: 15px;
     overflow-x: hidden;
-    /*    overflow-y: scroll;*/
     position: relative;
+    /*    height: 60vh;*/
+
 }
 
 .secondbox {
@@ -379,7 +249,6 @@ a:hover {
 }
 
 i.fas {
-
     color: rgba(90, 111, 135, .94);
 }
 
@@ -397,8 +266,7 @@ i.fas {
     font-family: 'Yantramanav', sans-serif;
 }
 
-
- hr {
+.documenttitlebox hr {
     margin-top: .5rem;
     margin-bottom: .5rem;
 }
@@ -420,12 +288,10 @@ i.fas {
 
 .demandlinescontainer {
     width: 22%;
-    /*        background-color:antiquewhite;*/
     display: flex;
     flex-direction: column;
     text-align: center;
-    border: .01px solid;
-    /*    border-color: black;*/
+    border: .01px solid rgba(0, 0, 0, .3);
     border-radius: 4px;
     padding: 5px;
     padding-bottom: 3.5px;
@@ -437,8 +303,6 @@ i.fas {
     left: 2.5%;
     width: 95%;
     height: 4px;
-    /*    background-color: #ebecf0;*/
-    /*    background-image:       url("pics/paint.jpg"); */
     background-color: #E0E1E1;
     margin-bottom: 1px;
     border-radius: 2px;
@@ -446,33 +310,86 @@ i.fas {
     border-color: none;
 }
 
+/* Events Container */
+.eventscontainer {
+    height: calc(45vh - 44px);
+    position: relative;
+    z-index: 100;
+
+
+}
+
+
 /* Timeline */
 
 #timeline {
+    position: absolute;
     height: 5px;
     border-radius: 10px;
     background-color: black;
+    bottom: 0;
+    transform: translate(0, 50%);
+
+}
+
+.timepoints {
+    position: absolute;
+    padding: 6px;
+    background-color: black;
+    border: solid 2px rgba(255, 255, 255, .97);
+    /*    left: 20px;*/
 
 
 }
 
-/* Events Container */
-.eventscontainer {
-    height: calc(27vh - 5px);
+.timepointer {
+    position: absolute;
+    background-color: black;
+    padding: 1px;
+    /*   height:  100px;*/
 
 }
 
-/* Overall Box Needs a Width */
-
-.box {
-    width:
+.eventtext {
+    position: absolute;
+    text-align: justify;
+    color: black;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 5px;
+    max-width: 100px;
+    opacity: .5;
+    transform: translate(-50%, -5px);
+    transition: 0.1s;
 }
 
-/*Interaciton Functions*/
+.eventtext:hover {
+    /*    position: fixed;*/
+    font-size: 20px;
+    max-width: 400px;
+    z-index: 5000;
+    opacity: 0;
+    transform: translate(-50%, -5px);
+}
 
+@media screen and (max-width: 576px) {
+
+    .eventtext:hover {
+        left: 50vw;
+        font-size: 20px;
+        max-width: 90vw;
+        z-index: 5000;
+        opacity: 0;
+        transform: translate(-50%, -5px);
+        overflow: scroll;
+    }
+
+}
+
+
+/*Interaction Functions*/
 #tooltip {
-    position: relative;
-    top: 2.5%;
+    position: absolute;
+    top: 10%;
     left: 50%;
     /*  max-height: 100px;*/
     overflow-y: scroll;
@@ -483,7 +400,7 @@ i.fas {
     padding: 10px;
     box-shadow: 1px 1px 1px #cccccc;
     border-radius: 3px;
-    text-align: left;
+    text-align: justify;
     opacity: 0.9;
     border-radius: 7.5px;
     z-index: 1000;
@@ -491,18 +408,59 @@ i.fas {
 }
 
 #demandtext {
+
     font-size: 17px;
     font-weight: 300;
     font-family: 'Yantramanav', sans-serif;
 
 }
 
-
-.form-group {
-    margin-top: 0;
+#demandtags {
+    font-weight: 600;
 }
 
 
-#demandtags {
-    font-weight: 600;
+#eventtooltip {
+    position: absolute;
+    top: 10px;
+        left: 50vw;
+    width: 500px;
+    /*  max-height: 100px;*/
+    overflow-y: scroll;
+    visibility: hidden;
+    font-size: 20px;
+/*
+    background-image:
+        linear-gradient(rgba(255, 255, 255, .4),
+            rgba(255, 255, 255, .8));
+*/
+        /*    background-color: #fcf5e3;*/
+        padding: 10px;
+    /*    box-shadow: 1px 1px 1px #cccccc;*/
+    /*    border-radius: 3px;*/
+    text-align: justify;
+    opacity: 0.9;
+        border-radius: 7.5px;
+    z-index: 1000;
+/*  transform: translate(-50%, 0%);*/
+}
+
+ .eventmark {
+      background-color:rgba(255, 0, 255, .4),
+
+}
+
+
+
+/*Forward/ Backward buttons */
+#button-group {
+    position: fixed;
+    right: calc(0vw + 10px);
+    top: 50px;
+    z-index: 100000;
+}
+
+
+.btn-outline-secondary {
+    width: 40px;
 }

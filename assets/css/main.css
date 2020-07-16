@@ -65,14 +65,15 @@ header a {
 
 }
 
-.navbar-hide {
-    pointer-events: none;
-    opacity: 0;
-}
-
-
 .navbar {
     color:  rgba(90, 111, 135, 1);
+}
+
+.bg-white {
+   background-image:         linear-gradient(rgba(255, 255, 255, .97),
+            rgba(255, 255, 255, .97)),
+                url("../pics/paint.jpg")
+    
 }
 
 /*Set everything in the main body*/
@@ -213,23 +214,27 @@ main {
 
 
 
-.font1 {
+
+.font2 {
+    margin-right: 5px;
+    padding: 0;
+    padding-left: 10px;
       text-align: center;
-    font-size:40px;
+    font-size:20px;
  color: rgba(90, 111, 135, 1);/*    opacity: .9;*/
     font-weight: 700;
     font-family: 'Amatic SC', cursive; 
+    color: white;
 }
+
+
+
 
 
 
 .font-white {
     color:white;
 }
-
-
-
-
 
 .card-text {
           font-family: 'Yantramanav', sans-serif;
@@ -241,8 +246,6 @@ main {
         linear-gradient(rgba(90, 111, 135, .5),
           rgba(90, 111, 135, .5)),
                     url("../pics/paint.jpg");
-
-
 }
 
 
@@ -266,10 +269,27 @@ main {
 }
 
 
-
 .nav-link {
         color: rgba(90, 111, 135, 1);
         font-family: 'Yantramanav', sans-serif;
         font-size: 20px;
+}
 
+.navcontainer {
+    margin:0;
+    width: 100%;
+    padding:0;
+}
+
+.bg-voices {
+     background:
+           linear-gradient(rgba(90, 111, 135, .9),
+          rgba(90, 111, 135, .9)),
+                url("../pics/paint.jpg");
+    padding:0;
+    padding-right: 10px;
+}
+
+.font-smaller {
+    font-size:18px;
 }

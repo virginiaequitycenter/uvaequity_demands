@@ -13,6 +13,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="assets/css/DemandDocs.css">
 
     <!-- Optional JavaScript -->
@@ -33,14 +34,16 @@
 </head>
 
 <body>
-    <div class="row container-fluid site d-flex">
-             <div class="sidebarspacer col-md-2"> </div>
+    <div class="container-fluid">
 
-      <div class="sidebar col-md-2">
-          <div>
-              <h1>VISUAL LIBRARY</h1>
-          </div>
-          <hr>
+        <!--
+        <div class="sidebarspacer col-md-2"> </div>
+
+          <div class="sidebar col-md-2">
+            <div>
+                <h1>VISUAL LIBRARY</h1>
+            </div>
+            <hr>
 
             <div class="sidebartext">
                 <h4> Scroll Through the Timeline: </h4>
@@ -50,29 +53,29 @@
                 <p>We coded demands into <a href="#">key themes</a>. Hover to see the demand text. Click <i class="fas fa-external-link-alt" style="color:#fcf5e3"> </i> for the full document. </p>
             </div>
 
-<div class = "relativecontainer">
-            <div class="demandexamplecontainer d-flex">
+            <div class="relativecontainer">
+                <div class="demandexamplecontainer d-flex">
 
-                <div class="demandlinescontainerexample d-flex flex-column">
-                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
-                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
-                    <div class="demandlinesex" style="background-color: rgb(163, 0, 11); border: none; opacity: 1;"></div>
-                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
-                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
-                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
-                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
-                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
-                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
-                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"> </div>
+                    <div class="demandlinescontainerexample d-flex flex-column">
+                        <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
+                        <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
+                        <div class="demandlinesex" style="background-color: rgb(163, 0, 11); border: none; opacity: 1;"></div>
+                        <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
+                        <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
+                        <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
+                        <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
+                        <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
+                        <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
+                        <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"> </div>
+                    </div>
+                    <div class="inlinetext">
+                        <p class="annotation">}</p>
+                    </div>
+                    <p class="annotationtext"> Group of 10 Demands</p>
+
                 </div>
-                <div class="inlinetext">
-                    <p class="annotation">}</p>
-                </div>
-                <p class="annotationtext"> Group of 10 Demands</p>
 
             </div>
-    
-</div>
             <br>
             <div class="sidebartext">
                 <h4> Highlight a Demand Type:</h4>
@@ -86,25 +89,78 @@
             <div class="form-group yearjump">
             </div>
 
-                    <center> <span> <a href="../VisualLibrary">Timeline</a> | <a href="../Analysis">Analysis</a> | <a href="../">Home</a> </span></center>
+            <center> <span> <a href="../VisualLibrary">Timeline</a> | <a href="../Analysis">Analysis</a> | <a href="../">Home</a> </span></center>
 
         </div>
-        <div class="col-md-10 project">
-            <div class="box">
-                <div id="eventscontainer" class="eventscontainer">
-                    <div id="tooltip" class="col-md-6">
-                        <span id="demandtext"></span> <br>
-                       <span id="demandtags"></span>
+-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-voices" id="mainNav" height="44px">
 
-                    </div>
+            <div class="font2"> HIGHLIGHT DEMANDS:</div>
+            <div class="form-group tagfilter"> </div>
+            <div class="font2">JUMP TO YEAR:</div>
+            <div class="form-group yearjump"> </div>
+
+
+            <!-- Brand -->
+            <!--                <a class="navbar-brand py-1 font1">VOICES FOR EQUITY</a>-->
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link font-smaller" href="#">Home
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link font-smaller" href="timeline.html">Timeline</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-smaller" href="analysis.html">Analysis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-smaller" href="#">Methodology</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="project" id = "project">
+            <div class="box" id="timelinebox">
+                <div id="eventscontainer" class="eventscontainer">
+ <div id="eventtooltip" >
+      <mark style="background-color:rgba(255, 255, 255, .9)" padding= "10px"> <span id="eventtexttip"
+> </span> </mark> 
+    </div>
+                    <div id="timeline"> </div>
+
                 </div>
-                <div id="timeline"> </div>
                 <div id="timelinecontainer" class="timelinecontainer"> </div>
             </div>
         </div>
     </div>
 
+    <div id="button-group">
+        <button type="button" class="btn btn-outline-secondary" aria-label="Scroll Timeline Forward" id = "scroll-back" >
+          <center>  <i class="fas fa-chevron-left fa-2x"></i></center> 
+        </button>
+        <button type="button" class="btn btn-default btn-outline-secondary" aria-label="Scroll Timeline Forward" id = "scroll-forward">
+           <center><i class="fas fa-chevron-right fa-2x"></i></center> 
+        </button>
+    </div>
 
+    <div id="tooltip" class="col-md-6">
+        <span id="demandtext"></span> <br>
+        <span id="demandtags"></span>
+
+    </div>
+    
+   
 
     <script type="text/javascript" src="assets/js/timeline/InteractionFunctions.js"></script>
     <script type="text/javascript" src="assets/js/timeline/ColorDemands.js"></script>
