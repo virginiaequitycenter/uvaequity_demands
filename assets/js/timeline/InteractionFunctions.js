@@ -65,7 +65,7 @@ function DrawYearJump(Data) {
         return d.YEAR;
     }).keys();
     
-    var addon = [""];
+    var addon = ["Year"];
     var YearList = addon.concat(YearList);
 
     var yearjump = d3.select(".yearjump")
