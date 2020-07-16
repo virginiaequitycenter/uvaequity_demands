@@ -77,5 +77,4 @@ function DrawYearJump(Data) {
       //  elmnt.scrollLeft += position
         
     });
-
 }
