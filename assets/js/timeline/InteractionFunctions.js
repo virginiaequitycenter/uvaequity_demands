@@ -137,11 +137,12 @@ $('#scroll-back').click(function () {
 var mouseovertip = function (d) {
     var windowwidth = d3.select("body").node().getBoundingClientRect()
     var thiswidth = d3.select(this).node().getBoundingClientRect()
+    var tooltipwidth = d3.select("#eventtooltip").node().getBoundingClientRect()
     var windowleft = $("#project").scrollLeft();
 
-    var left = thiswidth.x - 250;
+    var left = thiswidth.x - tooltipwidth.width/2;
    // var width = thiswidth.width;
-    var right = thiswidth.x - 250*-1;
+    var right = thiswidth.x - tooltipwidth.width/2*-1;
 
     var useleft;
     var usetransform;
@@ -149,7 +150,7 @@ var mouseovertip = function (d) {
                   usetransform = 0
                   }
     else if (right > windowwidth.width) {
-      useleft = windowleft + windowwidth.width - 505;
+      useleft = windowleft + windowwidth.width - tooltipwidth.width - 5;
       usetransform = 0
     } else {
       useleft = left  - windowleft*-1;

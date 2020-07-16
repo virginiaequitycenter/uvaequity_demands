@@ -448,7 +448,7 @@ i.fas {
 
 #eventtooltip {
     position: absolute;
-    top: 30px;
+    top: 45px;
         left: 50vw;
     width: 500px;
     /*  max-height: 100px;*/
@@ -470,6 +470,14 @@ i.fas {
     z-index: 1000;
 /*  transform: translate(-50%, 0%);*/
 }
+
+@media screen and (max-width: 505px) {
+#eventtooltip {
+    width: 350px;
+
+    } 
+}
+
 
  .eventmark {
       background-color:rgba(255, 0, 255, .4),
