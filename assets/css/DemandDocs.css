@@ -104,21 +104,19 @@ nav {
 }
 
 .demandlinescontainerexample {
-    position: inline;
-    /*    text-align: center;*/
+    position: absolute;
     width: 60px;
-    /*    width: 22%;*/
-    /*        background-color:antiquewhite;*/
     display: flex;
     flex-direction: column;
-    text-align: center;
     border: .01px solid;
     border-color: rgba(250, 250, 250, .9);
     border-radius: 4px;
     padding: 5px;
     padding-bottom: 3.5px;
+    margin-left: 5px;
+    margin-right: 5px;
     left: 50%;
-    /*    transform: translate(-50%, 0%);*/
+    transform: translate(-50%, 0%);
 
 }
 
@@ -181,23 +179,9 @@ nav {
 
 }
 
-.demandexamplecontainer {
-    position: absolute;
-    /*    padding-left: 10px;*/
-    /*    padding-right: 10px;*/
-    left: 40%;
-    transform: translate(-20%, 0);
-    /*    margin-bottom: 10px;*/
-}
 
-.relativecontainer {
-    position: relative;
-    padding-bottom: 62px;
-    overflow-x: hidden;
-    /*    width: 240px;*/
-    overflow-y: hidden;
 
-}
+
 
 /*Overall Project*/
 .project {
@@ -479,10 +463,6 @@ i.fas {
 }
 
 
- .eventmark {
-      background-color:rgba(255, 0, 255, .4),
-
-}
 
 
 
@@ -496,4 +476,63 @@ i.fas {
 
 .btn-outline-secondary {
     width: 40px;
+}
+
+.instructions {
+    position:fixed;
+     background:
+           linear-gradient(rgba(90, 111, 135, .97),
+          rgba(90, 111, 135, .97)),
+                url("../pics/paint.jpg");
+    height: 90vh;
+    z-index: 2000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;   
+    overflow-y: scroll;
+    visibility:hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+.instructions h1{   
+ color: rgba(255, 255, 255, .97);
+}
+
+.instructions p{
+    text-align:justify;
+      font-family: 'Yantramanav', sans-serif;
+   font-size: 20px;  
+    color: rgba(255, 255, 255, .97);
+}
+
+.open {
+  visibility: visible;
+}
+
+.demandexamplecontainer {
+    width: 100%;
+  height: 60px;
+    margin: 0px;
+    margin-bottom: 7.5px;
+}
+
+.blurry {
+     filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+#Exitbutton {
+     font-family: 'Yantramanav', sans-serif;
+    font-size: 20px;
+
+}
+
+#showinfomration {
+    position:fixed;
+    top: 97vh;
+    left: 98%;
+    z-index: 5000;
+    font-size: 20px;
 }

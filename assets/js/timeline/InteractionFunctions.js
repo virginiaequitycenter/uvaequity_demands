@@ -176,3 +176,35 @@ var mouseleavetip = function (d) {
     d3.select("#eventtooltip")
         .style("opacity", 0)
 }
+
+    var display = 1
+
+    
+$('#Exitbutton').click(function () {
+    d3.select("#instructions").classed("open", false);
+    d3.select("#site").classed("blurry", false);
+    console.log(display);
+});
+
+$('#showinfomration').click(function () {
+    d3.select("#instructions").classed("open", true);
+    d3.select("#site").classed("blurry", true);
+    console.log(display);
+});
+
+
+
+//function close(){
+//   d3.selectAll("#instructions").classed("open", false); 
+//    display = display + 1
+//    console.log(display);
+//};
+
+//$("#ExitButton").on("click");
+
+
+
+
+
+
+
