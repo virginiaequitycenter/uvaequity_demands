@@ -113,7 +113,7 @@ $('#scroll-forward').click(function () {
 
     $(".project").animate({
         scrollLeft: "+=" + position
-    }, 1000)
+    }, 500)
     //  elmnt.scrollLeft += position
 
 });
@@ -127,7 +127,7 @@ $('#scroll-back').click(function () {
 
     $(".project").animate({
         scrollLeft: "+=" + position
-    }, 1000)
+    }, 500)
     //  elmnt.scrollLeft += position
 
 });
