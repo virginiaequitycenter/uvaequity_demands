@@ -6,7 +6,7 @@
 
   // Collapse Navbar
   var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 100) {
+    if ($("#mainNav").offset().top > 50) {
       $("#mainNav").removeClass("navbar-dark").addClass("bg-white");
     } else {
       $("#mainNav").addClass("navbar-dark").removeClass("bg-white");
