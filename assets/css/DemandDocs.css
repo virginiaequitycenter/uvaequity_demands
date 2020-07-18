@@ -397,6 +397,7 @@ i.fas {
     visibility:hidden;
     text-align: center;
     padding: 20px;
+    border:black 1px solid;
 }
 
 .instructions h1{   
