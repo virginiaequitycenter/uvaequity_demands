@@ -77,127 +77,13 @@ nav {
 
 }
 
-.sidebartext strong {
-    font-weight: 700;
-}
-
-.sidebardef p {
-    text-align: left;
-
-    /*    display:inline;*/
-    font-size: 16px;
-    color: white;
-    opacity: .85;
-    font-weight: 300;
-    /*    padding-left: 10px;*/
-    /*    padding-right: 10px;*/
-    /*       font-family: 'Amatic SC', cursive;*/
-    font-family: 'Yantramanav', sans-serif;
-    line-height: 1em;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.sidebardef sup {
-
-    font-size: 10px;
-}
-
-.demandlinescontainerexample {
-    position: inline;
-    /*    text-align: center;*/
-    width: 60px;
-    /*    width: 22%;*/
-    /*        background-color:antiquewhite;*/
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    border: .01px solid;
-    border-color: rgba(250, 250, 250, .9);
-    border-radius: 4px;
-    padding: 5px;
-    padding-bottom: 3.5px;
-    left: 50%;
-    /*    transform: translate(-50%, 0%);*/
-
-}
-
-.demandlinesex {
-    position: relative;
-    left: 2.5%;
-    width: 95%;
-    height: 4px;
-    /*    background-color: #ebecf0;*/
-    /*    background-image:       url("pics/paint.jpg"); */
-    background-color: #E0E1E1;
-    margin-bottom: 1px;
-    border-radius: 2px;
-    /*   border: .001px solid;*/
-    border-color: none;
-
-}
-
-.inlinetext {
-    position: inline;
-
-}
-
-.annotation {
-    position: inline;
-    margin: 0;
-    /*    display:inline;*/
-    font-size: 60px;
-    color: white;
-    opacity: .85;
-    font-weight: 300;
-    /*    padding-left: 10px;*/
-    /*    padding-right: 10px;*/
-    font-family: 'Amatic SC', cursive;
-    line-height: 1em;
-    opacity: .8;
-    padding-left: 2px;
-}
 
 
-.annotationtext {
-    text-align: left;
-
-    /*    display:inline;*/
-    font-size: 16px;
-    color: white;
-    opacity: .85;
-    font-weight: 300;
-    /*    padding-left: 10px;*/
-    /*    padding-right: 10px;*/
-    /*       font-family: 'Amatic SC', cursive;*/
-    font-family: 'Yantramanav', sans-serif;
-    line-height: 1em;
-    transform: translate(0%, 25%);
-    vertical-align: middle;
-    width: 70%;
-    padding-right: 5px;
-    margin: 0;
 
 
-}
 
-.demandexamplecontainer {
-    position: absolute;
-    /*    padding-left: 10px;*/
-    /*    padding-right: 10px;*/
-    left: 40%;
-    transform: translate(-20%, 0);
-    /*    margin-bottom: 10px;*/
-}
 
-.relativecontainer {
-    position: relative;
-    padding-bottom: 62px;
-    overflow-x: hidden;
-    /*    width: 240px;*/
-    overflow-y: hidden;
 
-}
 
 /*Overall Project*/
 .project {
@@ -386,12 +272,13 @@ i.fas {
     opacity: .5;
     transform: translate(-50%, -5px);
     transition: 0.1s;
+/*    z-index: 100;*/
 }
 
 .eventtext:hover {
     /*    position: fixed;*/
-    font-size: 20px;
-    max-width: 400px;
+    font-size: 10px;
+    max-width: 200px;
     z-index: 5000;
     opacity: 0;
     transform: translate(-50%, -5px);
@@ -400,6 +287,49 @@ i.fas {
 @media screen and (max-width: 576px) {
 
     .eventtext:hover {
+        left: 50vw;
+        font-size: 10px;
+        max-width: 90vw;
+        z-index: 5000;
+        opacity: 0;
+        transform: translate(-50%, -5px);
+        overflow: scroll;
+    }
+
+}
+
+.eventimage {
+    position:relative;
+    max-width: 100%;
+        max-height: 100%;
+    border-radius: 10px;
+}
+
+.eventimagebox {
+    position: absolute;
+    text-align: justify;
+    color: black;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 5px;
+    max-width: 100px;
+    opacity: .5;
+    transform: translate(-50%, -5px);
+    transition: 0.1s;   
+/*    z-index: 200;*/
+}
+
+.eventimagebox:hover {
+    /*    position: fixed;*/
+    font-size: 20px;
+    max-width: 200px;
+    z-index: 5000;
+    opacity: 0;
+    transform: translate(-50%, -5px);
+        cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    .eventimagebox:hover {
         left: 50vw;
         font-size: 20px;
         max-width: 90vw;
@@ -412,10 +342,11 @@ i.fas {
 }
 
 
+
 /*Interaction Functions*/
 #tooltip {
-    position: absolute;
-    top: 10%;
+    position: fixed;
+    top: 50px;
     left: 50%;
     /*  max-height: 100px;*/
     overflow-y: scroll;
@@ -448,34 +379,42 @@ i.fas {
 
 #eventtooltip {
     position: absolute;
-    top: 30px;
+    top: 45px;
         left: 50vw;
     width: 500px;
     /*  max-height: 100px;*/
     overflow-y: scroll;
     visibility: hidden;
     font-size: 20px;
-/*
-    background-image:
-        linear-gradient(rgba(255, 255, 255, .4),
-            rgba(255, 255, 255, .8));
-*/
-        /*    background-color: #fcf5e3;*/
-        padding: 10px;
-    /*    box-shadow: 1px 1px 1px #cccccc;*/
-    /*    border-radius: 3px;*/
+    padding: 10px;
+    text-align: justify;
+    opacity: 0.9;
+    border-radius: 7.5px;
+    z-index: 1000;
+}
+
+#imagetooltip {
+    position: absolute;
+    top: 45px;
+        left: 50vw;
+    width: 500px;
+    /*  max-height: 100px;*/
+    overflow-y: scroll;
+    visibility: hidden;
+    font-size: 20px;
+    padding: 10px;
     text-align: justify;
     opacity: 0.9;
         border-radius: 7.5px;
     z-index: 1000;
-/*  transform: translate(-50%, 0%);*/
 }
 
- .eventmark {
-      background-color:rgba(255, 0, 255, .4),
+@media screen and (max-width: 505px) {
+#eventtooltip {
+    width: 350px;
 
+    } 
 }
-
 
 
 /*Forward/ Backward buttons */
@@ -483,9 +422,110 @@ i.fas {
     position: fixed;
     right: calc(0vw + 10px);
     top: 50px;
-    z-index: 100000;
+    z-index: 1000;
 }
 
 .btn-outline-secondary {
     width: 40px;
 }
+
+/*Instructions Pane*/
+.instructions {
+    position:fixed;
+     background:
+           linear-gradient(rgba(90, 111, 135, .97),
+          rgba(90, 111, 135, .97)),
+                url("../pics/paint.jpg");
+    height: 90vh;
+    z-index: 2000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;   
+    overflow-y: scroll;
+    visibility:hidden;
+    text-align: center;
+    padding: 20px;
+    border:black 1px solid;
+}
+
+.instructions h1{   
+ color: rgba(255, 255, 255, .97);
+}
+
+.instructions p{
+    text-align:justify;
+      font-family: 'Yantramanav', sans-serif;
+   font-size: 20px;  
+    color: rgba(255, 255, 255, .97);
+}
+
+.open {
+  visibility: visible;
+}
+
+.demandexamplecontainer {
+    width: 100%;
+  height: 60px;
+    margin: 0px;
+    margin-bottom: 7.5px;
+}
+
+
+.demandlinescontainerexample {
+    position: absolute;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    border: .01px solid;
+    border-color: rgba(250, 250, 250, .9);
+    border-radius: 4px;
+    padding: 5px;
+    padding-bottom: 3.5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+}
+
+.demandlinesex {
+    position: relative;
+    left: 2.5%;
+    width: 95%;
+    height: 4px;
+    /*    background-color: #ebecf0;*/
+    /*    background-image:       url("pics/paint.jpg"); */
+    background-color: #E0E1E1;
+    margin-bottom: 1px;
+    border-radius: 2px;
+    /*   border: .001px solid;*/
+    border-color: none;
+
+}
+
+
+.blurry {
+     filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+#Exitbutton {
+     font-family: 'Yantramanav', sans-serif;
+    font-size: 20px;
+
+}
+
+#showinformation {
+    position:fixed;
+    top: calc(100vh - 25px);
+    left: calc(100% - 25px);
+    z-index: 5000;
+    font-size: 20px;
+}
+
+.pointer {
+    cursor: pointer
+}
+
+
