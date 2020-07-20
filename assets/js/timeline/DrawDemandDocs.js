@@ -1,6 +1,6 @@
 var DemandTextNested;
 
-function DrawDemandDocs(demand_text, events) {
+function DrawDemandDocs(demand_text, events, images) {
 
 
     DemandTextNested = d3.nest()
@@ -11,7 +11,7 @@ function DrawDemandDocs(demand_text, events) {
 
     var YearList = d3.map(DemandTextNested, (d) => d.key).keys()
     //            console.log(YearList);
-       
+
     var demandstimeline = d3.selectAll("#timelinecontainer").classed("d-flex", true)
         .classed("flex-row", true); // Select the container for the demands timeline
 
@@ -20,7 +20,7 @@ function DrawDemandDocs(demand_text, events) {
         .data(DemandTextNested)
         .enter()
         .append("div")
-        .attr("class", d =>  d.values[[0]].values[[0]].values[[0]].docid)
+        .attr("class", d => d.values[[0]].values[[0]].values[[0]].docid)
         .classed("years", true)
         .classed("d-flex", true)
         .classed("flex-row", true)
@@ -51,10 +51,10 @@ function DrawDemandDocs(demand_text, events) {
                 return false;
             }
         })
-    
-    .attr("id", (d) => "did" + d.values[[0]].values[[0]].docid);
 
-    var documentlinks = demandboxes.append("i").classed("fas", true).classed("fa-external-link-alt", true).on("click", function (d) {
+        .attr("id", (d) => "did" + d.values[[0]].values[[0]].docid);
+
+    var documentlinks = demandboxes.append("i").classed("fas", true).classed("fa-external-link-alt", true).classed("pointer", true).on("click", function (d) {
         window.open("assets/documents/" + d.values[[0]].values[[0]].filename_updated);
     });
     var documenttitleboxes = demandboxes.append("div").classed("documenttitlebox", true);
@@ -92,12 +92,13 @@ function DrawDemandDocs(demand_text, events) {
 
 
     //Set the Top Timeline based on the Bottom Widths  
-    var i;
     var projectwidths = [];
     var yearstarts = []
     var yeartextboxwidth = document.getElementById("YT1970").offsetWidth;
     var yearnums = [];
-    
+
+    var i;
+
     for (i = 0; i < YearList.length; i++) {
         projectwidths[i] = document.getElementById("Y" + YearList[[i]]).offsetWidth
         yearstarts[i] = projectwidths.reduce(function (a, b) {
@@ -105,12 +106,11 @@ function DrawDemandDocs(demand_text, events) {
         }, 0) - projectwidths[i] + yeartextboxwidth;
         yearnums[i] = Number(YearList[[i]])
     };
-    
 
     var projectwidth = projectwidths.reduce(function (a, b) {
         return a + b;
     }, 0);
-    
+
     var projectheight = document.getElementById("timelinebox").offsetHeight;
 
     var timelinebox = document.getElementById('timelinebox');
@@ -118,44 +118,66 @@ function DrawDemandDocs(demand_text, events) {
 
     var timeline = document.getElementById('timeline');
     timeline.setAttribute("style", "width:" + projectwidth + "px");
-    
+
     var yearfinal = d3.max(YearList) - 1 * -1;
-    
+
     yearnums[YearList.length] = yearfinal;
     yearstarts[YearList.length] = projectwidth;
 
     timelinex = d3.scaleLinear()
         .domain(yearnums)
         .range(yearstarts);
-    
-  var eventscontainer = d3.select("#eventscontainer");
-    
-  eventscontainer.selectAll(".timepoints").data(events).enter().append("div")
-      .classed("timepoints", true)
-      .classed("rounded-circle", true)
-    .style("left", d => timelinex(d.YearPercent) + "px")
-    .style("bottom", "0px")
-    .style("transform", "translate(-50%, 50%)");
-    
-   eventscontainer.selectAll(".eventtext").data(events).enter().append("div")
-      .classed("eventtext", true)
-    .style("left", d => timelinex(d.YearPercent) + "px")
-//    .style("bottom", "2px")
-    .style("bottom", d => (d.vert * 100 + 10) + "px" )
-    .text(d => d.Year + " " +  d.Text)
-    .on("mouseover", mouseovertip)
-    .on("mouseleave", mouseleavetip);
-    
-    
-  eventscontainer.selectAll(".timepointer").data(events).enter().append("div")
-      .classed("timepointer", true)
-//      .classed("rounded-circle", true)
-    .style("left", d => timelinex(d.YearPercent) + "px")
-    .style("bottom", "2px")
-    .style("height", d => (d.vert*100 + 10) + "px" )
-    .style("transform", "translate(-50%, 0)");
-    
-    
-    
+
+    var eventscontainer = d3.select("#eventscontainer");
+
+    // Timeline Points
+    eventscontainer.selectAll(".timepoints").data(events).enter().append("div")
+        .classed("timepoints", true)
+        .classed("rounded-circle", true)
+        .style("left", d => timelinex(d.YearPercent) + "px")
+        .style("bottom", "0px")
+        .style("transform", "translate(-50%, 50%)");
+
+    // Timeline Text
+    eventscontainer.selectAll(".eventtext").data(events).enter().append("div")
+        .classed("eventtext", true)
+        .style("left", d => timelinex(d.YearPercent) + "px")
+        //    .style("bottom", "2px")
+        .style("bottom", d => (d.vert * 50 + 10) + "px")
+        .text(d => d.Year + " " + d.Text)
+        .on("mouseover", mouseovertip)
+        .on("mouseleave", mouseleavetip);
+
+    // Timeline Lines
+    eventscontainer.selectAll(".timepointer").data(events).enter().append("div")
+        .classed("timepointer", true)
+        //      .classed("rounded-circle", true)
+        .style("left", d => timelinex(d.YearPercent) + "px")
+        .style("bottom", "2px")
+        .style("height", d => (d.vert * 50 + 10) + "px")
+        .style("transform", "translate(-50%, 0)");
+
+  // Timeline Images
+  var imagecontainers =  eventscontainer.selectAll(".eventimageboxes").data(images).enter()
+
+   .append("div")
+        .classed("eventimagebox", true)
+        .style("left", d => timelinex(d.YearPercent) + "px")
+        //    .style("bottom", "2px")
+        .style("bottom", d => (d.vert * 50 + 60) + "px")
+        .on("mouseover", mouseoverimage)
+        .on("mouseleave", mouseleaveimage)
+        .on("click", function(d) { window.open(d.Link); })
+      .append("a")
+   .attr("xlink:href", d => d.Link);
+  
+    imagecontainers
+        .append("img")
+        .attr("src", function(d) { return "assets/pics/timelinepics/" + d.ImageFile + ".png"})
+        .attr("class", "eventimage");
+//        .text(d => d.Year + " " + d.Text)
+//        .on("mouseover", mouseovertip)
+//        .on("mouseleave", mouseleavetip);
+
 }
 var timelinex;

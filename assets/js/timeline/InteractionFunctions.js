@@ -177,7 +177,56 @@ var mouseleavetip = function (d) {
         .style("opacity", 0)
 }
 
+//Images 
+var mouseoverimage = function (d) {
+    var windowwidth = d3.select("body").node().getBoundingClientRect()
+    var thiswidth = d3.select(this).node().getBoundingClientRect()
+    var tooltipwidth = d3.select("#imagetooltip").node().getBoundingClientRect()
+    var windowleft = $("#project").scrollLeft();
 
+    var left = thiswidth.x - tooltipwidth.width/2;
+   // var width = thiswidth.width;
+    var right = thiswidth.x - tooltipwidth.width/2*-1;
+
+    var useleft;
+    var usetransform;
+    if (left < 0) {useleft =  windowleft - 5*-1
+                  usetransform = 0
+                  }
+    else if (right > windowwidth.width) {
+      useleft = windowleft + windowwidth.width - tooltipwidth.width - 5;
+      usetransform = 0
+    } else {
+      useleft = left  - windowleft*-1;
+     usetransform = 0;
+    };
+    
+    d3.select("#imagetooltip")
+        .style("visibility", "visible");
+      d3.select("#imagetooltip")
+        .style("opacity", 1);
+    
+    var imagebox = d3.select(this);
+    var imagepath = imagebox.select("img").attr("src")
+     console.log(imagepath);
+    d3.select("#imagetippic").attr("src", imagepath)
+    
+//  d3.select("#imagelink").attr("xlink:href", d => d.Link)
+                           
+// function(d) { return "assets/pics/timelinepics/" + imagepath + ".png"});
+    
+    d3.select("#imagetooltip")
+     .style("left", useleft + "px")
+     .style("transform", "translate(" + usetransform + "%, 0)")
+        console.log(useleft)
+}
+
+var mouseleaveimage = function (d) {
+    d3.select("#imagetooltip")
+        .style("visibility", "hidden");
+    d3.select("#imagetooltip")
+        .style("opacity", 0)
+}
 
 
 

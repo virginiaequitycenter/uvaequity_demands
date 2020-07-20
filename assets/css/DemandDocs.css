@@ -272,6 +272,7 @@ i.fas {
     opacity: .5;
     transform: translate(-50%, -5px);
     transition: 0.1s;
+/*    z-index: 100;*/
 }
 
 .eventtext:hover {
@@ -296,6 +297,49 @@ i.fas {
     }
 
 }
+
+.eventimage {
+    position:relative;
+    max-width: 100%;
+        max-height: 100%;
+}
+
+.eventimagebox {
+    position: absolute;
+    text-align: justify;
+    color: black;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 5px;
+    max-width: 100px;
+    opacity: .5;
+    transform: translate(-50%, -5px);
+    transition: 0.1s;   
+/*    z-index: 200;*/
+}
+
+.eventimagebox:hover {
+    /*    position: fixed;*/
+    font-size: 20px;
+    max-width: 400px;
+    z-index: 5000;
+    opacity: 0;
+    transform: translate(-50%, -5px);
+        cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    .eventimagebox:hover {
+        left: 50vw;
+        font-size: 20px;
+        max-width: 90vw;
+        z-index: 5000;
+        opacity: 0;
+        transform: translate(-50%, -5px);
+        overflow: scroll;
+    }
+
+}
+
 
 
 /*Interaction Functions*/
@@ -341,20 +385,27 @@ i.fas {
     overflow-y: scroll;
     visibility: hidden;
     font-size: 20px;
-/*
-    background-image:
-        linear-gradient(rgba(255, 255, 255, .4),
-            rgba(255, 255, 255, .8));
-*/
-        /*    background-color: #fcf5e3;*/
-        padding: 10px;
-    /*    box-shadow: 1px 1px 1px #cccccc;*/
-    /*    border-radius: 3px;*/
+    padding: 10px;
+    text-align: justify;
+    opacity: 0.9;
+    border-radius: 7.5px;
+    z-index: 1000;
+}
+
+#imagetooltip {
+    position: absolute;
+    top: 45px;
+        left: 50vw;
+    width: 500px;
+    /*  max-height: 100px;*/
+    overflow-y: scroll;
+    visibility: hidden;
+    font-size: 20px;
+    padding: 10px;
     text-align: justify;
     opacity: 0.9;
         border-radius: 7.5px;
     z-index: 1000;
-/*  transform: translate(-50%, 0%);*/
 }
 
 @media screen and (max-width: 505px) {
@@ -363,9 +414,6 @@ i.fas {
 
     } 
 }
-
-
-
 
 
 /*Forward/ Backward buttons */
@@ -467,13 +515,16 @@ i.fas {
 
 }
 
-
 #showinformation {
     position:fixed;
     top: calc(100vh - 25px);
     left: calc(100% - 25px);
     z-index: 5000;
     font-size: 20px;
+}
+
+.pointer {
+    cursor: pointer
 }
 
 
