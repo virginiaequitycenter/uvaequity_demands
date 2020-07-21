@@ -162,7 +162,7 @@ var mouseovertip = function (d) {
       d3.select("#eventtooltip")
         .style("opacity", 1)
 
-    d3.select("#eventtexttip").text(d.Text);
+    d3.select("#eventtexttip").text(d.Year + " "+ d.Text);
     
     d3.select("#eventtooltip")
      .style("left", useleft + "px")

@@ -8,12 +8,18 @@ function ColorDemands(tags, input_code) {
     tagsdata = tags.filter(function (el) {
         return el.Code === input_code;
     });
-
+    
+var use_color = colortimeline(input_code);
+    
     queryids = d3.map(tagsdata, function (d) {
         return d.demand_id;
     }).keys().join(', #ID');
 
-    d3.selectAll("#ID" + queryids).transition().style("background-color", "rgba(163, 0, 11, 1)").duration(1000)
+    d3.selectAll("#ID" + queryids).transition().style("background-color", 
+//                                                      "rgba(163, 0, 11, 1)"
+//                                                      "#7d452c"
+                                                    use_color
+                                                     ).duration(1000)
 
 
 }

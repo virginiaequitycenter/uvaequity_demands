@@ -319,3 +319,7 @@ a:hover {
     font-weight: 300px;
 
 }
+
+strong {
+    color: rgb(104, 58, 32);
+}
