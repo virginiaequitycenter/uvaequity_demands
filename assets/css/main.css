@@ -101,7 +101,7 @@ main span {
    font-size: 20px;   
 }
 
-main a{
+a{
     color: rgba(90, 111, 135, 1);
 }
 
@@ -182,7 +182,7 @@ font-size: 20px;
 
 section {
     margin-top: 25px;
-        margin-bottom: 25px;
+/*    margin-bottom: 25px;*/
 
 }
 
@@ -196,8 +196,8 @@ main {
     align-items: center;
     justify-content: center;
      background:
-        linear-gradient(rgba(0, 0, 0, .75),
-            rgba(0, 0, 0, .75)),
+        linear-gradient(rgba(41,23,12, .75),
+            rgba(41,23,12, .75)),
                 url("../pics/protest.jpg") no-repeat center center;
 -webkit-background-size: cover;
  -moz-background-size: cover;
@@ -242,10 +242,13 @@ main {
 }
 
 .album {
-        background-image:
+/*
+    background-image:
         linear-gradient(rgba(90, 111, 135, .90),
           rgba(90, 111, 135, .90)),
                     url("../pics/paint.jpg");
+*/
+    border: rgba(90, 111, 135, .90) solid .1px;
 }
 
 
@@ -301,4 +304,18 @@ main {
     font-weight: 700;
     font-family: 'Amatic SC', cursive; 
 }
+}
+
+
+
+a:hover {
+        text-decoration:none;
+}
+
+.text-right {
+    text-align: right;
+          font-family: 'Yantramanav', sans-serif;
+    font-size; 10px;
+    font-weight: 300px;
+
 }

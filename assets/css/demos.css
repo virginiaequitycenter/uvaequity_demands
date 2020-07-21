@@ -20,3 +20,8 @@
     text-anchor: middle;
     dominant-baseline: bottom;
 }
+
+.text-bottom {
+        writing-mode: vertical-rl;
+        transform: rotate(-180deg);
+}
