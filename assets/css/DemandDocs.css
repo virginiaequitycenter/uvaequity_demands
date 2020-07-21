@@ -298,6 +298,13 @@ i.fas {
 
 }
 
+.imageyearbox {
+   position: absolute;
+   display: flex;
+   flex-direction: row;
+
+}
+
 .eventimage {
     position:relative;
     max-width: 100%;
@@ -306,25 +313,26 @@ i.fas {
 }
 
 .eventimagebox {
-    position: absolute;
+    position:relative;
     text-align: justify;
     color: black;
     font-family: 'Yantramanav', sans-serif;
     font-size: 5px;
     max-width: 100px;
     opacity: .5;
-    transform: translate(-50%, -5px);
+/*    transform: translate(-50%, -5px);*/
     transition: 0.1s;   
 /*    z-index: 200;*/
 }
 
 .eventimagebox:hover {
-    /*    position: fixed;*/
+/*        position: fixed;*/
+/*    position: absolute;*/
     font-size: 20px;
-    max-width: 200px;
+/*    max-width: 200px;*/
     z-index: 5000;
     opacity: 0;
-    transform: translate(-50%, -5px);
+/*    transform: translate(-50%, -5px);*/
         cursor: pointer;
 }
 

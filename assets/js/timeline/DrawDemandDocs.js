@@ -157,27 +157,56 @@ function DrawDemandDocs(demand_text, events, images) {
         .style("height", d => (d.vert * 50 + 10) + "px")
         .style("transform", "translate(-50%, 0)");
 
-  // Timeline Images
-  var imagecontainers =  eventscontainer.selectAll(".eventimageboxes").data(images).enter()
+    images_nested = d3.nest()
+        .key((d) => d.Year)
+        .entries(images);
 
-   .append("div")
+
+    var imageyearcontainers = eventscontainer.selectAll(".imageyearcontainers").data(images_nested).enter()
+        .append("div")
+        .classed("imageyearbox", true)
+        .style("left", d => timelinex(d.values[[0]].YearPercent) + "px")
+        .style("top", "5%")
+
+
+    var imagecontainers = imageyearcontainers
+        .selectAll(".eventimageboxes")
+        .data(d => d.values)
+        .enter()
+        .append("div")
         .classed("eventimagebox", true)
-        .style("left", d => timelinex(d.YearPercent) + "px")
-        //    .style("bottom", "2px")
-        .style("bottom", d => (d.vert * 50 + 60) + "px")
         .on("mouseover", mouseoverimage)
         .on("mouseleave", mouseleaveimage)
-        .on("click", function(d) { window.open(d.Link); })
-      .append("a")
-   .attr("xlink:href", d => d.Link);
-  
+        .on("click", function (d) {
+            window.open(d.Link);
+        })
+        .append("a")
+        .attr("xlink:href", d => d.Link);;
+
+    // Timeline Images
+    //  var imagecontainers =  eventscontainer.selectAll(".eventimageboxes").data(images).enter()
+    //   .append("div")
+    //        .classed("eventimagebox", true)
+    //        .style("left", d => timelinex(d.YearPercent) + "px")
+    //        //    .style("bottom", "2px")
+    //        .style("bottom", d => ((d.ManualAdjust)*50 + 150) + "px")
+    //         .style("transform", "translate(-50%, 50%)")
+    //        .on("mouseover", mouseoverimage)
+    //        .on("mouseleave", mouseleaveimage)
+    //        .on("click", function(d) { window.open(d.Link); })
+    //      .append("a")
+    //   .attr("xlink:href", d => d.Link);
+
     imagecontainers
         .append("img")
-        .attr("src", function(d) { return "assets/pics/timelinepics/" + d.ImageFile + ".png"})
+        .attr("src", function (d) {
+            return "assets/pics/timelinepics/" + d.ImageFile + "" + d.Extension
+        })
         .attr("class", "eventimage");
-//        .text(d => d.Year + " " + d.Text)
-//        .on("mouseover", mouseovertip)
-//        .on("mouseleave", mouseleavetip);
+    //        .text(d => d.Year + " " + d.Text)
+    //        .on("mouseover", mouseovertip)
+    //        .on("mouseleave", mouseleavetip);
 
 }
 var timelinex;
+var images_nested;
