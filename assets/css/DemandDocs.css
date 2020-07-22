@@ -650,3 +650,19 @@ i.fa-white {
 
 
 
+
+#note {
+    position: fixed;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: justify;
+    top: 50%;
+    z-index: 1000;
+background-color: rgba(252, 245, 227, .7);
+    -webkit-backdrop-filter: blur(10px);
+        backdrop-filter:blur(10px);
+
+}
