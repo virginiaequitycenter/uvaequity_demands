@@ -157,12 +157,12 @@ var mouseovertip = function (d) {
      usetransform = 0;
     };
     
-    d3.select("#eventtooltip")
+    d3.select("#eventtooltip").transition().duration(200)
         .style("visibility", "visible");
-      d3.select("#eventtooltip")
-        .style("opacity", 1)
+      d3.select("#eventtooltip").transition().duration(200)
+        .style("opacity", 1);
 
-    d3.select("#eventtexttip").text(d.Text);
+    d3.select("#eventtexttip").text(d.Year + " "+ d.Text);
     
     d3.select("#eventtooltip")
      .style("left", useleft + "px")
@@ -201,9 +201,9 @@ var mouseoverimage = function (d) {
      usetransform = 0;
     };
     
-    d3.select("#imagetooltip")
+    d3.select("#imagetooltip").transition().duration(200)
         .style("visibility", "visible");
-      d3.select("#imagetooltip")
+      d3.select("#imagetooltip").transition().duration(200)
         .style("opacity", 1);
     
     var imagebox = d3.select(this);
@@ -244,6 +244,10 @@ $('#showinformation').click(function () {
     d3.select("#instructions").classed("open", true);
     d3.select("#site").classed("blurry", true);
 });
+
+
+
+
 
 
 
