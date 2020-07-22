@@ -12,11 +12,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-     <!-- My CSS -->
+    <!-- My CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/streams.css">
     <link rel="stylesheet" href="assets/css/demos.css">
-    
+    <link rel="stylesheet" href="assets/css/keyness.css">
+
+
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
@@ -31,20 +33,20 @@
 
     <!--        <div class="col-md-10 project">-->
     <div class="container-fluid">
-                    <br>
+        <br>
 
         <header>
             <nav>
-            <div class="row">
-                <div class="col-lg-3 col-md-2"> </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-2"> </div>
 
-                <div class="col-lg-6 col-md-8">
-                    <h1>VOICES FOR EQUITY</h1>
-                    <hr>
-                    <center> <span><a href="index.html">Home</a> | <a href="timeline.html">Timeline</a> | <a href="analysis.html">Analysis</a>  </span></center>
+                    <div class="col-lg-6 col-md-8">
+                        <h1>VOICES FOR EQUITY</h1>
+                        <hr>
+                        <center> <span><a href="index.html">Home</a> | <a href="timeline.html">Timeline</a> | <a href="analysis.html">Analysis</a> </span></center>
+                    </div>
+                    <div class="col-lg-3 col-md-2"> </div>
                 </div>
-                <div class="col-lg-3 col-md-2"> </div>
-            </div>
             </nav>
         </header>
 
@@ -262,27 +264,73 @@
                     <div class="col-lg-3 col-md-2"> </div>
                 </div>
             </section>
+
+            <section id="whattext">
+                <div class="row">
+                    <div class="col-lg-3 col-md-2"> </div>
+                    <div class="col-lg-6 col-md-8">
+
+                        <p>
+                            <center><i>What Do People Say</i> </center>
+
+                        </p>
+
+                        <p> Above, we looked at <strong>when</strong> specific topics entered conversation. Next we will look at <strong>who</strong> said them. Which groups speak on which issues? Who speaks together?
+                        </p>
+
+            
+
+                        <p> Below, we present the breakdown of contributors for each demand category. Each wedge's size represents the proportion of the conversation in our dataset occupied by that voice. Hover over a slice to get the exact count of demands made about a topic. </p>
+
+                        <p> Questions to ask as you look include: <i>Which Groups Speak Together, and on Which Topics? On Which Topics Has Every Group Spoken? For groups that do not have many written records, what have they spoken on? </i></p>
+
+                        <p> Explore for yourself or scroll beneath to see some of our conclusions. </p>
+                    </div>
+                    <div class="col-lg-3 col-md-2"> </div>
+                </div>
+            </section>
+            
+            <section id="keyness">
+                <div class="row">
+                    <div class="col-lg-1 col-md-1"> </div>
+
+                    <div class="col-lg-10 col-md-10" id="keynessviz"> </div>
+
+                    <div class="col-lg-1 col-md-1"> </div>
+                </div>
+            </section>
+
+
+            <!--
+            <section id = "searches"> 
+            <iframe src="https://commpaslab.shinyapps.io/uvaequitydash/" width="100%" height="400px"></iframe>
+            </section>
+-->
+
+
+
         </main>
     </div>
 
 
 
-    <div id="tooltipchord" class = "tooltip">
-        <span id="chordtext" class = "tooltiptext"> </span>
+    <div id="tooltipchord" class="tooltip">
+        <span id="chordtext" class="tooltiptext"> </span>
     </div>
 
-    <div id="tooltipstream" class = "tooltip">
-        <span id="streamtext" class = "tooltiptext"></span>
+    <div id="tooltipstream" class="tooltip">
+        <span id="streamtext" class="tooltiptext"></span>
     </div>
-    
+
 
     <script type="text/javascript" src="assets/js/wraptext.js"></script>
     <script type="text/javascript" src="assets/js/streams/streamsinteraction.js"></script>
     <script type="text/javascript" src="assets/js/streams/updatestreams.js"></script>
     <script type="text/javascript" src="assets/js/streams/streams.js"></script>
     <script type="text/javascript" src="assets/js/demos/demosinteraction.js"></script>
-
     <script type="text/javascript" src="assets/js/demos/demos.js"></script>
+    
+    <script type="text/javascript" src="assets/js/keyness/keyness.js"></script>
     <script type="text/javascript" src="assets/js/loadanalysis.js"></script>
     <script type="text/javascript" src="assets/js/scrolldrivenanalysis.js"></script>
 
@@ -295,6 +343,5 @@
 
 
 
-</body>
-</html>
+</body></html>
 <!DOCTYPE html>

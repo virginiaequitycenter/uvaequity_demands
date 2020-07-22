@@ -1,6 +1,7 @@
 var demands;
 var chords;
 var demos;
+var keyness;
 
 function loadData() {
 
@@ -13,8 +14,17 @@ function loadData() {
         d3.csv("assets/data/demos.csv").then(function(d){
         demos = d;
         drawdemos(demos);
-        initiatemovement();
-    })
+            
+            d3.csv("assets/data/keyness.csv").then(function(d){
+                keyness = d;
+                drawkeyness(keyness);
+                initiatemovement();
+
+            });
+    
+        
+        
+        })
         
     });
 
