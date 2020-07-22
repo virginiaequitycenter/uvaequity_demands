@@ -208,6 +208,28 @@ main {
     height: 600px;
 }
 
+
+.callout2 {
+       display: flex;
+    align-items: center;
+    justify-content: center;
+     background:
+        linear-gradient(rgba(41,23,12, .75),
+            rgba(41,23,12, .75)),
+                url("../pics/protest.jpg");
+/*         no-repeat center center;*/
+/*-webkit-background-size: cover;*/
+/* -moz-background-size: cover;*/
+/* -o-background-size: cover;*/
+/* background-size: cover;*/
+    margin:0;
+/*    margin-top: 25px;*/
+/*    height: 600px;*/
+}
+
+
+
+
 .container-fluid {
     padding:0;
 }
@@ -249,11 +271,12 @@ main {
                     url("../pics/paint.jpg");
 */
     border: rgba(90, 111, 135, .90) solid .1px;
+    overflow: hidden;
 }
 
 
 
-.callout2 {
+.callout3{
        display: flex;
     align-items: center;
     justify-content: center;
