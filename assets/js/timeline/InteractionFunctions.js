@@ -247,6 +247,10 @@ $('#showinformation').click(function () {
 
 
 
+
+
+
+
 //function close(){
 //   d3.selectAll("#instructions").classed("open", false); 
 //    display = display + 1
