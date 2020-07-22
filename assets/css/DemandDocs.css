@@ -83,10 +83,6 @@ nav {
 
 
 
-
-
-
-
 /*Overall Project*/
 .project {
     padding: 0;
@@ -269,19 +265,30 @@ i.fas {
     text-align: justify;
     color: black;
     font-family: 'Yantramanav', sans-serif;
-    font-size: 7.5px;
-    max-width: 150px;
+    font-size: 5px;
+    max-width: 100px;
     opacity: .5;
     transform: translate(-50%, -5px);
-    transition: 0.1s;
+/*    transition: 0.1s;*/
     line-height: 1em;
 /*    z-index: 100;*/
+        -webkit-transition: .1s all;   
+    -webkit-transition-delay: .1s; 
+    -moz-transition: .1s all;   
+    -moz-transition-delay: .1s; 
+    -ms-transition: .1s all;   
+    -ms-transition-delay: .1s; 
+    -o-transition: .1s all;   
+    -o-transition-delay: .1s; 
+    transition: .1s all;   
+    transition-delay: .1s; 
+
 }
 
 .eventtext:hover {
     /*    position: fixed;*/
     font-size: 10px;
-    max-width: 200px;
+    max-width: 150px;
     z-index: 5000;
     opacity: 0;
     transform: translate(-50%, -5px);
@@ -325,14 +332,28 @@ i.fas {
     opacity: .7;
 /*    transform: translate(-50%, -5px);*/
     transition: 0.1s;   
+     transition-delay: .1s; 
 /*    z-index: 200;*/
+/*
+        -webkit-transition: .5s all;   
+    -webkit-transition-delay: 5s; 
+    -moz-transition: .5s all;   
+    -moz-transition-delay: 5s; 
+    -ms-transition: .5s all;   
+    -ms-transition-delay: 5s; 
+    -o-transition: .5s all;   
+    -o-transition-delay: 5s; 
+    transition: .5s all;   
+   
+*/
+
 }
 
 .eventimagebox:hover {
 /*        position: fixed;*/
 /*    position: absolute;*/
-    font-size: 20px;
-/*    max-width: 200px;*/
+/*    font-size: 20px;*/
+    max-width: 100px;
     z-index: 5000;
     opacity: 0;
 /*    transform: translate(-50%, -5px);*/
@@ -341,12 +362,12 @@ i.fas {
 
 @media screen and (max-width: 576px) {
     .eventimagebox:hover {
-        left: 50vw;
-        font-size: 20px;
-        max-width: 90vw;
+/*        left: 50vw;*/
+/*        font-size: 20px;*/
+/*        max-width: 90vw;*/
         z-index: 5000;
         opacity: 0;
-        transform: translate(-50%, -5px);
+/*        transform: translate(-50%, -5px);*/
         overflow: scroll;
     }
 
@@ -433,9 +454,9 @@ i.fas {
 }
 
 
-@media screen and (max-width: 505px) {
+@media screen and (max-width: 576px) {
 #eventtooltip {
-    width: 350px;
+    width: 400px;
     } 
     
     #imagetooltip {
@@ -474,6 +495,7 @@ i.fas {
     text-align: center;
     padding: 20px;
     border:black 1px solid;
+/*    width: 90%;*/
 }
 
 .instructions h1{   
