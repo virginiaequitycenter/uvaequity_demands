@@ -131,7 +131,12 @@ nav {
 }
 
 i.fas {
-    color: rgba(90, 111, 135, .94);
+    color: rgba(90, 111, 135, 1)
+/*    color: black;*/
+}
+
+i.fa-white {
+    color: white
 }
 
 .documenttitlebox {
@@ -558,9 +563,19 @@ i.fas {
 
 
 .white-back {
-    background-color: rgb(255, 255, 255, 1);
-    
+    background-color: rgba(41,23,12, .7);
+/*        background-color: rgba(90, 111, 135, 1);*/
+    border-radius: 10px;
+    border: 0px;
 }
+
+
+.white-back:hover {
+    background-color: rgba(90, 111, 135, 1)
+/*     background-color: rgba(41,23,12, .8);*/
+}
+
+
 
 
 /*Fixing the smaller screen issue*/
@@ -633,20 +648,6 @@ i.fas {
       
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
