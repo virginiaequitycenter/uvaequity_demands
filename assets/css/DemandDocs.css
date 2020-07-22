@@ -642,12 +642,13 @@ i.fa-white {
     }
     
     
-
+    #note {
+        visibility: visible;
+    }
 
       
     
 }
-
 
 
 
@@ -664,5 +665,6 @@ i.fa-white {
 background-color: rgba(252, 245, 227, .7);
     -webkit-backdrop-filter: blur(10px);
         backdrop-filter:blur(10px);
+    visibility: hidden
 
 }

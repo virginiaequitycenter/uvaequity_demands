@@ -21,14 +21,5 @@
     dominant-baseline: bottom;
 }
 
-.text-bottom {
-        writing-mode: vertical-rl;
-        transform: rotate(-180deg);
-}
-
-.button-blue:hover {
-    background-color: rgba(90, 111, 135, 1);
-       color: rgba(90, 111, 135, 1);
 
 
-}
