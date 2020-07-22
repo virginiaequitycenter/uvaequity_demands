@@ -628,14 +628,13 @@ i.fa-white {
     
     #eventscontainer {
         visibility: hidden;
-    height: calc(2vh );
-    height:  calc(var(--vh, 1vh) * 2);
+    height: calc(1vh);
+/*    height:  calc(var(--vh, 1vh) * 2 - 44px);*/
     }
     
-    .years{
-        
-    height: 98vh;
-    height:  calc(var(--vh, 1vh) * 98);
+.years{
+    height: 90vh;
+/*    height:  calc(var(--vh, 1vh) * 96);*/
     }
     
     .project {
