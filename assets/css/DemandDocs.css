@@ -51,36 +51,6 @@ nav {
     height: 40px;
 }
 
-@media screen and (max-width: 350px) {
-
-    .tagfilter {
-    /*    position: absolute;*/
-    /*    margin-top: 20px;*/
-    /*    margin-left: 10px;*/
-    /*    margin-right: 10px;*/
-    padding: 0px;
-    margin: 0px;
-/*    width: 90%;*/
-    height: 40px;
-    /*    transform: translate(0, 50%);*/
-}
-    
-    .yearjump {
-/*    width: 90%;*/
-
-    }
-    
-    .font2 {
-        text-align: inline;
-        margin: 0px;
-        padding:0px;
-    font-size:10px;
-    }
-
-}
-
-
-
 
 
 /*Overall Project*/
@@ -113,7 +83,7 @@ nav {
     margin: 0 0rem;
     background-color: none;
     height: 55vh;
-    height:  calc(var(--vh, 1vh) * 55);
+/*    height:  calc(var(--vh, 1vh) * 55);*/
 
 }
 
@@ -225,7 +195,7 @@ i.fas {
 /* Events Container */
 .eventscontainer {
     height: calc(45vh - 44px);
-    height:  calc(var(--vh, 1vh) * 45 - 44px);
+/*    height:  calc(var(--vh, 1vh) * 45 - 44px);*/
 
     position: relative;
     z-index: 100;
@@ -444,7 +414,7 @@ i.fas {
         left: 50vw;
     width: 500px;
     max-height: 80vh;
-    max-height: calc(var(--vh, 1vh) * 80);
+/*    max-height: calc(var(--vh, 1vh) * 80);*/
     /*  max-height: 100px;*/
     overflow-y: scroll;
     visibility: hidden;
@@ -490,7 +460,7 @@ i.fas {
           rgba(90, 111, 135, .97)),
                 url("../pics/paint.jpg");
     height: 90vh;
-    height:   height: calc(var(--vh, 1vh) * 90);
+/*    height:   height: calc(var(--vh, 1vh) * 90);*/
     z-index: 2000;
     left: 50%;
     top: 50%;
@@ -574,7 +544,7 @@ i.fas {
 #showinformation {
     position:fixed;
     top: calc(100vh - 25px);
-    top:  calc(var(--vh, 1vh) * 100 - 25px);
+/*    top:  calc(var(--vh, 1vh) * 100 - 25px);*/
     left: calc(100% - 25px);
 /*    left:  calc(var(--vh, 1vh) * 100 - 25px);*/
     z-index: 5000;
@@ -591,3 +561,92 @@ i.fas {
     background-color: rgb(255, 255, 255, 1);
     
 }
+
+
+/*Fixing the smaller screen issue*/
+
+@media screen and (max-width: 350px) {
+
+    .tagfilter {
+    /*    position: absolute;*/
+    /*    margin-top: 20px;*/
+    /*    margin-left: 10px;*/
+    /*    margin-right: 10px;*/
+    padding: 0px;
+    margin: 0px;
+/*    width: 90%;*/
+    height: 40px;
+    /*    transform: translate(0, 50%);*/
+}
+    
+    .yearjump {
+/*    width: 90%;*/
+
+    }
+    
+    .font2 {
+        text-align: inline;
+        margin: 0px;
+        padding:0px;
+    font-size:10px;
+    }
+
+}
+
+
+@media screen and (max-width: 480px){
+    #instructions {
+        visibility: hidden;
+    }
+    
+    #showinformation {
+        visibility:hidden
+    }
+    
+    .blurry {
+     filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+    #button-group{
+        visibility:hidden
+    }
+    
+    #eventscontainer {
+        visibility: hidden;
+    height: calc(2vh );
+    height:  calc(var(--vh, 1vh) * 2);
+    }
+    
+    .years{
+        
+    height: 98vh;
+    height:  calc(var(--vh, 1vh) * 98);
+    }
+    
+    .project {
+        overflow-x: scroll;
+    }
+    
+    
+
+
+      
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
