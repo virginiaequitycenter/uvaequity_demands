@@ -28,7 +28,6 @@
 
 </head>
 
-
 <body>
 
     <!--        <div class="col-md-10 project">-->
@@ -60,7 +59,7 @@
                         <p> We collected 50 years of documents written by Students, Faculty, Staff, and Working Groups, all addressing racial inequity at the University of Virginia. Our team of qualitative researchers read each document, broke them down into specific demands, and grouped those demands into categories to understand concrete domains for institutional change.
                         </p>
 
-                        <p> These categories range from specific actions like <mark style="background-color: rgb(189, 123, 69)"> Minority Student Recruitment</mark> to <mark style="background-color: rgb(220, 177, 125)">Living Wages</mark> for Staff Members to more genaral comments around categories such as <mark style="background-color: rgb(109, 59, 32); color: white"> School Climate </mark>. </p>
+                        <p> These categories range from specific actions like <mark class = "colorstream">Minority Student Recruitment</mark> to <mark class = "colorstream">Living Wage</mark> for Staff Members to more genaral comments around categories such as <mark style="color: white" class = "colorstream"> School Climate </mark>. </p>
 
 
                         <p> As we prepared this project, we had to consistently remind ourselves that repeated asks, longer documents, and louder voices are not always indicative of the most urgent or important actions. One pithy demand does not take up as much space as a ten point plan. But it can bear as much power. Not to mention people are often pragmatic. Sometimes demands represent what people feel will be accomplishable without giving voice to their deepest hopes and dreams. </p>
@@ -127,11 +126,11 @@
                         <div class="col-lg-6 col-md-8 storytextbox">
                             <span class="storytext"> The Document raises 4 key themes: <br>
 
-                                <mark style="background-color: rgb(109, 59, 32); color: white">School Climate</mark>
-                                <mark style="background-color: rgb(189, 123, 69)"> Minority Student Recruitment</mark>
-                                <mark style="background-color: rgb(220, 177, 125)">Living Wages</mark>
+                                <mark style="color: white" class = "colorstream">School Climate</mark>
+                                <mark class = "colorstream"> Minority Student Recruitment</mark>
+                                <mark class = "colorstream"> Living Wages</mark>
 
-                                <mark style="background-color: #683a20; color: white">Abolition/ Defunding</mark> </span>
+                                <mark style="color: white" class = "colorstream">Abolition/ Defunding</mark> </span>
                         </div>
 
                         <div class="col-lg-3 col-md-2"> </div>
@@ -244,11 +243,11 @@
                         </p>
 
                         <p>
-                            <b> Thought Leaders:</b> Did you see that Black Students at the University have spoken as an identity group on every key topic here but one? Next to the University, they are the most prolific demographic in this set. In particular, Black Students have led the converstation on UVA's relationship with the Charlottesville Community. Take a look at <mark style="background-color: #ac7752; color: white">Community Labor or Partnership</mark> <mark style="background-color: #894f29; color: white">Current Initiatives & Working Groups</mark> & <mark style="background-color: rgb(220, 177, 125)">Living Wages</mark>.
+                            <b> Thought Leaders:</b> Did you see that Black Students at the University have spoken as an identity group on every key topic here but one? Next to the University, they are the most prolific demographic in this set. In particular, Black Students have led the converstation on UVA's relationship with the Charlottesville Community. Take a look at <mark style="color: white" class = "colorstream">Community Labor or Partnership</mark> <mark style="color: white" class = "colorstream">Current Initiatives and Working Groups</mark> & <mark class = "colorstream">Living Wage</mark>.
                         </p>
 
                         <p>
-                            <b> Money Matters:</b> The University speaks alot in this set, but not on <mark style="background-color: #683a20; color: white">Abolition/ Defunding</mark> a category which includes Divestment/Responsible Corporate Finance & Removal of Statues. That said, faculty groups have broached the topic before.
+                            <b> Money Matters:</b> The University speaks alot in this set, but not on <mark style="color: white" class = "colorstream">Abolition/ Defunding</mark> a category which includes Divestment/Responsible Corporate Finance & Removal of Statues. That said, faculty groups have broached the topic before.
                         </p>
 
                         <p>
@@ -256,7 +255,7 @@
                         </p>
 
                         <p>
-                            <b> Conversational Consensus:</b> All groups have spoken on the need for <mark style="background-color: #e8bfa3"> Minority Faculty / Staff Recruitment and Retention</mark> and some restructuring of <mark style="background-color: #7d452c; color: white">Research or Coursework</mark> toward a more antiracist and inclusive bent.
+                            <b> Conversational Consensus:</b> All groups have spoken on the need for <mark class = "colorstream">Minority Faculty / Staff Recruitment and Retention</mark> and some restructuring of <mark style="color: white" class = "colorstream">Research or Coursework</mark> toward a more antiracist and inclusive bent.
                         </p>
 
 
@@ -278,7 +277,7 @@
                         <p> Above, we looked at <strong>when</strong> specific topics entered conversation. Next we will look at <strong>who</strong> said them. Which groups speak on which issues? Who speaks together?
                         </p>
 
-            
+
 
                         <p> Below, we present the breakdown of contributors for each demand category. Each wedge's size represents the proportion of the conversation in our dataset occupied by that voice. Hover over a slice to get the exact count of demands made about a topic. </p>
 
@@ -289,7 +288,7 @@
                     <div class="col-lg-3 col-md-2"> </div>
                 </div>
             </section>
-            
+
             <section id="keyness">
                 <div class="row">
                     <div class="col-lg-2 col-md-2"> </div>
@@ -301,11 +300,28 @@
             </section>
 
 
-            <!--
-            <section id = "searches"> 
-            <iframe src="https://commpaslab.shinyapps.io/uvaequitydash/" width="100%" height="400px"></iframe>
+
+            <section id="searches">
+
+                <div class="row">
+                    <div class="col-lg-1 col-md-1"> </div>
+
+                    <div class="col-lg-10 col-md-10">
+
+                        <center> <button type="button" class="btn btn-default btn-secondary white-back" aria-label="Refresh Keyword Search" id="Refresh">
+                                <center>Refresh</center>
+                        </button></center>
+                        <br>
+
+<!--                        <iframe src="https://commpaslab.shinyapps.io/uvaequitydash/" width="100%" height="1000px" name="keysearch"></iframe>-->
+
+                    </div>
+
+                    <div class="col-lg-1 col-md-1"> </div>
+                </div>
+
             </section>
--->
+
 
 
 
@@ -315,6 +331,7 @@
 
 
     <div id="tooltipchord" class="tooltip">
+
         <span id="chordtext" class="tooltiptext"> </span>
     </div>
 
@@ -322,21 +339,28 @@
         <span id="streamtext" class="tooltiptext"></span>
     </div>
 
-
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('Refresh').addEventListener('click', function() {
+                var ifr = document.getElementsByName('keysearch')[0];
+                ifr.src = ifr.src;
+            });
+        }
+    </script>
     <script type="text/javascript" src="assets/js/wraptext.js"></script>
-    
+    <script type="text/javascript" src="assets/js/scrolldrivenanalysis.js"></script>
+
     <script type="text/javascript" src="assets/js/streams/streamsinteraction.js"></script>
     <script type="text/javascript" src="assets/js/streams/updatestreams.js"></script>
     <script type="text/javascript" src="assets/js/streams/streams.js"></script>
-    
+
     <script type="text/javascript" src="assets/js/demos/demosinteraction.js"></script>
     <script type="text/javascript" src="assets/js/demos/demos.js"></script>
-    
+
     <script type="text/javascript" src="assets/js/keyness/keynessinteraction.js"></script>
     <script type="text/javascript" src="assets/js/keyness/keyness.js"></script>
-    
+
     <script type="text/javascript" src="assets/js/loadanalysis.js"></script>
-    <script type="text/javascript" src="assets/js/scrolldrivenanalysis.js"></script>
 
 
     <script>

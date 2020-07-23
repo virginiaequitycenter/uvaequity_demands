@@ -403,3 +403,20 @@ i.fa-white {
     background-color:   rgba(90, 111, 135, 1)
    
 }
+
+.white-back {
+    background-color: rgba(41,23,12, .7);
+/*        background-color: rgba(90, 111, 135, 1);*/
+    border-radius: 2px;
+    border: rgba(41,23,12, .7);
+    
+        box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+    width: 100px;
+   font-family: 'Yantramanav', sans-serif;
+}
+
+.white-back:hover {
+    background-color: rgba(90, 111, 135, 1)
+/*     background-color: rgba(41,23,12, .8);*/
+
+}

@@ -8,16 +8,6 @@ function drawkeyness(data) {
             return el.source === "key";
         });
 
-
-    var AllCodes = d3.map(data, function (d) {
-        return d.code;
-    }).keys().sort();
-
-    var colorbars = d3.scaleOrdinal()
-        .domain(["Other", AllCodes])
-        .range(['#fde7da', '#dfad89', '#683a20', '#dcb17d', '#bd7b45', '#6d3b20', '#f2d3b1', '#9d5d2d', '#ac7752', '#894f29', '#d39156', '#efd1b7', '#e2ad85', '#dca77d', '#824f30', '#7d452c', '#a86b3f', '#e8bfa3'])
-
-
     // set the dimensions and margins of the graph
     var margin = {
             top: 250,
@@ -92,7 +82,7 @@ function drawkeyness(data) {
         .data(keynessdata)
         .enter()
         .append("path")
-        .attr("fill", d => colorbars(d.code))
+        .attr("fill", d => colorstreams(d.code_color))
     .attr("class", "bars")
         .attr("d", d3.arc() // imagine your doing a part of a donut plot
             .innerRadius(innerRadius)
@@ -192,9 +182,6 @@ function drawkeyness(data) {
             })
             .padAngle(0.05)
             .padRadius(innerRadius))
-    
-
-    
 
     // append the blank ones
     keysvg.append("g")
@@ -253,10 +240,7 @@ function drawkeyness(data) {
        .classed("visualizationtext", true)
       .attr("x", 0)   //Move the text from the start angle of the arc
     .attr("dy", 1) //Move the text down
-//    .attr("writing-mode", "vertical-rl")
- // .call(wrap)
     .style("font-size", "20px")
-//    .style("text-anchor", "middle")
     .append("textPath")
     .attr("startOffset","50%")
     .style("text-anchor","middle")

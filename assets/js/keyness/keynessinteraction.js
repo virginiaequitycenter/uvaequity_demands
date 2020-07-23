@@ -10,7 +10,6 @@ var mouseoverkey = function(d) {
 
 }
 
-
 var mousemovekey = function(d) {
     
     d3.select("#tooltipchord")
@@ -23,6 +22,6 @@ var mouseleavekey = function(d) {
       .style("visibility","hidden");
       
    d3.select(this)
-      .style("opacity", .8); 
+      .style("opacity", 1); 
     
   }

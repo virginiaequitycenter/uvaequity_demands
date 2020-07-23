@@ -189,7 +189,7 @@ var mouseoverimage = function (d) {
     var windowleft = $("#project").scrollLeft();
 
     var left = thiswidth.x - tooltipwidth.width/2;
-   // var width = thiswidth.width;
+
     var right = thiswidth.x - tooltipwidth.width/2*-1;
 
     var useleft;
@@ -214,10 +214,6 @@ var mouseoverimage = function (d) {
     var imagepath = imagebox.select("img").attr("src")
      console.log(imagepath);
     d3.select("#imagetippic").attr("src", imagepath)
-    
-//  d3.select("#imagelink").attr("xlink:href", d => d.Link)
-                           
-// function(d) { return "assets/pics/timelinepics/" + imagepath + ".png"});
     
     d3.select("#imagetooltip")
      .style("left", useleft + "px")
@@ -251,17 +247,6 @@ $('#showinformation').click(function () {
 
 
 
-
-
-
-
-//function close(){
-//   d3.selectAll("#instructions").classed("open", false); 
-//    display = display + 1
-//    console.log(display);
-//};
-
-//$("#ExitButton").on("click");
 
 
 

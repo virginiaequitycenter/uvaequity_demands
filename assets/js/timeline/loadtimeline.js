@@ -14,15 +14,17 @@ function loadData() {
             DrawTagFilter(DemandsTags);
         
         
-    AllCodes = d3.map(data, function (d) {
-        return d.Code;
-    }).keys().sort();
+ AllCodes = d3.map(data, function (d) {
+            return d.Code;
+        }).keys();
         
-    colortimeline = d3.scaleOrdinal()
-        .domain(["Other", AllCodes ])
-        .range(['#fde7da','#dfad89', '#683a20', '#dcb17d', '#bd7b45', '#6d3b20', '#f2d3b1', '#9d5d2d', '#ac7752', '#894f29', '#d39156', '#efd1b7', '#e2ad85',  '#dca77d', '#824f30', '#7d452c', '#a86b3f', '#e8bfa3'])
+     var addon = ["Other"];
+     var ColorCodes = addon.concat(AllCodes);
         
-        });
+        colortimeline = d3.scaleOrdinal()
+            .domain(ColorCodes)
+            .range(['#bd7b45',  '#683a20', '#dca77d', '#7d452c', '#9d5d2d', '#e8bfa3', '#894f29', '#efd1b7', '#d39156', '#a86b3f', '#ac7752', '#e2ad85', '#6d3b20', '#fde7da', '#824f30', '#dcb17d', '#dfad89', '#f2d3b1'])
+    });
 
     d3.csv("assets/data/demands_text.csv")
         .then(function (data1) {
