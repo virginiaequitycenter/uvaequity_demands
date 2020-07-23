@@ -20,7 +20,7 @@ function drawkeyness(data) {
 
     // set the dimensions and margins of the graph
     var margin = {
-            top: 0,
+            top: 250,
             right: 0,
             bottom: 0,
             left: 0
@@ -30,7 +30,7 @@ function drawkeyness(data) {
         usewidth = width + margin.left + margin.right,
         useheight = height + margin.top + margin.bottom,
         innerRadius = 90,
-        outerRadius = Math.min(width, height - 10) / 2; // the outerRadius goes from the middle of the SVG area to the border 
+        outerRadius = Math.min(width, height - 20) / 2; // the outerRadius goes from the middle of the SVG area to the border 
 
 
     var vizbox = d3.select("#keynessviz");
@@ -107,6 +107,10 @@ function drawkeyness(data) {
             })
             .padAngle(0.02)
             .padRadius(innerRadius))
+        .on("mouseover", mouseoverkey)
+        .on("mousemove", mousemovekey)
+        .on("mouseleave", mouseleavekey);
+    
 
     keysvg.append("g")
         .selectAll("g")
@@ -129,7 +133,8 @@ function drawkeyness(data) {
         .classed("visualizationtext", true)
         .style("font-size", "10px")
         .attr("alignment-baseline", "middle")
-
+    
+// Data for the inner X axes
     keynessroll = [];
     keynessdata.forEach(function (line) {
         keynessroll.push({
@@ -147,8 +152,8 @@ function drawkeyness(data) {
         v => d3.max(v, d => +d.freq)
     )
         .entries(keynessroll);   
-
-
+    
+//The Scale Band for the Labels and axes 
     var x2 = d3.scaleBand()
         .range([0, 2 * Math.PI]) // X axis goes from 0 to 2pi = all around the circle. If I stop at 1Pi, it will be around a half circle
         .align(0) // This does nothing
@@ -157,6 +162,19 @@ function drawkeyness(data) {
         }))
     
     
+        var arc = d3.arc() // imagine your doing a part of a donut plot
+            .innerRadius(d =>  y(d.value) + 90)
+            .outerRadius(d => y(d.value) + 91)
+            .startAngle(function (d) {
+                return x2(d.key);
+            })
+            .endAngle(function (d) {
+                return x2(d.key) + x2.bandwidth();
+            })
+            .padAngle(0.05)
+            .padRadius(innerRadius);
+    
+// Inner X Axes    
      keysvg.append("g")
         .selectAll(".bands")
         .data(keynessroll)
@@ -164,8 +182,8 @@ function drawkeyness(data) {
         .append("path")
         .attr("fill", "black")
         .attr("d", d3.arc() // imagine your doing a part of a donut plot
-            .innerRadius(innerRadius - 5 - 1)
-            .outerRadius(innerRadius-5)
+            .innerRadius(innerRadius - 2 - 1)
+            .outerRadius(innerRadius-2)
             .startAngle(function (d) {
                 return x2(d.key);
             })
@@ -174,67 +192,76 @@ function drawkeyness(data) {
             })
             .padAngle(0.05)
             .padRadius(innerRadius))
-//       .attr("id", function(d,i) {return "arc" + i})
     
-// append the blank ones
+
+    
+
+    // append the blank ones
     keysvg.append("g")
         .selectAll(".outerlabels")
         .data(keynessroll)
         .enter()
         .append("path")
         .attr("fill", "none")
-        .attr("d", d3.arc() // imagine your doing a part of a donut plot
-            .innerRadius(d =>  y(d.value) + 17)
-            .outerRadius(d => y(d.value) + 18)
-            .startAngle(function (d) {
-                return x2(d.key);
-            })
-            .endAngle(function (d) {
-                return x2(d.key) + x2.bandwidth()*2;
-            })
-            .padAngle(0.05)
-            .padRadius(innerRadius))
-    .attr("id", function(d,i) {return "arc" + i})
-    
-    //Create the new invisible arcs and flip the direction for the bottom half labels
+        .attr("d",  arc)
+            .each(function(d,i) {
+        
+        
+        //A regular expression that captures all in between the start of a string
+        //(denoted by ^) and the first capital letter L
+        var firstArcSection = /(^.+?)L/;
 
-//    keysvg.append("g")
-//        .selectAll("g")
-//        .data(keynessroll)
-//        .enter()
-//        .append("g")
-//        .attr("text-anchor", "middle"
-////              function (d) {
-////            return (x2(d.key) + x2.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "end" : "start";
-////        }
-//             )
-//        .attr("transform", function (d) {
-//            return "rotate(" + ((x2(d.key) + x2.bandwidth() / 2) * 180 / Math.PI - 90) + ")" + "translate(" + (y(0) -20 )  + ",0)";
-//        })
-//        .append("text")
-//        .text(function (d) {
-//            return (d.key)
-//        })
-//        .attr("transform", function (d) {
-//            return (x2(d.code_feature) + x2.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "rotate(-270)" : "rotate(-270)";
-//        }).attr("dy", 1)
-//        .call(wrap, 400)
-//        .classed("visualizationtext", true)
-//        .style("font-size", "6px")
-//        .attr("alignment-baseline", "middle")
+        //The [1] gives back the expression between the () (thus not the L as well)
+        //which is exactly the arc statement
+        var newArc = firstArcSection.exec( d3.select(this).attr("d") )[1];
+        //Replace all the comma's so that IE can handle it -_-
+        //The g after the / is a modifier that "find all matches rather than
+        //stopping after the first match"
+        newArc = newArc.replace(/,/g , " ");
+          var endarc = (((x2(d.key) + x2.bandwidth())/ (2* Math.PI)) *360);
+        
+         if ( endarc > 90  &  endarc < 270  ) {
+        //Everything between the capital M and first capital A
+        var startLoc = /M(.*?)A/;
+        //Everything between the capital A and 0 0 1
+        var middleLoc = /A(.*?)0 0 1/;
+        //Everything between the 0 0 1 and the end of the string (denoted by $)
+        var endLoc = /0 0 1 (.*?)$/;
+        //Flip the direction of the arc by switching the start and end point
+        //and using a 0 (instead of 1) sweep flag
+        var newStart = endLoc.exec( newArc )[1];
+        var newEnd = startLoc.exec( newArc )[1];
+        var middleSec = middleLoc.exec( newArc )[1];
+
+        //Build up the new arc notation, set the sweep-flag to 0
+        newArc = "M" + newStart + "A" + middleSec + "0 0 0 " + newEnd;
+    }//if
+        
+        
+        //Create a new invisible arc that the text can flow along
+        keysvg.append("path")
+            .attr("class", "hiddenDonutArcs")
+            .attr("id", "arc"+i)
+            .attr("d", newArc)
+            .style("fill", "none");
+    } );
     
     keysvg.selectAll(".arctext")
          .data(keynessroll)
         .enter()
         .append("text")
        .classed("visualizationtext", true)
-      .attr("x", 2)   //Move the text from the start angle of the arc
-    .attr("dy", -15) //Move the text down
-//    .call(wrap, 40)
-    .style("font-size", "11px")
+      .attr("x", 0)   //Move the text from the start angle of the arc
+    .attr("dy", 1) //Move the text down
+//    .attr("writing-mode", "vertical-rl")
+ // .call(wrap)
+    .style("font-size", "20px")
 //    .style("text-anchor", "middle")
     .append("textPath")
+    .attr("startOffset","50%")
+    .style("text-anchor","middle")
     .attr("xlink:href",function(d,i){return "#arc"+i;})
     .text(function(d){return d.key;});
+    console.log( ((x2(keynessroll[[5]].key) + x2.bandwidth()*2)/ (2* Math.PI)) *360 ) ;
 
 }

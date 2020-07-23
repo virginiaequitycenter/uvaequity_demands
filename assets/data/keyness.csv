@@ -1,313 +1,313 @@
-code,feature,chi2,freq,source,order,code_feature
-Abolition/ Defunding,police,0,13,freq,1,Abolition/ Defundingpolice
-Abolition/ Defunding,university,0,11,freq,2,Abolition/ Defundinguniversity
-Abolition/ Defunding,demand,0,5,freq,3,Abolition/ Defundingdemand
-Abolition/ Defunding,department,0,5,freq,4,Abolition/ Defundingdepartment
-Abolition/ Defunding,president,0,4,freq,5,Abolition/ Defundingpresident
-Abolition/ Defunding,shannon,0,3,freq,6,Abolition/ Defundingshannon
-Abolition/ Defunding,law,0,3,freq,7,Abolition/ Defundinglaw
-Abolition/ Defunding,enforcement,0,3,freq,8,Abolition/ Defundingenforcement
-Abolition/ Defunding,va,0,3,freq,9,Abolition/ Defundingva
-Abolition/ Defunding,state,0,3,freq,10,Abolition/ Defundingstate
-Abolition/ Defunding, ,0,0,freq,12,Abolition/ Defunding 
-Abolition/ Defunding, ,0,0,freq,14,Abolition/ Defunding 
-Community Labor or Partnership,university,0,19,freq,1,Community Labor or Partnershipuniversity
-Community Labor or Partnership,community,0,18,freq,2,Community Labor or Partnershipcommunity
-Community Labor or Partnership,black,0,8,freq,3,Community Labor or Partnershipblack
-Community Labor or Partnership,service,0,8,freq,4,Community Labor or Partnershipservice
-Community Labor or Partnership,public,0,7,freq,5,Community Labor or Partnershippublic
-Community Labor or Partnership,employees,0,7,freq,6,Community Labor or Partnershipemployees
-Community Labor or Partnership,programs,0,7,freq,7,Community Labor or Partnershipprograms
-Community Labor or Partnership,resources,0,6,freq,8,Community Labor or Partnershipresources
-Community Labor or Partnership,uva,0,5,freq,9,Community Labor or Partnershipuva
-Community Labor or Partnership,efforts,0,5,freq,10,Community Labor or Partnershipefforts
-Community Labor or Partnership, ,0,0,freq,12,Community Labor or Partnership 
-Community Labor or Partnership, ,0,0,freq,14,Community Labor or Partnership 
-Current Iniatives and Working Groups,students,0,47,freq,1,Current Iniatives and Working Groupsstudents
-Current Iniatives and Working Groups,university,0,43,freq,2,Current Iniatives and Working Groupsuniversity
-Current Iniatives and Working Groups,p,0,34,freq,3,Current Iniatives and Working Groupsp
-Current Iniatives and Working Groups,office,0,33,freq,4,Current Iniatives and Working Groupsoffice
-Current Iniatives and Working Groups,cultural,0,26,freq,5,Current Iniatives and Working Groupscultural
-Current Iniatives and Working Groups,black,0,24,freq,6,Current Iniatives and Working Groupsblack
-Current Iniatives and Working Groups,student,0,24,freq,7,Current Iniatives and Working Groupsstudent
-Current Iniatives and Working Groups,center,0,22,freq,8,Current Iniatives and Working Groupscenter
-Current Iniatives and Working Groups,oaaa,0,22,freq,9,Current Iniatives and Working Groupsoaaa
-Current Iniatives and Working Groups,2015,0,22,freq,10,Current Iniatives and Working Groups2015
-Current Iniatives and Working Groups, ,0,0,freq,12,Current Iniatives and Working Groups 
-Current Iniatives and Working Groups, ,0,0,freq,14,Current Iniatives and Working Groups 
-Data Collection and Transparency,university,0,30,freq,1,Data Collection and Transparencyuniversity
-Data Collection and Transparency,faculty,0,17,freq,2,Data Collection and Transparencyfaculty
-Data Collection and Transparency,students,0,13,freq,3,Data Collection and Transparencystudents
-Data Collection and Transparency,retention,0,12,freq,4,Data Collection and Transparencyretention
-Data Collection and Transparency,system,0,12,freq,5,Data Collection and Transparencysystem
-Data Collection and Transparency,data,0,12,freq,6,Data Collection and Transparencydata
-Data Collection and Transparency,positions,0,11,freq,7,Data Collection and Transparencypositions
-Data Collection and Transparency,employees,0,10,freq,8,Data Collection and Transparencyemployees
-Data Collection and Transparency,diversity,0,10,freq,9,Data Collection and Transparencydiversity
-Data Collection and Transparency,efforts,0,8,freq,10,Data Collection and Transparencyefforts
-Data Collection and Transparency, ,0,0,freq,12,Data Collection and Transparency 
-Data Collection and Transparency, ,0,0,freq,14,Data Collection and Transparency 
-Diversity in Student Leadership,students,0,27,freq,1,Diversity in Student Leadershipstudents
-Diversity in Student Leadership,student,0,16,freq,2,Diversity in Student Leadershipstudent
-Diversity in Student Leadership,black,0,13,freq,3,Diversity in Student Leadershipblack
-Diversity in Student Leadership,university,0,11,freq,4,Diversity in Student Leadershipuniversity
-Diversity in Student Leadership,committee,0,9,freq,5,Diversity in Student Leadershipcommittee
-Diversity in Student Leadership,must,0,8,freq,6,Diversity in Student Leadershipmust
-Diversity in Student Leadership,three,0,7,freq,7,Diversity in Student Leadershipthree
-Diversity in Student Leadership,faculty,0,6,freq,8,Diversity in Student Leadershipfaculty
-Diversity in Student Leadership,members,0,6,freq,9,Diversity in Student Leadershipmembers
-Diversity in Student Leadership,committees,0,6,freq,10,Diversity in Student Leadershipcommittees
-Diversity in Student Leadership, ,0,0,freq,12,Diversity in Student Leadership 
-Diversity in Student Leadership, ,0,0,freq,14,Diversity in Student Leadership 
-Financial Aid and Financing,students,0,55,freq,1,Financial Aid and Financingstudents
-Financial Aid and Financing,university,0,38,freq,2,Financial Aid and Financinguniversity
-Financial Aid and Financing,faculty,0,33,freq,3,Financial Aid and Financingfaculty
-Financial Aid and Financing,support,0,29,freq,4,Financial Aid and Financingsupport
-Financial Aid and Financing,black,0,25,freq,5,Financial Aid and Financingblack
-Financial Aid and Financing,graduate,0,21,freq,6,Financial Aid and Financinggraduate
-Financial Aid and Financing,funding,0,21,freq,7,Financial Aid and Financingfunding
-Financial Aid and Financing,p,0,20,freq,8,Financial Aid and Financingp
-Financial Aid and Financing,student,0,19,freq,9,Financial Aid and Financingstudent
-Financial Aid and Financing,programs,0,18,freq,10,Financial Aid and Financingprograms
-Financial Aid and Financing, ,0,0,freq,12,Financial Aid and Financing 
-Financial Aid and Financing, ,0,0,freq,14,Financial Aid and Financing 
-Living Wage,university,0,9,freq,1,Living Wageuniversity
-Living Wage,employees,0,7,freq,2,Living Wageemployees
-Living Wage,living,0,5,freq,3,Living Wageliving
-Living Wage,wage,0,5,freq,4,Living Wagewage
-Living Wage,benefits,0,4,freq,5,Living Wagebenefits
-Living Wage,general,0,3,freq,6,Living Wagegeneral
-Living Wage,workers,0,3,freq,7,Living Wageworkers
-Living Wage,attorney,0,3,freq,8,Living Wageattorney
-Living Wage,contracted,0,3,freq,9,Living Wagecontracted
-Living Wage,laid,0,3,freq,10,Living Wagelaid
-Living Wage, ,0,0,freq,12,Living Wage 
-Living Wage, ,0,0,freq,14,Living Wage 
-Minority Faculty / Staff Recruitment and Retention,faculty,0,112,freq,1,Minority Faculty / Staff Recruitment and Retentionfaculty
-Minority Faculty / Staff Recruitment and Retention,university,0,60,freq,2,Minority Faculty / Staff Recruitment and Retentionuniversity
-Minority Faculty / Staff Recruitment and Retention,black,0,59,freq,3,Minority Faculty / Staff Recruitment and Retentionblack
-Minority Faculty / Staff Recruitment and Retention,staff,0,42,freq,4,Minority Faculty / Staff Recruitment and Retentionstaff
-Minority Faculty / Staff Recruitment and Retention,p,0,42,freq,5,Minority Faculty / Staff Recruitment and Retentionp
-Minority Faculty / Staff Recruitment and Retention,diversity,0,40,freq,6,Minority Faculty / Staff Recruitment and Retentiondiversity
-Minority Faculty / Staff Recruitment and Retention,recruitment,0,34,freq,7,Minority Faculty / Staff Recruitment and Retentionrecruitment
-Minority Faculty / Staff Recruitment and Retention,hiring,0,33,freq,8,Minority Faculty / Staff Recruitment and Retentionhiring
-Minority Faculty / Staff Recruitment and Retention,minority,0,31,freq,9,Minority Faculty / Staff Recruitment and Retentionminority
-Minority Faculty / Staff Recruitment and Retention,positions,0,31,freq,10,Minority Faculty / Staff Recruitment and Retentionpositions
-Minority Faculty / Staff Recruitment and Retention, ,0,0,freq,12,Minority Faculty / Staff Recruitment and Retention 
-Minority Faculty / Staff Recruitment and Retention, ,0,0,freq,14,Minority Faculty / Staff Recruitment and Retention 
-Minority Student Recruitment,students,0,97,freq,1,Minority Student Recruitmentstudents
-Minority Student Recruitment,university,0,77,freq,2,Minority Student Recruitmentuniversity
-Minority Student Recruitment,black,0,69,freq,3,Minority Student Recruitmentblack
-Minority Student Recruitment,graduate,0,44,freq,4,Minority Student Recruitmentgraduate
-Minority Student Recruitment,recruitment,0,36,freq,5,Minority Student Recruitmentrecruitment
-Minority Student Recruitment,must,0,33,freq,6,Minority Student Recruitmentmust
-Minority Student Recruitment,support,0,25,freq,7,Minority Student Recruitmentsupport
-Minority Student Recruitment,virginia,0,25,freq,8,Minority Student Recruitmentvirginia
-Minority Student Recruitment,programs,0,25,freq,9,Minority Student Recruitmentprograms
-Minority Student Recruitment,faculty,0,24,freq,10,Minority Student Recruitmentfaculty
-Minority Student Recruitment, ,0,0,freq,12,Minority Student Recruitment 
-Minority Student Recruitment, ,0,0,freq,14,Minority Student Recruitment 
-Reparations,university,0,2,freq,1,Reparationsuniversity
-Reparations,students,0,2,freq,2,Reparationsstudents
-Reparations,enslaved,0,2,freq,3,Reparationsenslaved
-Reparations,descendants,0,2,freq,4,Reparationsdescendants
-Reparations,virginia,0,1,freq,5,Reparationsvirginia
-Reparations,staff,0,1,freq,6,Reparationsstaff
-Reparations,uva,0,1,freq,7,Reparationsuva
-Reparations,american,0,1,freq,8,Reparationsamerican
-Reparations,continue,0,1,freq,9,Reparationscontinue
-Reparations,financial,0,1,freq,10,Reparationsfinancial
-Reparations, ,0,0,freq,12,Reparations 
-Reparations, ,0,0,freq,14,Reparations 
-Research or Coursework,students,0,52,freq,1,Research or Courseworkstudents
-Research or Coursework,program,0,38,freq,2,Research or Courseworkprogram
-Research or Coursework,university,0,36,freq,3,Research or Courseworkuniversity
-Research or Coursework,faculty,0,26,freq,4,Research or Courseworkfaculty
-Research or Coursework,studies,0,26,freq,5,Research or Courseworkstudies
-Research or Coursework,diversity,0,26,freq,6,Research or Courseworkdiversity
-Research or Coursework,course,0,25,freq,7,Research or Courseworkcourse
-Research or Coursework,african,0,25,freq,8,Research or Courseworkafrican
-Research or Coursework,courses,0,24,freq,9,Research or Courseworkcourses
-Research or Coursework,black,0,23,freq,10,Research or Courseworkblack
-Research or Coursework, ,0,0,freq,12,Research or Coursework 
-Research or Coursework, ,0,0,freq,14,Research or Coursework 
-School Climate,students,0,84,freq,1,School Climatestudents
-School Climate,university,0,71,freq,2,School Climateuniversity
-School Climate,faculty,0,49,freq,3,School Climatefaculty
-School Climate,student,0,44,freq,4,School Climatestudent
-School Climate,p,0,44,freq,5,School Climatep
-School Climate,black,0,34,freq,6,School Climateblack
-School Climate,programs,0,34,freq,7,School Climateprograms
-School Climate,provide,0,34,freq,8,School Climateprovide
-School Climate,diversity,0,27,freq,9,School Climatediversity
-School Climate,program,0,26,freq,10,School Climateprogram
-School Climate, ,0,0,freq,12,School Climate 
-School Climate, ,0,0,freq,14,School Climate 
-Spaces and Places,university,0,29,freq,1,Spaces and Placesuniversity
-Spaces and Places,students,0,27,freq,2,Spaces and Placesstudents
-Spaces and Places,uva,0,21,freq,3,Spaces and Placesuva
-Spaces and Places,grounds,0,17,freq,4,Spaces and Placesgrounds
-Spaces and Places,faculty,0,15,freq,5,Spaces and Placesfaculty
-Spaces and Places,space,0,12,freq,6,Spaces and Placesspace
-Spaces and Places,history,0,11,freq,7,Spaces and Placeshistory
-Spaces and Places,support,0,10,freq,8,Spaces and Placessupport
-Spaces and Places,p,0,10,freq,9,Spaces and Placesp
-Spaces and Places,spaces,0,10,freq,10,Spaces and Placesspaces
-Spaces and Places, ,0,0,freq,12,Spaces and Places 
-Spaces and Places, ,0,0,freq,14,Spaces and Places 
-Abolition/ Defunding,police,625.4107707327651,13,key,24,Abolition/ Defundingpolice
-Abolition/ Defunding,va,104.1987895600997,3,key,22,Abolition/ Defundingva
-Abolition/ Defunding,enforcement,176.95890808143187,3,key,23,Abolition/ Defundingenforcement
-Abolition/ Defunding,prohibit,95.25429213317086,2,key,15,Abolition/ Defundingprohibit
-Abolition/ Defunding,carrying,95.25429213317086,2,key,16,Abolition/ Defundingcarrying
-Abolition/ Defunding,firearms,95.25429213317086,2,key,17,Abolition/ Defundingfirearms
-Abolition/ Defunding,fbi,95.25429213317086,2,key,18,Abolition/ Defundingfbi
-Abolition/ Defunding,cia,95.25429213317086,2,key,19,Abolition/ Defundingcia
-Abolition/ Defunding,guard,95.25429213317086,2,key,20,Abolition/ Defundingguard
-Abolition/ Defunding,county,95.25429213317086,2,key,21,Abolition/ Defundingcounty
-Abolition/ Defunding,,0,0,key,11,Abolition/ Defunding
-Abolition/ Defunding,,0,0,key,13,Abolition/ Defunding
-Community Labor or Partnership,community,124.38786378417757,18,key,23,Community Labor or Partnershipcommunity
-Community Labor or Partnership,service,137.2086928806848,8,key,24,Community Labor or Partnershipservice
-Community Labor or Partnership,youth,64.10810527842281,5,key,22,Community Labor or Partnershipyouth
-Community Labor or Partnership,knowledge,51.95058806348078,4,key,21,Community Labor or Partnershipknowledge
-Community Labor or Partnership,link,49.08522804805113,3,key,20,Community Labor or Partnershiplink
-Community Labor or Partnership,internships,45.646449332642206,2,key,15,Community Labor or Partnershipinternships
-Community Labor or Partnership,waivers,45.646449332642206,2,key,16,Community Labor or Partnershipwaivers
-Community Labor or Partnership,hand,45.646449332642206,2,key,17,Community Labor or Partnershiphand
-Community Labor or Partnership,crag,45.646449332642206,2,key,18,Community Labor or Partnershipcrag
-Community Labor or Partnership,2007,45.646449332642206,2,key,19,Community Labor or Partnership2007
-Community Labor or Partnership,,0,0,key,11,Community Labor or Partnership
-Community Labor or Partnership,,0,0,key,13,Community Labor or Partnership
-Current Iniatives and Working Groups,office,38.37081352867077,33,key,19,Current Iniatives and Working Groupsoffice
-Current Iniatives and Working Groups,cultural,55.25839334734449,26,key,23,Current Iniatives and Working Groupscultural
-Current Iniatives and Working Groups,center,49.96070570674337,22,key,22,Current Iniatives and Working Groupscenter
-Current Iniatives and Working Groups,oaaa,88.878503154749,22,key,24,Current Iniatives and Working Groupsoaaa
-Current Iniatives and Working Groups,affairs,37.74642677747369,21,key,18,Current Iniatives and Working Groupsaffairs
-Current Iniatives and Working Groups,organizations,32.91940684885713,17,key,17,Current Iniatives and Working Groupsorganizations
-Current Iniatives and Working Groups,luther,32.68661127708032,10,key,16,Current Iniatives and Working Groupsluther
-Current Iniatives and Working Groups,mission,38.53730375493413,10,key,20,Current Iniatives and Working Groupsmission
-Current Iniatives and Working Groups,jackson,46.008676245082334,10,key,21,Current Iniatives and Working Groupsjackson
-Current Iniatives and Working Groups,lpj,31.84763661483269,8,key,15,Current Iniatives and Working Groupslpj
-Current Iniatives and Working Groups,,0,0,key,11,Current Iniatives and Working Groups
-Current Iniatives and Working Groups,,0,0,key,13,Current Iniatives and Working Groups
-Data Collection and Transparency,system,29.9957928505558,12,key,20,Data Collection and Transparencysystem
-Data Collection and Transparency,data,90.27769282637472,12,key,24,Data Collection and Transparencydata
-Data Collection and Transparency,review,25.816709758752964,8,key,16,Data Collection and Transparencyreview
-Data Collection and Transparency,determine,32.50516561619587,7,key,22,Data Collection and Transparencydetermine
-Data Collection and Transparency,unit,23.86415118820658,6,key,15,Data Collection and Transparencyunit
-Data Collection and Transparency,reports,29.05281759561679,6,key,17,Data Collection and Transparencyreports
-Data Collection and Transparency,employment,29.05281759561679,6,key,18,Data Collection and Transparencyemployment
-Data Collection and Transparency,business,29.05281759561679,6,key,19,Data Collection and Transparencybusiness
-Data Collection and Transparency,performance,48.69003976598592,5,key,23,Data Collection and Transparencyperformance
-Data Collection and Transparency,rank,30.59721021313487,3,key,21,Data Collection and Transparencyrank
-Data Collection and Transparency,,0,0,key,11,Data Collection and Transparency
-Data Collection and Transparency,,0,0,key,13,Data Collection and Transparency
-Diversity in Student Leadership,three,120.2952824947523,7,key,24,Diversity in Student Leadershipthree
-Diversity in Student Leadership,committees,45.3972665789847,6,key,22,Diversity in Student Leadershipcommittees
-Diversity in Student Leadership,advisory,31.203380243530734,5,key,17,Diversity in Student Leadershipadvisory
-Diversity in Student Leadership,response,27.9166659916185,3,key,15,Diversity in Student Leadershipresponse
-Diversity in Student Leadership,self-governance,27.9166659916185,3,key,16,Diversity in Student Leadershipself-governance
-Diversity in Student Leadership,judiciary,34.45802700502676,3,key,21,Diversity in Student Leadershipjudiciary
-Diversity in Student Leadership,covid-19,60.6907730395857,3,key,23,Diversity in Student Leadershipcovid-19
-Diversity in Student Leadership,radio,32.47418067453386,2,key,18,Diversity in Student Leadershipradio
-Diversity in Student Leadership,stations,32.47418067453386,2,key,19,Diversity in Student Leadershipstations
-Diversity in Student Leadership,aug,32.47418067453386,2,key,20,Diversity in Student Leadershipaug
-Diversity in Student Leadership,,0,0,key,11,Diversity in Student Leadership
-Diversity in Student Leadership,,0,0,key,13,Diversity in Student Leadership
-Financial Aid and Financing,support,32.816748289638134,29,key,21,Financial Aid and Financingsupport
-Financial Aid and Financing,graduate,24.117717428953146,21,key,20,Financial Aid and Financinggraduate
-Financial Aid and Financing,funding,48.38038465940369,21,key,24,Financial Aid and Financingfunding
-Financial Aid and Financing,financial,38.71216598879659,16,key,23,Financial Aid and Financingfinancial
-Financial Aid and Financing,$,35.96910565774855,12,key,22,Financial Aid and Financing$
-Financial Aid and Financing,aid,22.203949326030553,9,key,19,Financial Aid and Financingaid
-Financial Aid and Financing,scholarship,17.519904983725652,7,key,17,Financial Aid and Financingscholarship
-Financial Aid and Financing,tuition,19.19393936360984,7,key,18,Financial Aid and Financingtuition
-Financial Aid and Financing,grants,16.942632361608855,6,key,16,Financial Aid and Financinggrants
-Financial Aid and Financing,compete,15.400319720477823,4,key,15,Financial Aid and Financingcompete
-Financial Aid and Financing,,0,0,key,11,Financial Aid and Financing
-Financial Aid and Financing,,0,0,key,13,Financial Aid and Financing
-Living Wage,living,381.92729386317353,5,key,23,Living Wageliving
-Living Wage,wage,381.92729386317353,5,key,24,Living Wagewage
-Living Wage,laid,175.9717330433323,3,key,20,Living Wagelaid
-Living Wage,attorney,236.27914358608126,3,key,21,Living Wageattorney
-Living Wage,contracted,236.27914358608126,3,key,22,Living Wagecontracted
-Living Wage,reconsider,127.28550034587322,2,key,15,Living Wagereconsider
-Living Wage,ruling,127.28550034587322,2,key,16,Living Wageruling
-Living Wage,mandating,127.28550034587322,2,key,17,Living Wagemandating
-Living Wage,wages,127.28550034587322,2,key,18,Living Wagewages
-Living Wage,16,127.28550034587322,2,key,19,Living Wage16
-Living Wage,,0,0,key,11,Living Wage
-Living Wage,,0,0,key,13,Living Wage
-Minority Faculty / Staff Recruitment and Retention,faculty,97.77200413407436,112,key,24,Minority Faculty / Staff Recruitment and Retentionfaculty
-Minority Faculty / Staff Recruitment and Retention,staff,36.64417660470944,42,key,21,Minority Faculty / Staff Recruitment and Retentionstaff
-Minority Faculty / Staff Recruitment and Retention,recruitment,26.74530790364682,34,key,19,Minority Faculty / Staff Recruitment and Retentionrecruitment
-Minority Faculty / Staff Recruitment and Retention,hiring,86.7712178059131,33,key,23,Minority Faculty / Staff Recruitment and Retentionhiring
-Minority Faculty / Staff Recruitment and Retention,positions,73.25757596000872,31,key,22,Minority Faculty / Staff Recruitment and Retentionpositions
-Minority Faculty / Staff Recruitment and Retention,retention,27.87566109255729,28,key,20,Minority Faculty / Staff Recruitment and Retentionretention
-Minority Faculty / Staff Recruitment and Retention,recruit,19.76406390934732,13,key,16,Minority Faculty / Staff Recruitment and Retentionrecruit
-Minority Faculty / Staff Recruitment and Retention,retain,19.986531044467394,10,key,17,Minority Faculty / Staff Recruitment and Retentionretain
-Minority Faculty / Staff Recruitment and Retention,pool,22.255381323483782,10,key,18,Minority Faculty / Staff Recruitment and Retentionpool
-Minority Faculty / Staff Recruitment and Retention,representation,19.184119613308226,8,key,15,Minority Faculty / Staff Recruitment and Retentionrepresentation
-Minority Faculty / Staff Recruitment and Retention,,0,0,key,11,Minority Faculty / Staff Recruitment and Retention
-Minority Faculty / Staff Recruitment and Retention,,0,0,key,13,Minority Faculty / Staff Recruitment and Retention
-Minority Student Recruitment,students,42.20296867022259,97,key,21,Minority Student Recruitmentstudents
-Minority Student Recruitment,black,46.72436926660802,69,key,22,Minority Student Recruitmentblack
-Minority Student Recruitment,graduate,109.79981117644027,44,key,24,Minority Student Recruitmentgraduate
-Minority Student Recruitment,recruitment,57.82307433523421,36,key,23,Minority Student Recruitmentrecruitment
-Minority Student Recruitment,virginia,40.89443221145815,25,key,19,Minority Student Recruitmentvirginia
-Minority Student Recruitment,admissions,42.08154530755152,17,key,20,Minority Student Recruitmentadmissions
-Minority Student Recruitment,percentage,32.279358971075176,8,key,17,Minority Student Recruitmentpercentage
-Minority Student Recruitment,weekends,35.70484207265204,7,key,18,Minority Student Recruitmentweekends
-Minority Student Recruitment,establishing,28.323425897216513,5,key,15,Minority Student Recruitmentestablishing
-Minority Student Recruitment,spring,28.323425897216513,5,key,16,Minority Student Recruitmentspring
-Minority Student Recruitment,,0,0,key,11,Minority Student Recruitment
-Minority Student Recruitment,,0,0,key,13,Minority Student Recruitment
-Reparations,enslaved,74.30390520635027,2,key,15,Reparationsenslaved
-Reparations,descendants,228.74348548709062,2,key,24,Reparationsdescendants
-Reparations,repayment,127.72069110603086,1,key,16,Reparationsrepayment
-Reparations,earned,127.72069110603086,1,key,17,Reparationsearned
-Reparations,fundraisers,127.72069110603086,1,key,18,Reparationsfundraisers
-Reparations,amateur,127.72069110603086,1,key,19,Reparationsamateur
-Reparations,minstrel,127.72069110603086,1,key,20,Reparationsminstrel
-Reparations,performers,127.72069110603086,1,key,21,Reparationsperformers
-Reparations,blackface,127.72069110603086,1,key,22,Reparationsblackface
-Reparations,yellowface,127.72069110603086,1,key,23,Reparationsyellowface
-Reparations,,0,0,key,11,Reparations
-Reparations,,0,0,key,13,Reparations
-Research or Coursework,studies,100.28117326037508,26,key,24,Research or Courseworkstudies
-Research or Coursework,course,88.77065998188729,25,key,22,Research or Courseworkcourse
-Research or Coursework,courses,99.63454749852596,24,key,23,Research or Courseworkcourses
-Research or Coursework,race,31.5702875948727,18,key,19,Research or Courseworkrace
-Research or Coursework,history,30.499541015511756,17,key,18,Research or Courseworkhistory
-Research or Coursework,curriculum,45.373650620124444,10,key,20,Research or Courseworkcurriculum
-Research or Coursework,requirement,50.06192976439552,8,key,21,Research or Courseworkrequirement
-Research or Coursework,politics,29.026963993173087,6,key,17,Research or Courseworkpolitics
-Research or Coursework,offerings,28.47599371457155,5,key,15,Research or Courseworkofferings
-Research or Coursework,inequities,28.47599371457155,5,key,16,Research or Courseworkinequities
-Research or Coursework,,0,0,key,11,Research or Coursework
-Research or Coursework,,0,0,key,13,Research or Coursework
-School Climate,ed,17.74135952857552,24,key,23,School Climateed
-School Climate,2002,15.05938001963451,23,key,21,School Climate2002
-School Climate,services,19.8622640537369,21,key,24,School Climateservices
-School Climate,training,11.176203279406637,18,key,16,School Climatetraining
-School Climate,mentoring,17.165203748575916,15,key,22,School Climatementoring
-School Climate,policy,14.089650373055388,13,key,20,School Climatepolicy
-School Climate,tutorial,10.734972859386751,8,key,15,School Climatetutorial
-School Climate,cases,12.496168631284274,8,key,17,School Climatecases
-School Climate,advising,12.730400032067502,6,key,18,School Climateadvising
-School Climate,mentorship,12.730400032067502,6,key,19,School Climatementorship
-School Climate,,0,0,key,11,School Climate
-School Climate,,0,0,key,13,School Climate
-Spaces and Places,grounds,45.8825435908198,17,key,19,Spaces and Placesgrounds
-Spaces and Places,spaces,56.318856869212276,10,key,24,Spaces and Placesspaces
-Spaces and Places,day,38.3148528731919,8,key,17,Spaces and Placesday
-Spaces and Places,historical,42.5006789546869,6,key,18,Spaces and Placeshistorical
-Spaces and Places,hall,50.09475884151755,6,key,23,Spaces and Placeshall
-Spaces and Places,confederate,48.23263282023859,5,key,20,Spaces and Placesconfederate
-Spaces and Places,plaque,48.23263282023859,5,key,21,Spaces and Placesplaque
-Spaces and Places,fig,48.23263282023859,5,key,22,Spaces and Placesfig
-Spaces and Places,supremacists,36.27807249595994,4,key,15,Spaces and Placessupremacists
-Spaces and Places,marker,36.27807249595994,4,key,16,Spaces and Placesmarker
-Spaces and Places,,0,0,key,11,Spaces and Places
-Spaces and Places,,0,0,key,13,Spaces and Places
+code,feature,chi2,freq,source,order,count,max_freq,code_feature
+Abolition/ Defunding,Police,0,100,freq,1,13,13,Abolition/ DefundingPolice
+Abolition/ Defunding,University,0,85,freq,2,11,13,Abolition/ DefundingUniversity
+Abolition/ Defunding,Demand,0,38,freq,3,5,13,Abolition/ DefundingDemand
+Abolition/ Defunding,Department,0,38,freq,4,5,13,Abolition/ DefundingDepartment
+Abolition/ Defunding,President,0,31,freq,5,4,13,Abolition/ DefundingPresident
+Abolition/ Defunding,Shannon,0,23,freq,6,3,13,Abolition/ DefundingShannon
+Abolition/ Defunding,Law,0,23,freq,7,3,13,Abolition/ DefundingLaw
+Abolition/ Defunding,Enforcement,0,23,freq,8,3,13,Abolition/ DefundingEnforcement
+Abolition/ Defunding,Va,0,23,freq,9,3,13,Abolition/ DefundingVa
+Abolition/ Defunding,State,0,23,freq,10,3,13,Abolition/ DefundingState
+Abolition/ Defunding, ,0,0,freq,11,0,13,Abolition/ Defunding 
+Abolition/ Defunding, ,0,0,freq,12,0,13,Abolition/ Defunding 
+Community Labor or Partnership,University,0,100,freq,1,19,19,Community Labor or PartnershipUniversity
+Community Labor or Partnership,Community,0,95,freq,2,18,19,Community Labor or PartnershipCommunity
+Community Labor or Partnership,Black,0,42,freq,3,8,19,Community Labor or PartnershipBlack
+Community Labor or Partnership,Service,0,42,freq,4,8,19,Community Labor or PartnershipService
+Community Labor or Partnership,Public,0,37,freq,5,7,19,Community Labor or PartnershipPublic
+Community Labor or Partnership,Employees,0,37,freq,6,7,19,Community Labor or PartnershipEmployees
+Community Labor or Partnership,Programs,0,37,freq,7,7,19,Community Labor or PartnershipPrograms
+Community Labor or Partnership,Resources,0,32,freq,8,6,19,Community Labor or PartnershipResources
+Community Labor or Partnership,Uva,0,26,freq,9,5,19,Community Labor or PartnershipUva
+Community Labor or Partnership,Efforts,0,26,freq,10,5,19,Community Labor or PartnershipEfforts
+Community Labor or Partnership, ,0,0,freq,11,0,19,Community Labor or Partnership 
+Community Labor or Partnership, ,0,0,freq,12,0,19,Community Labor or Partnership 
+Current Initiatives,Students,0,100,freq,1,47,47,Current Initiatives and Working GroupsStudents
+Current Initiatives,University,0,91,freq,2,43,47,Current Initiatives and Working GroupsUniversity
+Current Initiatives,P,0,72,freq,3,34,47,Current Initiatives and Working GroupsP
+Current Initiatives,Office,0,70,freq,4,33,47,Current Initiatives and Working GroupsOffice
+Current Initiatives,Cultural,0,55,freq,5,26,47,Current Initiatives and Working GroupsCultural
+Current Initiatives,Black,0,51,freq,6,24,47,Current Initiatives and Working GroupsBlack
+Current Initiatives,Student,0,51,freq,7,24,47,Current Initiatives and Working GroupsStudent
+Current Initiatives,Center,0,47,freq,8,22,47,Current Initiatives and Working GroupsCenter
+Current Initiatives,Oaaa,0,47,freq,9,22,47,Current Initiatives and Working GroupsOaaa
+Current Initiatives,2015,0,47,freq,10,22,47,Current Initiatives and Working Groups2015
+Current Initiatives, ,0,0,freq,11,0,47,Current Initiatives and Working Groups 
+Current Initiatives, ,0,0,freq,12,0,47,Current Initiatives and Working Groups 
+Data Collection and Transparency,University,0,100,freq,1,30,30,Data Collection and TransparencyUniversity
+Data Collection and Transparency,Faculty,0,57,freq,2,17,30,Data Collection and TransparencyFaculty
+Data Collection and Transparency,Students,0,43,freq,3,13,30,Data Collection and TransparencyStudents
+Data Collection and Transparency,Retention,0,40,freq,4,12,30,Data Collection and TransparencyRetention
+Data Collection and Transparency,System,0,40,freq,5,12,30,Data Collection and TransparencySystem
+Data Collection and Transparency,Data,0,40,freq,6,12,30,Data Collection and TransparencyData
+Data Collection and Transparency,Positions,0,37,freq,7,11,30,Data Collection and TransparencyPositions
+Data Collection and Transparency,Employees,0,33,freq,8,10,30,Data Collection and TransparencyEmployees
+Data Collection and Transparency,Diversity,0,33,freq,9,10,30,Data Collection and TransparencyDiversity
+Data Collection and Transparency,Efforts,0,27,freq,10,8,30,Data Collection and TransparencyEfforts
+Data Collection and Transparency, ,0,0,freq,11,0,30,Data Collection and Transparency 
+Data Collection and Transparency, ,0,0,freq,12,0,30,Data Collection and Transparency 
+Diversity in Student Leadership,Students,0,100,freq,1,27,27,Diversity in Student LeadershipStudents
+Diversity in Student Leadership,Student,0,59,freq,2,16,27,Diversity in Student LeadershipStudent
+Diversity in Student Leadership,Black,0,48,freq,3,13,27,Diversity in Student LeadershipBlack
+Diversity in Student Leadership,University,0,41,freq,4,11,27,Diversity in Student LeadershipUniversity
+Diversity in Student Leadership,Committee,0,33,freq,5,9,27,Diversity in Student LeadershipCommittee
+Diversity in Student Leadership,Must,0,30,freq,6,8,27,Diversity in Student LeadershipMust
+Diversity in Student Leadership,Three,0,26,freq,7,7,27,Diversity in Student LeadershipThree
+Diversity in Student Leadership,Faculty,0,22,freq,8,6,27,Diversity in Student LeadershipFaculty
+Diversity in Student Leadership,Members,0,22,freq,9,6,27,Diversity in Student LeadershipMembers
+Diversity in Student Leadership,Committees,0,22,freq,10,6,27,Diversity in Student LeadershipCommittees
+Diversity in Student Leadership, ,0,0,freq,11,0,27,Diversity in Student Leadership 
+Diversity in Student Leadership, ,0,0,freq,12,0,27,Diversity in Student Leadership 
+Financial Aid and Financing,Students,0,100,freq,1,55,55,Financial Aid and FinancingStudents
+Financial Aid and Financing,University,0,69,freq,2,38,55,Financial Aid and FinancingUniversity
+Financial Aid and Financing,Faculty,0,60,freq,3,33,55,Financial Aid and FinancingFaculty
+Financial Aid and Financing,Support,0,53,freq,4,29,55,Financial Aid and FinancingSupport
+Financial Aid and Financing,Black,0,45,freq,5,25,55,Financial Aid and FinancingBlack
+Financial Aid and Financing,Graduate,0,38,freq,6,21,55,Financial Aid and FinancingGraduate
+Financial Aid and Financing,Funding,0,38,freq,7,21,55,Financial Aid and FinancingFunding
+Financial Aid and Financing,P,0,36,freq,8,20,55,Financial Aid and FinancingP
+Financial Aid and Financing,Student,0,35,freq,9,19,55,Financial Aid and FinancingStudent
+Financial Aid and Financing,Programs,0,33,freq,10,18,55,Financial Aid and FinancingPrograms
+Financial Aid and Financing, ,0,0,freq,11,0,55,Financial Aid and Financing 
+Financial Aid and Financing, ,0,0,freq,12,0,55,Financial Aid and Financing 
+Living Wage,University,0,100,freq,1,9,9,Living WageUniversity
+Living Wage,Employees,0,78,freq,2,7,9,Living WageEmployees
+Living Wage,Living,0,56,freq,3,5,9,Living WageLiving
+Living Wage,Wage,0,56,freq,4,5,9,Living WageWage
+Living Wage,Benefits,0,44,freq,5,4,9,Living WageBenefits
+Living Wage,General,0,33,freq,6,3,9,Living WageGeneral
+Living Wage,Workers,0,33,freq,7,3,9,Living WageWorkers
+Living Wage,Attorney,0,33,freq,8,3,9,Living WageAttorney
+Living Wage,Contracted,0,33,freq,9,3,9,Living WageContracted
+Living Wage,Laid,0,33,freq,10,3,9,Living WageLaid
+Living Wage, ,0,0,freq,11,0,9,Living Wage 
+Living Wage, ,0,0,freq,12,0,9,Living Wage 
+Minority Factuly/Staff,Faculty,0,100,freq,1,112,112,Minority Faculty / Staff Recruitment and RetentionFaculty
+Minority Factuly/Staff,University,0,54,freq,2,60,112,Minority Faculty / Staff Recruitment and RetentionUniversity
+Minority Factuly/Staff,Black,0,53,freq,3,59,112,Minority Faculty / Staff Recruitment and RetentionBlack
+Minority Factuly/Staff,Staff,0,38,freq,4,42,112,Minority Faculty / Staff Recruitment and RetentionStaff
+Minority Factuly/Staff,P,0,38,freq,5,42,112,Minority Faculty / Staff Recruitment and RetentionP
+Minority Factuly/Staff,Diversity,0,36,freq,6,40,112,Minority Faculty / Staff Recruitment and RetentionDiversity
+Minority Factuly/Staff,Recruitment,0,30,freq,7,34,112,Minority Faculty / Staff Recruitment and RetentionRecruitment
+Minority Factuly/Staff,Hiring,0,29,freq,8,33,112,Minority Faculty / Staff Recruitment and RetentionHiring
+Minority Factuly/Staff,Minority,0,28,freq,9,31,112,Minority Faculty / Staff Recruitment and RetentionMinority
+Minority Factuly/Staff,Positions,0,28,freq,10,31,112,Minority Faculty / Staff Recruitment and RetentionPositions
+Minority Factuly/Staff, ,0,0,freq,11,0,112,Minority Faculty / Staff Recruitment and Retention 
+Minority Factuly/Staff, ,0,0,freq,12,0,112,Minority Faculty / Staff Recruitment and Retention 
+Minority Student Recruitment,Students,0,100,freq,1,97,97,Minority Student RecruitmentStudents
+Minority Student Recruitment,University,0,79,freq,2,77,97,Minority Student RecruitmentUniversity
+Minority Student Recruitment,Black,0,71,freq,3,69,97,Minority Student RecruitmentBlack
+Minority Student Recruitment,Graduate,0,45,freq,4,44,97,Minority Student RecruitmentGraduate
+Minority Student Recruitment,Recruitment,0,37,freq,5,36,97,Minority Student RecruitmentRecruitment
+Minority Student Recruitment,Must,0,34,freq,6,33,97,Minority Student RecruitmentMust
+Minority Student Recruitment,Support,0,26,freq,7,25,97,Minority Student RecruitmentSupport
+Minority Student Recruitment,Virginia,0,26,freq,8,25,97,Minority Student RecruitmentVirginia
+Minority Student Recruitment,Programs,0,26,freq,9,25,97,Minority Student RecruitmentPrograms
+Minority Student Recruitment,Faculty,0,25,freq,10,24,97,Minority Student RecruitmentFaculty
+Minority Student Recruitment, ,0,0,freq,11,0,97,Minority Student Recruitment 
+Minority Student Recruitment, ,0,0,freq,12,0,97,Minority Student Recruitment 
+Reparations,University,0,100,freq,1,2,2,ReparationsUniversity
+Reparations,Students,0,100,freq,2,2,2,ReparationsStudents
+Reparations,Enslaved,0,100,freq,3,2,2,ReparationsEnslaved
+Reparations,Descendants,0,100,freq,4,2,2,ReparationsDescendants
+Reparations,Virginia,0,50,freq,5,1,2,ReparationsVirginia
+Reparations,Staff,0,50,freq,6,1,2,ReparationsStaff
+Reparations,Uva,0,50,freq,7,1,2,ReparationsUva
+Reparations,American,0,50,freq,8,1,2,ReparationsAmerican
+Reparations,Continue,0,50,freq,9,1,2,ReparationsContinue
+Reparations,Financial,0,50,freq,10,1,2,ReparationsFinancial
+Reparations, ,0,0,freq,11,0,2,Reparations 
+Reparations, ,0,0,freq,12,0,2,Reparations 
+Research or Coursework,Students,0,100,freq,1,52,52,Research or CourseworkStudents
+Research or Coursework,Program,0,73,freq,2,38,52,Research or CourseworkProgram
+Research or Coursework,University,0,69,freq,3,36,52,Research or CourseworkUniversity
+Research or Coursework,Faculty,0,50,freq,4,26,52,Research or CourseworkFaculty
+Research or Coursework,Studies,0,50,freq,5,26,52,Research or CourseworkStudies
+Research or Coursework,Diversity,0,50,freq,6,26,52,Research or CourseworkDiversity
+Research or Coursework,Course,0,48,freq,7,25,52,Research or CourseworkCourse
+Research or Coursework,African,0,48,freq,8,25,52,Research or CourseworkAfrican
+Research or Coursework,Courses,0,46,freq,9,24,52,Research or CourseworkCourses
+Research or Coursework,Black,0,44,freq,10,23,52,Research or CourseworkBlack
+Research or Coursework, ,0,0,freq,11,0,52,Research or Coursework 
+Research or Coursework, ,0,0,freq,12,0,52,Research or Coursework 
+School Climate,Students,0,100,freq,1,84,84,School ClimateStudents
+School Climate,University,0,85,freq,2,71,84,School ClimateUniversity
+School Climate,Faculty,0,58,freq,3,49,84,School ClimateFaculty
+School Climate,Student,0,52,freq,4,44,84,School ClimateStudent
+School Climate,P,0,52,freq,5,44,84,School ClimateP
+School Climate,Black,0,40,freq,6,34,84,School ClimateBlack
+School Climate,Programs,0,40,freq,7,34,84,School ClimatePrograms
+School Climate,Provide,0,40,freq,8,34,84,School ClimateProvide
+School Climate,Diversity,0,32,freq,9,27,84,School ClimateDiversity
+School Climate,Program,0,31,freq,10,26,84,School ClimateProgram
+School Climate, ,0,0,freq,11,0,84,School Climate 
+School Climate, ,0,0,freq,12,0,84,School Climate 
+Spaces and Places,University,0,100,freq,1,29,29,Spaces and PlacesUniversity
+Spaces and Places,Students,0,93,freq,2,27,29,Spaces and PlacesStudents
+Spaces and Places,Uva,0,72,freq,3,21,29,Spaces and PlacesUva
+Spaces and Places,Grounds,0,59,freq,4,17,29,Spaces and PlacesGrounds
+Spaces and Places,Faculty,0,52,freq,5,15,29,Spaces and PlacesFaculty
+Spaces and Places,Space,0,41,freq,6,12,29,Spaces and PlacesSpace
+Spaces and Places,History,0,38,freq,7,11,29,Spaces and PlacesHistory
+Spaces and Places,Support,0,34,freq,8,10,29,Spaces and PlacesSupport
+Spaces and Places,P,0,34,freq,9,10,29,Spaces and PlacesP
+Spaces and Places,Spaces,0,34,freq,10,10,29,Spaces and PlacesSpaces
+Spaces and Places, ,0,0,freq,11,0,29,Spaces and Places 
+Spaces and Places, ,0,0,freq,12,0,29,Spaces and Places 
+Abolition/ Defunding,Police,625.4107707327651,100,key,1,13,13,Abolition/ DefundingPolice
+Abolition/ Defunding,Enforcement,176.95890808143187,23,key,2,3,13,Abolition/ DefundingEnforcement
+Abolition/ Defunding,Va,104.1987895600997,23,key,3,3,13,Abolition/ DefundingVa
+Abolition/ Defunding,Prohibit,95.25429213317086,15,key,4,2,13,Abolition/ DefundingProhibit
+Abolition/ Defunding,Carrying,95.25429213317086,15,key,5,2,13,Abolition/ DefundingCarrying
+Abolition/ Defunding,Firearms,95.25429213317086,15,key,6,2,13,Abolition/ DefundingFirearms
+Abolition/ Defunding,Fbi,95.25429213317086,15,key,7,2,13,Abolition/ DefundingFbi
+Abolition/ Defunding,Cia,95.25429213317086,15,key,8,2,13,Abolition/ DefundingCia
+Abolition/ Defunding,Guard,95.25429213317086,15,key,9,2,13,Abolition/ DefundingGuard
+Abolition/ Defunding,County,95.25429213317086,15,key,10,2,13,Abolition/ DefundingCounty
+Abolition/ Defunding,,0,0,key,11,0,13,Abolition/ Defunding
+Abolition/ Defunding,,0,0,key,12,0,13,Abolition/ Defunding
+Community Labor or Partnership,Community,124.38786378417757,100,key,2,18,18,Community Labor or PartnershipCommunity
+Community Labor or Partnership,Service,137.2086928806848,44,key,1,8,18,Community Labor or PartnershipService
+Community Labor or Partnership,Youth,64.10810527842281,28,key,3,5,18,Community Labor or PartnershipYouth
+Community Labor or Partnership,Knowledge,51.95058806348078,22,key,4,4,18,Community Labor or PartnershipKnowledge
+Community Labor or Partnership,Link,49.08522804805113,17,key,5,3,18,Community Labor or PartnershipLink
+Community Labor or Partnership,Internships,45.646449332642206,11,key,6,2,18,Community Labor or PartnershipInternships
+Community Labor or Partnership,Waivers,45.646449332642206,11,key,7,2,18,Community Labor or PartnershipWaivers
+Community Labor or Partnership,Hand,45.646449332642206,11,key,8,2,18,Community Labor or PartnershipHand
+Community Labor or Partnership,Crag,45.646449332642206,11,key,9,2,18,Community Labor or PartnershipCrag
+Community Labor or Partnership,2007,45.646449332642206,11,key,10,2,18,Community Labor or Partnership2007
+Community Labor or Partnership,,0,0,key,11,0,18,Community Labor or Partnership
+Community Labor or Partnership,,0,0,key,12,0,18,Community Labor or Partnership
+Current Initiatives,Office,38.37081352867077,100,key,6,33,33,Current Initiatives and Working GroupsOffice
+Current Initiatives,Cultural,55.25839334734449,79,key,2,26,33,Current Initiatives and Working GroupsCultural
+Current Initiatives,Oaaa,88.878503154749,67,key,1,22,33,Current Initiatives and Working GroupsOaaa
+Current Initiatives,Center,49.96070570674337,67,key,3,22,33,Current Initiatives and Working GroupsCenter
+Current Initiatives,Affairs,37.74642677747369,64,key,7,21,33,Current Initiatives and Working GroupsAffairs
+Current Initiatives,Organizations,32.91940684885713,52,key,8,17,33,Current Initiatives and Working GroupsOrganizations
+Current Initiatives,Jackson,46.008676245082334,30,key,4,10,33,Current Initiatives and Working GroupsJackson
+Current Initiatives,Mission,38.53730375493413,30,key,5,10,33,Current Initiatives and Working GroupsMission
+Current Initiatives,Luther,32.68661127708032,30,key,9,10,33,Current Initiatives and Working GroupsLuther
+Current Initiatives,Lpj,31.84763661483269,24,key,10,8,33,Current Initiatives and Working GroupsLpj
+Current Initiatives,,0,0,key,11,0,33,Current Initiatives and Working Groups
+Current Initiatives,,0,0,key,12,0,33,Current Initiatives and Working Groups
+Data Collection and Transparency,Data,90.27769282637472,100,key,1,12,12,Data Collection and TransparencyData
+Data Collection and Transparency,System,29.9957928505558,100,key,5,12,12,Data Collection and TransparencySystem
+Data Collection and Transparency,Review,25.816709758752964,67,key,9,8,12,Data Collection and TransparencyReview
+Data Collection and Transparency,Determine,32.50516561619587,58,key,3,7,12,Data Collection and TransparencyDetermine
+Data Collection and Transparency,Reports,29.05281759561679,50,key,6,6,12,Data Collection and TransparencyReports
+Data Collection and Transparency,Employment,29.05281759561679,50,key,7,6,12,Data Collection and TransparencyEmployment
+Data Collection and Transparency,Business,29.05281759561679,50,key,8,6,12,Data Collection and TransparencyBusiness
+Data Collection and Transparency,Unit,23.86415118820658,50,key,10,6,12,Data Collection and TransparencyUnit
+Data Collection and Transparency,Performance,48.69003976598592,42,key,2,5,12,Data Collection and TransparencyPerformance
+Data Collection and Transparency,Rank,30.59721021313487,25,key,4,3,12,Data Collection and TransparencyRank
+Data Collection and Transparency,,0,0,key,11,0,12,Data Collection and Transparency
+Data Collection and Transparency,,0,0,key,12,0,12,Data Collection and Transparency
+Diversity in Student Leadership,Three,120.2952824947523,100,key,1,7,7,Diversity in Student LeadershipThree
+Diversity in Student Leadership,Committees,45.3972665789847,86,key,3,6,7,Diversity in Student LeadershipCommittees
+Diversity in Student Leadership,Advisory,31.203380243530734,71,key,8,5,7,Diversity in Student LeadershipAdvisory
+Diversity in Student Leadership,Covid-19,60.6907730395857,43,key,2,3,7,Diversity in Student LeadershipCovid-19
+Diversity in Student Leadership,Judiciary,34.45802700502676,43,key,4,3,7,Diversity in Student LeadershipJudiciary
+Diversity in Student Leadership,Response,27.9166659916185,43,key,9,3,7,Diversity in Student LeadershipResponse
+Diversity in Student Leadership,Self-governance,27.9166659916185,43,key,10,3,7,Diversity in Student LeadershipSelf-governance
+Diversity in Student Leadership,Radio,32.47418067453386,29,key,5,2,7,Diversity in Student LeadershipRadio
+Diversity in Student Leadership,Stations,32.47418067453386,29,key,6,2,7,Diversity in Student LeadershipStations
+Diversity in Student Leadership,Aug,32.47418067453386,29,key,7,2,7,Diversity in Student LeadershipAug
+Diversity in Student Leadership,,0,0,key,11,0,7,Diversity in Student Leadership
+Diversity in Student Leadership,,0,0,key,12,0,7,Diversity in Student Leadership
+Financial Aid and Financing,Support,32.816748289638134,100,key,4,29,29,Financial Aid and FinancingSupport
+Financial Aid and Financing,Funding,48.38038465940369,72,key,1,21,29,Financial Aid and FinancingFunding
+Financial Aid and Financing,Graduate,24.117717428953146,72,key,5,21,29,Financial Aid and FinancingGraduate
+Financial Aid and Financing,Financial,38.71216598879659,55,key,2,16,29,Financial Aid and FinancingFinancial
+Financial Aid and Financing,$,35.96910565774855,41,key,3,12,29,Financial Aid and Financing$
+Financial Aid and Financing,Aid,22.203949326030553,31,key,6,9,29,Financial Aid and FinancingAid
+Financial Aid and Financing,Tuition,19.19393936360984,24,key,7,7,29,Financial Aid and FinancingTuition
+Financial Aid and Financing,Scholarship,17.519904983725652,24,key,8,7,29,Financial Aid and FinancingScholarship
+Financial Aid and Financing,Grants,16.942632361608855,21,key,9,6,29,Financial Aid and FinancingGrants
+Financial Aid and Financing,Compete,15.400319720477823,14,key,10,4,29,Financial Aid and FinancingCompete
+Financial Aid and Financing,,0,0,key,11,0,29,Financial Aid and Financing
+Financial Aid and Financing,,0,0,key,12,0,29,Financial Aid and Financing
+Living Wage,Living,381.92729386317353,100,key,1,5,5,Living WageLiving
+Living Wage,Wage,381.92729386317353,100,key,2,5,5,Living WageWage
+Living Wage,Attorney,236.27914358608126,60,key,3,3,5,Living WageAttorney
+Living Wage,Contracted,236.27914358608126,60,key,4,3,5,Living WageContracted
+Living Wage,Laid,175.9717330433323,60,key,5,3,5,Living WageLaid
+Living Wage,Reconsider,127.28550034587322,40,key,6,2,5,Living WageReconsider
+Living Wage,Ruling,127.28550034587322,40,key,7,2,5,Living WageRuling
+Living Wage,Mandating,127.28550034587322,40,key,8,2,5,Living WageMandating
+Living Wage,Wages,127.28550034587322,40,key,9,2,5,Living WageWages
+Living Wage,16,127.28550034587322,40,key,10,2,5,Living Wage16
+Living Wage,,0,0,key,11,0,5,Living Wage
+Living Wage,,0,0,key,12,0,5,Living Wage
+Minority Factuly/Staff,Faculty,97.77200413407436,100,key,1,112,112,Minority Faculty / Staff Recruitment and RetentionFaculty
+Minority Factuly/Staff,Staff,36.64417660470944,38,key,4,42,112,Minority Faculty / Staff Recruitment and RetentionStaff
+Minority Factuly/Staff,Recruitment,26.74530790364682,30,key,6,34,112,Minority Faculty / Staff Recruitment and RetentionRecruitment
+Minority Factuly/Staff,Hiring,86.7712178059131,29,key,2,33,112,Minority Faculty / Staff Recruitment and RetentionHiring
+Minority Factuly/Staff,Positions,73.25757596000872,28,key,3,31,112,Minority Faculty / Staff Recruitment and RetentionPositions
+Minority Factuly/Staff,Retention,27.87566109255729,25,key,5,28,112,Minority Faculty / Staff Recruitment and RetentionRetention
+Minority Factuly/Staff,Recruit,19.76406390934732,12,key,9,13,112,Minority Faculty / Staff Recruitment and RetentionRecruit
+Minority Factuly/Staff,Pool,22.255381323483782,9,key,7,10,112,Minority Faculty / Staff Recruitment and RetentionPool
+Minority Factuly/Staff,Retain,19.986531044467394,9,key,8,10,112,Minority Faculty / Staff Recruitment and RetentionRetain
+Minority Factuly/Staff,Representation,19.184119613308226,7,key,10,8,112,Minority Faculty / Staff Recruitment and RetentionRepresentation
+Minority Factuly/Staff,,0,0,key,11,0,112,Minority Faculty / Staff Recruitment and Retention
+Minority Factuly/Staff,,0,0,key,12,0,112,Minority Faculty / Staff Recruitment and Retention
+Minority Student Recruitment,Students,42.20296867022259,100,key,4,97,97,Minority Student RecruitmentStudents
+Minority Student Recruitment,Black,46.72436926660802,71,key,3,69,97,Minority Student RecruitmentBlack
+Minority Student Recruitment,Graduate,109.79981117644027,45,key,1,44,97,Minority Student RecruitmentGraduate
+Minority Student Recruitment,Recruitment,57.82307433523421,37,key,2,36,97,Minority Student RecruitmentRecruitment
+Minority Student Recruitment,Virginia,40.89443221145815,26,key,6,25,97,Minority Student RecruitmentVirginia
+Minority Student Recruitment,Admissions,42.08154530755152,18,key,5,17,97,Minority Student RecruitmentAdmissions
+Minority Student Recruitment,Percentage,32.279358971075176,8,key,8,8,97,Minority Student RecruitmentPercentage
+Minority Student Recruitment,Weekends,35.70484207265204,7,key,7,7,97,Minority Student RecruitmentWeekends
+Minority Student Recruitment,Establishing,28.323425897216513,5,key,9,5,97,Minority Student RecruitmentEstablishing
+Minority Student Recruitment,Spring,28.323425897216513,5,key,10,5,97,Minority Student RecruitmentSpring
+Minority Student Recruitment,,0,0,key,11,0,97,Minority Student Recruitment
+Minority Student Recruitment,,0,0,key,12,0,97,Minority Student Recruitment
+Reparations,Descendants,228.74348548709062,100,key,1,2,2,ReparationsDescendants
+Reparations,Enslaved,74.30390520635027,100,key,10,2,2,ReparationsEnslaved
+Reparations,Repayment,127.72069110603086,50,key,2,1,2,ReparationsRepayment
+Reparations,Earned,127.72069110603086,50,key,3,1,2,ReparationsEarned
+Reparations,Fundraisers,127.72069110603086,50,key,4,1,2,ReparationsFundraisers
+Reparations,Amateur,127.72069110603086,50,key,5,1,2,ReparationsAmateur
+Reparations,Minstrel,127.72069110603086,50,key,6,1,2,ReparationsMinstrel
+Reparations,Performers,127.72069110603086,50,key,7,1,2,ReparationsPerformers
+Reparations,Blackface,127.72069110603086,50,key,8,1,2,ReparationsBlackface
+Reparations,Yellowface,127.72069110603086,50,key,9,1,2,ReparationsYellowface
+Reparations,,0,0,key,11,0,2,Reparations
+Reparations,,0,0,key,12,0,2,Reparations
+Research or Coursework,Studies,100.28117326037508,100,key,1,26,26,Research or CourseworkStudies
+Research or Coursework,Course,88.77065998188729,96,key,3,25,26,Research or CourseworkCourse
+Research or Coursework,Courses,99.63454749852596,92,key,2,24,26,Research or CourseworkCourses
+Research or Coursework,Race,31.5702875948727,69,key,6,18,26,Research or CourseworkRace
+Research or Coursework,History,30.499541015511756,65,key,7,17,26,Research or CourseworkHistory
+Research or Coursework,Curriculum,45.373650620124444,38,key,5,10,26,Research or CourseworkCurriculum
+Research or Coursework,Requirement,50.06192976439552,31,key,4,8,26,Research or CourseworkRequirement
+Research or Coursework,Politics,29.026963993173087,23,key,8,6,26,Research or CourseworkPolitics
+Research or Coursework,Offerings,28.47599371457155,19,key,9,5,26,Research or CourseworkOfferings
+Research or Coursework,Inequities,28.47599371457155,19,key,10,5,26,Research or CourseworkInequities
+Research or Coursework,,0,0,key,11,0,26,Research or Coursework
+Research or Coursework,,0,0,key,12,0,26,Research or Coursework
+School Climate,Ed,17.74135952857552,100,key,2,24,24,School ClimateEd
+School Climate,2002,15.05938001963451,96,key,4,23,24,School Climate2002
+School Climate,Services,19.8622640537369,88,key,1,21,24,School ClimateServices
+School Climate,Training,11.176203279406637,75,key,9,18,24,School ClimateTraining
+School Climate,Mentoring,17.165203748575916,62,key,3,15,24,School ClimateMentoring
+School Climate,Policy,14.089650373055388,54,key,5,13,24,School ClimatePolicy
+School Climate,Cases,12.496168631284274,33,key,8,8,24,School ClimateCases
+School Climate,Tutorial,10.734972859386751,33,key,10,8,24,School ClimateTutorial
+School Climate,Advising,12.730400032067502,25,key,6,6,24,School ClimateAdvising
+School Climate,Mentorship,12.730400032067502,25,key,7,6,24,School ClimateMentorship
+School Climate,,0,0,key,11,0,24,School Climate
+School Climate,,0,0,key,12,0,24,School Climate
+Spaces and Places,Grounds,45.8825435908198,100,key,6,17,17,Spaces and PlacesGrounds
+Spaces and Places,Spaces,56.318856869212276,59,key,1,10,17,Spaces and PlacesSpaces
+Spaces and Places,Day,38.3148528731919,47,key,8,8,17,Spaces and PlacesDay
+Spaces and Places,Hall,50.09475884151755,35,key,2,6,17,Spaces and PlacesHall
+Spaces and Places,Historical,42.5006789546869,35,key,7,6,17,Spaces and PlacesHistorical
+Spaces and Places,Confederate,48.23263282023859,29,key,3,5,17,Spaces and PlacesConfederate
+Spaces and Places,Plaque,48.23263282023859,29,key,4,5,17,Spaces and PlacesPlaque
+Spaces and Places,Fig,48.23263282023859,29,key,5,5,17,Spaces and PlacesFig
+Spaces and Places,Supremacists,36.27807249595994,24,key,9,4,17,Spaces and PlacesSupremacists
+Spaces and Places,Marker,36.27807249595994,24,key,10,4,17,Spaces and PlacesMarker
+Spaces and Places,,0,0,key,11,0,17,Spaces and Places
+Spaces and Places,,0,0,key,12,0,17,Spaces and Places
