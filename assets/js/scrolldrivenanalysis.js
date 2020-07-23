@@ -3,8 +3,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 function initiatemovement() {
 
-// Animate Stream Chart
+//var chartoffset = document.getElementById('streams').getBoundingClientRect().height/2
+//// Animate Stream Chart
+//
+//var streammargin = "calc(50vh' + chartoffset')'";
 
+//d3.select("#streamstory").style("margin-bottom", streammargin);
+    
 gsap.to("#streamchart", {
     scrollTrigger: {
         trigger: "#streamchart",
