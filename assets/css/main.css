@@ -138,9 +138,17 @@ hr {
 .storytextbox {
     padding: 20px;
     background-image:
-        linear-gradient(rgba(90, 111, 135, .94),
-            rgba(90, 111, 135, .94)),
+        linear-gradient(rgba(90, 111, 135, .90),
+            rgba(90, 111, 135, .90)),
         url("../pics/paint.jpg");
+/*
+        background-image:
+        linear-gradient(  rgba(0, 0, 0, .4),
+                  rgba(0, 0, 0, .4)),
+        url("../pics/paint.jpg");
+*/
+ 
+
     border-radius: 10px;
     text-align: center;
 }
@@ -284,7 +292,7 @@ main {
      background:
            linear-gradient(rgba(90, 111, 135, .9),
           rgba(90, 111, 135, .9)),
-                url("../pics/paint.jpg") no-repeat center center;
+                url("../pics/bg.jpg") no-repeat center center;
 -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
@@ -311,17 +319,43 @@ main {
 .bg-voices {
 /*
     background:
-           linear-gradient(rgba(90, 111, 135, .9),
-          rgba(90, 111, 135, .9)),
+           linear-gradient(rgba(90, 111, 135, .8),
+          rgba(90, 111, 135, .8)),
+                url("../pics/cream_dust.jpg");
+    
+*/
+/*
+        background:
+           linear-gradient(rgba(0, 0, 0, .3),
+          rgba(0, 0, 0, .3)),
+                url("../pics/cream_dust.jpg");
+*/
+/*
+            background:
+           linear-gradient(rgba(0, 0, 0, .4),
+          rgba(0, 0, 0, .4)),
                 url("../pics/paint.jpg");
 */
+    border: 0px;
+/*
      background:
-           linear-gradient(rgba(41,23,12, .8),
-          rgba(41,23,12, .8)),
+           linear-gradient(rgba(41,23,12, .7),
+          rgba(41,23,12, .7)),
                 url("../pics/paint.jpg");
+*/
+    
+    
+     background:
+           linear-gradient(rgba(41,23,12, .6),
+          rgba(41,23,12, .6)),
+                url("../pics/cream_dust.jpg");
+
+    
 /*    background-color:rgb(104, 58, 32)*/
     padding:0;
     padding-right: 10px;
+    display: flex;
+    flex-direction: row;
 }
 
 .font-smaller {

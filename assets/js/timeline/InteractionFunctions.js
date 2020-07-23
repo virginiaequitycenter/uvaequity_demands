@@ -39,6 +39,9 @@ function DrawTagFilter(tags) {
     var TagList = d3.map(tags, function (d) {
         return d.Code;
     }).keys();
+    
+     var addon = ["Highlight Demand Type"];
+     TagList = addon.concat(TagList);
 
     var tagselector = d3.select(".tagfilter")
         .append("select")
@@ -65,8 +68,8 @@ function DrawYearJump(Data) {
         return d.YEAR;
     }).keys();
     
-    var addon = ["Year"];
-    var YearList = addon.concat(YearList);
+    var addon = ["Jump to Year"];
+     YearList = addon.concat(YearList);
 
     var yearjump = d3.select(".yearjump")
         .append("select")
@@ -79,6 +82,7 @@ function DrawYearJump(Data) {
         .append("option")
         .attr("value", (d) => "Y" + d)
         .text((d) => d)
+//        .call(wrap, 40)
         .classed("tagoption", true);
 
 
