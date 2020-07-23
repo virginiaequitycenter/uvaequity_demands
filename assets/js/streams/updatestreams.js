@@ -186,6 +186,8 @@ function DrawStreamsControl(Data) {
         return d.DocTitle;
     }).keys();
 
+    
+    
     var dochange = d3.select("#DocChange")
         .append("select")
         .classed("form-control", true)
@@ -200,7 +202,7 @@ function DrawStreamsControl(Data) {
         .enter()
         .append("option")
         .attr("value", (d) => d)
-        .text((d) => d);
+        .text((d) => d + " (" + d3.map(Data.filter(function(el) { return el.DocTitle == d}), (y) => y.YEAR).keys()[[0]] + ")");
 
     // .classed("tagoption", true);
 
