@@ -346,9 +346,9 @@ main {
     
     
      background:
-           linear-gradient(rgba(41,23,12, .6),
-          rgba(41,23,12, .6)),
-                url("../pics/cream_dust.jpg");
+           linear-gradient(rgba(41,23,12, .80),
+          rgba(41,23,12, .8)),
+                url("../pics/cream_dust.png");
 
     
 /*    background-color:rgb(104, 58, 32)*/
