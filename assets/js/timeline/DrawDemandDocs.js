@@ -182,7 +182,7 @@ function DrawDemandDocs(demand_text, events, images) {
         })
         .append("a")
         .attr("xlink:href", d => d.Link);;
-
+    
     // Timeline Images
     //  var imagecontainers =  eventscontainer.selectAll(".eventimageboxes").data(images).enter()
     //   .append("div")
@@ -200,7 +200,7 @@ function DrawDemandDocs(demand_text, events, images) {
     imagecontainers
         .append("img")
         .attr("src", function (d) {
-            return "assets/pics/timelinepics/" + d.ImageFile + "" + d.Extension
+            return "assets/pics/timelinepics/" + d.ImageFile
         })
         .attr("class", "eventimage");
     //        .text(d => d.Year + " " + d.Text)
