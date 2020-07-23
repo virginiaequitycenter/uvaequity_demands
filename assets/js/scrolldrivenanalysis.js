@@ -49,7 +49,7 @@ gsap.to("#streamchart", {
 gsap.to("#text1", {
     scrollTrigger: {
         trigger: "#text1",
-        start: "center center",
+        start: "bottom bottom",
         //      endTrigger: "#streamstory",
         end: +10,
         //        markers: true,

@@ -19,6 +19,12 @@ body {
         linear-gradient(rgba(255, 255, 255, .97),
             rgba(255, 255, 255, .97)),
                 url("../pics/paint.jpg");
+/*
+    background-image:
+        linear-gradient(rgba(255, 255, 255, .0),
+            rgba(255, 255, 255, .0)),
+                url("../pics/cream_dust.png");
+*/
     position:relative;
     margin:0;
     padding: 0;
