@@ -257,10 +257,10 @@ function drawkeyness(data) {
         .append("path")
         .style("fill", "none")
         .attr("d", d3.arc() // imagine your doing a part of a donut plot
-            .innerRadius(innerRadius - 20)
-            .outerRadius(innerRadius - 21)
-            .startAngle(0)
-            .endAngle(2*Math.PI)
+            .innerRadius(innerRadius - 40)
+            .outerRadius(innerRadius - 41)
+            .startAngle(-59/100*Math.PI)
+            .endAngle(3*Math.PI)
             .padAngle(0.05)
 //            .padRadius(innerRadius)
              ).style("visiblity", "hidden")
@@ -269,14 +269,14 @@ function drawkeyness(data) {
     keysvg
         .append("text")
        .classed("visualizationtext", true)
-      .attr("x", 0)   //Move the text from the start angle of the arc
-//    .attr("dy", 1) //Move the text down
+//      .attr("x", 80)   //Move the text from the start angle of the arc
+//    .attr("dy", ) //Move the text down
     .style("font-size", "20px")
     .append("textPath")
 //    .attr("startOffset","50%")
 //    .style("text-anchor","middle")
     .attr("xlink:href",function(d,i){return "#title";})
-    .text("Keyness of")
+    .text("Distinctive Words by Category")
     
     
     
