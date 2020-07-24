@@ -167,6 +167,32 @@ gsap.to(myAreas, {
     },
 });
     
+    gsap.to("#iframesearch", {
+        scrollTrigger: {
+            trigger: "#search",
+            start: "top bottom",
+            //      endTrigger: "#streamstory",
+            end: "bottom top",
+            //        markers: true,
+            //        scrub: 1,
+
+            onEnter: function () {
+                var ifr = document.getElementsByName('keysearch')[0]
+                ifr.src = " https://commpaslab.shinyapps.io/demandkeywords/"
+            },
+//            onLeaveBack: function(){
+//                var ifr = document.getElementsByName('keysearch')[0]
+//                ifr.src = "#"
+//            }
+
+        },
+
+    });
+    
+    
+   
+    
+    
 };
 
 
