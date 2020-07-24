@@ -178,7 +178,7 @@ gsap.to(myAreas, {
 
             onEnter: function () {
                 var ifr = document.getElementsByName('keysearch')[0]
-                ifr.src = " https://commpaslab.shinyapps.io/demandkeywords/"
+                ifr.src = "https://commpaslab.shinyapps.io/demandkeywords/"
             },
 //            onLeaveBack: function(){
 //                var ifr = document.getElementsByName('keysearch')[0]

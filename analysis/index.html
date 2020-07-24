@@ -32,9 +32,9 @@
 
     <!--        <div class="col-md-10 project">-->
     <div class="container-fluid">
-        <br>
 
         <header>
+<!--
             <nav>
                 <div class="row">
                     <div class="col-lg-3 col-md-2"> </div>
@@ -47,6 +47,40 @@
                     <div class="col-lg-3 col-md-2"> </div>
                 </div>
             </nav>
+-->
+<nav class="navbar navbar-expand-md navbar-dark bg-brown" id="mainNav">
+            <!-- Brand -->
+
+            <a class="navbar-brand py-1 font1">VOICES FOR EQUITY</a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../">Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../timeline">Timeline</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../analysis">Analysis</a>
+                           <span class="sr-only">(current)</span>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../methodology">Methodology</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
         </header>
 
         <main>
@@ -532,7 +566,7 @@
                     <div class="col-lg-3 col-md-2"> </div>
                 </div>
             </section>
-
+<section></section>
         </main>
 
 
@@ -560,7 +594,7 @@
         window.onload = function() {
             document.getElementById('Refresh').addEventListener('click', function() {
                 var ifr = document.getElementsByName('keysearch')[0];
-                ifr.src = ifr.src;
+                ifr.src = "https://commpaslab.shinyapps.io/demandkeywords/";
             });
         }
     </script>

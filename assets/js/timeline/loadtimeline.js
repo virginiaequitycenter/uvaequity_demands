@@ -16,7 +16,7 @@ function loadData() {
         
  AllCodes = d3.map(data, function (d) {
             return d.Code;
-        }).keys();
+        }).keys().sort()
         
      var addon = ["Other"];
      var ColorCodes = addon.concat(AllCodes);
