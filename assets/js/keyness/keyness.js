@@ -70,7 +70,7 @@ function drawkeyness(data) {
             return d.code_feature;
         }))
 
-    var ymax = d3.max(keynessdata, d => d.freq);
+    var ymax = d3.max(keynessdata, d => +d.freq);
     console.log(ymax);
 
     var y = scaleRadial()
