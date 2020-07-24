@@ -209,15 +209,7 @@ function streamgraph(data) {
         .classed("visualizationtext", true)
         .call(wrap, 100);
     
-    
-var marktext = []
-var marknodes = d3.selectAll(".colorstream").nodes()
-    marknodes.forEach(function(node){
-      marktext.push(node.firstChild.data.trim())
-        
-    })
- console.log(marktext)   
-var  marks = d3.selectAll(".colorstream").style("background-color", (d,i) => colorstreams(marktext[[i]]))
+
 //   marks .style("background-color", (d) => colorstreams(d.firstChild.data) );
 // marktexts = marks.text();
 }
