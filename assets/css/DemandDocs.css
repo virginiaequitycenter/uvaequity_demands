@@ -489,9 +489,9 @@ i.fa-white {
 .instructions {
     position:fixed;
      background:
-           linear-gradient(rgba(90, 111, 135, .97),
-          rgba(90, 111, 135, .97)),
-                url("../pics/paint.jpg");
+           linear-gradient(rgba(90, 111, 135, .85),
+          rgba(90, 111, 135, .85)),
+                url("../pics/cream_dust.png");
     height: 90vh;
 /*    height:   height: calc(var(--vh, 1vh) * 90);*/
     z-index: 2000;

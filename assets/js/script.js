@@ -7,9 +7,13 @@
   // Collapse Navbar
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 50) {
-      $("#mainNav").removeClass("navbar-dark").addClass("bg-white");
+      $("#mainNav")
+      .removeClass("fixed-top")
+          .addClass("bg-brown");
     } else {
-      $("#mainNav").addClass("navbar-dark").removeClass("bg-white");
+      $("#mainNav")
+//          .addClass("fixed-top")
+          .removeClass("bg-brown");
     }
   };
   // Collapse now if page is not at top

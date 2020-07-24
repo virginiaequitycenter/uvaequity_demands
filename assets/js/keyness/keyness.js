@@ -97,6 +97,7 @@ function drawkeyness(data) {
             })
             .padAngle(0.02)
             .padRadius(innerRadius))
+//        .attr("opacity", .8)
         .on("mouseover", mouseoverkey)
         .on("mousemove", mousemovekey)
         .on("mouseleave", mouseleavekey);
@@ -248,4 +249,36 @@ function drawkeyness(data) {
     .text(function(d){return d.key;});
     console.log( ((x2(keynessroll[[5]].key) + x2.bandwidth()*2)/ (2* Math.PI)) *360 ) ;
 
+    
+    keysvg.append("g")
+//        .selectAll(".bands")
+//        .data(keynessroll)
+//        .enter()
+        .append("path")
+        .style("fill", "none")
+        .attr("d", d3.arc() // imagine your doing a part of a donut plot
+            .innerRadius(innerRadius - 20)
+            .outerRadius(innerRadius - 21)
+            .startAngle(0)
+            .endAngle(2*Math.PI)
+            .padAngle(0.05)
+//            .padRadius(innerRadius)
+             ).style("visiblity", "hidden")
+    .attr("id", "title")
+    
+    keysvg
+        .append("text")
+       .classed("visualizationtext", true)
+      .attr("x", 0)   //Move the text from the start angle of the arc
+//    .attr("dy", 1) //Move the text down
+    .style("font-size", "20px")
+    .append("textPath")
+//    .attr("startOffset","50%")
+//    .style("text-anchor","middle")
+    .attr("xlink:href",function(d,i){return "#title";})
+    .text("Keyness of")
+    
+    
+    
+    
 }
