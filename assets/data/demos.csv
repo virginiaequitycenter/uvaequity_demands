@@ -1,5 +1,5 @@
 Demographic,Count,Percent,Code,Order
-Faculty/Staff,0,10,Legend,1
+Faculty/Staff,0,10,Key,1
 Faculty/Staff,25,4.1,Total,1
 Faculty/Staff,1,8.3,Abolition/ Defunding,1
 Faculty/Staff,2,7.4,Community Labor or Partnership,1
@@ -14,7 +14,7 @@ Faculty/Staff,0,0,Reparations,1
 Faculty/Staff,5,6,Research or Coursework,1
 Faculty/Staff,3,2.7,School Climate,1
 Faculty/Staff,6,11.8,Spaces and Places,1
-University Office,0,10,Legend,2
+University Office,0,10,Key,2
 University Office,330,53.7,Total,2
 University Office,0,0,Abolition/ Defunding,2
 University Office,9,33.3,Community Labor or Partnership,2
@@ -29,7 +29,7 @@ University Office,1,33.3,Reparations,2
 University Office,34,40.5,Research or Coursework,2
 University Office,76,69.1,School Climate,2
 University Office,20,39.2,Spaces and Places,2
-Black Students,0,10,Legend,3
+Black Students,0,10,Key,3
 Black Students,153,24.9,Total,3
 Black Students,4,33.3,Abolition/ Defunding,3
 Black Students,16,59.3,Community Labor or Partnership,3
@@ -44,7 +44,7 @@ Black Students,0,0,Reparations,3
 Black Students,28,33.3,Research or Coursework,3
 Black Students,15,13.6,School Climate,3
 Black Students,7,13.7,Spaces and Places,3
-APIDA Students,0,10,Legend,4
+APIDA Students,0,10,Key,4
 APIDA Students,9,1.5,Total,4
 APIDA Students,0,0,Abolition/ Defunding,4
 APIDA Students,0,0,Community Labor or Partnership,4
@@ -59,7 +59,7 @@ APIDA Students,0,0,Reparations,4
 APIDA Students,2,2.4,Research or Coursework,4
 APIDA Students,0,0,School Climate,4
 APIDA Students,1,2,Spaces and Places,4
-Latinx Students,0,10,Legend,5
+Latinx Students,0,10,Key,5
 Latinx Students,31,5,Total,5
 Latinx Students,0,0,Abolition/ Defunding,5
 Latinx Students,0,0,Community Labor or Partnership,5
@@ -74,7 +74,7 @@ Latinx Students,0,0,Reparations,5
 Latinx Students,4,4.8,Research or Coursework,5
 Latinx Students,7,6.4,School Climate,5
 Latinx Students,1,2,Spaces and Places,5
-Students,0,10,Legend,6
+Students,0,10,Key,6
 Students,58,9.4,Total,6
 Students,7,58.3,Abolition/ Defunding,6
 Students,0,0,Community Labor or Partnership,6
@@ -89,7 +89,7 @@ Students,2,66.7,Reparations,6
 Students,8,9.5,Research or Coursework,6
 Students,8,7.3,School Climate,6
 Students,16,31.4,Spaces and Places,6
-Alumni,0,10,Legend,7
+Alumni,0,10,Key,7
 Alumni,9,1.5,Total,7
 Alumni,0,0,Abolition/ Defunding,7
 Alumni,0,0,Community Labor or Partnership,7

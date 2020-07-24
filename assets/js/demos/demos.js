@@ -96,7 +96,7 @@ function scaleRadial() {
         .on("mouseleave", mouseleavedemos);
     
     
-var totalcircle =  d3.select("#Legend").select("g");
+var totalcircle =  d3.select("#Key").select("g");
     
     totalcircle
       .selectAll("titleg")
@@ -111,7 +111,9 @@ var totalcircle =  d3.select("#Legend").select("g");
         .attr("transform", function(d) { return (x(d.Demographic) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "rotate(180)" : "rotate(0)"; })
         .style("font-size", "35px")
         .attr("alignment-baseline", "middle")
-
+    
+  totalcircle
+      .selectAll("path").attr("opacity", .1)
 
     
     

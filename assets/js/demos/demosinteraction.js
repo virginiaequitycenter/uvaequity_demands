@@ -6,7 +6,7 @@ var mouseoverdemos = function(d) {
    d3.select(this)
       .style("opacity", .5); 
     
-    d3.select("#chordtext").text(d.Demographic + ": " + d.Count)
+    d3.select("#chordtext").text(d.Demographic + ": " + d.Count + " Contributions")
 
 }
 

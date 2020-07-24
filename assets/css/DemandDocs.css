@@ -392,7 +392,8 @@ i.fa-white {
     font-size: 16px;
     /*    background-color: #d6ecef;*/
 /*    background-color: #fcf5e3;*/
-    background-color: rgba(252, 245, 227, .7);
+/*    background-color: rgba(252, 245, 227, .7);*/
+    background-color:rgba(211, 145, 86,.2);
     padding: 10px;
     box-shadow: 1px 1px 1px #cccccc;
     border-radius: 3px;
@@ -401,8 +402,8 @@ i.fa-white {
     border-radius: 7.5px;
     z-index: 1000;
     transform: translate(-50%, 0%);
-          -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 
 #demandtext {
