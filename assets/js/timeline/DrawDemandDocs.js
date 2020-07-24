@@ -55,7 +55,7 @@ function DrawDemandDocs(demand_text, events, images) {
         .attr("id", (d) => "did" + d.values[[0]].values[[0]].docid);
 
     var documentlinks = demandboxes.append("i").classed("fas", true).classed("fa-external-link-alt", true).classed("pointer", true).on("click", function (d) {
-        window.open("assets/documents/" + d.values[[0]].values[[0]].filename_updated);
+        window.open("../assets/documents/" + d.values[[0]].values[[0]].filename_updated);
     });
     var documenttitleboxes = demandboxes.append("div").classed("documenttitlebox", true);
     var documenttitles = documenttitleboxes.append("h3").text((d) => d.key);

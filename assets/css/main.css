@@ -184,7 +184,7 @@ hr {
 
     border-radius: 10px;
     border: 2px solid rgba(90, 111, 135, .85);
-    text-align: center;
+    text-align: justify;
 }
 
 .storytext {
@@ -485,4 +485,12 @@ footer a{
         position: absolute;
     top: 0;
     width: 100%;
+}
+
+
+
+
+
+li {
+    text-align: justify;
 }
