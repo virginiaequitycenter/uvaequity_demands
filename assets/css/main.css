@@ -495,3 +495,14 @@ footer a{
 li {
     text-align: justify;
 }
+
+.topcallout {
+    margin-bottom: 0px; 
+    padding: 0px; 
+    background-color: rgba(211, 145, 86,.2);  
+    border-bottom: solid white 1px;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, .2);
+/*   -webkit-backdrop-filter: blur(20px);*/
+/*  backdrop-filter:blur(20px);*/
+    
+}
