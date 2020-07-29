@@ -55,7 +55,7 @@ function DrawDemandDocs(demand_text, events, images) {
         .attr("id", (d) => "did" + d.values[[0]].values[[0]].docid);
 
     var documentlinks = demandboxes.append("i").classed("fas", true).classed("fa-external-link-alt", true).classed("pointer", true).on("click", function (d) {
-        window.open("assets/documents/" + d.values[[0]].values[[0]].filename_updated);
+        window.open("../assets/documents/" + d.values[[0]].values[[0]].filename_updated);
     });
     var documenttitleboxes = demandboxes.append("div").classed("documenttitlebox", true);
     var documenttitles = documenttitleboxes.append("h3").text((d) => d.key);
@@ -182,7 +182,7 @@ function DrawDemandDocs(demand_text, events, images) {
         })
         .append("a")
         .attr("xlink:href", d => d.Link);;
-
+    
     // Timeline Images
     //  var imagecontainers =  eventscontainer.selectAll(".eventimageboxes").data(images).enter()
     //   .append("div")
@@ -200,7 +200,7 @@ function DrawDemandDocs(demand_text, events, images) {
     imagecontainers
         .append("img")
         .attr("src", function (d) {
-            return "assets/pics/timelinepics/" + d.ImageFile + "" + d.Extension
+            return "../assets/pics/timelinepics/" + d.ImageFile
         })
         .attr("class", "eventimage");
     //        .text(d => d.Year + " " + d.Text)

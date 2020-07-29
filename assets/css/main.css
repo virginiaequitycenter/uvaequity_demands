@@ -14,44 +14,54 @@ html {
 
 /* Give the Body the Proper Background Color*/
 body {
-        background-color: #FEFFFF;
+    background-color: #FEFFFF;
+/*
     background-image:
         linear-gradient(rgba(255, 255, 255, .97),
             rgba(255, 255, 255, .97)),
-                url("../pics/paint.jpg");
-    position:relative;
-    margin:0;
+        url("../pics/paint.jpg");
+*/
+    
+    background-image:
+        linear-gradient(rgba(255, 255, 255, .3),
+            rgba(255, 255, 255, .3)),
+                url("../pics/cream_dust.png");
+
+    position: relative;
+    margin: 0;
     padding: 0;
 }
 
 /* Set the Title color weight and font for the header*/
 header {
-    padding-top:0;
-/*    margin-top:25px;*/
+    padding-top: 0;
+    /*    margin-top:25px;*/
     margin-bottom: 50px;
 }
 
 header p {
-    text-align:justify;
-      font-family: 'Yantramanav', sans-serif;
-   font-size: 30px;  
-line-height: 1em;
-margin:0;}
+    text-align: justify;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 30px;
+    line-height: 1em;
+    margin: 0;
+}
 
 h1 {
-  text-align: center;
-    font-size:50px;
- color: rgba(90, 111, 135, 1);/*    opacity: .9;*/
+    text-align: center;
+    font-size: 50px;
+    color: rgba(90, 111, 135, 1);
+    /*    opacity: .9;*/
     font-weight: 700;
-    font-family: 'Amatic SC', cursive; 
+    font-family: 'Amatic SC', cursive;
 }
 
 
 header span {
     font-family: 'Yantramanav', sans-serif;
-   font-size: 16px;  
+    font-size: 16px;
 
-    text-align:center;
+    text-align: center;
     color: rgba(90, 111, 135, 1);
 }
 
@@ -60,66 +70,169 @@ header a {
 }
 
 .navbar-dark {
-        border-bottom: white solid .5px;
-/*    opacity: .9;*/
+    border-bottom: white solid .5px;
+    /*    opacity: .9;*/
 
 }
 
 .navbar {
-    color:  rgba(90, 111, 135, 1);
+    /*    color:  rgba(90, 111, 135, 1);*/
+    /*    color: rgb(104, 58, 32);*/
+    color: white;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, .2);
+
 }
 
-.bg-white {
+.bg-brown {
+    /*
    background-image:         linear-gradient(rgba(255, 255, 255, .97),
             rgba(255, 255, 255, .97)),
                 url("../pics/paint.jpg")
+*/
+    background:
+        linear-gradient(rgba(41, 23, 12, .80),
+            rgba(41, 23, 12, .8)),
+        url("../pics/cream_dust.png");
+    border-bottom: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.text-right {
+    text-align: right;
+    font-family: 'Yantramanav', sans-serif;
+    font-size;
+    10px;
+    font-weight: 300px;
+
+}
+
+/*
+strong {
+    color: rgb(104, 58, 32);
+}
+*/
+
+i.fa-white {
+    color: rgba(255, 255, 255, .94);
+}
+
+
+.button-blue {
+    /*    color:rgba(90, 111, 135, 1);*/
+    border-color: rgba(90, 111, 135, 1)
+}
+
+.button-blue:hover {
+    background-color: rgba(90, 111, 135, 1)
+}
+
+.white-back {
+    background-color: rgba(41, 23, 12, .7);
+    /*        background-color: rgba(90, 111, 135, 1);*/
+    border-radius: 2px;
+    border: rgba(41, 23, 12, .7);
+
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, .2);
+    width: 100px;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+.white-back:hover {
+    background-color: rgba(90, 111, 135, 1)
+        /*     background-color: rgba(41,23,12, .8);*/
+
+}
+
+img {
+    width: 100%;
+}
+
+
+footer a{
+    color: black;
+}
+
+.box-shadow {
+        box-shadow: 0 4px 3px -3px rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    border: 2px solid rgba(90, 111, 135, .90);
+
+}
+
+.card-body {
+    text-align: center;
+}
+
+.absolute-top {
+        position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+li {
+    text-align: justify;
+}
+
+.topcallout {
+    margin-bottom: 0px; 
+    padding: 0px; 
+    background-color: rgba(211, 145, 86,.2);  
+    border-bottom: solid white 1px;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, .2);
+/*   -webkit-backdrop-filter: blur(20px);*/
+/*  backdrop-filter:blur(20px);*/
+/*   min-height: calc(100vh - 60px;) */
     
 }
 
 /*Set everything in the main body*/
 
-
 main h1 {
-  text-align: center;
-    font-size:45px;
+    text-align: center;
+    font-size: 45px;
     color: black;
-/*    opacity: .9;*/
+    /*    opacity: .9;*/
     font-weight: 300;
-    font-family: 'Amatic SC', cursive; 
+    font-family: 'Amatic SC', cursive;
 }
 
-main p{
-    text-align:justify;
-      font-family: 'Yantramanav', sans-serif;
-   font-size: 20px;  
-    
+main p {
+    text-align: justify;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 20px;
+
 }
 
 main span {
     text-align: center;
-   font-family: 'Yantramanav', sans-serif;
-   font-size: 20px;   
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 20px;
 }
 
-a{
+a {
     color: rgba(90, 111, 135, 1);
 }
 
 section::first-line::first-letter {
-  font-size: 200%;
-  color: #8A2BE2;
+    font-size: 200%;
+    color: #8A2BE2;
 }
 
 mark {
     border-radius: 3px;
     padding: 1px;
+      box-shadow:  2px 2px 2px rgba(0, 0, 0, .2);
 }
 
 hr {
     margin: 0;
     margin-top: .25rem;
     margin-bottom: .25rem;
-    padding:0;
+    padding: 0;
 }
 
 
@@ -130,31 +243,55 @@ hr {
 
 /*Scrolly Telling Kit*/
 .storyelement {
-  margin-bottom: 100vh;
-   z-index: 2000;
-/*    padding-bottom: 100px;*/
+    margin-bottom: 100vh;
+    z-index: 2000;
+    /*    padding-bottom: 100px;*/
 }
 
 .storytextbox {
     padding: 20px;
+/*
     background-image:
-        linear-gradient(rgba(90, 111, 135, .94),
-            rgba(90, 111, 135, .94)),
+        linear-gradient(rgba(90, 111, 135, .90),
+            rgba(90, 111, 135, .90)),
         url("../pics/paint.jpg");
+*/
+/*
+     background-image:
+           linear-gradient(rgba(90, 111, 135, .85),
+          rgba(90, 111, 135, .85)),
+                url("../pics/cream_dust.png");
+*/
+    /*
+        background-image:
+        linear-gradient(  rgba(0, 0, 0, .4),
+                  rgba(0, 0, 0, .4)),
+        url("../pics/paint.jpg");
+*/
+
+    
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter:blur(20px);
+    
+        box-shadow: 0 4px 2px -2px rgba(0, 0, 0, .2);
+
+
     border-radius: 10px;
-    text-align: center;
+    border: 2px solid rgba(90, 111, 135, .85);
+    text-align: justify;
 }
 
 .storytext {
-color: white;
-font-family: 'Yantramanav', sans-serif;
-font-size: 20px;
+/*    color: white;*/
+    color:black
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 20px;
 }
 
 /*Data Vis Kit*/
-.svg-content{
-    width:100%;
-    overflow:visible;
+.svg-content {
+    width: 100%;
+    overflow: visible;
 }
 
 .visualizationtext {
@@ -172,17 +309,18 @@ font-size: 20px;
     border-radius: 3px;
     opacity: 0.9;
     border-radius: 7.5px;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
+/**/
 .tooltiptext {
-/*       font-family: 'Open Sans Condensed', sans-serif;*/
+    /*       font-family: 'Open Sans Condensed', sans-serif;*/
 }
 
 
 section {
     margin-top: 25px;
-/*    margin-bottom: 25px;*/
+    /*    margin-bottom: 25px;*/
 
 }
 
@@ -192,24 +330,47 @@ main {
 }
 
 .callout {
-       display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-     background:
-        linear-gradient(rgba(41,23,12, .75),
-            rgba(41,23,12, .75)),
-                url("../pics/protest.jpg") no-repeat center center;
--webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover;
-    margin:0;
-/*    margin-top: 25px;*/
+    background:
+        linear-gradient(rgba(41, 23, 12, .75),
+            rgba(41, 23, 12, .75)),
+        url("../pics/protest.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    /*    margin-top: 25px;*/
     height: 600px;
 }
 
+
+.callout2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        linear-gradient(rgba(41, 23, 12, .75),
+            rgba(41, 23, 12, .75)),
+        url("../pics/protest.jpg");
+    /*         no-repeat center center;*/
+    /*-webkit-background-size: cover;*/
+    /* -moz-background-size: cover;*/
+    /* -o-background-size: cover;*/
+    /* background-size: cover;*/
+    margin: 0;
+    /*    margin-top: 25px;*/
+    /*    height: 600px;*/
+}
+
+
+
+
 .container-fluid {
-    padding:0;
+    padding: 0;
+    margin-bottom:0
 }
 
 
@@ -219,11 +380,12 @@ main {
     margin-right: 5px;
     padding: 0;
     padding-left: 10px;
-      text-align: center;
-    font-size:20px;
- color: rgba(90, 111, 135, 1);/*    opacity: .9;*/
+    text-align: center;
+    font-size: 20px;
+    color: rgba(90, 111, 135, 1);
+    /*    opacity: .9;*/
     font-weight: 700;
-    font-family: 'Amatic SC', cursive; 
+    font-family: 'Amatic SC', cursive;
     color: white;
 }
 
@@ -233,93 +395,114 @@ main {
 
 
 .font-white {
-    color:white;
+    color: white;
 }
 
 .card-text {
-          font-family: 'Yantramanav', sans-serif;
+    font-family: 'Yantramanav', sans-serif;
 
 }
 
 .album {
-/*
+    /*
     background-image:
         linear-gradient(rgba(90, 111, 135, .90),
           rgba(90, 111, 135, .90)),
                     url("../pics/paint.jpg");
 */
     border: rgba(90, 111, 135, .90) solid .1px;
+    overflow: hidden;
 }
 
 
 
-.callout2 {
-       display: flex;
+.callout3 {
+    display: flex;
     align-items: center;
     justify-content: center;
-     background:
-           linear-gradient(rgba(90, 111, 135, .9),
-          rgba(90, 111, 135, .9)),
-                url("../pics/paint.jpg") no-repeat center center;
--webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover;
-    margin:0;
+    background:
+        linear-gradient(rgba(90, 111, 135, .9),
+            rgba(90, 111, 135, .9)),
+        url("../pics/bg.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
     margin-top: 25px;
-    padding:25px;
-/*    height: 200px;*/
+    padding: 25px;
+    /*    height: 200px;*/
 }
 
 
 .nav-link {
-        color: rgba(90, 111, 135, 1);
-        font-family: 'Yantramanav', sans-serif;
-        font-size: 20px;
+    color: rgba(90, 111, 135, 1);
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 20px;
 }
 
 .navcontainer {
-    margin:0;
+    margin: 0;
     width: 100%;
-    padding:0;
+    padding: 0;
 }
 
 .bg-voices {
+    /*
     background:
-           linear-gradient(rgba(90, 111, 135, .9),
-          rgba(90, 111, 135, .9)),
+           linear-gradient(rgba(90, 111, 135, .8),
+          rgba(90, 111, 135, .8)),
+                url("../pics/cream_dust.jpg");
+    
+*/
+    /*
+        background:
+           linear-gradient(rgba(0, 0, 0, .3),
+          rgba(0, 0, 0, .3)),
+                url("../pics/cream_dust.jpg");
+*/
+    /*
+            background:
+           linear-gradient(rgba(0, 0, 0, .4),
+          rgba(0, 0, 0, .4)),
                 url("../pics/paint.jpg");
-    padding:0;
+*/
+    border: 0px;
+    /*
+     background:
+           linear-gradient(rgba(41,23,12, .7),
+          rgba(41,23,12, .7)),
+                url("../pics/paint.jpg");
+*/
+
+
+    background:
+        linear-gradient(rgba(41, 23, 12, .80),
+            rgba(41, 23, 12, .8)),
+        url("../pics/cream_dust.png");
+
+
+    /*    background-color:rgb(104, 58, 32)*/
+    padding: 0;
     padding-right: 10px;
+    display: flex;
+    flex-direction: row;
 }
 
 .font-smaller {
-    font-size:18px;
+    font-size: 18px;
 }
 
 .font1 {
-      text-align: center;
-    font-size:35px;
- color: rgba(90, 111, 135, 1);/*    opacity: .9;*/
+    text-align: center;
+    font-size: 30px;
+/*    color: rgba(90, 111, 135, 1);*/
+    /*    opacity: .9;*/
     font-weight: 700;
-    font-family: 'Amatic SC', cursive; 
-}
-}
-
-
-
-a:hover {
-        text-decoration:none;
+    font-family: 'Amatic SC', cursive;
 }
 
-.text-right {
-    text-align: right;
-          font-family: 'Yantramanav', sans-serif;
-    font-size; 10px;
-    font-weight: 300px;
 
-}
 
-strong {
-    color: rgb(104, 58, 32);
-}
+
+

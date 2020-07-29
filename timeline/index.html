@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title> Voices for Equity Visual Library </title>
-    <link rel="icon" href="pics/UVAEQUITYCENTER.jpeg">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <title> Voices for Equity</title>
+    <link rel="icon" href="../assets/pics/eclogo.png">
 
     <script src="https://d3js.org/d3.v5.min.js"></script>
     
@@ -19,8 +19,8 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/DemandDocs.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/DemandDocs.css">
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -42,25 +42,31 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 <body>
 
-<!--  <div id="instructions" class="instructions col-md-10 open">-->
-   <div id="instructions" class="instructions container">
-        <h1>VISUAL LIBRARY</h1>
+  <div id="instructions" class="instructions col-md-10 open">
+<!--   <div id="instructions" class="instructions container">-->
+        <h1>INTERACTIVE TIMELINE</h1>
 
         <div class="col-md-8" style="transform: translate(-50%,0); left: 50%">
-            <p>We took 50 years of documents, read them, seperated them into specific calls to action, and tagged each action item with one or more of 13 key themes. We present those documents here in a timeline format for you to explore within their contexts.</p>
+            <p>We took 50 years of documents, read them, seperated them into specific calls to action, and tagged each action item with one or more of <a href="../methodology" style="color: rgba(211, 145, 86,.8)"> 13 key themes</a>. We present those documents here in a timeline format for you to explore within their contexts.</p>
 
             <p>Use the Arrow keys to progress forward and backward through time.</p>
 
             <div>
-                <button type="button" class="btn btn-secondary" aria-label="Scroll Timeline Forward">
-                    <center> <i class="fas fa-chevron-left fa-2x"></i></center>
-                </button>
-                <button type="button" class="btn btn-default btn-secondary active" aria-label="Scroll Timeline Forward">
-                    <center><i class="fas fa-chevron-right fa-2x"></i></center>
-                </button>
+                                  <button type="button" class="btn btn-secondary white-back" aria-label="Scroll Timeline Forward" >
+<!--                        <center> <i class="fas fa-white fa-chevron-left fa-2x"></i></center>-->
+                        
+                        <center>Back</center>
+                    </button>
+                    <button type="button" class="btn btn-default btn-secondary white-back" aria-label="Scroll Timeline Forward" >
+<!--                        <center><i class="fas fa-white fa-chevron-right fa-2x"></i></center>-->
+                        <center>Forward</center>
+                    </button>
+                
             </div>
             <br>
-            <p>Each group of lines represents ten distinct demands written in a document.<p>
+            <p>Each group of lines represents ten distinct demands written in a document. </p> 
+            
+
 
                     <div class="demandexamplecontainer">
                         <div class="demandlinescontainerexample d-flex flex-column">
@@ -79,29 +85,31 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
                     </div>
 
                     <br>
+            
+                        <p> <i class="fa fa-mouse-pointer" aria-hidden="true"></i>
+                            Hover over a line to see the written text. </p> <p>  Click <i class="fas fa-external-link-alt" style="color:#fcf5e3"> </i> for the full document.</p>
 
-                    <p> <mark style="background-color:rgb(104, 58, 32); color: white"> Highlighting</mark> means a demand belongs to the theme noted in the top left. We start by highlighting calls for Minority Faculty Staff Recruitment, but you can use the dropdown menu to change which theme you want to see.</p>
+                    <p> <mark style="background-color:rgb(104, 58, 32); color: white"> Highlighting</mark> means a demand belongs to the theme noted in the top left. We start by highlighting calls for Minority Faculty / Staff Recruitment, but you can use the dropdown menu to change which theme you want to see.</p>
 
-                    <p>Hover over a line to see the written text. Click <i class="fas fa-external-link-alt" style="color:#fcf5e3"> </i> for the full document. And mouse over the timeline elements to read the broader story</p>
 
                     <br>
-
-                    <button type="button" class="btn btn-secondary" id="Exitbutton" onclick="close()"> Get Started</button>
+  <button type="button" class="btn btn-default btn-secondary white-back" id="Exitbutton" onclick="close()" >
+Explore</button>
 
         </div>
 
     </div>
     
-<!-- <div class="container-fluid blurry" id="site">-->
-<div class="container-fluid" id="site">
+ <div class="container-fluid blurry" id="site">
+<!--<div class="container-fluid" id="site">-->
 
-        <nav class="navbar navbar-expand-md navbar-dark bg-voices" id="mainNav" height="44px">
-            <div class="font2">JUMP TO:</div>
-            <div class="form-group yearjump"> </div>
-            <div class="font2"> HIGHLIGHT:</div>
-            <div class="form-group tagfilter"> </div>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-voices" id="mainNav" height="44px">
+<!--<form class = "form-inline">             <div class="font2">JUMP TO:</div>-->
+            <div class="form-group yearjump mr-auto"> </div>
 
-            <!-- Brand -->
+<!--            <div class="font2"> HIGHLIGHT:</div>-->
+            <div class="form-group tagfilter mr-auto"> </div>
+<!--</form>             Brand -->
             <!--                <a class="navbar-brand py-1 font1">VOICES FOR EQUITY</a>-->
 
             <!-- Toggler/collapsibe Button -->
@@ -113,17 +121,19 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link font-smaller" href="..">Home
+                        <a class="nav-link font-smaller" href="../">Home
                         </a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link font-smaller" href="timeline.html">Timeline</a>
+                        <a class="nav-link font-smaller" href="../timeline">Timeline</a>
+                                                   <span class="sr-only">(current)</span>
+
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link font-smaller" href="analysis.html">Analysis</a>
+                        <a class="nav-link font-smaller" href="../analysis">Analysis</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link font-smaller" href="#">Methodology</a>
+                        <a class="nav-link font-smaller" href="../methodology">Methodology</a>
                     </li>
                 </ul>
 
@@ -134,10 +144,13 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
             <div class="box" id="timelinebox">
                 <div id="button-group">
                     <button type="button" class="btn btn-secondary white-back" aria-label="Scroll Timeline Forward" id="scroll-back">
-                        <center> <i class="fas fa-chevron-left fa-2x"></i></center>
+<!--                        <center> <i class="fas fa-white fa-chevron-left fa-2x"></i></center>-->
+                        
+                        <center>Back</center>
                     </button>
                     <button type="button" class="btn btn-default btn-secondary white-back" aria-label="Scroll Timeline Forward" id="scroll-forward">
-                        <center><i class="fas fa-chevron-right fa-2x"></i></center>
+<!--                        <center><i class="fas fa-white fa-chevron-right fa-2x"></i></center>-->
+                        <center>Forward</center>
                     </button>
                 </div>
                 <div id="eventscontainer" class="eventscontainer">
@@ -165,6 +178,11 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
         </div>
     </div>
 
+    <div id = "note">
+   <center><strong>Welcome</strong> </center>This app has not yet been optimized for mobile viewing. Content is limited in current format. Please view on larger screen to engage with more content. <br>
+      <center>  <span id='close' onclick='d3.select(this.parentNode.parentNode).remove(); return false;'>[close]</span></center>
+
+    </div>
 
     <div id="tooltip" class="col-md-6">
         <span id="demandtext"></span> <br>
@@ -172,11 +190,11 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 
     </div>
 
-
-    <script type="text/javascript" src="assets/js/timeline/InteractionFunctions.js"></script>
-    <script type="text/javascript" src="assets/js/timeline/ColorDemands.js"></script>
-    <script type="text/javascript" src="assets/js/timeline/DrawDemandDocs.js"></script>
-    <script type="text/javascript" src="assets/js/timeline/loadtimeline.js"></script>
+<script type="text/javascript" src="../assets/js/wraptext.js"></script>
+    <script type="text/javascript" src="../assets/js/timeline/InteractionFunctions.js"></script>
+    <script type="text/javascript" src="../assets/js/timeline/ColorDemands.js"></script>
+    <script type="text/javascript" src="../assets/js/timeline/DrawDemandDocs.js"></script>
+    <script type="text/javascript" src="../assets/js/timeline/loadtimeline.js"></script>
 
     <script>
         loadData()

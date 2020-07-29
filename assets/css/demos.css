@@ -13,6 +13,7 @@
     /*    border: solid black .5px;*/
     font-family: 'Open Sans Condensed', sans-serif;
 
+
 }
 
 .demostitles {
@@ -21,7 +22,9 @@
     dominant-baseline: bottom;
 }
 
-.text-bottom {
-        writing-mode: vertical-rl;
-        transform: rotate(-180deg);
+mark {
+  box-shadow:  2px 2px 2px rgba(0, 0, 0, .2);
+
 }
+
+

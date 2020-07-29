@@ -39,6 +39,9 @@ function DrawTagFilter(tags) {
     var TagList = d3.map(tags, function (d) {
         return d.Code;
     }).keys();
+    
+     var addon = ["Highlight Demand Type"];
+     TagList = addon.concat(TagList);
 
     var tagselector = d3.select(".tagfilter")
         .append("select")
@@ -65,8 +68,8 @@ function DrawYearJump(Data) {
         return d.YEAR;
     }).keys();
     
-    var addon = ["Year"];
-    var YearList = addon.concat(YearList);
+    var addon = ["Jump to Year"];
+     YearList = addon.concat(YearList);
 
     var yearjump = d3.select(".yearjump")
         .append("select")
@@ -79,6 +82,7 @@ function DrawYearJump(Data) {
         .append("option")
         .attr("value", (d) => "Y" + d)
         .text((d) => d)
+//        .call(wrap, 40)
         .classed("tagoption", true);
 
 
@@ -185,7 +189,7 @@ var mouseoverimage = function (d) {
     var windowleft = $("#project").scrollLeft();
 
     var left = thiswidth.x - tooltipwidth.width/2;
-   // var width = thiswidth.width;
+
     var right = thiswidth.x - tooltipwidth.width/2*-1;
 
     var useleft;
@@ -210,10 +214,6 @@ var mouseoverimage = function (d) {
     var imagepath = imagebox.select("img").attr("src")
      console.log(imagepath);
     d3.select("#imagetippic").attr("src", imagepath)
-    
-//  d3.select("#imagelink").attr("xlink:href", d => d.Link)
-                           
-// function(d) { return "assets/pics/timelinepics/" + imagepath + ".png"});
     
     d3.select("#imagetooltip")
      .style("left", useleft + "px")
@@ -247,17 +247,6 @@ $('#showinformation').click(function () {
 
 
 
-
-
-
-
-//function close(){
-//   d3.selectAll("#instructions").classed("open", false); 
-//    display = display + 1
-//    console.log(display);
-//};
-
-//$("#ExitButton").on("click");
 
 
 

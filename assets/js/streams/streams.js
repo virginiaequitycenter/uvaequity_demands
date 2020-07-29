@@ -2,13 +2,11 @@ var sumstat;
 var stackedData;
 var mygroup;
 var title_input = "Student Body Referendum";
-var colorstreams;
 var opacitystreams;
 var xstreams;
 var ystreams;
 var streamssvg;
 var thestreams;
-
 
 function streamgraph(data) {
 
@@ -49,9 +47,9 @@ function streamgraph(data) {
 
 
     // Start Ridiculous Data Manipulation
-     AllCodes = d3.map(data, function (d) {
-        return d.Code;
-    }).keys();
+//     AllCodes = d3.map(data, function (d) {
+//        return d.Code;
+//    }).keys();
 
     //   console.log(data);
 
@@ -139,18 +137,6 @@ function streamgraph(data) {
         (wide);
 
     console.log(stackedData);
-
-    // Ridiculous Data Manipulation is OVER
-
-   
-     colorstreams = d3.scaleOrdinal()
-        .domain(["Other", AllCodes ])
-        .range(['#fde7da','#dfad89', '#683a20', '#dcb17d', '#bd7b45', '#6d3b20', '#f2d3b1', '#9d5d2d', '#ac7752', '#894f29', '#d39156', '#efd1b7', '#e2ad85',  '#dca77d', '#824f30', '#7d452c', '#a86b3f', '#e8bfa3']);
-
-//    "#fde9de" "#fde7da" "#fde3cc" "#f2d3b1" "#fce1c6" "#efd1b7" "#f4cca8" "#e8bfa3" "#fad5b8" "#e9c39f" "#e8bc99" "#e2ad85" "#eeba93"
-// "#dfad89" "#d9a57d" "#e4ac7c" "#dca77d" "#d59d6d" "#e7ae85" "#dcb17d" "#ca9262" "#d28f58" "#d39063" "#d39156" "#ac7752" "#b67849"
-// "#bd7b45" "#c98256" "#ca875a" "#a86b3f" "#a65e23" "#9d5d2d" "#ab6939" "#894f29" "#9b5b35" "#824f30" "#7d452c" "#6d3b20" "#683a20"
-// "#583218"
     
    var o = .8;
     
@@ -223,6 +209,7 @@ function streamgraph(data) {
         .classed("visualizationtext", true)
         .call(wrap, 100);
     
-}
 
-var AllCodes;
+//   marks .style("background-color", (d) => colorstreams(d.firstChild.data) );
+// marktexts = marks.text();
+}

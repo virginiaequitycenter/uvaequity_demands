@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <title> Voices For Equity</title>
+    <link rel="icon" href="../assets/pics/eclogo.png">
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/streams.css">
+    <link rel="stylesheet" href="../assets/css/demos.css">
+    <link rel="stylesheet" href="../assets/css/keyness.css">
+
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+    </script>
+
+</head>
+
+<body>
+
+    <!--        <div class="col-md-10 project">-->
+    <div class="container-fluid">
+
+        <header>
+<!--
+            <nav>
+                <div class="row">
+                    <div class="col-lg-3 col-md-2"> </div>
+
+                    <div class="col-lg-6 col-md-8">
+                        <h1>VOICES FOR EQUITY</h1>
+                        <hr>
+                        <center> <span><a href="../">Home</a> | <a href="../timeline">Timeline</a> | <a href="#">Analysis</a> </span></center>
+                    </div>
+                    <div class="col-lg-3 col-md-2"> </div>
+                </div>
+            </nav>
+-->
+<nav class="navbar navbar-expand-md navbar-dark bg-brown" id="mainNav">
+            <!-- Brand -->
+
+            <a class="navbar-brand py-1 font1">VOICES FOR EQUITY</a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../">Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../timeline">Timeline</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../analysis">Analysis</a>
+                           <span class="sr-only">(current)</span>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../methodology">Methodology</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        </header>
+
+        <main>
+            <section>
+                <div class="row">
+                    <div class="col-lg-3 col-md-2"> </div>
+
+                    <div class="col-lg-6 col-md-8">
+                        <h1> ANALYSIS </h1>
+                        <p> We collected 50 years of documents written by Students, Faculty, Staff, and Working Groups, all addressing racial inequity at the University of Virginia. Our team of qualitative researchers read each document, broke them down into specific demands, and grouped those demands into categories to understand concrete domains for institutional change.
+                        </p>
+
+                        <p> These categories range from specific actions like <mark style="color: white" class="colorstream">Minority Student Recruitment</mark> to <mark class="colorstream">Living Wage</mark> for Staff Members to more genaral comments around categories such as <mark style="color: white" class="colorstream"> School Climate </mark>. For a closer look at the categories and their meanings, take a look at our <a href="#"> Methodology</a> page.</p>
+
+
+                        <p> As we prepared this project, we had to consistently remind ourselves that repeated asks, longer documents, and louder voices are not always indicative of the most urgent or important actions. One pithy demand does not take up as much space as a ten point plan. But it can bear as much power. Not to mention people are often pragmatic. Sometimes demands represent what people feel will be accomplishable without giving voice to their deepest hopes and dreams. </p>
+
+                        <p>As you engage with our work, think of this as a conversation. It is not an exclusive or exhaustive list of the work to be done nor a comprehensive poll of public opinion. Instead, it is a record of history to honor those who envisioned what the University could be long before it started to accept that vision for itself.
+                        </p>
+
+                        <hr>
+
+                        <p margin-bottom: 0>
+                            <strong>de&#xB7mand </strong> <small> /dəˈmand/</small> <i>n.</i> <br> <sup>1</sup>a recommendation made by a person/people who have become angry with complacency.
+                        </p>
+
+                        <hr>
+                        <br>
+
+                 
+                            <p>
+                                     <strong>  <center> Keep scrolling down to explore the conversation.</center>  </strong>
+                            </p>
+
+                      
+                    </div>
+                    <div class="col-lg-2 col-md-3"> </div>
+
+                </div>
+
+            </section>
+
+            <section id="streamsgroup">
+
+                <div id="streamchart">
+
+                    <div class="row">
+
+                        <div class="col-lg-3"> </div>
+
+                        <div class="col-lg-6">
+
+                            <svg id="streams" class="svg-content" viewBox="0 0 750 400" width=100% preserveAspectRatio="none"> </svg>
+                        </div>
+
+                        <div class="col-lg-3"> </div>
+                    </div>
+
+                </div>
+
+
+                <div id="streamstory">
+                    <div class="row storyelement" id="text1">
+                        <div class="col-lg-3 col-md-2"> </div>
+
+                        <div class="col-lg-6 col-md-8 storytextbox">
+                            <span class="storytext"> This is a Streams Chart of the first document in our library. It shows how the themes raised by the Student Body Referendum in 1970 develop later on. The width of a stream equals the # of references to that theme at a specific time while the blank space represent themes not mentioned in this document.</span>
+                        </div>
+
+                        <div class="col-lg-3 col-md-2"> </div>
+
+                    </div>
+
+
+                    <div class="row storyelement" id="text2">
+                        <div class="col-lg-3 col-md-2"> </div>
+
+                        <div class="col-lg-6 col-md-8 storytextbox">
+                            <span class="storytext">
+                                <center>The Document raises 4 key themes: </center>
+
+                                <mark style="color: white" class="colorstream">School Climate</mark>
+                                <mark style="color: white" class="colorstream"> Minority Student Recruitment</mark>
+                                <mark class="colorstream"> Living Wage</mark>
+
+                                <mark style="color: white" class="colorstream">Abolition/ Defunding</mark>
+                            </span>
+                        </div>
+
+                        <div class="col-lg-3 col-md-2"> </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="row storyelement" id="text3">
+                        <div class="col-lg-3"> </div>
+
+                        <div class="col-lg-6 storytextbox">
+                            <span class="storytext"> We can see that <mark style="color: white" class="colorstream">Minority Student Recruitment</mark> was central to this document's mission in 1970. </span>
+                        </div>
+
+                        <div class="col-lg-3"> </div>
+                    </div>
+
+
+
+                    <div class="row storyelement" id="justtext">
+                        <div class="col-lg-3"> </div>
+
+                        <div class="col-lg-6 storytextbox">
+
+                            <img src="../assets/pics/timelinepics/AntiWarStories_MayDay.png"> <br> <br>
+                            <span class="storytext"> "We demand that the University of Virginia publicly commit itself to accepting 20% as a goal for the enrollment of black students throughout the University, and further, that $100,000.00 be allocated for black admissions programs" <br> </span>
+
+                            <span style="float:right"> - Student Body Referendum (1970) </span>
+                        </div>
+
+                        <div class="col-lg-3"> </div>
+                    </div>
+
+
+
+
+                    <div class="row storyelement" id="justtext">
+                        <div class="col-lg-3"> </div>
+
+                        <div class="col-lg-6 storytextbox">
+                            <span class="storytext"> Conversations in 1987 echoed key demands in that theme while introducing new ones into the conversation. </span>
+                        </div>
+
+                        <div class="col-lg-3"> </div>
+                    </div>
+
+
+                    <div class="row storyelement" id="justtext">
+                        <div class="col-lg-3"> </div>
+
+                        <div class="col-lg-6 storytextbox">
+                            <span class="storytext">                             <center> <strong>An Audactious Faith 1987</strong></center>   
+
+
+                                <ul>
+                                    <li>"Merit-based scholarships should be increased from a level of $50,000 per year (or $200,000 for four classes) for black Virginian to at least $100,000 per year (or $400,000 for four classes) and extended to black non-Virginians. With respect to need-based aid, a $150,000 fund for emergency scholarships for black students should be established by the University to ensure retention of those students who are suffering extreme financial hardship."</li>
+
+                                    <li>"Development of sustained links between the university and target school systems to increase the pool of black students in Virginia who wish to attend college in general and the University of Virginia in particular and to enhance the academic preparation of those students."</li>
+
+
+                                </ul>
+
+
+
+
+
+                            </span>
+                        </div>
+
+                        <div class="col-lg-3"> </div>
+                    </div>
+
+
+                    <div class="row storyelement" id="text4">
+                        <div class="col-lg-3"> </div>
+
+                        <div class="col-lg-6 storytextbox">
+                            <span class="storytext"> In contrast, themes of <mark style="color:white" class="colorstream">Abolition/ Defunding</mark> raised in 1970 were not strongly voiced again until 2015. </span>
+                        </div>
+
+                        <div class="col-lg-3"> </div>
+                    </div>
+
+                    <div class="row storyelement" id="text4">
+                        <div class="col-lg-3"> </div>
+
+                        <div class="col-lg-6 storytextbox">
+                            <span class="storytext"> 
+                            <center> <strong>Student Body Referendum 1970</strong></center>   
+                                <ul>
+                                 <li>"We demand that University President, Edgar Shannon, prohibit University police from carrying firearms, and the University not allow any outside law enforcement officers on its property- FBI, CIA, National Guard, Va. State Police, Charlottesville-Albemarle County Police, etc."</li>
+                                
+                                    <li>"We demand that President Shannon immediately initiate action to sever any contractual obligations presently maintained with the Judge Advocate General Corps."</li>
+
+                                    <li>"We demand that the University terminate all research sponsored by, or related to the Department of Defense, and that no classified research be countenanced any longer."</li>
+                                </ul> </span>
+                        </div>
+
+                        <div class="col-lg-3"> </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="row storyelement" id="text4">
+                        <div class="col-lg-3"> </div>
+
+                        <div class="col-lg-6 storytextbox">
+                            <span class="storytext"> 
+                            <center> <strong>Towards a Better University 2015</strong></center>   
+                                <ul>
+                                 <li>"CPD, UPD, and APD should introduce stricter and more uniform regulations informing during what situations a police officer can make any physical contact with a citizen. These regulations should be easily accessible to the public, by way of each department‚ a website, and promotional educational tools for community members and students."</li>
+                                
+                                    <li>"University Police Department, Charlottesville Police Department, and Albemarle Police Department should implement additional, thorough implicit biases and discrimination training."</li>
+
+                                    <li>"Governor McAuliffe and the VA State Legislature abolish the law enforcement mandate of Alcoholic Beverage Control (ABC)."</li>
+                                </ul> </span>
+                        </div>
+
+                        <div class="col-lg-3"> </div>
+                    </div>
+
+
+
+
+                    <div class="row storyelement" id="text5">
+                        <div class="col-lg-3"> </div>
+
+                        <div class="col-lg-6 storytextbox">
+                            <span class="storytext"> In 1987, the first Audacious Faith Report introduced several new themes like <mark style="color:white" class="colorstream">Data Collection and Transparency</mark> <mark class = "colorstream">Diversity in Student Leadership</mark> & <mark style="color:white" class = "colorstream"> Minority Faculty / Staff Recruitment and Retention</mark></span>
+                        </div>
+
+                        <div class="col-lg-3"> </div>
+                    </div>
+                    
+                        <div class="row storyelement" id="text5">
+                        <div class="col-lg-3"> </div>
+
+                        <div class="col-lg-6 storytextbox">
+                            <span class="storytext">  But as we saw above with <mark style="color: white" class="colorstream">Minority Student Recruitment</mark>, it also built off themes from before, reiterating unmet prior demands.</span>
+                        </div>
+
+                        <div class="col-lg-3"> </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="row storyelement" id="text6">
+                        <div class="col-lg-3 col-md-2"> </div>
+
+                        <div class="col-lg-6 col-md-8 storytextbox">
+                            <span class="storytext"> We can move through history watching as the themes discussed in specific documents weave in and out of the conversation. </span>
+                        </div>
+
+                        <div class="col-lg-3 col-md-2"> </div>
+                    </div>
+
+
+
+                    <div class="row" id="textend">
+                        <div class="col-lg-3 col-md-2"> </div>
+
+                        <div class="col-lg-6 col-md-8 storytextbox">
+                            <span class="storytext"> Scroll the Document Selector into view to explore these dynamics on your own. </span>
+                        </div>
+
+                        <div class="col-lg-3 col-md-2"> </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-3"> </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div id="DocChange" class="form-group"></div>
+                    </div>
+                    <div class="col-lg-4 col-md-3"> </div>
+                </div>
+
+            </section>
+            <br>
+            <section id="whotext">
+                <div class="row">
+                    <div class="col-lg-3 col-md-2"> </div>
+                    <div class="col-lg-6 col-md-8">
+                        <p>
+                            <center><i>Who Speaks?</i> </center>
+
+                        </p>
+
+                        <p> Above, we looked at <strong>when</strong> specific topics enter the conversation. But we also need to consider <strong>who</strong> said them. Which groups speak on which issues? Who speaks together? So we grouped the documents by six author categories: (1) Faculty/Staff, (2) University Offices & Commissions, (3) Black Students at UVA, (4) APIDA Students at UVA, (5) Latinx Students at UVA, & (6) Groups of students who do not specificy demographic affiliation. We made these classifications using the authors' self-identification in the documents themselves. We then summed the number of recommendations made in each category by each group over time.
+                        </p>
+
+                        <p> Tabulating these recommendations by authors, we were struck by the number of times the University spoke about itself in the form of working groups and Presedential commissions. Excluding recommendations recorded in the 2017 Index of Diversity Recommendations (a University document summarizing prior student documents), we recorded 330 discrete actions demanded of the University by itself. You can explore those items more through our <a href=../timeline> Interactive Timeline</a>.</p>
+
+                        <p> Below, we present the breakdown of contributors for each demand category. Each wedge's size represents the proportion of the conversation in our dataset occupied by that voice. Hover over a slice to get the exact count of demands made about a topic. </p>
+
+                        <p> Questions to ask as you look include:</p>
+                        <ul>
+                            <li> <i>Which groups speak together, and on which topics? </i> </li>
+                            <li> <i> Have all of the groups contributed to one topic collectively? </i></li>
+                            <li> <i> For groups that do not have many written records, what have they spoken about? </i> </li>
+                            <li> <i> In what ways does our focus here on number of actions demanded deemphasize other important factors? </i> </li>
+                        </ul>
+                        <br>
+                        <p>
+                            <center> <strong> Explore for yourself or scroll beneath to see some of our conclusions. </strong></center>
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-2"> </div>
+                </div>
+            </section>
+
+            <section id="demographicbreakdown">
+                <div class="row">
+                    <div class="col-lg-3 col-md-2"> </div>
+
+                    <div class="col-lg-6 col-md-8" id="demographicviz"> </div>
+
+                    <div class="col-lg-3 col-md-2"> </div>
+                </div>
+            </section>
+
+            <section id="takeaways">
+                <div class="row">
+                    <div class="col-lg-3 col-md-2"> </div>
+                    <div class="col-lg-6 col-md-8">
+                        <p>
+                            <center><i>A Few of Our Takeaways</i> </center>
+
+                        </p>
+
+                        <p>
+                            <strong> Thought (& Action) Leaders:</strong> Did you see that Black students at the University have spoken as an identity group on every key topic here but one (<mark style="color: white" class="colorstream">Reparations</mark>)? Next to the University, they are the most prolific demographic in this set. In particular, Black students have led the converstation on UVA's relationship with the Charlottesville Community. Take a look at <mark style="color: white" class="colorstream">Community Labor or Partnership</mark> <mark style="color: white" class="colorstream">Current Initiatives and Working Groups</mark> & <mark class="colorstream">Living Wage</mark>.
+                        </p>
+
+                        <p>
+                            <strong> Money Matters:</strong> The University speaks alot in this set, but not on <mark style="color: white" class="colorstream">Abolition/ Defunding</mark>, a category that includes Divestment/Responsible Corporate Finance & Removal of Statues. That said, faculty groups have broached the topic before.
+                        </p>
+
+                        <p>
+                            <strong> Precision, Not Breadth:</strong> There is alot of literature here. As we noted at the start, sometimes forcing comparisons based on written quantity of discrete demands deeemphasizes the important contribution of pithy documents or activism outside of the written word. For example, visually looking at the graphic above, you might not have spent alot of time examining APIDA and Latinx contributions. And yet, the <a href="../assets/documents/WeAreNotInvisible%20A%20Report%20On%20Academic%20Reform.pdf"> #We Are Not Invisible</a> and <a href="../assets/documents/Our%20University%20to%20Shape.pdf">Our University To Shape</a> documents sparked so much conversation among other groups represented in this analysis. They made precise and actionable asks. Use the <a href=../timeline> Visual Library</a> to look for other instances of poignant but powerful speech.
+                        </p>
+
+
+                        <p>
+                            <strong> Conversational Consensus:</strong> All groups have spoken on the need for <mark style="color: white" class="colorstream">Minority Faculty / Staff Recruitment and Retention</mark> and some restructuring of <mark style="color: white" class="colorstream">Research or Coursework</mark> toward a more antiracist and inclusive bent.
+                        </p>
+                        <br>
+
+
+                    </div>
+                    <div class="col-lg-3 col-md-2"> </div>
+                </div>
+            </section>
+
+            <section id="whattext">
+                <div class="row">
+                    <div class="col-lg-3 col-md-2"> </div>
+                    <div class="col-lg-6 col-md-8">
+
+                        <p>
+                            <center><i>What Are They Saying?</i> </center>
+
+                        </p>
+
+                        <p> After knowing <strong>who</strong> spoke on which topics, we wanted to get a sense for <strong>what</strong> types of words were used in each category. Specifically, we wanted to know what key terms and actions were <strong>distinctive</strong> or most unique to each category. To do that, we used a metric called <strong>keyness</strong>. </p>
+
+                        <p>
+                            <strong>Keyness</strong> compares the distribution of words in one set to the distribution of words in another. You can think of it as a comparative measure of occurence. For example, if we were comparing fruit in Florida to fruit in other states, Pineapples would probably have a high keyness in Florida. If you are interested, you can read more about keyness <a href="http://www.thegrammarlab.com/?p=193">here</a>.</p>
+
+                        <p> We calculated<strong> keyness </strong> and chose the top ten most distinctive words in each category. We display those distinctive words in the circular bar chart below. Bars are ordered from highest to lowest keyness. You can hover over each bar to see the key word as well as the number of times that word was used in the demand category.</p>
+                         <p> Questions to ask as you look include:</p>
+                        <ul>
+                            <li> <i>Are there any words that you want a broader context for? (Hint: Remember them, that's coming next!)</i> </li>
+                            <li> <i>How do key words give you a sense for the category as a whole?</i> </li>
+                            <li> <i>Are there any words that surprise you?</i></li>
+                            <li> <i>Find the adjectives. What kinds of people and systems are being discussed?</i> </li>
+                            <li> <i>Are there any words that go together?</i> </li>
+
+                        </ul>
+                        <br>
+                    
+                        <p>
+                            <center> <strong>Like last time, explore for yourself or scroll beneath to see some of our takeaways. </strong> </center>
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-2"> </div>
+                </div>
+            </section>
+
+            <section id="keyness">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2"> </div>
+
+                    <div class="col-lg-8 col-md-8" id="keynessviz"> </div>
+
+                    <div class="col-lg-2 col-md-2"> </div>
+                </div>
+            </section>
+            
+            
+            <section id="takeawayskeyness">
+                <div class="row">
+                    <div class="col-lg-3 col-md-2"> </div>
+                    <div class="col-lg-6 col-md-8">
+                        <p>
+                            <center><i>A Few of Our Takeaways</i> </center>
+
+                        </p>
+
+                        <p>
+                            <strong>Access & Progression </strong> Did you see the key term <i>Graduate</i> in the <mark style="color: white" class="colorstream">Minority Student Recruitment</mark> section? While demands in this category certainly do address UVA's undergraduate enrollment of minority students, there is a particular focus on providing access to higher education to BIPOC beyond the undergraduate level.
+                        </p>
+
+                        <p>
+                            <strong>Responsible Contracting:</strong> Both <i>Contracted</i> and <i>Attorney</i> are keywords in the <mark class="colorstream">Living Wage</mark> category alongside <i>Living, Worker, Benefit & Employee</i>. These terms are in reference to the Attorney General of Virginia's 2006 opinion that there is "No authority granted to University of Virginia’s Board of Visitors to require that minimum or living wage be paid by private contractors and vendors to their employees. Virginia Public Procurement Act does not authorize requirement of living wage in public procurement process." [<a href = "https://www.oag.state.va.us/30-resource/opinions/69-2006-official-opinions?highlight=WyJ1bml2ZXJzaXR5IiwidW5pdmVyc2l0eSdzIiwib2YiLCJ2aXJnaW5pYSIsInZpcmdpbmlhJ3MiLCJ2aXJnaW5pYSdzbXVsdGktanVyaXNkaWN0aW9uYWwiLCJ2aXJnaW5pYSdzc29saWNpdGF0aW9uIiwidW5pdmVyc2l0eSBvZiIsInVuaXZlcnNpdHkgb2YgdmlyZ2luaWEiLCJvZiB2aXJnaW5pYSJd#april">citation</a>] This is an opinion many would like the university to challenge to ensure that all those who work on Grounds are justly compsensated. 
+                        </p>
+
+                        <p>
+                            <strong>Supportive Networks & Resources:</strong> The category <mark style="color: white" class="colorstream">School Climate</mark> comments on how to make the University of Virginia more culturally welcoming to BIPOC. And yet, we know that following recommendations in all the other categories would also contribute to that goal. So how is this category different? Looking at the key words, we see topics such as increasing <i>Mentorship</i>, considering student's relationship with <i>Alcohol</i>, routing services to those who most <i>Need</i> them regardless of demographic factors, and requesting that the administration make firm <i>Statements</i> in support of BIPOC, particularly during specific local, state, and national events. These are all concrete actions directly targeted and creating a more inclusive Climate at UVA.
+                        </p>
+
+                    </div>
+                    <div class="col-lg-3 col-md-2"> </div>
+                </div>
+            </section>
+            
+             <section id="search">
+                <div class="row">
+                    <div class="col-lg-3 col-md-2"> </div>
+                    <div class="col-lg-6 col-md-8">
+                        <p>
+                            <center><i>Adding Context</i> </center>
+
+                        </p>
+
+                        <p>
+                            Did you find some key words above that you wanted to explore further? Or maybe keywords just do not give you as clear a picture into the content as you would like. It is true, they can sometimes be vague. When we saw the word <i>Need</i> in <mark style="color: white" class="colorstream">School Climate</mark>, for example, we had to get more context before we could understand what it was talking about too. Keywords are a 10,000 foot view into the richness of these documents. </p>
+                            
+                            <p>So below, we provide a keyword in context (KWIC) search platform for you to take a bit deeper of a dive. If you are like us, maybe you will get lost for an hour exploring all of the references to the Latinx and APIDA communities. Or maybe you just want to see how people have historically addressed the Board of Visitors. That said, if you want even more context and direct access to the texts, it is definitley time to head over to our <a href=../timeline> Interactive Timeline</a>.</p>
+                        
+                        <p>  <strong>
+                         <center> To search, type in a word or a word stem with a * at the end (e.g. support* will give you support, supportive, supporting, etc...) to see demands that include that word.</center>  </strong> 
+                          
+                        </p>
+
+<br>
+                    </div>
+                    <div class="col-lg-3 col-md-2"> </div>
+                </div>
+  
+
+                <div class="row">
+                    <div class="col-lg-1 col-md-1"> </div>
+                    <div class="col-lg-10 col-md-10">
+
+                        <center>
+                            <button type="button" class="btn btn-default btn-secondary white-back" aria-label="Refresh Keyword Search" id="Refresh">
+                                <center>Refresh</center>
+                            </button>
+                        </center>
+                        <p><center> <i style = "font-size:12px;">(If our search server has timed out, wake it up with the refresh button)</i></center> </p>
+                        <iframe src="" width="100%" max-height="1000px" height="900px;" name="keysearch" id = "iframesearch"></iframe>
+
+                    </div>
+                    <div class="col-lg-1 col-md-1"> </div>
+                </div>
+
+            </section>
+
+            <section>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-2"> </div>
+
+                    <div class="col-lg-6 col-md-8">
+                                <p>
+                            <center><i>Your Time to Analyze</i> </center>
+
+                        </p>
+                        <p>
+                            At this point, we hope you have discovered with us just how sustained, impactful, and collaborative these calls for Equity have been at UVA. This is not a new phenomenon, nor is it an isolated one. Any policies recommended by the Racial Equity Taskforce are the next voice in this long-term story.</p>
+                        <p>
+                            Thank you for taking a first step to enter into this conversation with us. Let's continue it beyond this page. Tweet us <a href="https://twitter.com/equitycenteruva?lang=en"> @EquityCenterUVA</a> <strong>#VoicesForEquity</strong> with reactions, things you learned, or any questions about the project.
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-2"> </div>
+                </div>
+            </section>
+<section></section>
+        </main>
+
+
+
+        <div id="tooltipchord" class="tooltip">
+
+            <span id="chordtext" class="tooltiptext"> </span>
+        </div>
+
+        <div id="tooltipstream" class="tooltip">
+            <span id="streamtext" class="tooltiptext"></span>
+        </div>
+
+        <footer style="background-color:rgba(211, 145, 86,.4); border-top: 3px black solid; ">
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="#">UVA Equity Center</a>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('Refresh').addEventListener('click', function() {
+                var ifr = document.getElementsByName('keysearch')[0];
+                ifr.src = "https://commpaslab.shinyapps.io/demandkeywords/";
+            });
+        }
+    </script>
+    <script type="text/javascript" src="../assets/js/wraptext.js"></script>
+    <script type="text/javascript" src="../assets/js/scrolldrivenanalysis.js"></script>
+
+    <script type="text/javascript" src="../assets/js/streams/streamsinteraction.js"></script>
+    <script type="text/javascript" src="../assets/js/streams/updatestreams.js"></script>
+    <script type="text/javascript" src="../assets/js/streams/streams.js"></script>
+
+    <script type="text/javascript" src="../assets/js/demos/demosinteraction.js"></script>
+    <script type="text/javascript" src="../assets/js/demos/demos.js"></script>
+
+    <script type="text/javascript" src="../assets/js/keyness/keynessinteraction.js"></script>
+    <script type="text/javascript" src="../assets/js/keyness/keyness.js"></script>
+
+    <script type="text/javascript" src="../assets/js/loadanalysis.js"></script>
+
+
+    <script>
+        loadData();
+    </script>
+
+
+
+
+
+</body></html>
+<!DOCTYPE html>

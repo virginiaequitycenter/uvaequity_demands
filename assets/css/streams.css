@@ -10,7 +10,7 @@
 }
 
 #streamstory {
-    margin-bottom: calc(50vh + 200px);
+    margin-bottom: calc(50vh + min(25%, 200px));
 }
 
 .myArea{
@@ -28,5 +28,9 @@
 .axistext{
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 15px;
+}
+
+#Other {
+    visibility:hidden;
 }
 

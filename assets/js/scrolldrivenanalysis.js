@@ -3,8 +3,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 function initiatemovement() {
 
-// Animate Stream Chart
+//var chartoffset = document.getElementById('streams').getBoundingClientRect().height/2
+//// Animate Stream Chart
+//
+//var streammargin = "calc(50vh' + chartoffset')'";
 
+//d3.select("#streamstory").style("margin-bottom", streammargin);
+    
 gsap.to("#streamchart", {
     scrollTrigger: {
         trigger: "#streamchart",
@@ -44,7 +49,7 @@ gsap.to("#streamchart", {
 gsap.to("#text1", {
     scrollTrigger: {
         trigger: "#text1",
-        start: "center center",
+        start: "bottom bottom",
         //      endTrigger: "#streamstory",
         end: +10,
         //        markers: true,
@@ -161,6 +166,32 @@ gsap.to(myAreas, {
         },
     },
 });
+    
+    gsap.to("#iframesearch", {
+        scrollTrigger: {
+            trigger: "#search",
+            start: "top bottom",
+            //      endTrigger: "#streamstory",
+            end: "bottom top",
+            //        markers: true,
+            //        scrub: 1,
+
+            onEnter: function () {
+                var ifr = document.getElementsByName('keysearch')[0]
+                ifr.src = "https://commpaslab.shinyapps.io/demandkeywords/"
+            },
+//            onLeaveBack: function(){
+//                var ifr = document.getElementsByName('keysearch')[0]
+//                ifr.src = "#"
+//            }
+
+        },
+
+    });
+    
+    
+   
+    
     
 };
 
