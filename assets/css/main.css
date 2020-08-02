@@ -344,6 +344,8 @@ main {
     margin: 0;
     /*    margin-top: 25px;*/
     height: 600px;
+        background-attachment: fixed;
+
 }
 
 
@@ -354,15 +356,18 @@ main {
     background:
         linear-gradient(rgba(41, 23, 12, .75),
             rgba(41, 23, 12, .75)),
-        url("../pics/protest.jpg");
-    /*         no-repeat center center;*/
+        url("../pics/protest.jpg")
+             no-repeat center center;
     /*-webkit-background-size: cover;*/
     /* -moz-background-size: cover;*/
     /* -o-background-size: cover;*/
-    /* background-size: cover;*/
+     background-size: cover;
     margin: 0;
+    min-height:  600px;
+
     /*    margin-top: 25px;*/
     /*    height: 600px;*/
+    background-attachment: fixed;
 }
 
 
