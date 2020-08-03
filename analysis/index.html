@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <title> Voices For Equity</title>
     <link rel="icon" href="../assets/pics/eclogo.png">
-
     <script src="https://d3js.org/d3.v5.min.js"></script>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- My CSS -->
+    <link rel="stylesheet" href="../assets/css/jquery.tocify.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/streams.css">
     <link rel="stylesheet" href="../assets/css/demos.css">
@@ -29,67 +29,83 @@
 </head>
 
 <body>
-
-    <!--        <div class="col-md-10 project">-->
     <div class="container-fluid">
 
         <header>
-<!--
-            <nav>
-                <div class="row">
-                    <div class="col-lg-3 col-md-2"> </div>
+            <nav class="navbar navbar-expand-md navbar-dark bg-brown" id="mainNav">
+                <!-- Brand -->
 
-                    <div class="col-lg-6 col-md-8">
-                        <h1>VOICES FOR EQUITY</h1>
-                        <hr>
-                        <center> <span><a href="../">Home</a> | <a href="../timeline">Timeline</a> | <a href="#">Analysis</a> </span></center>
-                    </div>
-                    <div class="col-lg-3 col-md-2"> </div>
+                <a class="navbar-brand py-1 font1" href="../">VOICES FOR EQUITY</a>
+
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="../">Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../timeline">Timeline</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../analysis">Analysis</a>
+                            <span class="sr-only">(current)</span>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../methodology">Methodology</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
--->
-<nav class="navbar navbar-expand-md navbar-dark bg-brown" id="mainNav">
-            <!-- Brand -->
-
-            <a class="navbar-brand py-1 font1" href = "../">VOICES FOR EQUITY</a>
-
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="../">Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../timeline">Timeline</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="../analysis">Analysis</a>
-                           <span class="sr-only">(current)</span>
-
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../methodology">Methodology</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
 
         </header>
-
         <main>
+
             <section>
                 <div class="row">
-                    <div class="col-lg-3 col-md-2"> </div>
+                    <div class="col-lg-3 col-md-2">
+                        <div id="TOC" class="tocify">
+                            <a href="#intro">
+                                <ul class="tocify-header list-group">
+                                    <li id="tocify-header1" class="tocify-item list-group-item" style="cursor: pointer;">Overview</li>
+                                </ul>
+                            </a>
+
+                            <a href="#when">
+                                <ul class="tocify-header list-group">
+                                    <li id="tocify-header2" class="tocify-item list-group-item" style="cursor: pointer;">A Conversation Over Time</li>
+                                </ul>
+                            </a>
+
+                            <a href="#who">
+                                <ul class="tocify-header list-group">
+                                    <li id="tocify-header3" class="tocify-item list-group-item" style="cursor: pointer;">Who Speaks?</li>
+                                </ul>
+                            </a>
+
+                            <a href="#what">
+                                <ul class="tocify-header list-group">
+                                    <li id="tocify-header4" class="tocify-item list-group-item" style="cursor: pointer;">What are They Saying?</li>
+                                </ul>
+                            </a>
+                            <a href="#search">
+
+                                <ul class="tocify-header list-group">
+                                    <li id="tocify-header5" class="tocify-item list-group-item" style="cursor: pointer;">Understanding Context</li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
 
                     <div class="col-lg-6 col-md-8">
-                        <h1> ANALYSIS </h1>
+                        <h1 id="intro"> ANALYSIS </h1>
                         <p> We collected 50 years of documents written by Students, Faculty, Staff, and Working Groups, all addressing racial inequity at the University of Virginia. Our team of qualitative researchers read each document, broke them down into specific demands, and grouped those demands into categories to understand concrete domains for institutional change.
                         </p>
 
@@ -110,12 +126,14 @@
                         <hr>
                         <br>
 
-                 
-                            <p>
-                                     <strong>  <center> Keep scrolling down to explore the conversation.</center>  </strong>
-                            </p>
 
-                      
+                        <p>
+                            <strong id="when">
+                                <center> Keep scrolling down to explore the conversation.</center>
+                            </strong>
+                        </p>
+
+
                     </div>
                     <div class="col-lg-2 col-md-3"> </div>
 
@@ -133,8 +151,8 @@
 
                         <div class="col-lg-6">
 
-                            <svg id="streams" class="svg-content" viewBox="0 0 750 400" width=100% preserveAspectRatio="none" aria-labelledby="title"> 
-                            <title id = "title" lang = "en"> Dynamic Streamsgraphs. Displays the relative mentions of each demand category overtime. School Climate and Minority Student Recruitment are two top mentioned demands.  </title>
+                            <svg id="streams" class="svg-content" viewBox="0 0 750 400" width=100% preserveAspectRatio="none" aria-labelledby="title">
+                                <title id="title" lang="en"> Dynamic Streamsgraphs. Displays the relative mentions of each demand category overtime. School Climate and Minority Student Recruitment are two top mentioned demands. </title>
                             </svg>
                         </div>
 
@@ -197,7 +215,7 @@
 
                         <div class="col-lg-6 storytextbox">
 
-                            <img src="../assets/pics/timelinepics/AntiWarStories_MayDay.png" alt = "May Day Protests"> <br> <br>
+                            <img src="../assets/pics/timelinepics/AntiWarStories_MayDay.png" alt="May Day Protests"> <br> <br>
                             <span class="storytext"> "We demand that the University of Virginia publicly commit itself to accepting 20% as a goal for the enrollment of black students throughout the University, and further, that $100,000.00 be allocated for black admissions programs" <br> </span>
 
                             <span style="float:right"> - Student Body Referendum (1970) </span>
@@ -224,7 +242,8 @@
                         <div class="col-lg-3"> </div>
 
                         <div class="col-lg-6 storytextbox">
-                            <span class="storytext">                             <center> <strong>An Audactious Faith 1987</strong></center>   
+                            <span class="storytext">
+                                <center> <strong>An Audactious Faith 1987</strong></center>
 
 
                                 <ul>
@@ -260,35 +279,37 @@
                         <div class="col-lg-3"> </div>
 
                         <div class="col-lg-6 storytextbox">
-                            <span class="storytext"> 
-                            <center> <strong>Student Body Referendum 1970</strong></center>   
+                            <span class="storytext">
+                                <center> <strong>Student Body Referendum 1970</strong></center>
                                 <ul>
-                                 <li>"We demand that University President, Edgar Shannon, prohibit University police from carrying firearms, and the University not allow any outside law enforcement officers on its property- FBI, CIA, National Guard, Va. State Police, Charlottesville-Albemarle County Police, etc."</li>
-                                
+                                    <li>"We demand that University President, Edgar Shannon, prohibit University police from carrying firearms, and the University not allow any outside law enforcement officers on its property- FBI, CIA, National Guard, Va. State Police, Charlottesville-Albemarle County Police, etc."</li>
+
                                     <li>"We demand that President Shannon immediately initiate action to sever any contractual obligations presently maintained with the Judge Advocate General Corps."</li>
 
                                     <li>"We demand that the University terminate all research sponsored by, or related to the Department of Defense, and that no classified research be countenanced any longer."</li>
-                                </ul> </span>
+                                </ul>
+                            </span>
                         </div>
 
                         <div class="col-lg-3"> </div>
                     </div>
-                    
-                    
-                    
+
+
+
                     <div class="row storyelement" id="text4">
                         <div class="col-lg-3"> </div>
 
                         <div class="col-lg-6 storytextbox">
-                            <span class="storytext"> 
-                            <center> <strong>Towards a Better University 2015</strong></center>   
+                            <span class="storytext">
+                                <center> <strong>Towards a Better University 2015</strong></center>
                                 <ul>
-                                 <li>"CPD, UPD, and APD should introduce stricter and more uniform regulations informing during what situations a police officer can make any physical contact with a citizen. These regulations should be easily accessible to the public, by way of each department‚ a website, and promotional educational tools for community members and students."</li>
-                                
+                                    <li>"CPD, UPD, and APD should introduce stricter and more uniform regulations informing during what situations a police officer can make any physical contact with a citizen. These regulations should be easily accessible to the public, by way of each department‚ a website, and promotional educational tools for community members and students."</li>
+
                                     <li>"University Police Department, Charlottesville Police Department, and Albemarle Police Department should implement additional, thorough implicit biases and discrimination training."</li>
 
                                     <li>"Governor McAuliffe and the VA State Legislature abolish the law enforcement mandate of Alcoholic Beverage Control (ABC)."</li>
-                                </ul> </span>
+                                </ul>
+                            </span>
                         </div>
 
                         <div class="col-lg-3"> </div>
@@ -301,17 +322,17 @@
                         <div class="col-lg-3"> </div>
 
                         <div class="col-lg-6 storytextbox">
-                            <span class="storytext"> In 1987, the first Audacious Faith Report introduced several new themes like <mark style="color:white" class="colorstream">Data Collection and Transparency</mark> <mark class = "colorstream">Diversity in Student Leadership</mark> & <mark style="color:white" class = "colorstream"> Minority Faculty / Staff Recruitment and Retention</mark></span>
+                            <span class="storytext"> In 1987, the first Audacious Faith Report introduced several new themes like <mark style="color:white" class="colorstream">Data Collection and Transparency</mark> <mark class="colorstream">Diversity in Student Leadership</mark> & <mark style="color:white" class="colorstream"> Minority Faculty / Staff Recruitment and Retention</mark></span>
                         </div>
 
                         <div class="col-lg-3"> </div>
                     </div>
-                    
-                        <div class="row storyelement" id="text5">
+
+                    <div class="row storyelement" id="text5">
                         <div class="col-lg-3"> </div>
 
                         <div class="col-lg-6 storytextbox">
-                            <span class="storytext">  But as we saw above with <mark style="color: white" class="colorstream">Minority Student Recruitment</mark>, it also built off themes from before, reiterating unmet prior demands.</span>
+                            <span class="storytext"> But as we saw above with <mark style="color: white" class="colorstream">Minority Student Recruitment</mark>, it also built off themes from before, reiterating unmet prior demands.</span>
                         </div>
 
                         <div class="col-lg-3"> </div>
@@ -359,7 +380,7 @@
 
             </section>
             <br>
-            <section id="whotext">
+            <section id="who">
                 <div class="row">
                     <div class="col-lg-3 col-md-2"> </div>
                     <div class="col-lg-6 col-md-8">
@@ -434,7 +455,7 @@
                 </div>
             </section>
 
-            <section id="whattext">
+            <section id="what">
                 <div class="row">
                     <div class="col-lg-3 col-md-2"> </div>
                     <div class="col-lg-6 col-md-8">
@@ -450,7 +471,7 @@
                             <strong>Keyness</strong> compares the distribution of words in one set to the distribution of words in another. You can think of it as a comparative measure of occurence. For example, if we were comparing fruit in Florida to fruit in other states, Pineapples would probably have a high keyness in Florida. If you are interested, you can read more about keyness <a href="http://www.thegrammarlab.com/?p=193">here</a>.</p>
 
                         <p> We calculated<strong> keyness </strong> and chose the top ten most distinctive words in each category. We display those distinctive words in the circular bar chart below. Bars are ordered from highest to lowest keyness. You can hover over each bar to see the key word as well as the number of times that word was used in the demand category.</p>
-                         <p> Questions to ask as you look include:</p>
+                        <p> Questions to ask as you look include:</p>
                         <ul>
                             <li> <i>Are there any words that you want a broader context for? (Hint: Remember them, that's coming next!)</i> </li>
                             <li> <i>How do key words give you a sense for the category as a whole?</i> </li>
@@ -460,7 +481,7 @@
 
                         </ul>
                         <br>
-                    
+
                         <p>
                             <center> <strong>Like last time, explore for yourself or scroll beneath to see some of our takeaways. </strong> </center>
                         </p>
@@ -478,8 +499,8 @@
                     <div class="col-lg-2 col-md-2"> </div>
                 </div>
             </section>
-            
-            
+
+
             <section id="takeawayskeyness">
                 <div class="row">
                     <div class="col-lg-3 col-md-2"> </div>
@@ -494,7 +515,7 @@
                         </p>
 
                         <p>
-                            <strong>Responsible Contracting:</strong> Both <i>Contracted</i> and <i>Attorney</i> are keywords in the <mark class="colorstream">Living Wage</mark> category alongside <i>Living, Worker, Benefit & Employee</i>. These terms are in reference to the Attorney General of Virginia's 2006 opinion that there is "No authority granted to University of Virginia’s Board of Visitors to require that minimum or living wage be paid by private contractors and vendors to their employees. Virginia Public Procurement Act does not authorize requirement of living wage in public procurement process." [<a href = "https://www.oag.state.va.us/30-resource/opinions/69-2006-official-opinions?highlight=WyJ1bml2ZXJzaXR5IiwidW5pdmVyc2l0eSdzIiwib2YiLCJ2aXJnaW5pYSIsInZpcmdpbmlhJ3MiLCJ2aXJnaW5pYSdzbXVsdGktanVyaXNkaWN0aW9uYWwiLCJ2aXJnaW5pYSdzc29saWNpdGF0aW9uIiwidW5pdmVyc2l0eSBvZiIsInVuaXZlcnNpdHkgb2YgdmlyZ2luaWEiLCJvZiB2aXJnaW5pYSJd#april">citation</a>] This is an opinion many would like the university to challenge to ensure that all those who work on Grounds are justly compsensated. 
+                            <strong>Responsible Contracting:</strong> Both <i>Contracted</i> and <i>Attorney</i> are keywords in the <mark class="colorstream">Living Wage</mark> category alongside <i>Living, Worker, Benefit & Employee</i>. These terms are in reference to the Attorney General of Virginia's 2006 opinion that there is "No authority granted to University of Virginia’s Board of Visitors to require that minimum or living wage be paid by private contractors and vendors to their employees. Virginia Public Procurement Act does not authorize requirement of living wage in public procurement process." [<a href="https://www.oag.state.va.us/30-resource/opinions/69-2006-official-opinions?highlight=WyJ1bml2ZXJzaXR5IiwidW5pdmVyc2l0eSdzIiwib2YiLCJ2aXJnaW5pYSIsInZpcmdpbmlhJ3MiLCJ2aXJnaW5pYSdzbXVsdGktanVyaXNkaWN0aW9uYWwiLCJ2aXJnaW5pYSdzc29saWNpdGF0aW9uIiwidW5pdmVyc2l0eSBvZiIsInVuaXZlcnNpdHkgb2YgdmlyZ2luaWEiLCJvZiB2aXJnaW5pYSJd#april">citation</a>] This is an opinion many would like the university to challenge to ensure that all those who work on Grounds are justly compsensated.
                         </p>
 
                         <p>
@@ -505,8 +526,8 @@
                     <div class="col-lg-3 col-md-2"> </div>
                 </div>
             </section>
-            
-             <section id="search">
+
+            <section id="search">
                 <div class="row">
                     <div class="col-lg-3 col-md-2"> </div>
                     <div class="col-lg-6 col-md-8">
@@ -517,31 +538,34 @@
 
                         <p>
                             Did you find some key words above that you wanted to explore further? Or maybe keywords just do not give you as clear a picture into the content as you would like. It is true, they can sometimes be vague. When we saw the word <i>Need</i> in <mark style="color: white" class="colorstream">School Climate</mark>, for example, we had to get more context before we could understand what it was talking about too. Keywords are a 10,000 foot view into the richness of these documents. </p>
-                            
-                            <p>So below, we provide a keyword in context (KWIC) search platform for you to take a bit deeper of a dive. If you are like us, maybe you will get lost for an hour exploring all of the references to the Latinx and APIDA communities. Or maybe you just want to see how people have historically addressed the Board of Visitors. That said, if you want even more context and direct access to the texts, it is definitley time to head over to our <a href=../timeline> Interactive Timeline</a>.</p>
-                        
-                        <p>  <strong>
-                         <center> To search, type in a word or a word stem with a * at the end (e.g. support* will give you support, supportive, supporting, etc...) to see demands that include that word.</center>  </strong> 
-                          
+
+                        <p>So below, we provide a keyword in context (KWIC) search platform for you to take a bit deeper of a dive. If you are like us, maybe you will get lost for an hour exploring all of the references to the Latinx and APIDA communities. Or maybe you just want to see how people have historically addressed the Board of Visitors. That said, if you want even more context and direct access to the texts, it is definitley time to head over to our <a href=../timeline> Interactive Timeline</a>.</p>
+
+                        <p> <strong>
+                                <center> To search, type in a word or a word stem with a * at the end (e.g. support* will give you support, supportive, supporting, etc...) to see demands that include that word.</center>
+                            </strong>
+
                         </p>
 
-<br>
+                        <br>
                     </div>
                     <div class="col-lg-3 col-md-2"> </div>
                 </div>
-  
+
 
                 <div class="row">
                     <div class="col-lg-1 col-md-1"> </div>
                     <div class="col-lg-10 col-md-10">
 
                         <center>
-                            <button type="button" class="btn btn-default btn-secondary white-back" aria-label="Refresh Keyword Search" id="Refresh">
+                            <button type="button" class="btn btn-default btn-secondary white-back" aria-label="Refresh Keyword Search" id="RefreshButton">
                                 <center>Refresh</center>
                             </button>
                         </center>
-                        <p><center> <i style = "font-size:12px;">(If our search server has timed out, wake it up with the refresh button)</i></center> </p>
-                        <iframe src="" width="100%" max-height="1000px" height="900px;" name="keysearch" id = "iframesearch"></iframe>
+                        <p>
+                            <center> <i style="font-size:12px;">(If our search server has timed out, wake it up with the refresh button)</i></center>
+                        </p>
+                        <iframe src="" width="100%" max-height="1000px" height="900px;" name="keysearch" id="iframesearch"></iframe>
 
                     </div>
                     <div class="col-lg-1 col-md-1"> </div>
@@ -555,7 +579,7 @@
                     <div class="col-lg-3 col-md-2"> </div>
 
                     <div class="col-lg-6 col-md-8">
-                                <p>
+                        <p>
                             <center><i>Your Time to Analyze</i> </center>
 
                         </p>
@@ -570,7 +594,7 @@
                     <div class="col-lg-3 col-md-2"> </div>
                 </div>
             </section>
-<section></section>
+            <section></section>
         </main>
 
 
@@ -583,11 +607,11 @@
             <span id="streamtext" class="tooltiptext"></span>
         </div>
 
-        <footer style="background-color:rgba(211, 145, 86,.4); border-top: 3px black solid; ">
+        <footer style="background-color:rgba(211, 145, 86,.4); border-top: 3px black solid; " id="footer">
             <!-- Copyright -->
             <div class="footer-copyright text-center py-3">© 2020 Copyright:
-                <a href="https://virginiaequitycenter.org/">UVA Equity Center</a>  in collaboration with the 
-            <a href="https://virginiaequitycenter.org/">Racial Equity Taskforce</a> 
+                <a href="https://virginiaequitycenter.org/">UVA Equity Center</a> in collaboration with the
+                <a href="https://virginiaequitycenter.org/">Racial Equity Taskforce</a>
             </div>
             <!-- Copyright -->
 
@@ -601,6 +625,19 @@
                 ifr.src = "https://commpaslab.shinyapps.io/demandkeywords/";
             });
         }
+
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth',
+                    block: "start",
+                    inline: "start"
+                });
+            });
+        });
     </script>
     <script type="text/javascript" src="../assets/js/wraptext.js"></script>
     <script type="text/javascript" src="../assets/js/scrolldrivenanalysis.js"></script>
