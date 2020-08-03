@@ -402,8 +402,8 @@ i.fa-white {
     border-radius: 7.5px;
     z-index: 1000;
     transform: translate(-50%, 0%);
-          -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
 }
 
 #demandtext {
@@ -489,10 +489,12 @@ i.fa-white {
 /*Instructions Pane*/
 .instructions {
     position:fixed;
-     background:
+/*
+    background:
            linear-gradient(rgba(90, 111, 135, .85),
           rgba(90, 111, 135, .85)),
                 url("../pics/cream_dust.png");
+*/
     height: 90vh;
 /*    height:   height: calc(var(--vh, 1vh) * 90);*/
     z-index: 2000;
@@ -504,19 +506,22 @@ i.fa-white {
     visibility:hidden;
     text-align: center;
     padding: 20px;
-    border:black 1px solid;
+    border: 2px solid rgba(90, 111, 135, .85);
 /*    width: 90%;*/
+      backdrop-filter: blur(40px);
+        -webkit-backdrop-filter: blur(40px);
+
 }
 
 .instructions h1{   
- color: rgba(255, 255, 255, .97);
+/* color: rgba(255, 255, 255, .97);*/
 }
 
 .instructions p{
     text-align:justify;
       font-family: 'Yantramanav', sans-serif;
    font-size: 20px;  
-    color: rgba(255, 255, 255, .97);
+/*    color: rgba(255, 255, 255, .97);*/
 }
 
 .open {
@@ -565,8 +570,8 @@ i.fa-white {
 
 
 .blurry {
-     filter: blur(8px);
-  -webkit-filter: blur(8px);
+     filter: blur(4px);
+  -webkit-filter: blur(4px);
 }
 
 #Exitbutton {
