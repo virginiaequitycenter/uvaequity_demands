@@ -230,10 +230,6 @@ var mouseleaveimage = function (d) {
 
 
 
-
-
-
-
     
 $('#Exitbutton').click(function () {
     d3.select("#instructions").classed("open", false);
@@ -244,6 +240,12 @@ $('#showinformation').click(function () {
     d3.select("#instructions").classed("open", true);
     d3.select("#site").classed("blurry", true);
 });
+
+$('#showinformation').keydown(function () {
+    d3.select("#instructions").classed("open", true);
+    d3.select("#site").classed("blurry", true);
+});
+
 
 
 

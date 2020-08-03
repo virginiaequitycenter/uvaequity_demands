@@ -310,6 +310,7 @@ hr {
     opacity: 0.9;
     border-radius: 7.5px;
     z-index: 1000;
+    top: 55px;
 }
 
 /**/
@@ -415,7 +416,7 @@ main {
           rgba(90, 111, 135, .90)),
                     url("../pics/paint.jpg");
 */
-    border: rgba(90, 111, 135, .90) solid .1px;
+/*    border: rgba(90, 111, 135, .90) solid .1px;*/
     overflow: hidden;
 }
 
@@ -511,3 +512,7 @@ main {
 
 
 
+
+footer a:hover {
+   color: rgba(90, 111, 135, .85);
+}

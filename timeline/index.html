@@ -46,12 +46,12 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
             <p>Use the Arrow keys to progress forward and backward through time.</p>
 
             <div>
-                                  <button type="button" class="btn btn-secondary white-back" aria-label="Scroll Timeline Forward" >
+                                  <button type="button" class="btn btn-secondary white-back" aria-label="Example Backwards Button" >
 <!--                        <center> <i class="fas fa-white fa-chevron-left fa-2x"></i></center>-->
                         
                         <center>Back</center>
                     </button>
-                    <button type="button" class="btn btn-default btn-secondary white-back" aria-label="Scroll Timeline Forward" >
+                    <button type="button" class="btn btn-default btn-secondary white-back" aria-label="Example Forwards Button" >
 <!--                        <center><i class="fas fa-white fa-chevron-right fa-2x"></i></center>-->
                         <center>Forward</center>
                     </button>
@@ -87,7 +87,7 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 
                     <br>
-  <button type="button" class="btn btn-default btn-secondary white-back" id="Exitbutton" onclick="close()" >
+  <button type="button" class="btn btn-default btn-secondary white-back" id="Exitbutton" onclick="close()" aria-label="Close Information Pane">
 Explore</button>
 
         </div>
@@ -130,14 +130,13 @@ Explore</button>
                         <a class="nav-link font-smaller" href="../methodology">Methodology</a>
                     </li>
                 </ul>
-
             </div>
         </nav>
 
         <div class="project" id="project">
             <div class="box" id="timelinebox">
                 <div id="button-group">
-                    <button type="button" class="btn btn-secondary white-back" aria-label="Scroll Timeline Forward" id="scroll-back">
+                    <button type="button" class="btn btn-secondary white-back" aria-label="Scroll Timeline Backward" id="scroll-back">
 <!--                        <center> <i class="fas fa-white fa-chevron-left fa-2x"></i></center>-->
                         
                         <center>Back</center>
@@ -167,7 +166,7 @@ Explore</button>
                 <div id="timelinecontainer" class="timelinecontainer"> </div>
             </div>
 
-            <i class="fa fa-info-circle pointer" id="showinformation" role = "button" tabindex = "0"></i>
+            <i class="fa fa-info-circle pointer" id="showinformation" role = "button" tabindex = "0" aria-label="Show Information Pane"></i>
 
         </div>
     </div>

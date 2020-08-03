@@ -29,10 +29,15 @@ function drawkeyness(data) {
         .attr("viewBox", "0 0 " + usewidth + " " + useheight)
         .attr("class", "svg-content")
         .attr("id", "keysvg")
+        .attr("aria-labelledby", "title")
         .append("g")
         .attr("transform", "translate(" + (width / 2 + margin.left) + "," + (height / 3 + margin.top) + ")");
 
-
+    keysvg.append("title")
+        .attr("id", "title")
+        .attr("lang", "en")
+        .text("A radial bar chart of the Most Distinctive words used in demand category. The top words by category include: (1) Abolition/Defunding: Police, Enforcement, VA, Prohibit. (2) Community Labor or Partnership: Community, Service, Charlottesville, Employee, Youth (3) Current Iniatives: Office, Americam, Cultural, Space. (4) Data Collection & Transparency: System, Position, Datum, Report. (5) Diversity in Student Leadership: Committee, Three, Response, Inclusion, COVID. (6) Financial Aid & Financing: Support, Graduate, Funding, Financial, Scholarship. (7) Living Wage: Wage, Worker, Benefit, Employee, Attorney. (8) Minority Faculty/Staff: Faculty, Staff, Recruitment, Position, Hiring, Retention. (9) Minority Student Recruitment: Student, Black, Graduate, Recruitment, Virginia. (10) Reparations: Descendant, Enslaved, Repayment, Earned, Fundraiser. (11) Research or Coursework: Course, Studies, Race, History. (12) School Climate: ED, Training, Policy, Mentoring, Statement. (13) Spaces & Places: Space, Grounds, Memorial, Plaque, Confederate" 
+        )
 
     function scaleRadial() {
         var domain = [0, 1],
@@ -100,7 +105,8 @@ function drawkeyness(data) {
 //        .attr("opacity", .8)
         .on("mouseover", mouseoverkey)
         .on("mousemove", mousemovekey)
-        .on("mouseleave", mouseleavekey);
+        .on("mouseleave", mouseleavekey)
+    .attr("tabindex", 0);
     
 
     keysvg.append("g")
@@ -112,7 +118,10 @@ function drawkeyness(data) {
             return (x(d.code_feature) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "end" : "start";
         })
         .attr("transform", function (d) {
-            return "rotate(" + ((x(d.code_feature) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")" + "translate(" + (y(d['freq']) + 2.5) + ",0)";
+            return "rotate(" + ((x(d.code_feature) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")" + "translate(" + 
+//                (y(d['freq']) 
+                (y(100)
+                 + 5) + ",0)";
         })
         .append("text")
         .text(function (d) {
@@ -122,8 +131,31 @@ function drawkeyness(data) {
             return (x(d.code_feature) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "rotate(180)" : "rotate(0)";
         })
         .classed("visualizationtext", true)
-        .style("font-size", "10px")
+        .style("font-size", "12.5px")
         .attr("alignment-baseline", "middle")
+    
+  // Inner X Axes    
+//     keysvg.append("g")
+//        .selectAll(".outerbands")
+//        .data(keynessdata)
+//        .enter()
+//        .append("path")
+//        .attr("fill", "black")
+//        .attr("d", d3.arc() // imagine your doing a part of a donut plot
+//            .innerRadius(y(100) + 2)
+//            .outerRadius(y(100) + 2.5)
+//            .startAngle(function (d) {
+//                return x(d.code_feature);
+//            })
+//            .endAngle(function (d) {
+//                return x(d.code_feature) + x.bandwidth();
+//            })
+//            .padAngle(0.05)
+//            .padRadius(innerRadius))
+  
+    
+    
+    
     
 // Data for the inner X axes
     keynessroll = [];
