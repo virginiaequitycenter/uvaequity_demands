@@ -83,18 +83,18 @@ Living Wage,General,0,40,freq,9,2,5,Living WageGeneral,Living Wage
 Living Wage,S,0,40,freq,10,2,5,Living WageS,Living Wage
 Living Wage, ,0,0,freq,11,0,5,Living Wage ,Living Wage
 Living Wage, ,0,0,freq,12,0,5,Living Wage ,Living Wage
-Minority Factuly/Staff,Faculty,0,100,freq,1,81,81,Minority Faculty / Staff Recruitment and RetentionFaculty,Minority Faculty / Staff Recruitment and Retention
-Minority Factuly/Staff,University,0,67,freq,2,54,81,Minority Faculty / Staff Recruitment and RetentionUniversity,Minority Faculty / Staff Recruitment and Retention
-Minority Factuly/Staff,Black,0,65,freq,3,53,81,Minority Faculty / Staff Recruitment and RetentionBlack,Minority Faculty / Staff Recruitment and Retention
-Minority Factuly/Staff,Diversity,0,42,freq,4,34,81,Minority Faculty / Staff Recruitment and RetentionDiversity,Minority Faculty / Staff Recruitment and Retention
-Minority Factuly/Staff,Student,0,40,freq,5,32,81,Minority Faculty / Staff Recruitment and RetentionStudent,Minority Faculty / Staff Recruitment and Retention
-Minority Factuly/Staff,Minority,0,31,freq,6,25,81,Minority Faculty / Staff Recruitment and RetentionMinority,Minority Faculty / Staff Recruitment and Retention
-Minority Factuly/Staff,Staff,0,31,freq,7,25,81,Minority Faculty / Staff Recruitment and RetentionStaff,Minority Faculty / Staff Recruitment and Retention
-Minority Factuly/Staff,Must,0,28,freq,8,23,81,Minority Faculty / Staff Recruitment and RetentionMust,Minority Faculty / Staff Recruitment and Retention
-Minority Factuly/Staff,Recruitment,0,28,freq,9,23,81,Minority Faculty / Staff Recruitment and RetentionRecruitment,Minority Faculty / Staff Recruitment and Retention
-Minority Factuly/Staff,Hiring,0,27,freq,10,22,81,Minority Faculty / Staff Recruitment and RetentionHiring,Minority Faculty / Staff Recruitment and Retention
-Minority Factuly/Staff, ,0,0,freq,11,0,81,Minority Faculty / Staff Recruitment and Retention ,Minority Faculty / Staff Recruitment and Retention
-Minority Factuly/Staff, ,0,0,freq,12,0,81,Minority Faculty / Staff Recruitment and Retention ,Minority Faculty / Staff Recruitment and Retention
+Minority Faculty/Staff,Faculty,0,100,freq,1,81,81,Minority Faculty / Staff Recruitment and RetentionFaculty,Minority Faculty / Staff Recruitment and Retention
+Minority Faculty/Staff,University,0,67,freq,2,54,81,Minority Faculty / Staff Recruitment and RetentionUniversity,Minority Faculty / Staff Recruitment and Retention
+Minority Faculty/Staff,Black,0,65,freq,3,53,81,Minority Faculty / Staff Recruitment and RetentionBlack,Minority Faculty / Staff Recruitment and Retention
+Minority Faculty/Staff,Diversity,0,42,freq,4,34,81,Minority Faculty / Staff Recruitment and RetentionDiversity,Minority Faculty / Staff Recruitment and Retention
+Minority Faculty/Staff,Student,0,40,freq,5,32,81,Minority Faculty / Staff Recruitment and RetentionStudent,Minority Faculty / Staff Recruitment and Retention
+Minority Faculty/Staff,Minority,0,31,freq,6,25,81,Minority Faculty / Staff Recruitment and RetentionMinority,Minority Faculty / Staff Recruitment and Retention
+Minority Faculty/Staff,Staff,0,31,freq,7,25,81,Minority Faculty / Staff Recruitment and RetentionStaff,Minority Faculty / Staff Recruitment and Retention
+Minority Faculty/Staff,Must,0,28,freq,8,23,81,Minority Faculty / Staff Recruitment and RetentionMust,Minority Faculty / Staff Recruitment and Retention
+Minority Faculty/Staff,Recruitment,0,28,freq,9,23,81,Minority Faculty / Staff Recruitment and RetentionRecruitment,Minority Faculty / Staff Recruitment and Retention
+Minority Faculty/Staff,Hiring,0,27,freq,10,22,81,Minority Faculty / Staff Recruitment and RetentionHiring,Minority Faculty / Staff Recruitment and Retention
+Minority Faculty/Staff, ,0,0,freq,11,0,81,Minority Faculty / Staff Recruitment and Retention ,Minority Faculty / Staff Recruitment and Retention
+Minority Faculty/Staff, ,0,0,freq,12,0,81,Minority Faculty / Staff Recruitment and Retention ,Minority Faculty / Staff Recruitment and Retention
 Minority Student Recruitment,Student,0,100,freq,1,101,101,Minority Student RecruitmentStudent,Minority Student Recruitment
 Minority Student Recruitment,University,0,75,freq,2,76,101,Minority Student RecruitmentUniversity,Minority Student Recruitment
 Minority Student Recruitment,Black,0,59,freq,3,60,101,Minority Student RecruitmentBlack,Minority Student Recruitment
@@ -239,18 +239,18 @@ Living Wage,Direct,35.03357485823725,40,key,9,2,5,Living WageDirect,Living Wage
 Living Wage,Pat,32.76160138705828,20,key,10,1,5,Living WagePat,Living Wage
 Living Wage,,0,0,key,11,0,5,Living Wage,Living Wage
 Living Wage,,0,0,key,12,0,5,Living Wage,Living Wage
-Minority Factuly/Staff,Faculty,114.6159344648297,100,key,1,81,81,Minority Faculty / Staff Recruitment and RetentionFaculty,Minority Faculty / Staff Recruitment and Retention
-Minority Factuly/Staff,Staff,30.072619852196713,31,key,6,25,81,Minority Faculty / Staff Recruitment and RetentionStaff,Minority Faculty / Staff Recruitment and Retention
-Minority Factuly/Staff,Recruitment,26.291440188582996,28,key,7,23,81,Minority Faculty / Staff Recruitment and RetentionRecruitment,Minority Faculty / Staff Recruitment and Retention
-Minority Factuly/Staff,Hiring,66.58249689006341,27,key,2,22,81,Minority Faculty / Staff Recruitment and RetentionHiring,Minority Faculty / Staff Recruitment and Retention
-Minority Factuly/Staff,Position,46.14768629353913,26,key,3,21,81,Minority Faculty / Staff Recruitment and RetentionPosition,Minority Faculty / Staff Recruitment and Retention
-Minority Factuly/Staff,Retention,19.69706015048783,21,key,9,17,81,Minority Faculty / Staff Recruitment and RetentionRetention,Minority Faculty / Staff Recruitment and Retention
-Minority Factuly/Staff,Pool,32.69969723305558,11,key,4,9,81,Minority Faculty / Staff Recruitment and RetentionPool,Minority Faculty / Staff Recruitment and Retention
-Minority Factuly/Staff,Tenure,32.69969723305558,11,key,5,9,81,Minority Faculty / Staff Recruitment and RetentionTenure,Minority Faculty / Staff Recruitment and Retention
-Minority Factuly/Staff,Track,25.730215330264677,9,key,8,7,81,Minority Faculty / Staff Recruitment and RetentionTrack,Minority Faculty / Staff Recruitment and Retention
-Minority Factuly/Staff,Target,18.82141611536037,6,key,10,5,81,Minority Faculty / Staff Recruitment and RetentionTarget,Minority Faculty / Staff Recruitment and Retention
-Minority Factuly/Staff,,0,0,key,11,0,81,Minority Faculty / Staff Recruitment and Retention,Minority Faculty / Staff Recruitment and Retention
-Minority Factuly/Staff,,0,0,key,12,0,81,Minority Faculty / Staff Recruitment and Retention,Minority Faculty / Staff Recruitment and Retention
+Minority Faculty/Staff,Faculty,114.6159344648297,100,key,1,81,81,Minority Faculty / Staff Recruitment and RetentionFaculty,Minority Faculty / Staff Recruitment and Retention
+Minority Faculty/Staff,Staff,30.072619852196713,31,key,6,25,81,Minority Faculty / Staff Recruitment and RetentionStaff,Minority Faculty / Staff Recruitment and Retention
+Minority Faculty/Staff,Recruitment,26.291440188582996,28,key,7,23,81,Minority Faculty / Staff Recruitment and RetentionRecruitment,Minority Faculty / Staff Recruitment and Retention
+Minority Faculty/Staff,Hiring,66.58249689006341,27,key,2,22,81,Minority Faculty / Staff Recruitment and RetentionHiring,Minority Faculty / Staff Recruitment and Retention
+Minority Faculty/Staff,Position,46.14768629353913,26,key,3,21,81,Minority Faculty / Staff Recruitment and RetentionPosition,Minority Faculty / Staff Recruitment and Retention
+Minority Faculty/Staff,Retention,19.69706015048783,21,key,9,17,81,Minority Faculty / Staff Recruitment and RetentionRetention,Minority Faculty / Staff Recruitment and Retention
+Minority Faculty/Staff,Pool,32.69969723305558,11,key,4,9,81,Minority Faculty / Staff Recruitment and RetentionPool,Minority Faculty / Staff Recruitment and Retention
+Minority Faculty/Staff,Tenure,32.69969723305558,11,key,5,9,81,Minority Faculty / Staff Recruitment and RetentionTenure,Minority Faculty / Staff Recruitment and Retention
+Minority Faculty/Staff,Track,25.730215330264677,9,key,8,7,81,Minority Faculty / Staff Recruitment and RetentionTrack,Minority Faculty / Staff Recruitment and Retention
+Minority Faculty/Staff,Target,18.82141611536037,6,key,10,5,81,Minority Faculty / Staff Recruitment and RetentionTarget,Minority Faculty / Staff Recruitment and Retention
+Minority Faculty/Staff,,0,0,key,11,0,81,Minority Faculty / Staff Recruitment and Retention,Minority Faculty / Staff Recruitment and Retention
+Minority Faculty/Staff,,0,0,key,12,0,81,Minority Faculty / Staff Recruitment and Retention,Minority Faculty / Staff Recruitment and Retention
 Minority Student Recruitment,Student,20.415152338731477,100,key,8,101,101,Minority Student RecruitmentStudent,Minority Student Recruitment
 Minority Student Recruitment,Black,31.62897717104232,59,key,3,60,101,Minority Student RecruitmentBlack,Minority Student Recruitment
 Minority Student Recruitment,Graduate,85.51997713472333,39,key,1,39,101,Minority Student RecruitmentGraduate,Minority Student Recruitment

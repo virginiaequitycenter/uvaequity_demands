@@ -50,7 +50,7 @@ header p {
 h1 {
     text-align: center;
     font-size: 50px;
-    color: rgba(90, 111, 135, 1);
+/*    color: rgba(90, 111, 135, 1);*/
     /*    opacity: .9;*/
     font-weight: 700;
     font-family: 'Amatic SC', cursive;
@@ -175,6 +175,8 @@ footer a{
 
 li {
     text-align: justify;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 20px;
 }
 
 .topcallout {
@@ -310,6 +312,7 @@ hr {
     opacity: 0.9;
     border-radius: 7.5px;
     z-index: 1000;
+    top: 55px;
 }
 
 /**/
@@ -344,6 +347,8 @@ main {
     margin: 0;
     /*    margin-top: 25px;*/
     height: 600px;
+        background-attachment: fixed;
+
 }
 
 
@@ -354,15 +359,18 @@ main {
     background:
         linear-gradient(rgba(41, 23, 12, .75),
             rgba(41, 23, 12, .75)),
-        url("../pics/protest.jpg");
-    /*         no-repeat center center;*/
+        url("../pics/protest.jpg")
+             no-repeat center center;
     /*-webkit-background-size: cover;*/
     /* -moz-background-size: cover;*/
     /* -o-background-size: cover;*/
-    /* background-size: cover;*/
+     background-size: cover;
     margin: 0;
+    min-height:  600px;
+
     /*    margin-top: 25px;*/
     /*    height: 600px;*/
+    background-attachment: fixed;
 }
 
 
@@ -410,7 +418,7 @@ main {
           rgba(90, 111, 135, .90)),
                     url("../pics/paint.jpg");
 */
-    border: rgba(90, 111, 135, .90) solid .1px;
+/*    border: rgba(90, 111, 135, .90) solid .1px;*/
     overflow: hidden;
 }
 
@@ -506,3 +514,11 @@ main {
 
 
 
+
+footer a:hover {
+   color: rgba(90, 111, 135, .85);
+}
+
+#iframesearch {
+    z-index: 5000000000;
+}

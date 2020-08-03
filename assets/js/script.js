@@ -8,7 +8,7 @@
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 50) {
       $("#mainNav")
-      .removeClass("fixed-top")
+//      .removeClass("fixed-top")
           .addClass("bg-brown");
     } else {
       $("#mainNav")

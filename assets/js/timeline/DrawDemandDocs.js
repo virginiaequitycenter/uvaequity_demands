@@ -51,12 +51,30 @@ function DrawDemandDocs(demand_text, events, images) {
                 return false;
             }
         })
-
         .attr("id", (d) => "did" + d.values[[0]].values[[0]].docid);
 
-    var documentlinks = demandboxes.append("i").classed("fas", true).classed("fa-external-link-alt", true).classed("pointer", true).on("click", function (d) {
-        window.open("../assets/documents/" + d.values[[0]].values[[0]].filename_updated);
-    });
+    var documentlinks = demandboxes
+        .append("a")
+        .attr("tabindex", 0)
+        .attr("aria-label", (d) => "open full " + d.values[[0]].values[[0]].filename_updated )
+
+        .attr("xlink:href", function (d) {
+            "../assets/documents/" + d.values[[0]].values[[0]].filename_updated;
+        })
+        .append("i")
+        .classed("fas", true)
+        .classed("fa-external-link-alt", true)
+        .classed("pointer", true)
+
+        .on("click", function (d) {
+            window.open("../assets/documents/" + d.values[[0]].values[[0]].filename_updated);
+        })
+    //    .on("k", function (d) {
+    //        window.open("../assets/documents/" + d.values[[0]].values[[0]].filename_updated);
+    //    })
+
+
+    ;
     var documenttitleboxes = demandboxes.append("div").classed("documenttitlebox", true);
     var documenttitles = documenttitleboxes.append("h3").text((d) => d.key);
     var documenttitlebreaks = documenttitleboxes.append("hr");
@@ -182,7 +200,7 @@ function DrawDemandDocs(demand_text, events, images) {
         })
         .append("a")
         .attr("xlink:href", d => d.Link);;
-    
+
     // Timeline Images
     //  var imagecontainers =  eventscontainer.selectAll(".eventimageboxes").data(images).enter()
     //   .append("div")
@@ -202,7 +220,8 @@ function DrawDemandDocs(demand_text, events, images) {
         .attr("src", function (d) {
             return "../assets/pics/timelinepics/" + d.ImageFile
         })
-        .attr("class", "eventimage");
+        .attr("class", "eventimage")
+        .attr("alt", d=> d.Year + " From " + d.Source + " " + d.Brief_Description);
     //        .text(d => d.Year + " " + d.Text)
     //        .on("mouseover", mouseovertip)
     //        .on("mouseleave", mouseleavetip);
