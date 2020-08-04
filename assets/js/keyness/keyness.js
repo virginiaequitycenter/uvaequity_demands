@@ -296,7 +296,7 @@ function drawkeyness(data) {
             .padAngle(0.05)
 //            .padRadius(innerRadius)
              ).style("visiblity", "hidden")
-    .attr("id", "title")
+    .attr("id", "mid-title")
     
     keysvg
         .append("text")
@@ -307,7 +307,7 @@ function drawkeyness(data) {
     .append("textPath")
 //    .attr("startOffset","50%")
 //    .style("text-anchor","middle")
-    .attr("xlink:href",function(d,i){return "#title";})
+    .attr("xlink:href",function(d,i){return "#mid-title";})
     .text("Distinctive Words by Category")
     
     

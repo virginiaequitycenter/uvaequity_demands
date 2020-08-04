@@ -495,7 +495,7 @@ i.fa-white {
           rgba(90, 111, 135, .85)),
                 url("../pics/cream_dust.png");
 */
-    background: rgba(211, 145, 86, .2);
+    background: rgba(211, 145, 86, .1);
     height: 90vh;
 /*    height:   height: calc(var(--vh, 1vh) * 90);*/
     z-index: 2000;
