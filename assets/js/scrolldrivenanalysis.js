@@ -252,7 +252,7 @@ function initiatemovement() {
             trigger: "#search",
             start: "top top",
             endTrigger: "#footer",
-            end: "top top",
+            end: "top top",      
             toggleClass: {
                 targets: "#tocify-header5",
                 className: "tocify-highlighted"
@@ -266,10 +266,12 @@ function initiatemovement() {
             start: "top center",
             endTrigger: "#footer",
             end: "top top",
-            toggleClass: {
-                targets: "#TOC",
-                className: "tocify-stick"
-            }
+         onEnter: function () {
+             d3.select("#TOC").classed("tocify-stick", true)
+            },
+     onLeaveBack: function(){
+                 d3.select("#TOC").classed("tocify-stick", false)
+             }
         },
     });
 
