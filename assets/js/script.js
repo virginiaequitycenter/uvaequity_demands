@@ -56,7 +56,7 @@ function drawProjects(photos) {
 
 imageboxes.append("img")
         .attr("src", function (d) {
-            return "assets/front-images/" + d.image + "" + d.type
+            return "assets/pics/front-images/" + d.image + "" + d.type
         })
 //    .style("z-index", (d) => d.z)
 
