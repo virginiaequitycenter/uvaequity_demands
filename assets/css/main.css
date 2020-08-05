@@ -15,17 +15,17 @@ html {
 /* Give the Body the Proper Background Color*/
 body {
     background-color: #FEFFFF;
-/*
+    /*
     background-image:
         linear-gradient(rgba(255, 255, 255, .97),
             rgba(255, 255, 255, .97)),
         url("../pics/paint.jpg");
 */
-    
+
     background-image:
         linear-gradient(rgba(255, 255, 255, .3),
             rgba(255, 255, 255, .3)),
-                url("../pics/cream_dust.png");
+        url("../pics/cream_dust.png");
 
     position: relative;
     margin: 0;
@@ -47,27 +47,21 @@ header p {
     margin: 0;
 }
 
+
+
+
 h1 {
     text-align: center;
     font-size: 50px;
-/*    color: rgba(90, 111, 135, 1);*/
+    /*    color: rgba(90, 111, 135, 1);*/
     /*    opacity: .9;*/
     font-weight: 700;
     font-family: 'Amatic SC', cursive;
 }
 
 
-header span {
-    font-family: 'Yantramanav', sans-serif;
-    font-size: 16px;
 
-    text-align: center;
-    color: rgba(90, 111, 135, 1);
-}
 
-header a {
-    color: rgba(90, 111, 135, 1);
-}
 
 .navbar-dark {
     border-bottom: white solid .5px;
@@ -108,6 +102,9 @@ a:hover {
     font-weight: 300px;
 
 }
+
+
+
 
 /*
 strong {
@@ -150,13 +147,22 @@ img {
     width: 100%;
 }
 
+footer {
+    background-color:rgba(211, 145, 86,.4); 
+    border-top: 3px black solid;
+}
 
-footer a{
+footer a {
     color: black;
 }
 
+footer a:hover {
+    color: rgba(90, 111, 135, .85);
+}
+
+
 .box-shadow {
-        box-shadow: 0 4px 3px -3px rgba(0, 0, 0, 1);
+    box-shadow: 0 4px 3px -3px rgba(0, 0, 0, 1);
     border-radius: 5px;
     border: 2px solid rgba(90, 111, 135, .90);
 
@@ -167,7 +173,7 @@ footer a{
 }
 
 .absolute-top {
-        position: absolute;
+    position: absolute;
     top: 0;
     width: 100%;
 }
@@ -180,15 +186,15 @@ li {
 }
 
 .topcallout {
-    margin-bottom: 0px; 
-    padding: 0px; 
-    background-color: rgba(211, 145, 86,.2);  
+    margin-bottom: 0px;
+    padding: 0px;
+    background-color: rgba(211, 145, 86, .2);
     border-bottom: solid white 1px;
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, .2);
-/*   -webkit-backdrop-filter: blur(20px);*/
-/*  backdrop-filter:blur(20px);*/
-/*   min-height: calc(100vh - 60px;) */
-    
+    /*   -webkit-backdrop-filter: blur(20px);*/
+    /*  backdrop-filter:blur(20px);*/
+    /*   min-height: calc(100vh - 60px;) */
+
 }
 
 /*Set everything in the main body*/
@@ -227,7 +233,7 @@ section::first-line::first-letter {
 mark {
     border-radius: 3px;
     padding: 1px;
-      box-shadow:  2px 2px 2px rgba(0, 0, 0, .2);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
 }
 
 hr {
@@ -252,13 +258,13 @@ hr {
 
 .storytextbox {
     padding: 20px;
-/*
+    /*
     background-image:
         linear-gradient(rgba(90, 111, 135, .90),
             rgba(90, 111, 135, .90)),
         url("../pics/paint.jpg");
 */
-/*
+    /*
      background-image:
            linear-gradient(rgba(90, 111, 135, .85),
           rgba(90, 111, 135, .85)),
@@ -271,11 +277,11 @@ hr {
         url("../pics/paint.jpg");
 */
 
-    
-        -webkit-backdrop-filter: blur(20px);
-        backdrop-filter:blur(20px);
-    
-        box-shadow: 0 4px 2px -2px rgba(0, 0, 0, .2);
+
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, .2);
 
 
     border-radius: 10px;
@@ -284,9 +290,8 @@ hr {
 }
 
 .storytext {
-/*    color: white;*/
-    color:black
-    font-family: 'Yantramanav', sans-serif;
+    /*    color: white;*/
+    color: black font-family: 'Yantramanav', sans-serif;
     font-size: 20px;
 }
 
@@ -333,6 +338,7 @@ main {
 }
 
 .callout {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -347,7 +353,7 @@ main {
     margin: 0;
     /*    margin-top: 25px;*/
     height: 600px;
-        background-attachment: fixed;
+    background-attachment: fixed;
 
 }
 
@@ -359,14 +365,13 @@ main {
     background:
         linear-gradient(rgba(41, 23, 12, .75),
             rgba(41, 23, 12, .75)),
-        url("../pics/protest.jpg")
-             no-repeat center center;
+        url("../pics/protest.jpg") no-repeat center center;
     /*-webkit-background-size: cover;*/
     /* -moz-background-size: cover;*/
     /* -o-background-size: cover;*/
-     background-size: cover;
+    background-size: cover;
     margin: 0;
-    min-height:  600px;
+    min-height: 600px;
 
     /*    margin-top: 25px;*/
     /*    height: 600px;*/
@@ -378,7 +383,7 @@ main {
 
 .container-fluid {
     padding: 0;
-    margin-bottom:0
+    margin-bottom: 0
 }
 
 
@@ -418,7 +423,7 @@ main {
           rgba(90, 111, 135, .90)),
                     url("../pics/paint.jpg");
 */
-/*    border: rgba(90, 111, 135, .90) solid .1px;*/
+    /*    border: rgba(90, 111, 135, .90) solid .1px;*/
     overflow: hidden;
 }
 
@@ -504,7 +509,7 @@ main {
 .font1 {
     text-align: center;
     font-size: 30px;
-/*    color: rgba(90, 111, 135, 1);*/
+    /*    color: rgba(90, 111, 135, 1);*/
     /*    opacity: .9;*/
     font-weight: 700;
     font-family: 'Amatic SC', cursive;
@@ -513,12 +518,8 @@ main {
 
 
 
-
-
-footer a:hover {
-   color: rgba(90, 111, 135, .85);
-}
-
 #iframesearch {
     z-index: 5000000000;
 }
+
+
