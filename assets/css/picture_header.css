@@ -5,42 +5,41 @@
     margin: 0px;
     padding: 0px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+/*    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));*/
+    grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
     grid-auto-flow: dense;
     background: rgba(211, 145, 86, .4);
     max-height: 150vw;
     overflow: hidden;
-        grid-gap: 1px;
+/*        grid-gap: 1px;*/
 
 }
 
-/*// Small devices (landscape phones, 576px and up)*/
+/*
 @media screen and (min-width: 576px) {
     .pic-header {
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     }
 }
 
-/*// Medium devices (tablets, 768px and up)*/
 @media screen and (min-width: 768px) {
        .pic-header {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
 }
 
-/*// Large devices (desktops, 992px and up)*/
 @media screen and (min-width: 992px) {
     .pic-header {
         grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
     }
 }
 
-/*// Extra large devices (large desktops, 1200px and up)*/
 @media screen and  (min-width: 1200px) {
     .pic-header {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
 }
+*/
 
 
 
@@ -140,4 +139,11 @@
     .header-p {
         font-size: 30px;
     }
+}
+
+.blur-back {
+        -webkit-backdrop-filter: blur(10px);
+      backdrop-filter:blur(10px);
+    padding: 40px;
+    border-radius: 10px;
 }
