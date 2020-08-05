@@ -8,11 +8,13 @@
     <link rel="icon" href="../assets/pics/eclogo.png">
 
     <script src="https://d3js.org/d3.v5.min.js"></script>
-    
-    <script> // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-let vh = window.innerHeight * 0.01;
-// Then we set the value in the --vh custom property to the root of the document
-document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    <script>
+        // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+        let vh = window.innerHeight * 0.01;
+        // Then we set the value in the --vh custom property to the root of the document
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+
     </script>
 
 
@@ -30,80 +32,79 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
-    
+
 
 </head>
 
 <body>
 
-  <div id="instructions" class="instructions col-md-10 open">
-<!--   <div id="instructions" class="instructions container">-->
+    <div id="instructions" class="instructions col-md-10 open">
+        <!--   <div id="instructions" class="instructions container">-->
         <h1>INTERACTIVE TIMELINE</h1>
+        
+         <button type="button" class="btn btn-default btn-secondary white-back" id="Exitbutton" onclick="close()" aria-label="Close Information Pane" style = "width: 40px; height: 40px; border-radius:30px;">
+                X</button>
 
         <div class="col-md-8" style="transform: translate(-50%,0); left: 50%">
-            <p>We took 50 years of documents, read them, seperated them into specific calls to action, and tagged each action item with one or more of <mark style = "background-color:rgb(211, 145, 86)"> <a href="../methodology" style="color: rgba(250, 250, 250,1)"> 13 key themes</a></mark>. We present those documents here in a timeline format for you to explore within their contexts.</p>
+            <p>We collected 50 years of documents, analyzed them, separated them into specific calls to action, and tagged each action item with one or more of <mark style="background-color:rgb(211, 145, 86)"> <a href="../methodology" style="color: rgba(250, 250, 250,1)"> 13 key themes</a></mark>. We present those documents here in a timeline format for you to explore within their contexts.</p>
 
             <p>Use the Arrow keys to progress forward and backward through time.</p>
 
             <div>
-                                  <button type="button" class="btn btn-secondary white-back" aria-label="Example Backwards Button" >
-<!--                        <center> <i class="fas fa-white fa-chevron-left fa-2x"></i></center>-->
-                        
-                        <center>Back</center>
-                    </button>
-                    <button type="button" class="btn btn-default btn-secondary white-back" aria-label="Example Forwards Button" >
-<!--                        <center><i class="fas fa-white fa-chevron-right fa-2x"></i></center>-->
-                        <center>Forward</center>
-                    </button>
-                
+                <button type="button" class="btn btn-secondary white-back" aria-label="Example Backwards Button">
+                    <!--                        <center> <i class="fas fa-white fa-chevron-left fa-2x"></i></center>-->
+
+                    <center>Back</center>
+                </button>
+                <button type="button" class="btn btn-default btn-secondary white-back" aria-label="Example Forwards Button">
+                    <!--                        <center><i class="fas fa-white fa-chevron-right fa-2x"></i></center>-->
+                    <center>Forward</center>
+                </button>
+
             </div>
             <br>
-            <p>Each group of lines represents ten distinct demands written in a document. </p> 
-            
+            <p>Each group of lines represents ten distinct demands written in a document. </p>
 
 
-                    <div class="demandexamplecontainer">
-                        <div class="demandlinescontainerexample d-flex flex-column">
-                            <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
-                            <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
-                            <div class="demandlinesex" style="background-color: rgb(104, 58, 32); border: none; opacity: 1;"></div>
-                            <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
-                            <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
-                            <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
-                            <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
-                            <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
-                            <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
-                            <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"> </div>
-                        </div>
 
-                    </div>
+            <div class="demandexamplecontainer">
+                <div class="demandlinescontainerexample d-flex flex-column">
+                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
+                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
+                    <div class="demandlinesex" style="background-color: rgb(104, 58, 32); border: none; opacity: 1;"></div>
+                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
+                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
+                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
+                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
+                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
+                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"></div>
+                    <div class="demandlinesex" style="background-color: rgb(224, 225, 225); border: none; opacity: 1;"> </div>
+                </div>
 
-                    <br>
-            
-                        <p> <i class="fa fa-mouse-pointer" aria-hidden="true"></i>
-                            Hover over a line to see the written text. </p> <p>  Click <i class="fas fa-external-link-alt" > </i> for the full document.</p>
+            </div>
 
-                    <p> <mark style="background-color:rgb(104, 58, 32); color: white"> Highlighting</mark> means a demand belongs to the theme noted in the top left. We start by highlighting calls for <mark style = "background-color:rgb(211, 145, 86)"> Minority Faculty / Staff Recruitment</mark>, but you can use the dropdown menu to change which theme you want to see.</p>
+            <br>
 
+            <p> <i class="fa fa-mouse-pointer" aria-hidden="true"></i>
+                Hover over a line to see the written text. </p>
+            <p> Click <i class="fas fa-external-link-alt"> </i> for the full document.</p>
 
-                    <br>
-  <button type="button" class="btn btn-default btn-secondary white-back" id="Exitbutton" onclick="close()" aria-label="Close Information Pane">
-Explore</button>
+            <p> <mark style="background-color:rgb(104, 58, 32); color: white"> Highlighting</mark> means a demand belongs to the theme noted in the top left. We start by highlighting calls for <mark style="background-color:rgb(211, 145, 86)"> Minority Faculty / Staff Recruitment</mark>, but you can use the dropdown menu to change which theme you want to see.</p>           
 
         </div>
 
     </div>
-    
- <div class="container-fluid blurry" id="site">
-<!--<div class="container-fluid" id="site">-->
+
+    <div class="container-fluid blurry" id="site">
+        <!--<div class="container-fluid" id="site">-->
 
         <nav class="navbar navbar-expand-sm navbar-dark bg-voices" id="mainNav" height="44px">
-<!--<form class = "form-inline">             <div class="font2">JUMP TO:</div>-->
+            <!--<form class = "form-inline">             <div class="font2">JUMP TO:</div>-->
             <div class="form-group yearjump mr-auto"> </div>
 
-<!--            <div class="font2"> HIGHLIGHT:</div>-->
+            <!--            <div class="font2"> HIGHLIGHT:</div>-->
             <div class="form-group tagfilter mr-auto"> </div>
-<!--</form>             Brand -->
+            <!--</form>             Brand -->
             <!--                <a class="navbar-brand py-1 font1">VOICES FOR EQUITY</a>-->
 
             <!-- Toggler/collapsibe Button -->
@@ -120,7 +121,7 @@ Explore</button>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link font-smaller" href="../timeline">Timeline</a>
-                                                   <span class="sr-only">(current)</span>
+                        <span class="sr-only">(current)</span>
 
                     </li>
                     <li class="nav-item">
@@ -137,43 +138,43 @@ Explore</button>
             <div class="box" id="timelinebox">
                 <div id="button-group">
                     <button type="button" class="btn btn-secondary white-back" aria-label="Scroll Timeline Backward" id="scroll-back">
-<!--                        <center> <i class="fas fa-white fa-chevron-left fa-2x"></i></center>-->
-                        
+                        <!--                        <center> <i class="fas fa-white fa-chevron-left fa-2x"></i></center>-->
+
                         <center>Back</center>
                     </button>
                     <button type="button" class="btn btn-default btn-secondary white-back" aria-label="Scroll Timeline Forward" id="scroll-forward">
-<!--                        <center><i class="fas fa-white fa-chevron-right fa-2x"></i></center>-->
+                        <!--                        <center><i class="fas fa-white fa-chevron-right fa-2x"></i></center>-->
                         <center>Forward</center>
                     </button>
                 </div>
                 <div id="eventscontainer" class="eventscontainer">
                     <div id="eventtooltip">
-<!--                        <mark style="background-color:rgba(255, 255, 255, .9)" padding="10px"> -->
-                            <span id="eventtexttip"> </span> 
-<!--                        </mark>-->
+                        <!--                        <mark style="background-color:rgba(255, 255, 255, .9)" padding="10px"> -->
+                        <span id="eventtexttip"> </span>
+                        <!--                        </mark>-->
                     </div>
-                    
+
                     <div id="imagetooltip">
-                        <a id = "imagelink">
-                        <img class = "eventimage"  id = "imagetippic">
+                        <a id="imagelink">
+                            <img class="eventimage" id="imagetippic">
                         </a>
                     </div>
-                    
-                    
+
+
                     <div id="timeline"> </div>
 
                 </div>
                 <div id="timelinecontainer" class="timelinecontainer"> </div>
             </div>
 
-            <i class="fa fa-info-circle pointer" id="showinformation" role = "button" tabindex = "0" aria-label="Show Information Pane"></i>
+            <i class="fa fa-info-circle pointer" id="showinformation" role="button" tabindex="0" aria-label="Show Information Pane"></i>
 
         </div>
     </div>
 
-    <div id = "note">
-   <center><strong>Welcome</strong> </center>This app has not yet been optimized for mobile viewing. Content is limited in current format. Please view on larger screen to engage with more content. <br>
-      <center>  <span id='close' onclick='d3.select(this.parentNode.parentNode).remove(); return false;'>[close]</span></center>
+    <div id="note">
+        <center><strong>Welcome</strong> </center>This app has not yet been optimized for mobile viewing. Content is limited in current format. Please view on larger screen to engage with more content. <br>
+        <center> <span id='close' onclick='d3.select(this.parentNode.parentNode).remove(); return false;'>[close]</span></center>
 
     </div>
 
@@ -183,7 +184,7 @@ Explore</button>
 
     </div>
 
-<script type="text/javascript" src="../assets/js/wraptext.js"></script>
+    <script type="text/javascript" src="../assets/js/wraptext.js"></script>
     <script type="text/javascript" src="../assets/js/timeline/InteractionFunctions.js"></script>
     <script type="text/javascript" src="../assets/js/timeline/ColorDemands.js"></script>
     <script type="text/javascript" src="../assets/js/timeline/DrawDemandDocs.js"></script>
@@ -191,6 +192,7 @@ Explore</button>
 
     <script>
         loadData()
+
     </script>
 
 </body>

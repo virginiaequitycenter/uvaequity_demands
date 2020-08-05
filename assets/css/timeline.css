@@ -578,6 +578,9 @@ i.fa-white {
 #Exitbutton {
      font-family: 'Yantramanav', sans-serif;
     font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 
 }
 
@@ -594,8 +597,6 @@ i.fa-white {
 .pointer {
     cursor: pointer
 }
-
-
 
 
 
