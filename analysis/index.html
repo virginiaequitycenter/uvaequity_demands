@@ -10,6 +10,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
     <!-- My CSS -->
     <link rel="stylesheet" href="../assets/css/jquery.tocify.css">
@@ -160,15 +161,37 @@
                         <div class="col-lg-3 col-md-2"> </div>
 
                         <div class="col-lg-6 col-md-8 storytextbox">
-                            <span class="storytext"> This is a Streams Chart of the first document in our library. It shows how the themes raised by the Student Body Referendum in 1970 develop later on. The width of a stream equals the # of references to that theme at a specific time while the blank space accounts for themes not mentioned in the document but still present in the conversation at the time.</span>
+                            <span class="storytext"> This is a Streams Chart. It shows how the call to action themes evolve over time. The width of a stream equals the # of references to that theme at a specific instance. <i class="fa fa-mouse-pointer" aria-hidden="true"></i> Mouse over a stream to see its label. </span> 
                         </div>
 
                         <div class="col-lg-3 col-md-2"> </div>
 
                     </div>
 
+                    
+              <div class="row storyelement" id="text2">
+                        <div class="col-lg-3 col-md-2"> </div>
 
-                    <div class="row storyelement" id="text2">
+                        <div class="col-lg-6 col-md-8 storytextbox">
+                            <span class="storytext"> Let's filter to show themes raised by the Student Body Referendum in 1970. <br>
+
+                                <mark style="color: white" class="colorstream">School Climate</mark>
+                                <mark style="color: white" class="colorstream"> Minority Student Recruitment</mark>
+                                <mark class="colorstream"> Living Wage</mark>
+
+                                <mark style="color: white" class="colorstream">Abolition/ Defunding</mark>
+                                </span>
+                        </div>
+
+                        <div class="col-lg-3 col-md-2"> </div>
+
+                    </div>
+                    
+                    
+                    
+
+<!--
+                    <div class="row storyelement" id="justtext">
                         <div class="col-lg-3 col-md-2"> </div>
 
                         <div class="col-lg-6 col-md-8 storytextbox">
@@ -185,17 +208,14 @@
 
                         <div class="col-lg-3 col-md-2"> </div>
                     </div>
-
-
-
-
+-->
 
 
                     <div class="row storyelement" id="text3">
                         <div class="col-lg-3"> </div>
 
                         <div class="col-lg-6 storytextbox">
-                            <span class="storytext"> We can see that <mark style="color: white" class="colorstream">Minority Student Recruitment</mark> was central to this document's mission in 1970. </span>
+                            <span class="storytext"> We can see that <mark style="color: white" class="colorstream">Minority Student Recruitment</mark> was a central tenant in 1970. </span>
                         </div>
 
                         <div class="col-lg-3"> </div>
@@ -224,7 +244,7 @@
                         <div class="col-lg-3"> </div>
 
                         <div class="col-lg-6 storytextbox">
-                            <span class="storytext"> Conversations in 1987 echoed key demands in <mark style="color: white" class="colorstream">Minority Student Recruitment</mark> while introducing new calls for action into the conversation. </span>
+                            <span class="storytext"> <mark style="color: white" class="colorstream">Minority Student Recruitment</mark> expanded from that point. Conversations in 1987 echoed key demands  while introducing new calls for action into the conversation. </span>
                         </div>
 
                         <div class="col-lg-3"> </div>
@@ -247,7 +267,6 @@
 
                                 </ul>
 
-
                             </span>
                         </div>
 
@@ -259,7 +278,7 @@
                         <div class="col-lg-3"> </div>
 
                         <div class="col-lg-6 storytextbox">
-                            <span class="storytext"> In contrast, themes of <mark style="color:white" class="colorstream">Abolition/ Defunding</mark> raised in 1970 were not strongly voiced again until 2015. </span>
+                            <span class="storytext"> In contrast, themes of <mark style="color:white" class="colorstream">Abolition/ Defunding</mark> raised in 1970 were not strongly written again until 2015. </span>
                         </div>
 
                         <div class="col-lg-3"> </div>
@@ -637,6 +656,8 @@
     <script type="text/javascript" src="../assets/js/streams/streamsinteraction.js"></script>
     <script type="text/javascript" src="../assets/js/streams/updatestreams.js"></script>
     <script type="text/javascript" src="../assets/js/streams/streams.js"></script>
+        <script type="text/javascript" src="../assets/js/streams/streams_all.js"></script>
+
 
     <script type="text/javascript" src="../assets/js/demos/demosinteraction.js"></script>
     <script type="text/javascript" src="../assets/js/demos/demos.js"></script>

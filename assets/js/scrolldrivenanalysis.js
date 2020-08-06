@@ -58,6 +58,24 @@ function initiatemovement() {
         opacity: 1
     });
 
+    gsap.to("#text2", {
+        scrollTrigger: {
+            trigger: "#text2",
+            start: "center center",
+            //      endTrigger: "#streamstory",
+            end: +10,
+            //        markers: true,
+            
+            onEnterBack: function () {
+                streamgraph_all(demands);
+            },
+            onLeave: function () {
+                streamgraph(demands)
+            },
+        },
+    });
+    
+    
     var myAreas = d3.selectAll(".myArea");
 
     gsap.to(myAreas, {
@@ -178,7 +196,7 @@ function initiatemovement() {
 
             onEnter: function () {
                 var ifr = document.getElementsByName('keysearch')[0]
-//                ifr.src = "https://commpaslab.shinyapps.io/demandkeywords/"
+                ifr.src = "https://commpaslab.shinyapps.io/demandkeywords/"
             },
             //            onLeaveBack: function(){
             //                var ifr = document.getElementsByName('keysearch')[0]

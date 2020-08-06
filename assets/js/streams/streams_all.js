@@ -1,14 +1,13 @@
 var sumstat;
 var stackedData;
 var mygroup;
-var title_input = "Student Body Referendum";
 var opacitystreams;
 var xstreams;
 var ystreams;
 var streamssvg;
 var thestreams;
 
-function streamgraph(data) {
+function streamgraph_all(data) {
 
     // set the dimensions and margins of the graph
     var margin = {
@@ -22,7 +21,7 @@ function streamgraph(data) {
 
     // append the svg object to the body of the page
     
-    d3.select("#streams").selectAll("g").remove();
+    d3.select("#streams").selectAll("g").remove()
      streamssvg = d3.select("#streams")
         .append("g")
         .attr("transform",
@@ -53,11 +52,8 @@ function streamgraph(data) {
 
     //   console.log(data);
 
-    var DocCodes = d3.map(data.filter(function (el) {
-        return el.DocTitle === title_input && el.Count > 0;
-    }), function (d) {
-        return d.Code;
-    }).keys();
+    var DocCodes = d3.map(data, (d) => d.Code
+    ).keys();
 
     //    console.log(DocCodes);
 
@@ -81,7 +77,7 @@ function streamgraph(data) {
       console.log(CodeList);
       console.log(diff);
 
-    CodeList = [...Other, ...diff];
+    CodeList = [ ...diff];
     //   console.log(CodeList);
 
     var counteddemands = d3.nest()
@@ -172,43 +168,46 @@ function streamgraph(data) {
         .style("opacity", function (d) {
             return opacitystreams(d.key);
         })
-        .attr("d", area);
+        .attr("d", area)
+        .on("mouseover", mouseoverstream)
+        .on("mousemove", mousemovestream)
+        .on("mouseleave", mouseleavestream);
     
-    // Add Year Annotation
-    var DocYear = d3.map(data.filter(function (el) {
-        return el.DocTitle === title_input && el.Count > 0;
-    }), function (d) {
-        return d.YEAR;
-    }).keys()[[0]];
+//    // Add Year Annotation
+//    var DocYear = d3.map(data.filter(function (el) {
+//        return el.DocTitle === title_input && el.Count > 0;
+//    }), function (d) {
+//        return d.YEAR;
+//    }).keys()[[0]];
 
-    console.log(DocYear);
+//    console.log(DocYear);
 
-    var displayyear = DocYear - (1 * -1);
+//    var displayyear = DocYear - (1 * -1);
 
-    streamssvg
-        .append("line")
-        .attr("x1", xstreams(DocYear))
-        .attr("x2", xstreams(DocYear))
-        .attr("y1", ystreams(0))
-        .attr("y2", ystreams(150))
-        .attr("class", "annotationline");
+//    streamssvg
+//        .append("line")
+//        .attr("x1", xstreams(DocYear))
+//        .attr("x2", xstreams(DocYear))
+//        .attr("y1", ystreams(0))
+//        .attr("y2", ystreams(150))
+//        .attr("class", "annotationline");
 
-    var display = title_input + " " + DocYear
-    // Add Title & Year Name Annotation
-    streamssvg
-        .append("g")
-        .attr("transform",
-            "translate(" + xstreams(displayyear) + "," + ystreams(140) + ")")
-        .attr("class", "textannotationg")
-        .append("text")
-        .attr("y", 0)
-        .attr("dy", .1)
-         .attr("x", 0)
-        .text(display)
-        .classed("textannotation", true)
-        .classed("visualizationtext", true)
-        .call(wrap, 100);
-    
+//    var display = title_input + " " + DocYear
+//    // Add Title & Year Name Annotation
+//    streamssvg
+//        .append("g")
+//        .attr("transform",
+//            "translate(" + xstreams(displayyear) + "," + ystreams(140) + ")")
+//        .attr("class", "textannotationg")
+//        .append("text")
+//        .attr("y", 0)
+//        .attr("dy", .1)
+//         .attr("x", 0)
+//        .text(display)
+//        .classed("textannotation", true)
+//        .classed("visualizationtext", true)
+//        .call(wrap, 100);
+//    
 
 //   marks .style("background-color", (d) => colorstreams(d.firstChild.data) );
 // marktexts = marks.text();
