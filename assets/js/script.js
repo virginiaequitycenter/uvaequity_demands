@@ -1,18 +1,18 @@
-//
-//// Activate scrollspy to add active class to navbar items on scroll
+
+// Activate scrollspy to add active class to navbar items on scroll
 //  $('body').scrollspy({
-//    target: '#mainNav',
+//    target: '#mainNav2',
 //    offset: 70
 //  });
 //
 //  // Collapse Navbar
 //  var navbarCollapse = function() {
-//    if ($("#mainNav").offset().top > 10) {
-//      $("#mainNav")
+//    if ($("#mainNav2").offset().top > 10) {
+//      $("#mainNav2")
 ////      .removeClass("fixed-top")
 //          .addClass("bg-brown");
 //    } else {
-//      $("#mainNav")
+//      $("#mainNav2")
 ////          .addClass("fixed-top")
 //          .removeClass("bg-brown");
 //    }
@@ -59,9 +59,13 @@ imageboxes.append("img")
             return "assets/pics/front-images/" + d.image + "" + d.type
         })
 //    .style("z-index", (d) => d.z)
-
 imageboxes.append("div").classed("overlay", true);
 
 
 
 };
+
+
+$('.carousel').carousel({
+  interval: 2000
+})
