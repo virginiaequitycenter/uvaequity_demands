@@ -13,7 +13,7 @@
 .header-text {
     position: absolute;
     left: 50%;
-    top: calc(50% + 70px);
+    top: calc(50% + 50px);
     transform: translate(-50%, -50%);
     width: 100%;
     /*    font-size:30px; */
@@ -29,7 +29,7 @@
 
 @media screen and (max-width: 850px) {
     .header-p {
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 
