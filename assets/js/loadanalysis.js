@@ -27,7 +27,8 @@ function loadData() {
         console.log(marktext)
         var marks = d3.selectAll(".colorstream").style("background-color", (d, i) => colorstreams(marktext[[i]]))
 
-        streamgraph(demands);
+        streamgraph_all(demands);
+//        streamgraph(demands);
         DrawStreamsControl(demands);
         initiatemovement();
 
