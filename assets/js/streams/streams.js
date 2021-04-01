@@ -23,6 +23,7 @@ function streamgraph(data) {
     // append the svg object to the body of the page
     
     d3.select("#streams").selectAll("g").remove();
+    
      streamssvg = d3.select("#streams")
         .append("g")
         .attr("transform",
